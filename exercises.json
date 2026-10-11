@@ -1,0 +1,1635 @@
+[
+  {
+    "id": "knee-101",
+    "name": "Quad Set with Towel Roll",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Roll a small towel firmly under the knee so the joint rests on the roll",
+      "Tighten the thigh and press the back of the knee straight down into the towel",
+      "Keep the heel down and do not lift the hip to cheat the contraction"
+    ],
+    "photos": [
+      "assets/011-supine-quad-set.jpg",
+      "assets/011-supine-quad-set.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-102",
+    "name": "Straight Leg Raise (Supine)",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lock the knee completely straight before the heel leaves the table",
+      "Lift only to the height of the opposite bent knee",
+      "Lower slowly and do not let the knee bend or the pelvis roll"
+    ],
+    "photos": [
+      "assets/010-supine-straight-leg-raises-start.jpg",
+      "assets/010-supine-straight-leg-raises-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-103",
+    "name": "Seated Superior Patellar Glide",
+    "category": "knee",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit with the knee fully extended and the quadriceps relaxed",
+      "Cup the inferior border of the patella with the web space of both hands",
+      "Glide the kneecap toward the hip without compressing it into the femur"
+    ],
+    "photos": [
+      "assets/099-seated-superior-patellar-glide.jpg",
+      "assets/099-seated-superior-patellar-glide.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-104",
+    "name": "Terminal Knee Extension (Band)",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Anchor the band behind the knee crease and step back to light tension",
+      "Straighten the knee fully so the band slides toward the joint line",
+      "Keep the knee over the second toe and do not lock the hip into a lean"
+    ],
+    "photos": [
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-105",
+    "name": "Heel Slide",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie supine and place a sock or strap under the heel to reduce friction",
+      "Slide the heel toward the buttock until a firm, tolerable stretch",
+      "Keep the heel in line with the hip and do not let the knee fall outward"
+    ],
+    "photos": [
+      "assets/012-supine-heel-slide.jpg",
+      "assets/012-supine-heel-slide.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-106",
+    "name": "Long Arc Quad",
+    "category": "knee",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall with the thigh supported and the knee starting near 90 degrees",
+      "Straighten until the leg is level and the kneecap is pulled up",
+      "Lower through the last few degrees instead of dropping the foot"
+    ],
+    "photos": [
+      "assets/025-seated-long-arc-quad-start.jpg",
+      "assets/025-seated-long-arc-quad-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-101",
+    "name": "Side-Lying Clamshell",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on the side with hips stacked and both knees bent about 45 degrees",
+      "Keep the heels together and lift the top knee without rolling the pelvis back",
+      "Stop before the low back twists; the motion stays in the hip"
+    ],
+    "photos": [
+      "assets/014-clamshell-start.jpg",
+      "assets/014-clamshell-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-102",
+    "name": "Supine Glute Bridge",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie hooklying with the feet hip-width and the heels close to the hips",
+      "Lift the pelvis until the shoulders, hips, and knees make one line",
+      "Keep the knees from splaying out or pinching together"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-103",
+    "name": "Side-Lying Hip Abduction",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on the side with the bottom knee bent and the top leg straight",
+      "Lead with the heel and lift the top leg slightly behind the trunk",
+      "Point the toes forward and do not hike the pelvis toward the ribs"
+    ],
+    "photos": [
+      "assets/007-sidelying-hip-abduction-start.jpg",
+      "assets/007-sidelying-hip-abduction-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-104",
+    "name": "Half-Kneeling Hip Flexor Stretch",
+    "category": "hip",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Half-kneel with the back knee under the hip and the front shin vertical",
+      "Tuck the pelvis so the belt buckle nods toward the ribs",
+      "Shift slightly forward until the stretch is in the front of the hip, not the low back"
+    ],
+    "photos": [
+      "assets/093-half-kneeling-hip-flexor-stretch.jpg",
+      "assets/093-half-kneeling-hip-flexor-stretch.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-105",
+    "name": "Figure-4 Piriformis Stretch",
+    "category": "hip",
+    "type": "stretch",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie supine and cross one ankle over the opposite thigh just above the knee",
+      "Flex the foot and let the crossed knee open toward the side",
+      "Draw the uncrossed thigh in until the stretch is deep in the buttock"
+    ],
+    "photos": [
+      "assets/038-supine-piriformis-stretch-with-foot-on-ground.jpg",
+      "assets/038-supine-piriformis-stretch-with-foot-on-ground.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-201",
+    "name": "Prone Press-Up (McKenzie Extension)",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie prone with the hands under the shoulders and the legs fully relaxed",
+      "Press the chest up with the arms only; leave the pelvis on the table",
+      "Stop at the height that eases or centralizes symptoms, then lower with control"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-202",
+    "name": "Supine Double Knee to Chest",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie supine and draw both knees toward the chest with the hands",
+      "Keep the head, neck, and shoulders relaxed on the table",
+      "Hug gently to open the low back without holding the breath"
+    ],
+    "photos": [
+      "assets/101-supine-double-knee-to-chest.jpg",
+      "assets/101-supine-double-knee-to-chest.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-203",
+    "name": "Bird Dog",
+    "category": "lumbar",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Start on hands and knees with the ribs stacked over a neutral pelvis",
+      "Reach the opposite arm and leg until they are level with the trunk",
+      "Do not let the low back sag or the pelvis rotate toward the moving leg"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-204",
+    "name": "Dead Bug",
+    "category": "lumbar",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie supine with the hips and knees at 90 degrees and the low back gently set",
+      "Lower the opposite arm and leg only as far as the back stays quiet",
+      "Exhale as the limbs move and do not let the ribs flare"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-205",
+    "name": "Pelvic Tilt",
+    "category": "lumbar",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie hooklying with the feet flat and the spine in a comfortable mid-position",
+      "Gently flatten the low back into the table by nodding the pelvis",
+      "Keep the motion small and do not lift the hips into a bridge"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "thor-101",
+    "name": "Side-Lying Open Book",
+    "category": "thoracic",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on the side with the knees stacked and bent, arms reaching forward",
+      "Open the top arm so the chest rotates toward the ceiling",
+      "Keep the knees together so the rotation stays in the mid-back"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "thor-102",
+    "name": "Foam Roller Thoracic Extension",
+    "category": "thoracic",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Place the roller across the mid-back and support the head with the hands",
+      "Extend over the roller only through the thoracic spine",
+      "Do not let the low back arch or the neck crank backward"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "thor-103",
+    "name": "Quadruped Thread the Needle",
+    "category": "thoracic",
+    "type": "stretch",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Start on hands and knees with the hands under the shoulders",
+      "Slide one arm under the chest and let that shoulder lower toward the floor",
+      "Keep the hips square so the twist stays in the upper back"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-301",
+    "name": "Seated Chin Tuck with Retraction",
+    "category": "cervical",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall and look straight ahead",
+      "Draw the chin straight back to make a double chin, without tipping down",
+      "Keep the chest up so the motion is at the neck, not a slump of the trunk"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-302",
+    "name": "Upper Trapezius Stretch",
+    "category": "cervical",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall and side-bend the ear toward the opposite shoulder",
+      "Let the stretching-side shoulder stay heavy and down",
+      "Use only a light hand assist and do not pull the head forward"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-303",
+    "name": "Levator Scapulae Stretch",
+    "category": "cervical",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Turn the nose about 45 degrees toward the armpit",
+      "Nod the chin slightly down and let the stretching-side shoulder drop",
+      "The stretch should land at the angle of the neck and the top of the shoulder blade"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-304",
+    "name": "Scapular Retraction and Depression",
+    "category": "cervical",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit or stand tall with the arms relaxed at the sides",
+      "Slide the shoulder blades down and slightly together, toward the back pockets",
+      "Do not shrug, arch the low back, or pinch the blades hard"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "shld-401",
+    "name": "Standing Band Horizontal Abduction",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Hold the band at chest height with the hands about shoulder-width apart",
+      "Pull the hands apart and squeeze the shoulder blades together",
+      "Keep the shoulders down and the elbows softly bent"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "shld-402",
+    "name": "Band External Rotation at 0° with Towel Roll",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Pinch a small towel roll between the elbow and the ribs",
+      "Keep the elbow on the towel and rotate the forearm outward",
+      "Do not let the elbow drift forward or the shoulder hike"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "shld-403",
+    "name": "Sleeper Stretch",
+    "category": "shoulder",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on the involved side with that shoulder flexed about 90 degrees",
+      "Gently press the forearm toward the table to rotate the shoulder inward",
+      "Stop at a stretch in the back of the shoulder; do not force a pinch in the front"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "shld-404",
+    "name": "Serratus Wall Slide with Band",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Face the wall with the forearms on the wall and a light band around the wrists",
+      "Slide the arms up while reaching the shoulder blades forward around the ribs",
+      "Keep the low back quiet and do not shrug as the arms rise"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "shld-405",
+    "name": "Wand Shoulder Flexion",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Hold a cane or dowel with both hands, thumbs up if comfortable",
+      "Use the uninvolved arm to lift the wand forward and overhead",
+      "Keep the ribs down and stop before the low back arches to gain height"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "elbow-101",
+    "name": "Wrist Extensor Stretch",
+    "category": "elbow_wrist",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Straighten the elbow and point the fingers toward the floor",
+      "Use the other hand to bend the wrist gently into flexion",
+      "Keep the shoulder relaxed so the stretch stays on the top of the forearm"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "elbow-102",
+    "name": "Eccentric Wrist Extension",
+    "category": "elbow_wrist",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Support the forearm on a table, palm down, with the wrist just past the edge",
+      "Use the other hand to lift the wrist, then lower slowly with the working hand",
+      "Make the lowering phase the work and do not let the wrist drop"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "elbow-103",
+    "name": "Forearm Pronation and Supination with Hammer",
+    "category": "elbow_wrist",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Hold a hammer at the end of the handle with the elbow tucked to the side",
+      "Rotate the palm up and palm down through a comfortable arc",
+      "Keep the elbow still so the motion comes from the forearm, not the shoulder"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hand-101",
+    "name": "Tendon Gliding (Hook, Straight Fist, Full Fist)",
+    "category": "hand",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Start with the fingers straight, then make a hook fist with the large knuckles straight",
+      "Move to a straight fist, then a full fist, pausing briefly in each shape",
+      "Keep the wrist neutral and do not force a painful end range"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hand-102",
+    "name": "First Web Space Stretch",
+    "category": "hand",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Open the thumb away from the index finger to widen the web space",
+      "Assist at the base of the thumb, not by levering the tip",
+      "Keep the wrist neutral and do not hyperextend the thumb joints"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hand-103",
+    "name": "Putty Grip Squeeze",
+    "category": "hand",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Hold therapy putty in the palm and wrap the fingers fully around it",
+      "Squeeze and hold, then release without flicking the wrist",
+      "Keep the thumb opposed so the grip is a full fist, not a pinch"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "ankle-101",
+    "name": "Standing Gastrocnemius Wall Stretch",
+    "category": "ankle",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Place the back foot straight ahead with the heel down and the knee locked",
+      "Lean the hips toward the wall until the stretch is in the upper calf",
+      "Do not let the arch collapse or the foot turn out"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "ankle-102",
+    "name": "Standing Soleus Wall Stretch",
+    "category": "ankle",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Use the same staggered stance, then bend the back knee while the heel stays down",
+      "Let the stretch shift lower, toward the Achilles",
+      "Keep the knee tracking over the second toe"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "ankle-103",
+    "name": "4-Way Ankle with Elastic Band",
+    "category": "ankle",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit with the ankle free and the band set to resist the direction you are working",
+      "Move only at the ankle: pull up, point down, turn in, and turn out",
+      "Keep the knee still so the shin muscles, not the hip, do the work"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "ankle-104",
+    "name": "Standing Heel Raise (Double to Single Leg)",
+    "category": "ankle",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand at a counter with the feet hip-width and the knees soft",
+      "Rise onto the balls of the feet with weight through the big-toe side",
+      "Lower slowly, and use one leg only when two-leg raises stay steady"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "balance-101",
+    "name": "Single-Leg Stance",
+    "category": "balance",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand near a counter and shift your weight fully onto one leg",
+      "Keep the pelvis level and the stance knee softly unlocked",
+      "Look at a fixed point; light fingertip support is allowed at first"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "balance-102",
+    "name": "Tandem Romberg Stance with Head Turns",
+    "category": "balance",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Place one foot directly in front of the other so the heel touches the toe",
+      "Turn the head slowly side to side without stepping out of the stance",
+      "Keep the hips square and let the eyes move with the head"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "balance-103",
+    "name": "Lateral Weight Shift on Airex Pad",
+    "category": "balance",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand on the foam pad with the feet hip-width and the knees soft",
+      "Shift weight slowly from one foot to the other without hiking the pelvis",
+      "Keep the trunk upright so the correction stays at the hips and ankles"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-101",
+    "name": "Quadruped Transverse Abdominis Drawing-In",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "On hands and knees, set a neutral spine with the ribs over the pelvis",
+      "Draw the lower abdomen up and in, as if tightening a belt one notch",
+      "Keep breathing; do not tuck the pelvis hard or hold the breath"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-102",
+    "name": "Side Plank from Knees",
+    "category": "core",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on the side, prop on the forearm, and bend both knees",
+      "Lift the hips until the shoulder, hip, and knees line up",
+      "Stack the top shoulder over the supporting shoulder and do not roll the hips forward"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-103",
+    "name": "Supine Marching with Core Brace",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie hooklying and brace so the low back stays gently set on the table",
+      "Lift one foot a few inches, then set it down before the other leg moves",
+      "If the pelvis rocks, lift less high"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-modified-thomas-stretch-01",
+    "name": "Modified Thomas Stretch",
+    "category": "hip",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit at the edge of the table, then roll back and hug one knee to the chest",
+      "Let the other thigh hang off the table until a stretch is felt at the front of the hip",
+      "Keep the low back flat on the table and do not let the hanging thigh swing out"
+    ],
+    "photos": [
+      "assets/002-modified-thomas-stretch.jpg",
+      "assets/002-modified-thomas-stretch.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-supine-bridge-01",
+    "name": "Supine Bridge",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with knees bent and feet flat",
+      "Lift the hips until the shoulders, hips, and knees line up",
+      "Lower slowly and keep the ribs down so the low back does not arch"
+    ],
+    "photos": [
+      "assets/003-supine-bridge-start.jpg",
+      "assets/003-supine-bridge-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-mini-squat-with-counter-support-01",
+    "name": "Mini Squat with Counter Support",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Hold the counter lightly and stand with feet about hip width",
+      "Bend both knees a short distance while keeping the heels down",
+      "Stand back up through the heels without locking the knees hard"
+    ],
+    "photos": [
+      "assets/004-mini-squat-with-counter-support-start.jpg",
+      "assets/004-mini-squat-with-counter-support-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-seated-hamstring-stretch-01",
+    "name": "Seated Hamstring Stretch",
+    "category": "knee",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall with the stretching leg straight and the other foot supported",
+      "Hinge forward from the hips until a stretch is felt behind the thigh",
+      "Keep the knee soft-straight and do not round hard through the low back"
+    ],
+    "photos": [
+      "assets/006-seated-hamstring-stretch.jpg",
+      "assets/006-seated-hamstring-stretch.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-supine-gluteal-sets-01",
+    "name": "Supine Gluteal Sets",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with legs relaxed",
+      "Squeeze both buttocks together without arching the low back",
+      "Hold the contraction, then fully relax before the next one"
+    ],
+    "photos": [
+      "assets/013-supine-gluteal-sets.jpg",
+      "assets/013-supine-gluteal-sets.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-seated-table-hamstring-stretch-01",
+    "name": "Seated Table Hamstring Stretch",
+    "category": "knee",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit at the edge of the table with one leg straight along the surface",
+      "Sit tall, then hinge forward from the hips until the back of the thigh stretches",
+      "Keep the foot relaxed and do not bounce at the end of the motion"
+    ],
+    "photos": [
+      "assets/015-seated-table-hamstring-stretch.jpg",
+      "assets/015-seated-table-hamstring-stretch.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-squat-01",
+    "name": "Squat",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand with feet about hip width and weight through the heels",
+      "Sit the hips back and down while the knees track over the toes",
+      "Keep the chest up and stand by driving through both heels"
+    ],
+    "photos": [
+      "assets/022-squat-start.jpg",
+      "assets/022-squat-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-supine-hip-adduction-isometric-with-ball-01",
+    "name": "Supine Hip Adduction Isometric with Ball",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with knees bent and a ball between the knees",
+      "Squeeze the ball gently and keep the pelvis still",
+      "Hold the squeeze, then release without letting the knees fall open"
+    ],
+    "photos": [
+      "assets/026-supine-hip-adduction-isometric-with-ball.jpg",
+      "assets/026-supine-hip-adduction-isometric-with-ball.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-bridge-with-hip-abduction-and-resistance-01",
+    "name": "Bridge with Hip Abduction and Resistance",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with knees bent and a band above the knees",
+      "Press the knees slightly apart as you lift the hips",
+      "Lower with control and keep the band tension even"
+    ],
+    "photos": [
+      "assets/056-bridge-with-hip-abduction-and-resistance-start.jpg",
+      "assets/056-bridge-with-hip-abduction-and-resistance-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-forward-step-up-01",
+    "name": "Forward Step Up",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Place the whole foot on the step and keep the knee tracking over the toes",
+      "Drive through the heel to stand tall without pushing off the back foot",
+      "Lower with control until the back foot taps down"
+    ],
+    "photos": [
+      "assets/057-forward-step-up-start.jpg",
+      "assets/057-forward-step-up-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-prone-hip-extension-01",
+    "name": "Prone Hip Extension",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie face down with both hips resting on the table",
+      "Lift one straight leg a few inches without rolling the pelvis",
+      "Lower slowly and keep the low back quiet"
+    ],
+    "photos": [
+      "assets/059-prone-hip-extension-start.jpg",
+      "assets/059-prone-hip-extension-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-side-stepping-with-resistance-at-ankles-01",
+    "name": "Side Stepping with Resistance at Ankles",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with a slight knee bend and the band just above the ankles",
+      "Step sideways while keeping the pelvis level and the toes forward",
+      "Do not let the trailing leg drag or the trunk lean"
+    ],
+    "photos": [
+      "assets/061-side-stepping-with-resistance-at-ankles-start.jpg",
+      "assets/061-side-stepping-with-resistance-at-ankles-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-side-stepping-with-resistance-at-feet-01",
+    "name": "Side Stepping with Resistance at Feet",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with a slight knee bend and the band around the feet",
+      "Step sideways leading with the heel and keep the toes forward",
+      "Control the return step so the knees do not collapse inward"
+    ],
+    "photos": [
+      "assets/068-side-stepping-with-resistance-at-feet-start.jpg",
+      "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-prone-hip-extension-on-table-01",
+    "name": "Prone Hip Extension on Table",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie face down with the hips at the edge of the table and the trunk supported",
+      "Lift one leg toward the ceiling only as far as the pelvis stays still",
+      "Lower slowly and avoid arching the low back to get higher"
+    ],
+    "photos": [
+      "assets/094-prone-hip-extension-on-table-start.jpg",
+      "assets/094-prone-hip-extension-on-table-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-hip-abduction-with-resistance-loop-01",
+    "name": "Hip Abduction with Resistance Loop",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with a loop around the thighs and a soft knee bend",
+      "Step or press the leg out to the side without leaning the trunk",
+      "Return slowly and keep the pelvis level"
+    ],
+    "photos": [
+      "assets/095-hip-abduction-with-resistance-loop-start.jpg",
+      "assets/095-hip-abduction-with-resistance-loop-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-hip-extension-with-resistance-loop-01",
+    "name": "Hip Extension with Resistance Loop",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with a loop around the ankles and a light hold for balance",
+      "Reach one leg back against the band without arching the low back",
+      "Return with control and keep the stance knee soft"
+    ],
+    "photos": [
+      "assets/096-hip-extension-with-resistance-loop-start.jpg",
+      "assets/096-hip-extension-with-resistance-loop-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-seated-inferior-patellar-glide-01",
+    "name": "Seated Inferior Patellar Glide",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit with the knee relaxed and the thigh supported",
+      "Cup the top of the kneecap and glide it gently toward the foot",
+      "Use a comfortable pressure and do not force the kneecap into the joint"
+    ],
+    "photos": [
+      "assets/098-seated-inferior-patellar-glide.jpg",
+      "assets/098-seated-inferior-patellar-glide.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-hooklying-single-knee-to-chest-stretch-01",
+    "name": "Hooklying Single Knee to Chest Stretch",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with one knee bent and the foot flat",
+      "Draw the other knee toward the chest until a gentle low-back stretch is felt",
+      "Keep the head and shoulders relaxed and do not pull through pain"
+    ],
+    "photos": [
+      "assets/102-hooklying-single-knee-to-chest-stretch.jpg",
+      "assets/102-hooklying-single-knee-to-chest-stretch.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "shoulder-standing-shoulder-horizontal-abduction-with-resistance-01",
+    "name": "Standing Shoulder Horizontal Abduction with Resistance",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall and hold the band with the arms in front at shoulder height",
+      "Pull the hands apart and squeeze the shoulder blades together",
+      "Return slowly and keep the shoulders down away from the ears"
+    ],
+    "photos": [
+      "assets/103-standing-shoulder-horizontal-abduction-with-resistance-start.jpg",
+      "assets/103-standing-shoulder-horizontal-abduction-with-resistance-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-bridge-with-heels-on-swiss-ball-01",
+    "name": "Bridge with Heels on Swiss Ball",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with both heels on the ball and knees straight",
+      "Lift the hips until the body is a straight line from shoulders to heels",
+      "Keep the ball steady and lower the hips without dropping them"
+    ],
+    "photos": [
+      "assets/104-bridge-with-heels-on-swiss-ball-start.jpg",
+      "assets/104-bridge-with-heels-on-swiss-ball-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-lunge-matrix-on-slider-01",
+    "name": "Lunge Matrix on Slider",
+    "category": "knee",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with the moving foot on the slider",
+      "Slide into one direction of the lunge, then return to the start before changing direction",
+      "Keep the standing knee tracking over the toes and the trunk upright"
+    ],
+    "photos": [
+      "assets/105-lunge-matrix-on-slider.jpg",
+      "assets/105-lunge-matrix-on-slider.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-lateral-lunge-with-slider-01",
+    "name": "Lateral Lunge with Slider",
+    "category": "knee",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with one foot on the slider",
+      "Shift the hips toward the standing leg as the slider foot glides out",
+      "Push through the standing heel to return, keeping the knee over the toes"
+    ],
+    "photos": [
+      "assets/106-lateral-lunge-with-slider-start.jpg",
+      "assets/106-lateral-lunge-with-slider-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-lunge-on-slider-01",
+    "name": "Lunge on Slider",
+    "category": "knee",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with the back foot on the slider",
+      "Lower into a lunge as the back foot slides, keeping the front knee over the toes",
+      "Press through the front heel to return to standing"
+    ],
+    "photos": [
+      "assets/107-lunge-on-slider-start.jpg",
+      "assets/107-lunge-on-slider-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-clamshell-with-resistance-01",
+    "name": "Clamshell with Resistance",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your side with a band above the knees and the feet together",
+      "Lift the top knee against the band while the pelvis stays stacked",
+      "Lower with control and keep the low back quiet"
+    ],
+    "photos": [
+      "assets/054-clamshell-with-resistance-start.jpg",
+      "assets/054-clamshell-with-resistance-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-sidelying-hip-adduction-01",
+    "name": "Sidelying Hip Adduction",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your side with the top leg bent and the foot placed in front",
+      "Lift the bottom leg a few inches without rolling the pelvis",
+      "Lower slowly and keep the toes pointing forward"
+    ],
+    "photos": [
+      "assets/066-sidelying-hip-adduction-start.jpg",
+      "assets/066-sidelying-hip-adduction-finish.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-lunge-matrix-01",
+    "name": "Lunge Matrix",
+    "category": "knee",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with the moving foot ready to step",
+      "Lunge in one direction, then return to the start before changing direction",
+      "Keep the front knee tracking over the toes and the trunk upright"
+    ],
+    "photos": [
+      "assets/067-lunge-matrix-start.jpg",
+      "assets/067-lunge-matrix.jpg"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees-01",
+    "name": "Long Sitting Isometric Hip Adduction and Extension with Ball at Knees",
+    "category": "hip",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall with the legs out and a ball between the knees",
+      "Squeeze the ball and press the thighs down into the surface",
+      "Hold the contraction, then relax without rounding the low back"
+    ],
+    "photos": [
+      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg",
+      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg"
+    ],
+    "video_url": ""
+  }
+]
