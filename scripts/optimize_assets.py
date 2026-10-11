@@ -173,23 +173,46 @@ def reconcile_catalog(processed):
     return catalog, matched, missing, orphans, len(groups)
 
 
+def asset_numbers(processed):
+    numbers = set()
+    for path in processed:
+        match = re.match(r"^(\d+)-", path.stem)
+        if match:
+            numbers.add(int(match.group(1)))
+    return numbers
+
+
 def print_report(processed, catalog, matched, missing, orphans, group_count):
+    present = asset_numbers(processed)
+    expected = set(range(1, 192))
+    absent = sorted(expected - present)
     print("")
-    print("Asset optimization report")
-    print(f"Total images processed: {len(processed)}")
-    print(f"Image groups: {group_count}")
-    print(f"Catalog entries: {len(catalog)}")
-    print(f"Total catalog entries matched: {len(matched)}")
+    print("Asset reconciliation summary")
+    print(f"{'Item':<42} {'Count':>7}")
+    print(f"{'-' * 42} {'-' * 7}")
+    print(f"{'Converted WebP images':<42} {len(processed):>7}")
+    print(f"{'Image groups (start/finish paired)':<42} {group_count:>7}")
+    print(f"{'Catalog entries in exercises.json':<42} {len(catalog):>7}")
+    print(f"{'Matched exercises':<42} {len(matched):>7}")
+    print(f"{'Missing catalog IDs':<42} {len(missing):>7}")
+    print(f"{'Numbered asset IDs present (1-191)':<42} {len(present):>7}")
+    print(f"{'Numbered asset IDs absent (1-191)':<42} {len(absent):>7}")
+    print(f"{'Orphaned WebP files':<42} {len(orphans):>7}")
+    print("")
+    print("Matched exercises")
+    print(f"{'Catalog ID':<62} {'WebP':<48}")
+    print(f"{'-' * 62} {'-' * 48}")
     for exercise, photos in matched:
-        print(f"  {exercise['id']}  {exercise['name']}")
-        for photo in photos:
-            print(f"    {photo}")
-    print(f"Missing exercises still needing assets: {len(missing)}")
+        print(f"{exercise['id']:<62} {photos[0]}")
+    print("")
+    print("Missing catalog IDs")
+    print(f"{'Catalog ID':<22} {'Name'}")
+    print(f"{'-' * 22} {'-' * 48}")
     for exercise in missing:
-        print(f"  {exercise['id']}  {exercise['name']}")
-    print(f"Orphaned images: {len(orphans)}")
-    for path in orphans:
-        print(f"  assets/{path.name}")
+        print(f"{exercise['id']:<22} {exercise['name']}")
+    print("")
+    print("Missing numbered asset IDs (1-191)")
+    print(", ".join(str(number) for number in absent) if absent else "None")
 
 
 def main():
