@@ -156,9 +156,8 @@
             <span aria-hidden="true">📄</span>
             <span>Ingest MD Protocol</span>
           </button>
-          <!-- 1-Click Protocol Preset Dropdown -->
-          <select id="protocolPresetSelect" onchange="applyProtocolPreset()" class="text-xs font-medium bg-blue-50 border border-blue-200 text-blue-800 rounded-lg px-2.5 py-2 hover:bg-blue-100 transition focus:outline-none">
-            <option value="">⚡ Load Protocol Preset...</option>
+          <select id="protocolPresetSelect" onchange="applyProtocolPreset()" aria-label="Load protocol preset" class="text-xs font-medium bg-blue-50 border border-blue-200 text-blue-800 rounded-lg px-2.5 py-2 hover:bg-blue-100 transition focus:outline-none max-w-[280px]">
+            <option value="">Load Protocol Preset...</option>
           </select>
         </div>
 
@@ -229,6 +228,10 @@
 
         <!-- Builder Actions Footer -->
         <div class="p-4 border-t border-slate-200 bg-slate-50 rounded-b-xl space-y-2">
+          <div class="grid grid-cols-2 gap-1.5">
+            <button type="button" onclick="openSaveTemplateModal()" class="w-full py-2 px-2 bg-white border border-slate-300 hover:border-blue-600 hover:text-blue-700 text-slate-700 rounded-lg font-bold text-xs transition">Save Routine as Template</button>
+            <button type="button" onclick="exportClinicTemplates()" class="w-full py-2 px-2 bg-white border border-slate-300 hover:border-blue-600 hover:text-blue-700 text-slate-700 rounded-lg font-bold text-xs transition">Export Templates JSON</button>
+          </div>
           <div class="grid grid-cols-3 gap-1.5">
             <!-- Copy EMR Note Button -->
             <button onclick="copyEmrSnippet()" class="w-full flex items-center justify-center space-x-1 py-2.5 px-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold text-xs shadow-sm transition">
@@ -254,6 +257,36 @@
     </section>
 
   </main>
+
+  <div id="saveTemplateModal" class="no-print hidden fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="saveTemplateTitle">
+    <div class="absolute inset-0 bg-slate-900/40" onclick="closeSaveTemplateModal()"></div>
+    <form id="saveTemplateForm" onsubmit="submitSaveTemplate(event)" class="relative bg-white w-full max-w-md rounded-2xl border border-slate-200 shadow-xl p-5 space-y-4">
+      <div>
+        <h2 id="saveTemplateTitle" class="text-base font-bold text-slate-900">Save Routine as Template</h2>
+        <p class="text-xs text-slate-500 mt-1">Stored in this browser and listed under Clinic Templates.</p>
+      </div>
+      <label class="block space-y-1">
+        <span class="text-xs font-semibold text-slate-600">Template Title</span>
+        <input id="templateTitleInput" required placeholder="Michael's Balance Progression" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+      </label>
+      <label class="block space-y-1">
+        <span class="text-xs font-semibold text-slate-600">Category</span>
+        <input id="templateCategoryInput" list="templateCategoryList" required placeholder="Balance" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+        <datalist id="templateCategoryList">
+          <option value="Shoulder"></option>
+          <option value="Knee"></option>
+          <option value="Spine"></option>
+          <option value="Foot/Ankle"></option>
+          <option value="Balance"></option>
+          <option value="Core"></option>
+        </datalist>
+      </label>
+      <div class="flex justify-end gap-2">
+        <button type="button" onclick="closeSaveTemplateModal()" class="px-3 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900">Cancel</button>
+        <button type="submit" class="px-3 py-2 bg-slate-900 hover:bg-blue-600 text-white font-semibold text-xs rounded-lg">Save Template</button>
+      </div>
+    </form>
+  </div>
 
   <input type="file" id="customSnapInput" accept="image/*" capture="environment" class="hidden no-print" onchange="onCustomSnapPhoto(event)">
   <div id="prescribeToast" class="no-print hidden fixed bottom-5 left-1/2 -translate-x-1/2 z-40 max-w-md px-4 py-2.5 rounded-full bg-slate-900 text-white text-sm font-medium shadow-lg" role="status"></div>
@@ -421,38 +454,14 @@
     // --- 1. Exercise Catalog State & Loader ---
     let catalogData = [];
 
-    const protocolBundles = {
-      knee_phase1: {
-        region: "Knee",
-        menuLabel: "Knee Phase 1 (Acute Quad / Effusion)",
-        title: "Knee Rehabilitation - Phase 1 (Acute)",
-        notes: "Focus on establishing quad activation and swelling reduction. Perform twice daily.",
-        exerciseIds: ["knee-101", "knee-102", "knee-103"]
-      },
-      knee_phase2: {
-        region: "Knee",
-        menuLabel: "Knee Phase 2 (Loaded Closed-Chain)",
-        title: "Knee Rehabilitation - Phase 2 (Loaded Closed Chain)",
-        notes: "Maintain knee over 2nd toe. Stop if sharp joint pain occurs.",
-        exerciseIds: ["knee-102", "knee-104"]
-      },
-      lumbar_ext: {
-        region: "Spine",
-        menuLabel: "Lumbar Extension Bias",
-        title: "Lumbar Extension Protocol",
-        notes: "Perform frequently throughout the day to centralize symptoms. Avoid prolonged flexion.",
-        exerciseIds: ["lumbar-201"]
-      },
-      cervical_posture: {
-        region: "Spine",
-        menuLabel: "Cervical & Postural Control",
-        title: "Cervical & Postural Stabilization",
-        notes: "Perform at your desk every 2-3 hours to relieve postural strain.",
-        exerciseIds: ["cerv-301", "shld-401"]
-      }
-    };
     let protocolRegistry = [];
-    const protocolRegionOrder = ["Shoulder", "Knee", "Spine", "Foot/Ankle", "General"];
+    let clinicTemplates = [];
+    const CLINIC_TEMPLATE_KEY = "pw_custom_templates";
+    const protocolTierOrder = [
+      "Standard Protocols (Generic)",
+      "Surgeon Protocols (MD-Specific)",
+      "Clinic Templates"
+    ];
 
     // --- 2. Reactive State ---
     let currentFilter = 'all';
@@ -523,9 +532,11 @@
         if (event.key === "Escape") {
           closeCustomExerciseModal();
           closeDictatePasteModal();
+          closeSaveTemplateModal();
           closeProtocolIngestModal();
         }
       });
+      loadClinicTemplates();
       renderProtocolPresets();
       await loadExercisesData();
       await loadProtocolRegistry();
@@ -979,43 +990,57 @@
       }
     }
 
-    function protocolRegionLabel(entry) {
-      if (entry.region) return entry.region;
-      const text = `${entry.protocol_title || ""} ${entry.phase || ""}`.toLowerCase();
-      if (/ankle|foot|achilles/.test(text)) return "Foot/Ankle";
-      if (/knee|acl|tka|patella/.test(text)) return "Knee";
-      if (/spine|lumbar|cervical|thoracic|neck|back/.test(text)) return "Spine";
-      if (/shoulder|rotator|cuff|scapula/.test(text)) return "Shoulder";
-      return "General";
+    function protocolTier(entry) {
+      if (entry.type === "surgeon") return "Surgeon Protocols (MD-Specific)";
+      if (entry.type === "template") return "Clinic Templates";
+      return "Standard Protocols (Generic)";
+    }
+
+    function protocolOptionLabel(entry) {
+      const phase = entry.phase ? ` · ${entry.phase}` : "";
+      const source = entry.type === "surgeon" && entry.source ? ` · ${entry.source}` : "";
+      return `${entry.protocol_title || entry.id}${phase}${source}`;
+    }
+
+    function loadClinicTemplates() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(CLINIC_TEMPLATE_KEY) || "[]");
+        clinicTemplates = Array.isArray(saved) ? saved : [];
+      } catch (err) {
+        clinicTemplates = [];
+      }
+    }
+
+    function persistClinicTemplates() {
+      localStorage.setItem(CLINIC_TEMPLATE_KEY, JSON.stringify(clinicTemplates));
     }
 
     function renderProtocolPresets() {
       const select = document.getElementById("protocolPresetSelect");
       const groups = new Map();
-      const addOption = (region, value, label) => {
-        if (!groups.has(region)) groups.set(region, []);
-        groups.get(region).push({ value, label });
+      const addOption = (tier, value, label) => {
+        if (!groups.has(tier)) groups.set(tier, []);
+        groups.get(tier).push({ value, label });
       };
-      Object.entries(protocolBundles).forEach(([key, bundle]) => {
-        addOption(bundle.region || "General", key, bundle.menuLabel || bundle.title);
-      });
       protocolRegistry.forEach(entry => {
-        const phase = entry.phase ? ` · ${entry.phase}` : "";
-        addOption(protocolRegionLabel(entry), `registry:${entry.id}`, `${entry.protocol_title || entry.id}${phase}`);
+        addOption(protocolTier(entry), `registry:${entry.id}`, protocolOptionLabel(entry));
+      });
+      clinicTemplates.forEach(entry => {
+        addOption("Clinic Templates", `template:${entry.id}`, protocolOptionLabel(entry));
       });
       select.innerHTML = "";
       const placeholder = document.createElement("option");
       placeholder.value = "";
-      placeholder.textContent = "⚡ Load Protocol Preset...";
+      placeholder.textContent = "Load Protocol Preset...";
       select.appendChild(placeholder);
-      const regions = [
-        ...protocolRegionOrder.filter(name => groups.has(name)),
-        ...[...groups.keys()].filter(name => !protocolRegionOrder.includes(name))
+      const tiers = [
+        ...protocolTierOrder.filter(name => groups.has(name)),
+        ...[...groups.keys()].filter(name => !protocolTierOrder.includes(name))
       ];
-      regions.forEach(region => {
+      tiers.forEach(tier => {
         const group = document.createElement("optgroup");
-        group.label = region;
-        groups.get(region).forEach(item => {
+        group.label = tier;
+        groups.get(tier).forEach(item => {
           const option = document.createElement("option");
           option.value = item.value;
           option.textContent = item.label;
@@ -1042,6 +1067,11 @@
       const phase = entry.phase ? `${entry.phase}. ` : "";
       document.getElementById("patientNotesInput").value = `${phase}${entry.precautions || ""}`.trim();
       currentProgram = [];
+      if (Array.isArray(entry.saved_exercises) && entry.saved_exercises.length) {
+        entry.saved_exercises.forEach(saved => applySavedExercise(saved));
+        renderActiveProgram();
+        return;
+      }
       (entry.exercise_ids || []).forEach(id => {
         const item = addToProgram(id, "Bilateral", null, false);
         const dose = (entry.exercise_doses || {})[id];
@@ -1057,27 +1087,124 @@
       renderActiveProgram();
     }
 
+    function applySavedExercise(saved) {
+      const side = saved.side || "Bilateral";
+      let item = saved.id && saved.id !== "custom" ? addToProgram(saved.id, side, null, false) : null;
+      if (!item) {
+        item = {
+          uniqueInstanceId: "item_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
+          baseId: saved.id || "custom",
+          name: saved.name || "Custom Exercise",
+          type: saved.type || "strength",
+          side,
+          sets: saved.sets,
+          reps: saved.reps,
+          hold: saved.hold,
+          freq: saved.freq,
+          dosePreset: "custom",
+          cues: [...(saved.cues || [])],
+          photos: [...(saved.photos || [])]
+        };
+        currentProgram.push(item);
+        return item;
+      }
+      if (saved.sets != null) item.sets = saved.sets;
+      if (saved.reps != null) item.reps = saved.reps;
+      if (saved.hold) item.hold = saved.hold;
+      if (saved.freq) item.freq = saved.freq;
+      item.side = side;
+      item.dosePreset = "custom";
+      return item;
+    }
+
     function applyProtocolPreset() {
       const select = document.getElementById("protocolPresetSelect");
       const bundleKey = select.value;
       if (!bundleKey) return;
-      if (bundleKey.startsWith("registry:")) {
-        const entry = protocolRegistry.find(item => item.id === bundleKey.slice("registry:".length));
+      if (bundleKey.startsWith("template:")) {
+        const entry = clinicTemplates.find(item => item.id === bundleKey.slice("template:".length));
         if (!entry) return;
         applyRegistryPreset(entry);
         select.value = "";
         return;
       }
-      const bundle = protocolBundles[bundleKey];
-      if (!bundle) return;
+      if (bundleKey.startsWith("registry:")) {
+        const entry = protocolRegistry.find(item => item.id === bundleKey.slice("registry:".length));
+        if (!entry) return;
+        applyRegistryPreset(entry);
+        select.value = "";
+      }
+    }
 
-      document.getElementById("programTitleInput").value = bundle.title;
-      document.getElementById("patientNotesInput").value = bundle.notes;
+    function openSaveTemplateModal() {
+      if (!currentProgram.length) {
+        alert("Add exercises before saving a template.");
+        return;
+      }
+      document.getElementById("saveTemplateForm").reset();
+      const title = document.getElementById("programTitleInput").value.trim();
+      if (title) document.getElementById("templateTitleInput").value = title;
+      document.getElementById("saveTemplateModal").classList.remove("hidden");
+      document.getElementById("templateTitleInput").focus();
+    }
 
-      currentProgram = [];
-      bundle.exerciseIds.forEach(id => addToProgram(id, "Bilateral", null, false));
-      renderActiveProgram();
-      select.value = "";
+    function closeSaveTemplateModal() {
+      document.getElementById("saveTemplateModal").classList.add("hidden");
+    }
+
+    function submitSaveTemplate(event) {
+      event.preventDefault();
+      const title = document.getElementById("templateTitleInput").value.trim();
+      const category = document.getElementById("templateCategoryInput").value.trim();
+      if (!title || !category) return;
+      clinicTemplates.push({
+        id: "clinic-" + Date.now().toString(36),
+        type: "template",
+        protocol_title: title,
+        region: category,
+        phase: "",
+        precautions: document.getElementById("patientNotesInput").value.trim(),
+        exercise_ids: currentProgram.map(item => item.baseId || "custom"),
+        saved_exercises: currentProgram.map(item => ({
+          id: item.baseId || "custom",
+          name: item.name,
+          type: item.type,
+          side: item.side,
+          sets: item.sets,
+          reps: item.reps,
+          hold: item.hold,
+          freq: item.freq,
+          cues: item.cues || [],
+          photos: item.baseId === "custom" ? (item.photos || []) : []
+        }))
+      });
+      persistClinicTemplates();
+      renderProtocolPresets();
+      closeSaveTemplateModal();
+      showPrescribeToast("Saved template: " + title);
+    }
+
+    function exportClinicTemplates() {
+      if (!clinicTemplates.length) {
+        alert("No clinic templates to export yet.");
+        return;
+      }
+      const payload = clinicTemplates.map(entry => ({
+        id: entry.id,
+        type: "standard",
+        protocol_title: entry.protocol_title,
+        phase: entry.phase || "",
+        region: entry.region || "General",
+        exercise_ids: entry.exercise_ids || [],
+        precautions: entry.precautions || "",
+        saved_exercises: entry.saved_exercises || []
+      }));
+      const blob = new Blob([JSON.stringify(payload, null, 2) + "\n"], { type: "application/json" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "clinic-templates.json";
+      link.click();
+      URL.revokeObjectURL(link.href);
     }
 
     function resetProgram() {
@@ -1099,13 +1226,15 @@
 
       badge.textContent = currentProgram.length;
 
+      if (emptyState && emptyState.parentElement === container) {
+        emptyState.remove();
+      }
+      container.innerHTML = "";
+
       if (currentProgram.length === 0) {
-        container.innerHTML = "";
         container.appendChild(emptyState);
         return;
       }
-
-      container.innerHTML = "";
       currentProgram.forEach((item, index) => {
         const row = document.createElement("div");
         row.className = "bg-white p-3 rounded-lg border border-slate-200 shadow-sm space-y-2";

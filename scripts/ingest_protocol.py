@@ -383,6 +383,7 @@ def registry_entries(parsed_doc):
         weeks = phase["weeks"] or phase["label"]
         entries.append({
             "id": f"{key}-phase-{phase['number']}",
+            "type": "standard",
             "protocol_title": f"{short} (Phase {phase['number']})",
             "phase": weeks,
             "region": region_for(parsed_doc["title"], phase["label"]),
@@ -403,19 +404,18 @@ def load_registry():
 
 
 def migrate_entry(entry):
+    if entry.get("type") == "surgeon":
+        return dict(entry)
     raw_id = str(entry.get("id", ""))
-    if re.search(r"carson", raw_id, re.I) and raw_id != "carson-rc-phase-1":
+    if re.search(r"carson", raw_id, re.I):
         return None
     item = dict(entry)
-    if raw_id == "carson-rc-phase-1":
-        item["id"] = "rc-repair-phase-1"
-        item["protocol_title"] = "Rotator Cuff Repair (Phase 1)"
+    if not item.get("type"):
+        item["type"] = "standard"
     for field in ("protocol_title", "precautions", "phase"):
         value = item.get(field)
         if isinstance(value, str):
             item[field] = strip_physician_prefix(value)
-    if item.get("id") == "rc-repair-phase-1":
-        item["protocol_title"] = "Rotator Cuff Repair (Phase 1)"
     return item
 
 

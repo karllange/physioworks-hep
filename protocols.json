@@ -1,7 +1,192 @@
 [
   {
-    "id": "rc-repair-phase-1",
-    "protocol_title": "Rotator Cuff Repair (Phase 1)",
+    "id": "std-rc-conservative-phase-1",
+    "type": "standard",
+    "protocol_title": "Rotator Cuff Conservative / Early Post-Op (Phase 1)",
+    "phase": "Early",
+    "region": "Shoulder",
+    "exercise_ids": [
+      "standing-pendulum",
+      "shld-405",
+      "cerv-304"
+    ],
+    "exercise_doses": {
+      "standing-pendulum": {
+        "sets": 2,
+        "reps": 20,
+        "hold_sec": 2,
+        "frequency": "Daily (7x/wk)"
+      },
+      "shld-405": {
+        "sets": 2,
+        "reps": 20,
+        "hold_sec": 5,
+        "frequency": "3x/day"
+      },
+      "cerv-304": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 5,
+        "frequency": "Daily (7x/wk)"
+      }
+    },
+    "precautions": "Passive and assisted motion only. Avoid active lifting and sudden movements. Stay inside a comfortable range."
+  },
+  {
+    "id": "std-rc-aarom-phase-2",
+    "type": "standard",
+    "protocol_title": "Rotator Cuff AAROM & Scapular Control (Phase 2)",
+    "phase": "AAROM",
+    "region": "Shoulder",
+    "exercise_ids": [
+      "shld-405",
+      "side-lying-external-rotation",
+      "prone-scapular-retraction",
+      "shld-404",
+      "shld-403"
+    ],
+    "exercise_doses": {
+      "shld-405": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 5,
+        "frequency": "1-2x daily"
+      },
+      "side-lying-external-rotation": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "prone-scapular-retraction": {
+        "sets": 2,
+        "reps": 12,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      },
+      "shld-404": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      },
+      "shld-403": {
+        "sets": 2,
+        "reps": 3,
+        "hold_sec": 30,
+        "frequency": "1x daily"
+      }
+    },
+    "precautions": "Progress assisted motion as tolerated. Keep the shoulder blade stable. Avoid painful end-range stretching."
+  },
+  {
+    "id": "std-rc-strength-phase-3",
+    "type": "standard",
+    "protocol_title": "Rotator Cuff Progressive Strengthening (Phase 3)",
+    "phase": "Strength",
+    "region": "Shoulder",
+    "exercise_ids": [
+      "shld-402",
+      "band-internal-rotation-at-0",
+      "standing-scaption-full-can",
+      "prone-horizontal-abduction-t-s",
+      "cerv-304"
+    ],
+    "exercise_doses": {
+      "shld-402": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "band-internal-rotation-at-0": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "standing-scaption-full-can": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "prone-horizontal-abduction-t-s": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      },
+      "cerv-304": {
+        "sets": 3,
+        "reps": 12,
+        "hold_sec": 5,
+        "frequency": "1x daily"
+      }
+    },
+    "precautions": "Increase load gradually. Pain should stay mild during and after exercise. Avoid heavy resistance overhead."
+  },
+  {
+    "id": "std-tka-phase-1",
+    "type": "standard",
+    "protocol_title": "Total Knee Arthroplasty (Phase 1)",
+    "phase": "Phase 1",
+    "region": "Knee",
+    "exercise_ids": [
+      "knee-101",
+      "knee-102",
+      "knee-103"
+    ],
+    "exercise_doses": {
+      "knee-101": {
+        "sets": 2,
+        "reps": 20,
+        "hold_sec": 2,
+        "frequency": "2x/day"
+      },
+      "knee-102": {
+        "sets": 2,
+        "reps": 20,
+        "hold_sec": 2,
+        "frequency": "2x/day"
+      },
+      "knee-103": {
+        "sets": 2,
+        "reps": 20,
+        "hold_sec": 2,
+        "frequency": "2x/day"
+      }
+    },
+    "precautions": "Focus on quad activation and swelling control. Perform twice daily. Stop for sharp joint pain or a major increase in swelling."
+  },
+  {
+    "id": "std-lumbar-extension",
+    "type": "standard",
+    "protocol_title": "Acute Lumbar Extension Bias",
+    "phase": "",
+    "region": "Spine",
+    "exercise_ids": [
+      "lumbar-201"
+    ],
+    "precautions": "Perform frequently through the day to centralize symptoms. Avoid prolonged sitting in flexion."
+  },
+  {
+    "id": "std-cervical-reset",
+    "type": "standard",
+    "protocol_title": "Cervical & Upper Quadrant Reset",
+    "phase": "",
+    "region": "Spine",
+    "exercise_ids": [
+      "cerv-301",
+      "shld-401"
+    ],
+    "precautions": "Perform every 2-3 hours to ease postural strain. Keep the motion small and pain free."
+  },
+  {
+    "id": "carson-rc-repair-phase-1",
+    "type": "surgeon",
+    "source": "Dr. Carson",
+    "protocol_title": "Carson - Rotator Cuff Repair (Phase 1)",
     "phase": "Weeks 0-4",
     "region": "Shoulder",
     "exercise_ids": [
@@ -9,11 +194,33 @@
       "standing-pendulum",
       "cerv-304"
     ],
+    "exercise_doses": {
+      "shld-405": {
+        "sets": 2,
+        "reps": 20,
+        "hold_sec": 5,
+        "frequency": "3x/day"
+      },
+      "standing-pendulum": {
+        "sets": 2,
+        "reps": 20,
+        "hold_sec": 2,
+        "frequency": "Daily (7x/wk)"
+      },
+      "cerv-304": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 5,
+        "frequency": "Daily (7x/wk)"
+      }
+    },
     "precautions": "No active shoulder abduction or external rotation past 30 deg."
   },
   {
-    "id": "rc-repair-phase-2",
-    "protocol_title": "Rotator Cuff Repair (Phase 2)",
+    "id": "carson-rc-repair-phase-2",
+    "type": "surgeon",
+    "source": "Dr. Carson",
+    "protocol_title": "Carson - Rotator Cuff Repair (Phase 2)",
     "phase": "Weeks 4-8",
     "region": "Shoulder",
     "exercise_ids": [
@@ -58,8 +265,10 @@
     "precautions": "Wean from sling per MD. No sudden lifting > 2 lbs. Avoid active abduction above 90 degrees until scapular control is restored. No aggressive stretching into end-range external rotation."
   },
   {
-    "id": "rc-repair-phase-3",
-    "protocol_title": "Rotator Cuff Repair (Phase 3)",
+    "id": "carson-rc-repair-phase-3",
+    "type": "surgeon",
+    "source": "Dr. Carson",
+    "protocol_title": "Carson - Rotator Cuff Repair (Phase 3)",
     "phase": "Weeks 8-12",
     "region": "Shoulder",
     "exercise_ids": [
