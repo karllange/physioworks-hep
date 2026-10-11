@@ -339,8 +339,8 @@
       "Exhale as the limbs move and do not let the ribs flare"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/118-supine-dead-bug-with-leg-extension-start.webp",
+      "assets/118-supine-dead-bug-with-leg-extension-finish.webp"
     ],
     "video_url": ""
   },
@@ -1629,6 +1629,719 @@
     "photos": [
       "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.webp",
       "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-supine-lower-trunk-rotation-01",
+    "name": "Supine Lower Trunk Rotation",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with the knees bent and the feet flat",
+      "Slowly roll both knees to one side while the shoulders stay down",
+      "Return to the middle and repeat to the other side"
+    ],
+    "photos": [
+      "assets/001-supine-lower-trunk-rotation.webp",
+      "assets/001-supine-lower-trunk-rotation.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-prone-press-up-on-elbows-01",
+    "name": "Prone Press-Up on Elbows",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie face down and prop on your elbows under the shoulders",
+      "Let the low back sag gently while the hips stay on the table",
+      "Hold the comfortable extension, then rest back down"
+    ],
+    "photos": [
+      "assets/017-prone-press-up-on-elbows.webp",
+      "assets/017-prone-press-up-on-elbows.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-side-plank-on-elbow-01",
+    "name": "Side Plank on Elbow",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your side and prop on the elbow under the shoulder",
+      "Lift the hips so the body makes a straight line",
+      "Keep the neck long and do not let the hips roll forward"
+    ],
+    "photos": [
+      "assets/020-side-plank-on-elbow-start.webp",
+      "assets/020-side-plank-on-elbow-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-standing-lumbar-extension-01",
+    "name": "Standing Lumbar Extension",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with the feet about hip width",
+      "Place the hands on the hips and gently arch the low back",
+      "Return upright without forcing the motion"
+    ],
+    "photos": [
+      "assets/021-standing-lumbar-extension.webp",
+      "assets/021-standing-lumbar-extension.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-childs-pose-stretch-01",
+    "name": "Child's Pose Stretch",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Kneel and sit the hips back toward the heels",
+      "Reach the arms forward and let the chest sink toward the floor",
+      "Breathe and keep the stretch comfortable through the back"
+    ],
+    "photos": [
+      "assets/033-child-s-pose-stretch.webp",
+      "assets/033-child-s-pose-stretch.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-supine-piriformis-stretch-foot-on-ground-01",
+    "name": "Supine Piriformis Stretch with Foot on Ground",
+    "category": "hip",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back and cross one ankle over the opposite thigh",
+      "Keep the foot of the supporting leg on the ground",
+      "Draw the thigh in until a stretch is felt deep in the buttock"
+    ],
+    "photos": [
+      "assets/038-supine-piriformis-stretch-with-foot-on-ground.webp",
+      "assets/038-supine-piriformis-stretch-with-foot-on-ground.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-mountain-climbers-slow-01",
+    "name": "Mountain Climbers, Slow",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Start in a plank with the hands under the shoulders",
+      "Step one knee toward the chest, then switch legs slowly",
+      "Keep the hips level and do not bounce"
+    ],
+    "photos": [
+      "assets/039-mountain-climbers-slow-start.webp",
+      "assets/039-mountain-climbers-slow-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-standing-diagonal-chops-medicine-ball-01",
+    "name": "Standing Diagonal Chops with Medicine Ball",
+    "category": "core",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand with a soft knee bend and hold the ball at one shoulder",
+      "Chop the ball diagonally down across the body",
+      "Control the return and keep the trunk from collapsing"
+    ],
+    "photos": [
+      "assets/040-standing-diagonal-chops-with-medicine-ball-start.webp",
+      "assets/040-standing-diagonal-chops-with-medicine-ball-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-plank-on-knees-01",
+    "name": "Plank on Knees",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Prop on the forearms with the knees on the floor",
+      "Make a straight line from the head to the knees",
+      "Brace the stomach and do not let the low back sag"
+    ],
+    "photos": [
+      "assets/042-plank-on-knees-start.webp",
+      "assets/042-plank-on-knees-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-bent-knee-fallouts-01",
+    "name": "Bent Knee Fallouts",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with the knees bent and the feet together",
+      "Let one knee fall out to the side while the pelvis stays still",
+      "Bring the knee back to the middle with control"
+    ],
+    "photos": [
+      "assets/055-bent-knee-fallouts-start.webp",
+      "assets/055-bent-knee-fallouts-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-supine-transversus-abdominis-bracing-01",
+    "name": "Supine Transversus Abdominis Bracing",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with the knees bent and the hands on the lower stomach",
+      "Gently draw the belly in without holding your breath",
+      "Keep the ribs down and the low back quiet"
+    ],
+    "photos": [
+      "assets/062-supine-transversus-abdominis-bracing-hands-on-stomach.webp",
+      "assets/062-supine-transversus-abdominis-bracing-hands-on-stomach.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-sidelying-tfl-stretch-01",
+    "name": "Sidelying TFL Stretch",
+    "category": "hip",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your side with the bottom leg straight",
+      "Let the top leg drop behind you until the outer hip stretches",
+      "Keep the pelvis stacked and do not twist the low back"
+    ],
+    "photos": [
+      "assets/069-sidelying-tfl-stretch.webp",
+      "assets/069-sidelying-tfl-stretch.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "elbow-standing-egypt-nerve-glide-01",
+    "name": "Standing Ulnar Nerve Glide",
+    "category": "elbow_wrist",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall and make the 'OK' sign with the thumb and index finger",
+      "Bring the hand toward the face, then turn it out like a mask",
+      "Move only as far as a gentle nerve glide, not a strong stretch"
+    ],
+    "photos": [
+      "assets/084-standing-egypt-nerve-glide.webp",
+      "assets/084-standing-egypt-nerve-glide.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-standard-plank-01",
+    "name": "Standard Plank",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Prop on the forearms and toes with the body in one line",
+      "Brace the stomach and squeeze the glutes",
+      "Do not let the hips pike up or the low back sag"
+    ],
+    "photos": [
+      "assets/090-standard-plank-start.webp",
+      "assets/090-standard-plank-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-seated-lumbar-extension-01",
+    "name": "Seated Lumbar Extension",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall at the front of a chair with the feet supported",
+      "Gently arch the low back and lift the chest",
+      "Return upright without forcing the motion"
+    ],
+    "photos": [
+      "assets/092-seated-lumbar-extension.webp",
+      "assets/092-seated-lumbar-extension.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-supine-isometric-hamstring-set-01",
+    "name": "Supine Isometric Hamstring Set",
+    "category": "knee",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with the knee slightly bent",
+      "Press the heel down as if you are trying to bend the knee",
+      "Hold the hamstring contraction, then relax"
+    ],
+    "photos": [
+      "assets/100-supine-isometric-hamstring-set.webp",
+      "assets/100-supine-isometric-hamstring-set.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-thomas-stretch-on-table-01",
+    "name": "Thomas Stretch on Table",
+    "category": "hip",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit at the edge of the table and roll back while hugging one knee",
+      "Let the other thigh hang off the table",
+      "Keep the low back flat and feel the stretch in the front of the hanging hip"
+    ],
+    "photos": [
+      "assets/108-thomas-stretch-on-table.webp",
+      "assets/108-thomas-stretch-on-table.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-modified-side-plank-hip-abduction-01",
+    "name": "Modified Side Plank with Hip Abduction",
+    "category": "core",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Set up in a side plank from the knees",
+      "Lift the top leg a few inches without rolling the trunk",
+      "Lower the leg with control and keep the hips lifted"
+    ],
+    "photos": [
+      "assets/112-modified-side-plank-with-hip-abduction-start.webp",
+      "assets/112-modified-side-plank-with-hip-abduction-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-half-kneeling-diagonal-chops-medicine-ball-01",
+    "name": "Half-Kneeling Diagonal Chops with Medicine Ball",
+    "category": "core",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Half kneel with the front knee over the ankle",
+      "Chop the ball from the high side down across the body",
+      "Stay tall and do not let the front knee cave in"
+    ],
+    "photos": [
+      "assets/113-half-kneeling-diagonal-chops-with-medicine-ball-start.webp",
+      "assets/113-half-kneeling-diagonal-chops-with-medicine-ball-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-bird-dog-on-foam-roll-01",
+    "name": "Bird Dog on Foam Roll",
+    "category": "core",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Rest the shins or hands on the roll as directed and find a tall spine",
+      "Reach the opposite arm and leg until they are level with the trunk",
+      "Move slowly and do not let the low back sag"
+    ],
+    "photos": [
+      "assets/114-bird-dog-on-foam-roll-start.webp",
+      "assets/114-bird-dog-on-foam-roll-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-half-kneeling-diagonal-lift-01",
+    "name": "Half-Kneeling Diagonal Lift with Resistance",
+    "category": "core",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Half kneel with the band starting low on the side of the back leg",
+      "Lift the hands diagonally up across the body",
+      "Keep the ribs stacked and the front knee over the foot"
+    ],
+    "photos": [
+      "assets/115-half-kneeling-diagonal-lift-with-resistance-opposite-forward-leg-start.webp",
+      "assets/115-half-kneeling-diagonal-lift-with-resistance-opposite-forward-leg-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "core-swiss-ball-march-01",
+    "name": "Swiss Ball March",
+    "category": "core",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with the heels on the ball and the hips lifted",
+      "March one foot, then the other, without dropping the hips",
+      "Keep the ribs down and the motion slow"
+    ],
+    "photos": [
+      "assets/119-swiss-ball-march.webp",
+      "assets/119-swiss-ball-march.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-full-superman-on-table-01",
+    "name": "Full Superman on Table",
+    "category": "lumbar",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie face down with the arms reaching overhead",
+      "Lift the arms, chest, and legs a few inches off the table",
+      "Lower slowly and do not crank the neck back"
+    ],
+    "photos": [
+      "assets/120-full-superman-on-table-start.webp",
+      "assets/120-full-superman-on-table-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "hip-single-leg-bridge-leg-supported-01",
+    "name": "Single-Leg Bridge with Leg Supported",
+    "category": "hip",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie on your back with one foot on the floor and the other leg supported",
+      "Lift the hips by pushing through the standing heel",
+      "Keep the pelvis level and lower with control"
+    ],
+    "photos": [
+      "assets/121-single-leg-bridge-with-leg-supported-start.webp",
+      "assets/121-single-leg-bridge-with-leg-supported-finish.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "lumbar-standing-sidebends-01",
+    "name": "Standing Sidebends",
+    "category": "lumbar",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Stand tall with the arms at the sides",
+      "Slide one hand down the thigh as the trunk bends sideways",
+      "Return to the middle and repeat to the other side"
+    ],
+    "photos": [
+      "assets/123-standing-sidebends.webp",
+      "assets/123-standing-sidebends.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "knee-prone-knee-extension-hang-01",
+    "name": "Prone Knee Extension Hang",
+    "category": "knee",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Lie face down with the knee just past the edge of the table",
+      "Let the lower leg hang so the knee straightens with gravity",
+      "Stay relaxed and do not force the knee down"
+    ],
+    "photos": [
+      "assets/143-prone-knee-extension-hang.webp",
+      "assets/143-prone-knee-extension-hang.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-gentle-levator-scapulae-stretch-01",
+    "name": "Gentle Levator Scapulae Stretch",
+    "category": "cervical",
+    "type": "stretch",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 1,
+      "hold_sec": 30,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall and look down toward the opposite armpit",
+      "Use a light hand pressure only if it stays comfortable",
+      "Keep the stretch in the back of the neck, not the shoulder joint"
+    ],
+    "photos": [
+      "assets/146-gentle-levator-scapulae-stretch.webp",
+      "assets/146-gentle-levator-scapulae-stretch.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-seated-cervical-rotation-arom-01",
+    "name": "Seated Cervical Rotation AROM",
+    "category": "cervical",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall and look over one shoulder as far as is comfortable",
+      "Return to the middle, then turn to the other side",
+      "Move slowly and keep the shoulders relaxed"
+    ],
+    "photos": [
+      "assets/147-seated-cervical-rotation-arom.webp",
+      "assets/147-seated-cervical-rotation-arom.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-seated-cervical-extension-arom-01",
+    "name": "Seated Cervical Extension AROM",
+    "category": "cervical",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall and look up only as far as the neck stays comfortable",
+      "Return to a neutral chin position",
+      "Do not force the head backward"
+    ],
+    "photos": [
+      "assets/148-seated-cervical-extension-arom.webp",
+      "assets/148-seated-cervical-extension-arom.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-seated-cervical-flexion-arom-01",
+    "name": "Seated Cervical Flexion AROM",
+    "category": "cervical",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall and nod the chin toward the chest",
+      "Return to neutral without jutting the chin forward",
+      "Keep the motion slow and pain free"
+    ],
+    "photos": [
+      "assets/149-seated-cervical-flexion-arom.webp",
+      "assets/149-seated-cervical-flexion-arom.webp"
+    ],
+    "video_url": ""
+  },
+  {
+    "id": "cerv-seated-cervical-sidebending-arom-01",
+    "name": "Seated Cervical Sidebending AROM",
+    "category": "cervical",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 20,
+      "hold_sec": 2,
+      "frequency": "Daily (7x/wk)"
+    },
+    "cues": [
+      "Sit tall and tilt one ear toward the same shoulder",
+      "Return to the middle, then tilt to the other side",
+      "Keep the shoulders down and do not rotate the head"
+    ],
+    "photos": [
+      "assets/150-seated-cervical-sidebending-arom.webp",
+      "assets/150-seated-cervical-sidebending-arom.webp"
     ],
     "video_url": ""
   }
