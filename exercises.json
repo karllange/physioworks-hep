@@ -2392,5 +2392,115 @@
     ],
     "video_url": "",
     "image_status": "pending_asset"
+  },
+  {
+    "id": "side-lying-external-rotation",
+    "name": "Side-Lying External Rotation",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 10,
+      "hold_sec": 2,
+      "frequency": "1x daily"
+    },
+    "cues": [
+      "Keep towel roll under arm, lift forearm without rotating torso."
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
+  },
+  {
+    "id": "prone-scapular-retraction",
+    "name": "Prone Scapular Retraction",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 12,
+      "hold_sec": 3,
+      "frequency": "1x daily"
+    },
+    "cues": [
+      "Prone on table, squeeze shoulder blades together without shrugging toward ears."
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
+  },
+  {
+    "id": "band-internal-rotation-at-0",
+    "name": "Band Internal Rotation at 0°",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 3,
+      "reps": 10,
+      "hold_sec": 2,
+      "frequency": "1x daily"
+    },
+    "cues": [
+      "Elbow at 90 degrees at side, rotate inward across stomach."
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
+  },
+  {
+    "id": "standing-scaption-full-can",
+    "name": "Standing Scaption (Full Can)",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 3,
+      "reps": 10,
+      "hold_sec": 2,
+      "frequency": "1x daily"
+    },
+    "cues": [
+      "Raise arms in scapular plane (30 deg forward of coronal plane), thumbs up, stop at 90 deg."
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
+  },
+  {
+    "id": "prone-horizontal-abduction-t-s",
+    "name": "Prone Horizontal Abduction (T's)",
+    "category": "shoulder",
+    "type": "strength",
+    "starter": true,
+    "default_dosing": {
+      "sets": 3,
+      "reps": 10,
+      "hold_sec": 3,
+      "frequency": "1x daily"
+    },
+    "cues": [
+      "Prone, arms straight out to side at 90 deg, lift thumbs toward ceiling."
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
   }
 ]

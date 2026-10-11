@@ -6,22 +6,32 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STAGING = ROOT / "protocols" / "carson"
+STAGING = ROOT / "protocols"
 CATALOG_PATH = ROOT / "exercises.json"
 REGISTRY_PATH = ROOT / "protocols.json"
 
 STOPWORDS = {"a", "an", "the", "and", "with", "of", "on", "at", "to", "for", "in", "or"}
 DOSE_KEYS = {"sets", "reps", "rep", "hold", "frequency", "freq", "cues", "cue", "instructions", "precautions", "precaution"}
 PHASE_RE = re.compile(r"^(?:#{1,6}\s*)?phase\s+(\d+)\s*[:.-]\s*(.+?)\s*$", re.I)
+PHASE_WEEKS_RE = re.compile(r"^(?:#{1,6}\s*)?phase\s*:\s*(.+)$", re.I)
 WEEKS_RE = re.compile(r"weeks?\s+\d+\s*[-–]\s*\d+", re.I)
 TITLE_RE = re.compile(r"^(?:#\s+|(?:protocol(?:\s+name)?)\s*[:.-]\s+)(.+)$", re.I)
 EXERCISE_RE = re.compile(r"^(?:#{2,6}\s+|\d+[.)]\s+|[-*]\s+)(.+?)\s*$")
 PRECAUTION_RE = re.compile(r"^(?:#{0,6}\s*)?(?:precautions?|restrictions?)\s*[:.-]\s*(.+)$", re.I)
 FIELD_RE = re.compile(r"^(?:[-*]\s*)?(sets?|reps?|hold|frequency|freq|cues?|instructions?)\s*[:.-]\s*(.+)$", re.I)
+BULLET_DOSE_RE = re.compile(
+    r"^[-*]\s*(?P<name>[^:]+):\s*(?P<sets>\d+)\s*sets?,\s*(?P<reps>\d+)\s*reps?,\s*(?P<hold>\d+)\s*s(?:ec(?:onds?)?)?\s*hold,\s*(?P<freq>[^.]+)\.(?:\s*(?P<cues>.*))?$",
+    re.I,
+)
 INLINE_RE = re.compile(
     r"^(?P<name>.+?)\s*(?:—|–|\|)\s*(?P<sets>\d+)\s*sets?\s*[x×]\s*(?P<reps>\d+)\s*reps?(?P<rest>.*)$",
     re.I,
 )
+PHYSICIAN_PREFIX_RE = re.compile(
+    r"^(?:(?:dr\.?\s+)?carson\b(?:\s*[-–:]\s*|\s+)|dr\.?\s+[A-Za-z][A-Za-z.'-]*(?:\s+[A-Za-z][A-Za-z.'-]*)?\s*[-–:]\s*)",
+    re.I,
+)
+PHASE_IN_TITLE_RE = re.compile(r"\s*\(phase\s+(\d+)\)\s*", re.I)
 
 STRENGTH = {"sets": 2, "reps": 20, "hold_sec": 2, "frequency": "Daily (7x/wk)"}
 STRETCH = {"sets": 2, "reps": 1, "hold_sec": 30, "frequency": "Daily (7x/wk)"}
@@ -56,22 +66,39 @@ def tokens(value):
     return {word for word in words if word not in STOPWORDS and len(word) > 1}
 
 
+def strip_physician_prefix(title):
+    text = (title or "").strip()
+    previous = None
+    while text and text != previous:
+        previous = text
+        text = PHYSICIAN_PREFIX_RE.sub("", text).strip()
+    return re.sub(r"\s+", " ", text).strip(" -")
+
+
 def weeks_label(text):
     match = WEEKS_RE.search(text or "")
     if not match:
         return ""
-    return re.sub(r"\s+", " ", match.group(0)).strip().title().replace("Weeks", "Weeks")
+    return re.sub(r"\s+", " ", match.group(0)).strip().title()
 
 
-def short_protocol_name(title):
-    head = re.split(r"\s+[-–]\s+", title, maxsplit=1)[0].strip()
-    return head or title.strip()
+def phase_number_in(title):
+    match = PHASE_IN_TITLE_RE.search(title or "")
+    return int(match.group(1)) if match else None
+
+
+def base_title(title):
+    text = strip_physician_prefix(title)
+    text = PHASE_IN_TITLE_RE.sub(" ", text)
+    text = re.sub(r"\s+phase\s+\d+\s*$", "", text, flags=re.I)
+    head = re.split(r"\s+[-–]\s+", text, maxsplit=1)[0].strip()
+    return re.sub(r"\s+", " ", head or text).strip(" -")
 
 
 def protocol_key(title):
     if re.search(r"rotator\s+cuff", title, re.I):
-        return "rc"
-    return slugify(short_protocol_name(title))[:48]
+        return "rc-repair"
+    return slugify(base_title(title))[:48]
 
 
 def region_for(title, phase_text):
@@ -139,37 +166,49 @@ def blank_exercise():
 
 
 def flush_exercise(phase, current):
-    if current and current["name"]:
+    if phase and current and current["name"]:
         phase["exercises"].append(current)
 
 
-def parse_document(text, source):
+def open_phase(phases, number, label):
+    phase = {
+        "number": number,
+        "label": label,
+        "weeks": weeks_label(label),
+        "precautions": "",
+        "exercises": [],
+    }
+    phases.append(phase)
+    return phase
+
+
+def parse_document(text):
     title = ""
     phases = []
     phase = None
     current = None
     for raw_line in text.splitlines():
         line = raw_line.strip()
-        if not line:
+        if not line or line.lower().rstrip(":") == "exercises":
             continue
         if not title:
             titled = TITLE_RE.match(line)
-            if titled and not PHASE_RE.match(line):
-                title = titled.group(1).strip()
+            if titled and not PHASE_RE.match(line) and not PHASE_WEEKS_RE.match(line):
+                title = strip_physician_prefix(titled.group(1).strip())
                 continue
         phase_match = PHASE_RE.match(line)
         if phase_match:
-            flush_exercise(phase, current) if phase else None
+            flush_exercise(phase, current)
             current = None
-            label = phase_match.group(2).strip()
-            phase = {
-                "number": int(phase_match.group(1)),
-                "label": label,
-                "weeks": weeks_label(label),
-                "precautions": "",
-                "exercises": [],
-            }
-            phases.append(phase)
+            phase = open_phase(phases, int(phase_match.group(1)), phase_match.group(2).strip())
+            continue
+        weeks_match = PHASE_WEEKS_RE.match(line)
+        if weeks_match and re.match(r"^phase\s*:", line, re.I):
+            flush_exercise(phase, current)
+            current = None
+            label = weeks_match.group(1).strip()
+            number = phase_number_in(title) or (len(phases) + 1)
+            phase = open_phase(phases, number, label)
             continue
         if phase is None:
             continue
@@ -179,6 +218,21 @@ def parse_document(text, source):
             current = None
             extra = precaution.group(1).strip()
             phase["precautions"] = f"{phase['precautions']} {extra}".strip()
+            continue
+        bullet = BULLET_DOSE_RE.match(line)
+        if bullet:
+            flush_exercise(phase, current)
+            current = blank_exercise()
+            current.update({
+                "name": bullet.group("name").strip(),
+                "sets": int(bullet.group("sets")),
+                "reps": int(bullet.group("reps")),
+                "hold_sec": int(bullet.group("hold")),
+                "frequency": normalize_frequency(bullet.group("freq")),
+                "cues": (bullet.group("cues") or "").strip(),
+            })
+            flush_exercise(phase, current)
+            current = None
             continue
         field = FIELD_RE.match(line)
         if field and current:
@@ -201,17 +255,17 @@ def parse_document(text, source):
         if inline and tokens(inline.group("name")) and not any(word in tokens(inline.group("name")) for word in DOSE_KEYS):
             flush_exercise(phase, current)
             rest = inline.group("rest") or ""
-            hold = parse_hold(re.search(r"hold\s+(\d+)", rest, re.I).group(0) if re.search(r"hold\s+\d+", rest, re.I) else "")
+            hold_match = re.search(r"hold\s+(\d+)", rest, re.I)
             frequency = ""
-            freq_match = re.search(r"(daily(?:\s*\(7x/wk\))?|\d+\s*x\s*/\s*day|\d+x/day)", rest, re.I)
+            freq_match = re.search(r"(daily(?:\s*\(7x/wk\))?|\d+\s*[-–]?\s*\d*\s*x\s*/?\s*day|\d+x/day)", rest, re.I)
             if freq_match:
-                frequency = normalize_frequency(freq_match.group(1).replace(" ", ""))
+                frequency = normalize_frequency(freq_match.group(1))
             current = blank_exercise()
             current.update({
                 "name": inline.group("name").strip(" -"),
                 "sets": int(inline.group("sets")),
                 "reps": int(inline.group("reps")),
-                "hold_sec": hold,
+                "hold_sec": parse_hold(hold_match.group(0) if hold_match else ""),
                 "frequency": frequency,
             })
             continue
@@ -227,7 +281,7 @@ def parse_document(text, source):
         flush_exercise(phase, current)
     if not title:
         title = "Untitled Protocol"
-    return {"source": source, "title": title, "phases": [item for item in phases if item["exercises"]]}
+    return {"title": strip_physician_prefix(title), "phases": [item for item in phases if item["exercises"]]}
 
 
 def match_exercise(name, catalog):
@@ -304,34 +358,37 @@ def link_exercises(parsed_doc, catalog):
     added = []
     for phase in parsed_doc["phases"]:
         ids = []
+        doses = {}
         for exercise in phase["exercises"]:
             match = match_exercise(exercise["name"], catalog)
             if match:
-                ids.append(match["id"])
-                continue
-            entry = new_entry(exercise, region, unique_slug(exercise["name"], catalog))
-            catalog.append(entry)
-            ids.append(entry["id"])
-            added.append(entry)
+                exercise_id = match["id"]
+            else:
+                entry = new_entry(exercise, region, unique_slug(exercise["name"], catalog))
+                catalog.append(entry)
+                exercise_id = entry["id"]
+                added.append(entry)
+            ids.append(exercise_id)
+            doses[exercise_id] = dosing_for(exercise, exercise["name"])
         phase["exercise_ids"] = ids
+        phase["exercise_doses"] = doses
     return added
 
 
 def registry_entries(parsed_doc):
-    source = parsed_doc["source"]
-    source_label = source.replace("-", " ").title()
     key = protocol_key(parsed_doc["title"])
-    short = short_protocol_name(parsed_doc["title"])
+    short = base_title(parsed_doc["title"])
     entries = []
     for phase in parsed_doc["phases"]:
         weeks = phase["weeks"] or phase["label"]
         entries.append({
-            "id": f"{source}-{key}-phase-{phase['number']}",
-            "protocol_title": f"{source_label} - {short} (Phase {phase['number']})",
+            "id": f"{key}-phase-{phase['number']}",
+            "protocol_title": f"{short} (Phase {phase['number']})",
             "phase": weeks,
             "region": region_for(parsed_doc["title"], phase["label"]),
             "exercise_ids": phase["exercise_ids"],
-            "precautions": phase["precautions"],
+            "exercise_doses": phase.get("exercise_doses", {}),
+            "precautions": strip_physician_prefix(phase["precautions"]),
         })
     return entries
 
@@ -345,23 +402,70 @@ def load_registry():
     return list(data)
 
 
-def ingest():
+def migrate_entry(entry):
+    raw_id = str(entry.get("id", ""))
+    if re.search(r"carson", raw_id, re.I) and raw_id != "carson-rc-phase-1":
+        return None
+    item = dict(entry)
+    if raw_id == "carson-rc-phase-1":
+        item["id"] = "rc-repair-phase-1"
+        item["protocol_title"] = "Rotator Cuff Repair (Phase 1)"
+    for field in ("protocol_title", "precautions", "phase"):
+        value = item.get(field)
+        if isinstance(value, str):
+            item[field] = strip_physician_prefix(value)
+    if item.get("id") == "rc-repair-phase-1":
+        item["protocol_title"] = "Rotator Cuff Repair (Phase 1)"
+    return item
+
+
+def staging_files():
+    if not STAGING.exists():
+        return []
+    files = []
+    for path in sorted(STAGING.iterdir()):
+        if not path.is_file():
+            continue
+        if path.name == REGISTRY_PATH.name:
+            continue
+        if path.suffix.lower() in {".txt", ".md", ".pdf"}:
+            files.append(path)
+    return files
+
+
+def resolve_inputs(argv):
+    if not argv:
+        return staging_files()
+    paths = []
+    for arg in argv:
+        path = Path(arg)
+        if not path.is_absolute():
+            path = ROOT / path
+        paths.append(path)
+    return paths
+
+
+def ingest(argv):
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     documents = []
-    if STAGING.exists():
-        for path in sorted(STAGING.iterdir()):
-            if path.suffix.lower() not in {".txt", ".md", ".pdf"} or not path.is_file():
-                continue
-            text = read_document(path)
-            if text.strip():
-                documents.append(parse_document(text, STAGING.name))
+    for path in resolve_inputs(argv):
+        if not path.is_file():
+            print(f"Skipping missing file {path}")
+            continue
+        text = read_document(path)
+        if text.strip():
+            documents.append(parse_document(text))
     added = []
     fresh = []
     for document in documents:
         added.extend(link_exercises(document, catalog))
         fresh.extend(registry_entries(document))
     fresh_ids = {entry["id"] for entry in fresh}
-    registry = [entry for entry in load_registry() if entry.get("id") not in fresh_ids and not str(entry.get("id", "")).startswith(f"{STAGING.name}-")]
+    registry = []
+    for entry in load_registry():
+        migrated = migrate_entry(entry)
+        if migrated and migrated["id"] not in fresh_ids:
+            registry.append(migrated)
     registry.extend(fresh)
     CATALOG_PATH.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     REGISTRY_PATH.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -371,7 +475,8 @@ def ingest():
     print(f"{'-' * 42} {'-' * 7}")
     print(f"{'Documents read':<42} {len(documents):>7}")
     print(f"{'New exercises appended':<42} {len(added):>7}")
-    print(f"{'Protocol phases in registry':<42} {len(fresh):>7}")
+    print(f"{'Protocol phases written':<42} {len(fresh):>7}")
+    print(f"{'Registry entries':<42} {len(registry):>7}")
     print(f"{'Total exercises in exercises.json':<42} {len(catalog):>7}")
     for entry in fresh:
         print(f"  {entry['id']}  {entry['protocol_title']}  [{', '.join(entry['exercise_ids'])}]")
@@ -381,4 +486,4 @@ def ingest():
 
 
 if __name__ == "__main__":
-    sys.exit(ingest())
+    sys.exit(ingest(sys.argv[1:]))

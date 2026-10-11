@@ -1042,7 +1042,18 @@
       const phase = entry.phase ? `${entry.phase}. ` : "";
       document.getElementById("patientNotesInput").value = `${phase}${entry.precautions || ""}`.trim();
       currentProgram = [];
-      (entry.exercise_ids || []).forEach(id => addToProgram(id, "Bilateral", null, false));
+      (entry.exercise_ids || []).forEach(id => {
+        const item = addToProgram(id, "Bilateral", null, false);
+        const dose = (entry.exercise_doses || {})[id];
+        if (!item || !dose) return;
+        if (dose.sets != null) item.sets = dose.sets;
+        if (dose.reps != null) item.reps = dose.reps;
+        const hold = dose.hold_sec ?? dose.hold;
+        if (hold != null && hold !== "") item.hold = formatHold(hold);
+        const frequency = dose.frequency || dose.freq;
+        if (frequency) item.freq = frequency;
+        item.dosePreset = "custom";
+      });
       renderActiveProgram();
     }
 
