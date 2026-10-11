@@ -1065,7 +1065,9 @@
     function applyRegistryPreset(entry) {
       document.getElementById("programTitleInput").value = entry.protocol_title || "";
       const phase = entry.phase ? `${entry.phase}. ` : "";
-      document.getElementById("patientNotesInput").value = `${phase}${entry.precautions || ""}`.trim();
+      const criteria = entry.criteria ? `Criteria to progress: ${entry.criteria}. ` : "";
+      const precautions = entry.precautions ? `${criteria ? "Precautions: " : ""}${entry.precautions}` : "";
+      document.getElementById("patientNotesInput").value = `${phase}${criteria}${precautions}`.replace(/\s+/g, " ").trim();
       currentProgram = [];
       if (Array.isArray(entry.saved_exercises) && entry.saved_exercises.length) {
         entry.saved_exercises.forEach(saved => applySavedExercise(saved));
