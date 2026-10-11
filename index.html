@@ -1066,10 +1066,37 @@
       return path + "/";
     }
 
+    function sharePayload() {
+      return {
+        code: currentAccessCode,
+        clinic: document.getElementById("clinicSelect").value,
+        title: document.getElementById("programTitleInput").value,
+        notes: document.getElementById("patientNotesInput").value,
+        directives: [...currentProgramState.directives],
+        exercises: currentProgram.map(item => ({
+          id: item.baseId,
+          name: item.name,
+          side: item.side,
+          sets: item.sets,
+          reps: item.reps,
+          hold: item.hold,
+          freq: item.freq
+        }))
+      };
+    }
+
+    function encodeSharePayload(payload) {
+      const bytes = new TextEncoder().encode(JSON.stringify(payload));
+      let binary = "";
+      bytes.forEach(byte => { binary += String.fromCharCode(byte); });
+      return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+    }
+
     function patientPageUrl(code) {
       const url = new URL(appDirectoryPath() + "patient.html", window.location.origin);
-      url.searchParams.set("code", code);
-      return url.href;
+      url.search = "";
+      const encoded = encodeSharePayload(sharePayload());
+      return url.origin + url.pathname + "#d=" + encoded + "&code=" + encodeURIComponent(code);
     }
 
     function triggerPrintHandout() {

@@ -85,12 +85,72 @@
       if (!hash) return "";
       if (hash.includes("=")) {
         const hashedCode = new URLSearchParams(hash).get("code");
-        if (hashedCode && hashedCode.trim()) return hashedCode.trim().toUpperCase();
+        return hashedCode && hashedCode.trim() ? hashedCode.trim().toUpperCase() : "";
       }
       return hash.toUpperCase();
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
+    function decodeSharePayload(encoded) {
+      const normalized = String(encoded).replace(/-/g, "+").replace(/_/g, "/");
+      const padLength = (4 - (normalized.length % 4)) % 4;
+      const padded = normalized + "=".repeat(padLength);
+      const binary = atob(padded);
+      const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
+      return JSON.parse(new TextDecoder().decode(bytes));
+    }
+
+    async function programFromPayload(payload) {
+      let catalog = [];
+      try {
+        const response = await fetch("./exercises.json");
+        if (response.ok) catalog = await response.json();
+      } catch (error) {
+        catalog = [];
+      }
+      const byId = new Map(catalog.map(item => [item.id, item]));
+      const exercises = (payload.exercises || []).map((item, index) => {
+        const template = byId.get(item.id) || {};
+        const dosing = template.default_dosing || {};
+        return {
+          uniqueInstanceId: "shared_" + index,
+          baseId: item.id || "custom",
+          name: template.name || item.name || "Exercise",
+          type: template.type || "strength",
+          side: item.side || "Bilateral",
+          sets: item.sets,
+          reps: item.reps,
+          hold: item.hold,
+          freq: item.freq || dosing.frequency || "",
+          cues: template.cues || [],
+          photos: template.photos || []
+        };
+      });
+      return {
+        code: String(payload.code || "").toUpperCase(),
+        clinic: payload.clinic || "Silverdale",
+        title: payload.title || "",
+        notes: payload.notes || "",
+        directives: Array.isArray(payload.directives) ? payload.directives : [],
+        exercises,
+        savedAt: new Date().toISOString()
+      };
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      const encoded = hashParams.get("d");
+      if (encoded) {
+        try {
+          const payload = decodeSharePayload(encoded);
+          const program = await programFromPayload(payload);
+          if (!program.code) program.code = codeFromLocation();
+          if (program.code) localStorage.setItem("PW_HEP_" + program.code, JSON.stringify(program));
+          renderProgram(program);
+          return;
+        } catch (error) {
+          console.error(error);
+        }
+      }
       const codeFromUrl = codeFromLocation();
       if (codeFromUrl) loadProgram(codeFromUrl);
     });
@@ -142,9 +202,10 @@
         alert("No exercise program found for code: " + code);
         return;
       }
+      renderProgram(JSON.parse(raw));
+    }
 
-      const program = JSON.parse(raw);
-
+    function renderProgram(program) {
       document.getElementById("codeEntryCard").classList.add("hidden");
       document.getElementById("programHeaderCard").classList.remove("hidden");
 
