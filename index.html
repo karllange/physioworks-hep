@@ -159,10 +159,6 @@
           <!-- 1-Click Protocol Preset Dropdown -->
           <select id="protocolPresetSelect" onchange="applyProtocolPreset()" class="text-xs font-medium bg-blue-50 border border-blue-200 text-blue-800 rounded-lg px-2.5 py-2 hover:bg-blue-100 transition focus:outline-none">
             <option value="">⚡ Load Protocol Preset...</option>
-            <option value="knee_phase1">Knee Phase 1 (Acute Quad / Effusion)</option>
-            <option value="knee_phase2">Knee Phase 2 (Loaded Closed-Chain)</option>
-            <option value="lumbar_ext">Lumbar Extension Bias</option>
-            <option value="cervical_posture">Cervical & Postural Control</option>
           </select>
         </div>
 
@@ -427,26 +423,36 @@
 
     const protocolBundles = {
       knee_phase1: {
+        region: "Knee",
+        menuLabel: "Knee Phase 1 (Acute Quad / Effusion)",
         title: "Knee Rehabilitation - Phase 1 (Acute)",
         notes: "Focus on establishing quad activation and swelling reduction. Perform twice daily.",
         exerciseIds: ["knee-101", "knee-102", "knee-103"]
       },
       knee_phase2: {
+        region: "Knee",
+        menuLabel: "Knee Phase 2 (Loaded Closed-Chain)",
         title: "Knee Rehabilitation - Phase 2 (Loaded Closed Chain)",
         notes: "Maintain knee over 2nd toe. Stop if sharp joint pain occurs.",
         exerciseIds: ["knee-102", "knee-104"]
       },
       lumbar_ext: {
+        region: "Spine",
+        menuLabel: "Lumbar Extension Bias",
         title: "Lumbar Extension Protocol",
         notes: "Perform frequently throughout the day to centralize symptoms. Avoid prolonged flexion.",
         exerciseIds: ["lumbar-201"]
       },
       cervical_posture: {
+        region: "Spine",
+        menuLabel: "Cervical & Postural Control",
         title: "Cervical & Postural Stabilization",
         notes: "Perform at your desk every 2-3 hours to relieve postural strain.",
         exerciseIds: ["cerv-301", "shld-401"]
       }
     };
+    let protocolRegistry = [];
+    const protocolRegionOrder = ["Shoulder", "Knee", "Spine", "Foot/Ankle", "General"];
 
     // --- 2. Reactive State ---
     let currentFilter = 'all';
@@ -520,7 +526,10 @@
           closeProtocolIngestModal();
         }
       });
+      renderProtocolPresets();
       await loadExercisesData();
+      await loadProtocolRegistry();
+      renderProtocolPresets();
       renderDirectiveChips();
       renderCatalog();
     });
@@ -912,8 +921,8 @@
         hold: formatHold(dosing.hold),
         freq: dosing.freq,
         dosePreset: template.type === "stretch" ? "standard_stretch" : "standard_strength",
-        cues: [...template.cues],
-        photos: [...template.photos]
+        cues: [...(template.cues || [])],
+        photos: [...(template.photos || [])]
       };
 
       if (dosePresetId && dosePresetId !== "custom") {
@@ -970,17 +979,93 @@
       }
     }
 
+    function protocolRegionLabel(entry) {
+      if (entry.region) return entry.region;
+      const text = `${entry.protocol_title || ""} ${entry.phase || ""}`.toLowerCase();
+      if (/ankle|foot|achilles/.test(text)) return "Foot/Ankle";
+      if (/knee|acl|tka|patella/.test(text)) return "Knee";
+      if (/spine|lumbar|cervical|thoracic|neck|back/.test(text)) return "Spine";
+      if (/shoulder|rotator|cuff|scapula/.test(text)) return "Shoulder";
+      return "General";
+    }
+
+    function renderProtocolPresets() {
+      const select = document.getElementById("protocolPresetSelect");
+      const groups = new Map();
+      const addOption = (region, value, label) => {
+        if (!groups.has(region)) groups.set(region, []);
+        groups.get(region).push({ value, label });
+      };
+      Object.entries(protocolBundles).forEach(([key, bundle]) => {
+        addOption(bundle.region || "General", key, bundle.menuLabel || bundle.title);
+      });
+      protocolRegistry.forEach(entry => {
+        const phase = entry.phase ? ` · ${entry.phase}` : "";
+        addOption(protocolRegionLabel(entry), `registry:${entry.id}`, `${entry.protocol_title || entry.id}${phase}`);
+      });
+      select.innerHTML = "";
+      const placeholder = document.createElement("option");
+      placeholder.value = "";
+      placeholder.textContent = "⚡ Load Protocol Preset...";
+      select.appendChild(placeholder);
+      const regions = [
+        ...protocolRegionOrder.filter(name => groups.has(name)),
+        ...[...groups.keys()].filter(name => !protocolRegionOrder.includes(name))
+      ];
+      regions.forEach(region => {
+        const group = document.createElement("optgroup");
+        group.label = region;
+        groups.get(region).forEach(item => {
+          const option = document.createElement("option");
+          option.value = item.value;
+          option.textContent = item.label;
+          group.appendChild(option);
+        });
+        select.appendChild(group);
+      });
+    }
+
+    async function loadProtocolRegistry() {
+      try {
+        const response = await fetch("./protocols.json", { cache: "no-store" });
+        if (!response.ok) return;
+        const data = await response.json();
+        protocolRegistry = Array.isArray(data) ? data : [data];
+      } catch (err) {
+        console.warn("Protocol registry unavailable.");
+        protocolRegistry = [];
+      }
+    }
+
+    function applyRegistryPreset(entry) {
+      document.getElementById("programTitleInput").value = entry.protocol_title || "";
+      const phase = entry.phase ? `${entry.phase}. ` : "";
+      document.getElementById("patientNotesInput").value = `${phase}${entry.precautions || ""}`.trim();
+      currentProgram = [];
+      (entry.exercise_ids || []).forEach(id => addToProgram(id, "Bilateral", null, false));
+      renderActiveProgram();
+    }
+
     function applyProtocolPreset() {
       const select = document.getElementById("protocolPresetSelect");
       const bundleKey = select.value;
-      if (!bundleKey || !protocolBundles[bundleKey]) return;
-
+      if (!bundleKey) return;
+      if (bundleKey.startsWith("registry:")) {
+        const entry = protocolRegistry.find(item => item.id === bundleKey.slice("registry:".length));
+        if (!entry) return;
+        applyRegistryPreset(entry);
+        select.value = "";
+        return;
+      }
       const bundle = protocolBundles[bundleKey];
+      if (!bundle) return;
+
       document.getElementById("programTitleInput").value = bundle.title;
       document.getElementById("patientNotesInput").value = bundle.notes;
 
       currentProgram = [];
-      bundle.exerciseIds.forEach(id => addToProgram(id, "Bilateral"));
+      bundle.exerciseIds.forEach(id => addToProgram(id, "Bilateral", null, false));
+      renderActiveProgram();
       select.value = "";
     }
 

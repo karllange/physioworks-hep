@@ -1,0 +1,25 @@
+[
+  {
+    "id": "carson-rc-phase-1",
+    "protocol_title": "Carson - Rotator Cuff Repair (Phase 1)",
+    "phase": "Weeks 0-4",
+    "region": "Shoulder",
+    "exercise_ids": [
+      "shld-405",
+      "standing-pendulum",
+      "cerv-304"
+    ],
+    "precautions": "No active shoulder abduction or external rotation past 30 deg."
+  },
+  {
+    "id": "carson-rc-phase-2",
+    "protocol_title": "Carson - Rotator Cuff Repair (Phase 2)",
+    "phase": "Weeks 4-8",
+    "region": "Shoulder",
+    "exercise_ids": [
+      "shld-405",
+      "supine-passive-external-rotation"
+    ],
+    "precautions": "No resisted lifting. External rotation only to the limit set by the surgeon."
+  }
+]
