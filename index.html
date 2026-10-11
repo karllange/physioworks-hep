@@ -1074,8 +1074,8 @@
       }
       (entry.exercise_ids || []).forEach(id => {
         const item = addToProgram(id, "Bilateral", null, false);
-        const dose = (entry.exercise_doses || {})[id];
-        if (!item || !dose) return;
+        const dose = { ...(entry.default_dosing || {}), ...((entry.exercise_doses || {})[id] || {}) };
+        if (!item || !Object.keys(dose).length) return;
         if (dose.sets != null) item.sets = dose.sets;
         if (dose.reps != null) item.reps = dose.reps;
         const hold = dose.hold_sec ?? dose.hold;

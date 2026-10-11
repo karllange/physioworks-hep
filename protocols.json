@@ -160,6 +160,28 @@
     "precautions": "Focus on quad activation and swelling control. Perform twice daily. Stop for sharp joint pain or a major increase in swelling."
   },
   {
+    "id": "knee-phase-2-closed-chain",
+    "type": "standard",
+    "protocol_title": "Knee Rehabilitation (Phase 2: Loaded Closed-Chain)",
+    "phase": "Weeks 4-8+ / Progressive Loading",
+    "region": "Knee",
+    "category": "Knee",
+    "exercise_ids": [
+      "knee-squat-01",
+      "knee-forward-step-up-01",
+      "knee-104",
+      "hip-102",
+      "ankle-104"
+    ],
+    "default_dosing": {
+      "sets": 3,
+      "reps": 10,
+      "hold": "2s",
+      "frequency": "1x daily"
+    },
+    "precautions": "Maintain neutral knee-over-second-toe tracking; avoid valgus collapse. Emphasize slow, controlled eccentric descent. Discontinue if anterior knee pain exceeds 3/10."
+  },
+  {
     "id": "std-lumbar-extension",
     "type": "standard",
     "protocol_title": "Acute Lumbar Extension Bias",
