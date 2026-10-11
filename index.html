@@ -156,7 +156,7 @@
             <span aria-hidden="true">📄</span>
             <span>Ingest MD Protocol</span>
           </button>
-          <select id="protocolPresetSelect" onchange="applyProtocolPreset()" aria-label="Load protocol preset" class="text-xs font-medium bg-blue-50 border border-blue-200 text-blue-800 rounded-lg px-2.5 py-2 hover:bg-blue-100 transition focus:outline-none max-w-[280px]">
+          <select id="protocolPresetSelect" onchange="applyProtocolPreset()" aria-label="Load protocol preset" class="text-xs font-medium bg-blue-50 border border-blue-200 text-blue-800 rounded-lg px-2.5 py-2 hover:bg-blue-100 transition focus:outline-none w-[22rem] max-w-full">
             <option value="">Load Protocol Preset...</option>
           </select>
         </div>
@@ -457,11 +457,8 @@
     let protocolRegistry = [];
     let clinicTemplates = [];
     const CLINIC_TEMPLATE_KEY = "pw_custom_templates";
-    const protocolTierOrder = [
-      "Standard Protocols (Generic)",
-      "Surgeon Protocols (MD-Specific)",
-      "Clinic Templates"
-    ];
+    const standardProtocolGroup = "Standard Protocols (Generic)";
+    const clinicTemplateGroup = "Clinic Templates";
 
     // --- 2. Reactive State ---
     let currentFilter = 'all';
@@ -990,16 +987,42 @@
       }
     }
 
+    const procedureAliases = { TKA: "Total Knee Arthroplasty" };
+
+    function procedureName(entry) {
+      const title = String(entry.protocol_title || "").trim();
+      const match = title.match(/^(.+?)\s*\(\s*Phase\s+\d+/i);
+      const name = match ? match[1].trim() : title.replace(/^Carson\s*[-–—]\s*/i, "").trim();
+      return procedureAliases[name] || name || "Surgeon Protocol";
+    }
+
+    function surgeonGroupLabel(entry) {
+      const source = String(entry.source || "Surgeon").trim();
+      return `${source} — ${procedureName(entry)}`;
+    }
+
+    function formatTimeline(phase) {
+      return String(phase || "").trim().replace(/(\d+)\s*[-–]\s*(\d+)/g, "$1–$2");
+    }
+
     function protocolTier(entry) {
-      if (entry.type === "surgeon") return "Surgeon Protocols (MD-Specific)";
-      if (entry.type === "template") return "Clinic Templates";
-      return "Standard Protocols (Generic)";
+      if (entry.type === "surgeon") return surgeonGroupLabel(entry);
+      if (entry.type === "template") return clinicTemplateGroup;
+      return standardProtocolGroup;
     }
 
     function protocolOptionLabel(entry) {
       const phase = entry.phase ? ` · ${entry.phase}` : "";
       const source = entry.type === "surgeon" && entry.source ? ` · ${entry.source}` : "";
       return `${entry.protocol_title || entry.id}${phase}${source}`;
+    }
+
+    function phaseOptionLabel(entry) {
+      const title = String(entry.protocol_title || "");
+      const phaseMatch = title.match(/Phase\s+(\d+)/i);
+      const timeline = formatTimeline(entry.phase);
+      if (phaseMatch) return timeline ? `Phase ${phaseMatch[1]} (${timeline})` : `Phase ${phaseMatch[1]}`;
+      return protocolOptionLabel(entry);
     }
 
     function loadClinicTemplates() {
@@ -1023,19 +1046,24 @@
         groups.get(tier).push({ value, label });
       };
       protocolRegistry.forEach(entry => {
-        addOption(protocolTier(entry), `registry:${entry.id}`, protocolOptionLabel(entry));
+        const label = entry.type === "surgeon" ? phaseOptionLabel(entry) : protocolOptionLabel(entry);
+        addOption(protocolTier(entry), `registry:${entry.id}`, label);
       });
       clinicTemplates.forEach(entry => {
-        addOption("Clinic Templates", `template:${entry.id}`, protocolOptionLabel(entry));
+        addOption(clinicTemplateGroup, `template:${entry.id}`, protocolOptionLabel(entry));
       });
       select.innerHTML = "";
       const placeholder = document.createElement("option");
       placeholder.value = "";
       placeholder.textContent = "Load Protocol Preset...";
       select.appendChild(placeholder);
+      const procedures = [...groups.keys()]
+        .filter(name => name !== standardProtocolGroup && name !== clinicTemplateGroup)
+        .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
       const tiers = [
-        ...protocolTierOrder.filter(name => groups.has(name)),
-        ...[...groups.keys()].filter(name => !protocolTierOrder.includes(name))
+        ...(groups.has(standardProtocolGroup) ? [standardProtocolGroup] : []),
+        ...procedures,
+        ...(groups.has(clinicTemplateGroup) ? [clinicTemplateGroup] : [])
       ];
       tiers.forEach(tier => {
         const group = document.createElement("optgroup");
