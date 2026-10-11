@@ -78,13 +78,21 @@
   </main>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const codeFromUrl = urlParams.get('code');
-
-      if (codeFromUrl) {
-        loadProgram(codeFromUrl.toUpperCase());
+    function codeFromLocation() {
+      const queryCode = new URLSearchParams(window.location.search).get("code");
+      if (queryCode && queryCode.trim()) return queryCode.trim().toUpperCase();
+      const hash = window.location.hash.replace(/^#/, "").trim();
+      if (!hash) return "";
+      if (hash.includes("=")) {
+        const hashedCode = new URLSearchParams(hash).get("code");
+        if (hashedCode && hashedCode.trim()) return hashedCode.trim().toUpperCase();
       }
+      return hash.toUpperCase();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const codeFromUrl = codeFromLocation();
+      if (codeFromUrl) loadProgram(codeFromUrl);
     });
 
     function submitManualCode() {

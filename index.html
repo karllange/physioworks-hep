@@ -1058,6 +1058,20 @@
     }
 
     // --- 7. Print Handout & Dynamic QR Code ---
+    function appDirectoryPath() {
+      const path = window.location.pathname;
+      if (path.endsWith("/")) return path;
+      const last = path.slice(path.lastIndexOf("/") + 1);
+      if (last.includes(".")) return path.slice(0, path.lastIndexOf("/") + 1);
+      return path + "/";
+    }
+
+    function patientPageUrl(code) {
+      const url = new URL(appDirectoryPath() + "patient.html", window.location.origin);
+      url.searchParams.set("code", code);
+      return url.href;
+    }
+
     function triggerPrintHandout() {
       if (currentProgram.length === 0) {
         alert("Please add exercises before printing.");
@@ -1073,7 +1087,7 @@
       const notes = document.getElementById("patientNotesInput").value || "Perform daily within comfortable tolerance.";
       document.getElementById("printNotesText").textContent = notes;
 
-      const qrTargetUrl = `${window.location.origin}/patient.html?code=${currentAccessCode}`;
+      const qrTargetUrl = patientPageUrl(currentAccessCode);
       const qrContainer = document.getElementById("printQrCode");
       qrContainer.innerHTML = "";
       new QRCode(qrContainer, {
@@ -2477,7 +2491,7 @@
         return;
       }
       saveCurrentProgramLocally();
-      window.open(`patient.html?code=${currentAccessCode}`, '_blank');
+      window.open(patientPageUrl(currentAccessCode), "_blank");
     }
   </script>
 </body>
