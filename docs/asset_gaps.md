@@ -3257,3 +3257,391 @@ Suggested Grok prompt:
 ```
 Clinical line illustration of Modified Curl-Up (McGill) for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Modified Curl-Up (McGill) as two separate frames.
 ```
+
+## ankle-circles — Ankle Circles
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Ankle Circles for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Ankle Circles as two separate frames.
+```
+
+## reverse-slider-lunge — Reverse Slider Lunge
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Reverse Slider Lunge for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Reverse Slider Lunge as two separate frames.
+```
+
+## star-drill — Star Drill
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Star Drill for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Star Drill as two separate frames.
+```
+
+## hamstring-ball-curls — Hamstring Ball Curls
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Hamstring Ball Curls for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Hamstring Ball Curls as two separate frames.
+```
+
+## prone-hamstring-curls — Prone Hamstring Curls
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Prone Hamstring Curls for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Prone Hamstring Curls as two separate frames.
+```
+
+## toe-walks — Toe Walks
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Toe Walks for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Toe Walks as two separate frames.
+```
+
+## split-squat — Split Squat
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Split Squat for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Split Squat as two separate frames.
+```
+
+## depth-jump-progression — Depth Jump Progression
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Depth Jump Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Depth Jump Progression as two separate frames.
+```
+
+## squat-progression — Squat Progression
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Squat Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Squat Progression as two separate frames.
+```
+
+## hamstring-curls-progression — Hamstring Curls Progression
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Hamstring Curls Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Hamstring Curls Progression as two separate frames.
+```
+
+## shuttle-press — Shuttle Press
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Shuttle Press for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Shuttle Press as two separate frames.
+```
+
+## sled-pulls-sled-pushes — Sled Pulls/Sled Pushes
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Sled Pulls/Sled Pushes for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Sled Pulls/Sled Pushes as two separate frames.
+```
+
+## lateral-squat-variations — Lateral Squat Variations
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Lateral Squat Variations for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Lateral Squat Variations as two separate frames.
+```
+
+## leg-extensions-on-exxentric — Leg Extensions On Exxentric
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Leg Extensions On Exxentric for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Leg Extensions On Exxentric as two separate frames.
+```
+
+## lateral-lunges — Lateral Lunges
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Lateral Lunges for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Lateral Lunges as two separate frames.
+```
+
+
+## nu-step — Nu-step
+
+- Category: shoulder
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Nu-step for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Nu-step as two separate frames.
+```
+
+## dl-machine-extension — DL Machine Extension
+
+- Category: shoulder
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of DL Machine Extension for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of DL Machine Extension as two separate frames.
+```
+
+## trx-cossack-squat — TRX Cossack Squat
+
+- Category: hip
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of TRX Cossack Squat for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of TRX Cossack Squat as two separate frames.
+```
+
+## 1-2-kneeling-hip-flexor — 1/2 Kneeling Hip Flexor
+
+- Category: hip
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of 1/2 Kneeling Hip Flexor for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of 1/2 Kneeling Hip Flexor as two separate frames.
+```
+
+## wall-sits — Wall Sits
+
+- Category: hip
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Wall Sits for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Wall Sits as two separate frames.
+```
+
+## tall-kneeling-halos — Tall Kneeling Halos
+
+- Category: hip
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Tall Kneeling Halos for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Tall Kneeling Halos as two separate frames.
+```
+
+
+## intro-to-couch-stretch — Intro To Couch Stretch
+
+- Category: shoulder
+- Type: stretch
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Intro To Couch Stretch for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Intro To Couch Stretch as two separate frames.
+```
+
+
+## standing-hamstring-curl — Standing Hamstring Curl
+
+- Category: shoulder
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Standing Hamstring Curl for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Standing Hamstring Curl as two separate frames.
+```
+
+## tibial-rotations-w-slider — Tibial Rotations W/ Slider
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Tibial Rotations W/ Slider for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Tibial Rotations W/ Slider as two separate frames.
+```
+
+## couch-stretch-progression — Couch Stretch Progression
+
+- Category: knee
+- Type: stretch
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Couch Stretch Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Couch Stretch Progression as two separate frames.
+```
+
+## scapular-depression — Scapular Depression
+
+- Category: shoulder
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Scapular Depression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Scapular Depression as two separate frames.
+```
+
+## arom-of-the-elbow — AROM Of The Elbow
+
+- Category: elbow_wrist
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of AROM Of The Elbow for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of AROM Of The Elbow as two separate frames.
+```
+
+## standing-flexion-progression — Standing Flexion Progression
+
+- Category: shoulder
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Standing Flexion Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Standing Flexion Progression as two separate frames.
+```
+
+## shoulder-press-variations — Shoulder Press Variations
+
+- Category: shoulder
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Shoulder Press Variations for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Shoulder Press Variations as two separate frames.
+```
+
+## prom-of-the-elbow — PROM Of The Elbow
+
+- Category: elbow_wrist
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of PROM Of The Elbow for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of PROM Of The Elbow as two separate frames.
+```
+
+## feet-together-on-foam — Feet Together On Foam
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Feet Together On Foam for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Feet Together On Foam as two separate frames.
+```
+
+## sled-push-pull — Sled Push/pull
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Sled Push/pull for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Sled Push/pull as two separate frames.
+```
+
+## sidelying-abduction — Sidelying Abduction
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Sidelying Abduction for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Sidelying Abduction as two separate frames.
+```
+
+## stork-stance — Stork Stance
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Stork Stance for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Stork Stance as two separate frames.
+```
+
+## hip-hikes — Hip Hikes
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Hip Hikes for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Hip Hikes as two separate frames.
+```

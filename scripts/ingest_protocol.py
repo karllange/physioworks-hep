@@ -790,11 +790,11 @@ def parse_criteria_page(page):
 
 
 def source_from_text(text):
+    if re.search(r"criteria to pass", text, re.I):
+        return "Dr. Carson"
     named = re.search(r"\bDr\.?\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?", text)
     if named and not re.search(r"surgeon", named.group(0), re.I):
         return named.group(0).replace("Dr ", "Dr. ")
-    if re.search(r"performance doc", text, re.I):
-        return "The Performance Doc"
     copyright_match = re.search(r"©\s*\d{4}\s+(.+)$", text, re.M)
     if copyright_match:
         return re.sub(r"\s+", " ", copyright_match.group(1)).strip()
@@ -928,14 +928,23 @@ def ingest(argv):
     added = []
     fresh = []
     matched = 0
+    summary_rows = []
     for document in documents:
         starter = False if document.get("criteria_based") or document.get("protocol_type") else True
-        added.extend(link_exercises(document, catalog, starter=starter))
+        new_entries = link_exercises(document, catalog, starter=starter)
+        added.extend(new_entries)
         matched += document.get("matched_count", 0)
         if document.get("criteria_based"):
-            fresh.extend(criteria_entries(document))
+            phases = criteria_entries(document)
         else:
-            fresh.extend(registry_entries(document))
+            phases = registry_entries(document)
+        fresh.extend(phases)
+        summary_rows.append({
+            "title": document.get("title") or "Untitled Protocol",
+            "phases": len(phases),
+            "matched": document.get("matched_count", 0),
+            "new": len(new_entries),
+        })
     fresh_ids = {entry["id"] for entry in fresh}
     registry = []
     for entry in load_registry():
@@ -948,19 +957,15 @@ def ingest(argv):
     gap_count = append_asset_gaps(added)
     print("")
     print("Protocol ingestion summary")
-    print(f"{'Protocol':<52} {'Phases':>7}")
-    print(f"{'-' * 52} {'-' * 7}")
-    by_title = {}
-    for entry in fresh:
-        title = re.sub(r"\s*\(Phase\s+\d+.*$", "", entry["protocol_title"])
-        by_title[title] = by_title.get(title, 0) + 1
-    for title, count in by_title.items():
-        print(f"{title[:52]:<52} {count:>7}")
-    print(f"{'-' * 52} {'-' * 7}")
-    print(f"{'Ingested protocols':<52} {len(by_title):>7}")
-    print(f"{'Total phases':<52} {len(fresh):>7}")
-    print(f"{'Exercises matched to existing assets':<52} {matched:>7}")
-    print(f"{'New exercises pending in docs/asset_gaps.md':<52} {gap_count:>7}")
+    print(f"{'Protocol':<44} {'Phases':>7} {'Matched':>8} {'New gaps':>9}")
+    print(f"{'-' * 44} {'-' * 7} {'-' * 8} {'-' * 9}")
+    for row in summary_rows:
+        print(f"{row['title'][:44]:<44} {row['phases']:>7} {row['matched']:>8} {row['new']:>9}")
+    print(f"{'-' * 44} {'-' * 7} {'-' * 8} {'-' * 9}")
+    print(f"{'Ingested protocols':<44} {len(summary_rows):>7}")
+    print(f"{'Total phases':<44} {len(fresh):>7}")
+    print(f"{'Exercises matched to existing assets':<44} {matched:>7}")
+    print(f"{'New exercises pending in docs/asset_gaps.md':<44} {gap_count:>7}")
     print(f"{'Registry entries':<52} {len(registry):>7}")
     print(f"{'Total exercises in exercises.json':<52} {len(catalog):>7}")
     for entry in fresh:
