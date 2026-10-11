@@ -10497,5 +10497,219 @@
     },
     "criteria": "Use Strengthlevel.com norms:. Functional Squat test: 10 reps w/ 15lb (f),. 20lb (m) med ball to 18\" bench. Functional RDL Test: 10 reps w/ 20lb (f). 25lb (m) med ball from 8\" step. Complete 3 minute step test (8\") w/o UE support. 30sec STS test 17” height: Complete 15 reps",
     "precautions": "Avoid excessive and repetitive impact exercises"
+  },
+  {
+    "id": "acute-lumbar-extension-bias-discogenic-flexion-i-phase-1",
+    "type": "standard",
+    "protocol_title": "Acute Lumbar Extension Bias (Discogenic / Flexion Intolerance)",
+    "phase": "Acute / Phase 1",
+    "region": "Spine",
+    "exercise_ids": [
+      "lumbar-prone-press-up-on-elbows-01",
+      "lumbar-201",
+      "lumbar-standing-lumbar-extension-01",
+      "hip-102"
+    ],
+    "exercise_doses": {
+      "lumbar-prone-press-up-on-elbows-01": {
+        "sets": 2,
+        "reps": 5,
+        "hold_sec": 30,
+        "frequency": "3x daily"
+      },
+      "lumbar-201": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "3-5x daily"
+      },
+      "lumbar-standing-lumbar-extension-01": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "Every 2 hours while standing"
+      },
+      "hip-102": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      }
+    },
+    "precautions": "Avoid loaded lumbar flexion, slouching, and prolonged seated postures. Centralization of symptoms into low back is the primary goal; discontinue if symptoms peripheralize into buttock or leg."
+  },
+  {
+    "id": "lumbar-flexion-bias-spinal-stenosis-facet-arthro-phase-1",
+    "type": "standard",
+    "protocol_title": "Lumbar Flexion Bias (Spinal Stenosis / Facet Arthropathy)",
+    "phase": "Acute to Subacute",
+    "region": "Spine",
+    "exercise_ids": [
+      "lumbar-hooklying-single-knee-to-chest-stretch-01",
+      "lumbar-202",
+      "lumbar-205",
+      "seated-lumbar-flexion",
+      "cat-camel"
+    ],
+    "exercise_doses": {
+      "lumbar-hooklying-single-knee-to-chest-stretch-01": {
+        "sets": 2,
+        "reps": 3,
+        "hold_sec": 30,
+        "frequency": "2-3x daily"
+      },
+      "lumbar-202": {
+        "sets": 2,
+        "reps": 3,
+        "hold_sec": 30,
+        "frequency": "2-3x daily"
+      },
+      "lumbar-205": {
+        "sets": 2,
+        "reps": 12,
+        "hold_sec": 5,
+        "frequency": "2x daily"
+      },
+      "seated-lumbar-flexion": {
+        "sets": 2,
+        "reps": 8,
+        "hold_sec": 5,
+        "frequency": "2x daily"
+      },
+      "cat-camel": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "2x daily"
+      }
+    },
+    "precautions": "Avoid end-range lumbar extension, prolonged standing, and overhead reaching with arched back. Siting or forward leaning should relieve symptoms."
+  },
+  {
+    "id": "lumbar-motor-control-phase-1-local-stabilization-phase-1",
+    "type": "standard",
+    "protocol_title": "Lumbar Motor Control (Phase 1: Local Stabilization)",
+    "phase": "Weeks 1-3",
+    "region": "Spine",
+    "exercise_ids": [
+      "core-supine-transversus-abdominis-bracing-01",
+      "hip-bent-knee-fallouts-01",
+      "hooklying-heel-slides",
+      "hip-102"
+    ],
+    "exercise_doses": {
+      "core-supine-transversus-abdominis-bracing-01": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 10,
+        "frequency": "2x daily"
+      },
+      "hip-bent-knee-fallouts-01": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      },
+      "hooklying-heel-slides": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "hip-102": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      }
+    },
+    "precautions": "Maintain neutral spine posture; no breath-holding (avoid Valsalva). Discontinue any movement causing sharp back pain or radiating symptoms."
+  },
+  {
+    "id": "lumbar-motor-control-phase-2-global-endurance-an-phase-1",
+    "type": "standard",
+    "protocol_title": "Lumbar Motor Control (Phase 2: Global Endurance & Anti-Movement)",
+    "phase": "Weeks 4-8",
+    "region": "Spine",
+    "exercise_ids": [
+      "lumbar-203",
+      "lumbar-204",
+      "core-102",
+      "modified-curl-up-mcgill",
+      "pallof-press"
+    ],
+    "exercise_doses": {
+      "lumbar-203": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      },
+      "lumbar-204": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "core-102": {
+        "sets": 3,
+        "reps": 5,
+        "hold_sec": 15,
+        "frequency": "1x daily"
+      },
+      "modified-curl-up-mcgill": {
+        "sets": 3,
+        "reps": 6,
+        "hold_sec": 8,
+        "frequency": "1x daily"
+      },
+      "pallof-press": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      }
+    },
+    "precautions": "Emphasize core stiffness and anti-rotational stability over movement speed. Stop before form breaks down into compensatory lumbar extension or rotation."
+  },
+  {
+    "id": "si-joint-pelvic-girdle-stabilization-phase-1",
+    "type": "standard",
+    "protocol_title": "SI Joint & Pelvic Girdle Stabilization",
+    "phase": "Subacute / Functional",
+    "region": "Spine",
+    "exercise_ids": [
+      "hip-supine-hip-adduction-isometric-with-ball-01",
+      "hip-101",
+      "hip-103",
+      "hip-bridge-with-hip-abduction-and-resistance-01"
+    ],
+    "exercise_doses": {
+      "hip-supine-hip-adduction-isometric-with-ball-01": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 5,
+        "frequency": "2x daily"
+      },
+      "hip-101": {
+        "sets": 3,
+        "reps": 12,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "hip-103": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "1x daily"
+      },
+      "hip-bridge-with-hip-abduction-and-resistance-01": {
+        "sets": 3,
+        "reps": 10,
+        "hold_sec": 3,
+        "frequency": "1x daily"
+      }
+    },
+    "precautions": "Avoid wide-stance asymmetric lunging or aggressive unilateral shear forces during acute pain. Keep pelvis level and square during all movements."
   }
 ]

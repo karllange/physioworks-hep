@@ -1,0 +1,11 @@
+Protocol: Lumbar Flexion Bias (Spinal Stenosis / Facet Arthropathy)
+Phase: Acute to Subacute
+Category: Spine
+Type: standard
+Precautions: Avoid end-range lumbar extension, prolonged standing, and overhead reaching with arched back. Siting or forward leaning should relieve symptoms.
+Exercises:
+- Single Knee-to-Chest: 2 sets, 3 reps, 30s hold, 2-3x daily. Supine, draw one knee gently toward chest until gentle stretch is felt in lower back.
+- Double Knee-to-Chest: 2 sets, 3 reps, 30s hold, 2-3x daily. Supine, bring both knees toward chest, holding behind knees to open lumbar foramen.
+- Posterior Pelvic Tilt: 2 sets, 12 reps, 5s hold, 2x daily. Supine hooklying, flatten lower back into table by contracting abdominals and rotating pelvis backward.
+- Seated Lumbar Flexion: 2 sets, 8 reps, 5s hold, 2x daily. Sit in chair, slowly bend forward sliding hands down shins toward ankles within comfortable tolerance.
+- Cat-Camel: 2 sets, 10 reps, 3s hold, 2x daily. Quadruped, alternate gently between rounding spine toward ceiling and relaxing to neutral.

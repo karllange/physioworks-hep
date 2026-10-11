@@ -1,0 +1,10 @@
+Protocol: Lumbar Motor Control (Phase 1: Local Stabilization)
+Phase: Weeks 1-3
+Category: Spine
+Type: standard
+Precautions: Maintain neutral spine posture; no breath-holding (avoid Valsalva). Discontinue any movement causing sharp back pain or radiating symptoms.
+Exercises:
+- Transverse Abdominis Drawing-In: 2 sets, 10 reps, 10s hold, 2x daily. Supine hooklying, gently pull navel toward spine without moving pelvis or ribs; breathe normally.
+- Hooklying Bent Knee Fall-Out: 2 sets, 10 reps, 3s hold, 1x daily. Maintain stable pelvis while lowering one knee slowly out to 45 degrees, then return.
+- Hooklying Heel Slides: 2 sets, 10 reps, 2s hold, 1x daily. Slide heel along floor while maintaining neutral spine and transverse abdominis activation.
+- Supine Glute Bridge: 3 sets, 10 reps, 3s hold, 1x daily. Lift pelvis, squeeze glutes, keep ribs connected to pelvis.

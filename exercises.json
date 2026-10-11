@@ -9078,5 +9078,101 @@
     ],
     "video_url": "",
     "image_status": "pending_asset"
+  },
+  {
+    "id": "seated-lumbar-flexion",
+    "name": "Seated Lumbar Flexion",
+    "category": "lumbar",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 8,
+      "hold_sec": 5,
+      "frequency": "2x daily"
+    },
+    "cues": [
+      "Sit in chair, slowly bend forward sliding hands down shins toward ankles within comfortable tolerance.",
+      "Set up for Seated Lumbar Flexion in a comfortable position",
+      "Move slowly and stay within the range allowed for this phase"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
+  },
+  {
+    "id": "cat-camel",
+    "name": "Cat-Camel",
+    "category": "lumbar",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 10,
+      "hold_sec": 3,
+      "frequency": "2x daily"
+    },
+    "cues": [
+      "Quadruped, alternate gently between rounding spine toward ceiling and relaxing to neutral.",
+      "Set up for Cat-Camel in a comfortable position",
+      "Move slowly and stay within the range allowed for this phase"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
+  },
+  {
+    "id": "hooklying-heel-slides",
+    "name": "Hooklying Heel Slides",
+    "category": "lumbar",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 2,
+      "reps": 10,
+      "hold_sec": 2,
+      "frequency": "1x daily"
+    },
+    "cues": [
+      "Slide heel along floor while maintaining neutral spine and transverse abdominis activation.",
+      "Set up for Hooklying Heel Slides in a comfortable position",
+      "Move slowly and stay within the range allowed for this phase"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
+  },
+  {
+    "id": "modified-curl-up-mcgill",
+    "name": "Modified Curl-Up (McGill)",
+    "category": "core",
+    "type": "strength",
+    "starter": false,
+    "default_dosing": {
+      "sets": 3,
+      "reps": 6,
+      "hold_sec": 8,
+      "frequency": "1x daily"
+    },
+    "cues": [
+      "One leg straight, hands supporting lumbar lordosis, lift head and shoulder blades 1-2 inches off floor.",
+      "Set up for Modified Curl-Up (McGill) in a comfortable position",
+      "Move slowly and stay within the range allowed for this phase"
+    ],
+    "photos": [
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    ],
+    "video_url": "",
+    "image_status": "pending_asset"
   }
 ]

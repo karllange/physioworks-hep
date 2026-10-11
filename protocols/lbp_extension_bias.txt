@@ -1,0 +1,10 @@
+Protocol: Acute Lumbar Extension Bias (Discogenic / Flexion Intolerance)
+Phase: Acute / Phase 1
+Category: Spine
+Type: standard
+Precautions: Avoid loaded lumbar flexion, slouching, and prolonged seated postures. Centralization of symptoms into low back is the primary goal; discontinue if symptoms peripheralize into buttock or leg.
+Exercises:
+- Prone On Elbows: 2 sets, 5 reps, 30s hold, 3x daily. Lie prone, gently prop up onto forearms keeping hips flat on table, relax lower back completely.
+- Prone Press-Up (McKenzie): 2 sets, 10 reps, 3s hold, 3-5x daily. Hands under shoulders, press upper body up while keeping pelvis relaxed and sagged against the table.
+- Standing Lumbar Extension: 2 sets, 10 reps, 2s hold, Every 2 hours while standing. Hands on lower back/sacrum, gently arch backward into extension.
+- Supine Glute Bridge: 2 sets, 10 reps, 3s hold, 1x daily. Drive through heels, squeeze glutes, keep spine in neutral without hyperextending.

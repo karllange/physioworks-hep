@@ -3213,3 +3213,47 @@ Suggested Grok prompt:
 ```
 Clinical line illustration of Incorporate More Compound Movements for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Incorporate More Compound Movements as two separate frames.
 ```
+
+## seated-lumbar-flexion — Seated Lumbar Flexion
+
+- Category: lumbar
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Seated Lumbar Flexion for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Seated Lumbar Flexion as two separate frames.
+```
+
+## cat-camel — Cat-Camel
+
+- Category: lumbar
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Cat-Camel for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Cat-Camel as two separate frames.
+```
+
+## hooklying-heel-slides — Hooklying Heel Slides
+
+- Category: lumbar
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Hooklying Heel Slides for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Hooklying Heel Slides as two separate frames.
+```
+
+## modified-curl-up-mcgill — Modified Curl-Up (McGill)
+
+- Category: core
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Modified Curl-Up (McGill) for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Modified Curl-Up (McGill) as two separate frames.
+```

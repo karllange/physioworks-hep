@@ -138,7 +138,7 @@ def region_for(title, phase_text):
 
 def category_for(region, name):
     text = f"{region} {name}".lower()
-    if "foot/ankle" in region.lower() or re.search(r"ankle|heel|calf|gastroc|soleus", text):
+    if "foot/ankle" in region.lower() or (region != "Spine" and re.search(r"ankle|heel|calf|gastroc|soleus", text)):
         return "ankle"
     if region == "Knee" or re.search(r"\bknee\b|quad|patella", text):
         return "knee"
@@ -147,10 +147,14 @@ def category_for(region, name):
             return "cervical"
         if re.search(r"thoracic", text):
             return "thoracic"
+        if re.search(r"plank|dead bug|bird dog|pallof|curl-up|drawing-in|transverse abdominis", text):
+            return "core"
+        if re.search(r"\bhip\b|glute|clamshell|adductor", text):
+            return "hip"
         return "lumbar"
     if re.search(r"balance|single[- ]leg stance|weight shift|tandem", text):
         return "balance"
-    if re.search(r"plank|dead bug|bird dog|\bchop\b|abdominal", text):
+    if re.search(r"plank|dead bug|bird dog|\bchop\b|abdominal|pallof|curl-up|drawing-in|transverse abdominis", text):
         return "core"
     if re.search(r"wrist|forearm|elbow", text):
         return "elbow_wrist"
@@ -215,6 +219,8 @@ def parse_document(text):
     phases = []
     phase = None
     current = None
+    category = ""
+    protocol_type = ""
     for raw_line in text.splitlines():
         line = raw_line.strip()
         if not line or line.lower().rstrip(":") == "exercises":
@@ -239,6 +245,14 @@ def parse_document(text):
             phase = open_phase(phases, number, label)
             continue
         if phase is None:
+            continue
+        category_match = re.match(r"^category\s*:\s*(.+)$", line, re.I)
+        if category_match:
+            category = category_match.group(1).strip()
+            continue
+        type_match = re.match(r"^type\s*:\s*(standard|surgeon)\s*$", line, re.I)
+        if type_match:
+            protocol_type = type_match.group(1).lower()
             continue
         precaution = PRECAUTION_RE.match(line)
         if precaution:
@@ -309,18 +323,37 @@ def parse_document(text):
         flush_exercise(phase, current)
     if not title:
         title = "Untitled Protocol"
-    return {"title": strip_physician_prefix(title), "phases": [item for item in phases if item["exercises"]]}
+    return {
+        "title": strip_physician_prefix(title),
+        "phases": [item for item in phases if item["exercises"]],
+        "category": category,
+        "protocol_type": protocol_type,
+    }
 
 
 ALIAS_RULES = [
     (r"\bquad sets?\b", "knee-101"),
     (r"\bstraight leg raises?\b|\bslrs?\b", "knee-102"),
     (r"\bterminal knee extensions?\b|\btkes?\b", "knee-104"),
-    (r"\bheel slides?\b", "knee-105"),
+    (r"(?<!hooklying )\bheel slides?\b", "knee-105"),
     (r"\blong arc quads?\b|\blaqs?\b", "knee-106"),
     (r"\bclamshells?\b", "hip-101"),
-    (r"\bglute bridges?\b|(?<![\w-])bridges?\b", "hip-102"),
+    (r"glute bridge with loop band|bridge with (?:a )?loop", "hip-bridge-with-hip-abduction-and-resistance-01"),
+    (r"\bsupine glute bridges?\b|\bglute bridges?\b|(?<![\w-])bridges?\b", "hip-102"),
     (r"\bside[- ]lying (?:hip )?abduction\b", "hip-103"),
+    (r"\bprone on elbows\b", "lumbar-prone-press-up-on-elbows-01"),
+    (r"\bprone press-ups?\b", "lumbar-201"),
+    (r"\bstanding lumbar extension\b", "lumbar-standing-lumbar-extension-01"),
+    (r"\bsingle knee[- ]to[- ]chest\b", "lumbar-hooklying-single-knee-to-chest-stretch-01"),
+    (r"\bdouble knee[- ]to[- ]chest\b", "lumbar-202"),
+    (r"\b(?:posterior )?pelvic tilts?\b", "lumbar-205"),
+    (r"\bbird dogs?\b", "lumbar-203"),
+    (r"\bdead bugs?\b", "lumbar-204"),
+    (r"\bside plank from knees\b", "core-102"),
+    (r"\btransverse abdominis drawing-in\b", "core-supine-transversus-abdominis-bracing-01"),
+    (r"\bbent knee fall-?outs?\b", "hip-bent-knee-fallouts-01"),
+    (r"\b(?:isometric )?hip adductor squeeze\b", "hip-supine-hip-adduction-isometric-with-ball-01"),
+    (r"\bpallof press\b", "pallof-press"),
     (r"\bcalf raises?\b|\bheel raises?\b", "ankle-104"),
     (r"\bpendulums?\b", "standing-pendulum"),
     (r"\bchin tucks?\b", "cerv-301"),
@@ -374,9 +407,9 @@ def match_exercise(name, catalog):
         if len(overlap) < 2:
             continue
         score = len(overlap) / max(len(query), len(candidate))
-        if query <= candidate or candidate <= query:
-            if abs(len(query) - len(candidate)) <= 1:
-                score += 0.25
+        extra = (candidate - query) if query <= candidate else (query - candidate)
+        if (query <= candidate or candidate <= query) and extra <= {"band", "roll", "towel", "supine", "resistance", "extension"} and abs(len(query) - len(candidate)) <= 1:
+            score += 0.25
         if score > best_score:
             best_score = score
             best = exercise
@@ -414,6 +447,12 @@ def new_entry(parsed, region, exercise_id, starter=True):
     name = parsed["name"]
     stretch = bool(re.search(r"stretch", name, re.I))
     cues = cue_list(parsed["cues"]) if parsed["cues"] else default_cues(name)
+    if len(cues) < 3:
+        for extra in default_cues(name):
+            if extra not in cues:
+                cues.append(extra)
+            if len(cues) >= 3:
+                break
     return {
         "id": exercise_id,
         "name": name,
@@ -429,7 +468,7 @@ def new_entry(parsed, region, exercise_id, starter=True):
 
 
 def link_exercises(parsed_doc, catalog, starter=True):
-    region = region_for(parsed_doc["title"], " ".join(phase["label"] for phase in parsed_doc["phases"]))
+    region = parsed_doc.get("category") or region_for(parsed_doc["title"], " ".join(phase["label"] for phase in parsed_doc["phases"]))
     added = []
     matched = 0
     for phase in parsed_doc["phases"]:
@@ -458,15 +497,21 @@ def link_exercises(parsed_doc, catalog, starter=True):
 def registry_entries(parsed_doc):
     key = protocol_key(parsed_doc["title"])
     short = base_title(parsed_doc["title"])
+    entry_type = parsed_doc.get("protocol_type") or "standard"
+    single_phase = len(parsed_doc["phases"]) == 1
     entries = []
     for phase in parsed_doc["phases"]:
         weeks = phase["weeks"] or phase["label"]
+        if single_phase or re.search(rf"phase\s+{phase['number']}", parsed_doc["title"], re.I):
+            protocol_title = parsed_doc["title"]
+        else:
+            protocol_title = f"{short} (Phase {phase['number']})"
         entries.append({
             "id": f"{key}-phase-{phase['number']}",
-            "type": "standard",
-            "protocol_title": f"{short} (Phase {phase['number']})",
+            "type": entry_type,
+            "protocol_title": protocol_title,
             "phase": weeks,
-            "region": region_for(parsed_doc["title"], phase["label"]),
+            "region": parsed_doc.get("category") or region_for(parsed_doc["title"], phase["label"]),
             "exercise_ids": phase["exercise_ids"],
             "exercise_doses": phase.get("exercise_doses", {}),
             "precautions": strip_physician_prefix(phase["precautions"]),
@@ -884,7 +929,7 @@ def ingest(argv):
     fresh = []
     matched = 0
     for document in documents:
-        starter = not document.get("criteria_based")
+        starter = False if document.get("criteria_based") or document.get("protocol_type") else True
         added.extend(link_exercises(document, catalog, starter=starter))
         matched += document.get("matched_count", 0)
         if document.get("criteria_based"):
