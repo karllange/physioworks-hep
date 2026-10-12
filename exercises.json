@@ -3203,11 +3203,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/single-leg-squat.webp",
+      "assets/single-leg-squat.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/single-leg-squat.webp"
   },
   {
     "id": "shuttle-press-variations",
@@ -3443,11 +3444,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/romanian-deadlift.webp",
+      "assets/romanian-deadlift.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/romanian-deadlift.webp"
   },
   {
     "id": "lateral-squat-progression",
@@ -3971,11 +3973,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/bulgarian-split-squat.webp",
+      "assets/bulgarian-split-squat.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/bulgarian-split-squat.webp"
   },
   {
     "id": "sled-pushes",
@@ -4715,11 +4718,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/romanian-deadlift.webp",
+      "assets/romanian-deadlift.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/romanian-deadlift.webp"
   },
   {
     "id": "kickstand-squat-on-wall",

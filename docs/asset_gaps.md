@@ -497,17 +497,6 @@ Suggested Grok prompt:
 Clinical line illustration of Fwd Step Down Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Fwd Step Down Progression as two separate frames.
 ```
 
-## sl-squat-progression — SL Squat Progression
-
-- Category: ankle
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of SL Squat Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of SL Squat Progression as two separate frames.
-```
-
 ## shuttle-press-variations — Shuttle Press Variations
 
 - Category: ankle
@@ -605,17 +594,6 @@ Suggested Grok prompt:
 
 ```
 Clinical line illustration of Increase Distance for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Increase Distance as two separate frames.
-```
-
-## deadlift-romanian-deadlift-variations — Deadlift/Romanian Deadlift Variations
-
-- Category: ankle
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of Deadlift/Romanian Deadlift Variations for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Deadlift/Romanian Deadlift Variations as two separate frames.
 ```
 
 ## lateral-squat-progression — Lateral Squat Progression
@@ -847,17 +825,6 @@ Suggested Grok prompt:
 
 ```
 Clinical line illustration of Exxentric Squat for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Exxentric Squat as two separate frames.
-```
-
-## bulgarian-split — Bulgarian Split
-
-- Category: ankle
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of Bulgarian Split for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Bulgarian Split as two separate frames.
 ```
 
 ## sled-pushes — Sled Pushes
@@ -1188,17 +1155,6 @@ Suggested Grok prompt:
 
 ```
 Clinical line illustration of Ankle Weight for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Ankle Weight as two separate frames.
-```
-
-## romanian-deadlift-progression — Romanian Deadlift Progression
-
-- Category: knee
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of Romanian Deadlift Progression for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Romanian Deadlift Progression as two separate frames.
 ```
 
 ## kickstand-squat-on-wall — Kickstand Squat On Wall
