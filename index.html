@@ -19,7 +19,14 @@
     
     /* Print Engine: Clean, High-Contrast B&W Laser Handout */
     @media print {
-      body { background: white !important; color: black !important; font-size: 11pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body, .surface-card, .notes-box, .frost-chip, .diagram-frame {
+        background: #ffffff !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        color: #000000 !important;
+      }
+      body { font-size: 11pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .no-print { display: none !important; }
       .print-only { display: block !important; }
       #printExerciseSheet { break-inside: auto; page-break-inside: auto; }
@@ -30,7 +37,7 @@
         break-inside: avoid;
         page-break-inside: avoid;
       }
-      .exercise-card { display: block !important; }
+      .exercise-card { display: block !important; background: #fff !important; box-shadow: none !important; }
       .print-photo {
         width: 1.45in;
         height: 1.45in;
@@ -38,7 +45,8 @@
         object-fit: contain;
         object-position: center;
         background: #ffffff !important;
-        border: 1px solid #111827;
+        border: 1px solid #111827 !important;
+        box-shadow: none !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
@@ -55,27 +63,47 @@
     .dictate-live { animation: dictatePulse 1.3s ease-out infinite; }
 
     :root {
-      --ice: #F4F8FA;
+      --ice-top: #E8EFF2;
+      --ice-bottom: #F4F8FA;
       --fjord: #1D354E;
+      --fjord-deep: #132334;
       --ink: #1A2C3F;
-      --card: #FFFFFF;
-      --line: #B8C5CB;
-      --silver: #CAD3D6;
-      --mist: #E2E8EB;
-      --note: #EBF0F3;
       --signal: #D22D3B;
       --signal-hover: #B82330;
-      --lift: 0 4px 12px rgba(29, 53, 78, 0.08);
+      --card-sheen: linear-gradient(155deg, rgba(255, 255, 255, 0.92) 0%, rgba(222, 231, 236, 0.75) 100%);
+      --card-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.95), 0 4px 18px -2px rgba(29, 53, 78, 0.07);
+      --specular: inset 0 1px 0 rgba(255, 255, 255, 0.25);
     }
     @media screen {
-      body { background: var(--ice); color: var(--ink); }
-      .clinic-header { background: var(--fjord); color: #fff; border-color: transparent; }
-      .clinic-header .text-slate-500,
+      body {
+        background-color: #F0F4F6;
+        background-image: linear-gradient(180deg, var(--ice-top) 0%, var(--ice-bottom) 100%);
+        background-attachment: fixed;
+        color: var(--ink);
+      }
+      .clinic-header {
+        background: linear-gradient(145deg, var(--fjord) 0%, var(--fjord-deep) 100%);
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 4px 16px rgba(19, 35, 52, 0.15);
+      }
       .clinic-header .text-blue-700,
       .clinic-header .text-red-600,
-      .clinic-header .text-slate-800,
       .clinic-header .font-extrabold { color: #fff; }
-      main h2, main h3, .modal-title { color: var(--fjord); }
+      .mark-metal {
+        background: linear-gradient(160deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.05));
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+      }
+      .header-tool {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 10px;
+        color: #fff;
+      }
+      .header-tool span { color: rgba(255, 255, 255, 0.78); }
+      main h2, main h3 { color: var(--fjord); }
       main .text-slate-400,
       main .text-slate-500,
       main .text-slate-600,
@@ -84,66 +112,96 @@
       .surface-card,
       #catalogList > div,
       #activeProgramList > div.bg-white {
-        background: var(--card);
-        border-color: var(--line);
+        background: var(--card-sheen);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.85);
+        box-shadow: var(--card-shadow);
+        border-radius: 14px;
       }
-      #catalogList > div,
-      #activeProgramList > div.bg-white { transition: box-shadow 0.15s ease, border-color 0.15s ease; }
-      #catalogList > div:hover,
-      #activeProgramList > div.bg-white:hover { box-shadow: var(--lift); }
-      .filter-pill {
-        background: var(--mist);
+      .diagram-frame {
+        background: #fff;
+        border: 1px solid rgba(29, 53, 78, 0.16);
+        border-radius: 8px;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+      }
+      .frost-chip,
+      .badge-selected {
+        background: rgba(202, 211, 214, 0.35);
         color: var(--fjord);
-        border: 1px solid var(--mist);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 9999px;
+      }
+      .clinic-header .badge-selected {
+        background: rgba(240, 244, 246, 0.94);
+        color: var(--fjord);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+      }
+      .filter-pill,
+      .side-toggle {
+        background: rgba(255, 255, 255, 0.6);
+        color: var(--fjord);
+        border: 1px solid #CAD3D6;
+        border-radius: 9999px;
       }
       .filter-pill.active,
-      .badge-selected,
-      .clinic-header .badge-selected,
-      #protocolPresetSelect {
-        background: var(--silver);
-        color: var(--fjord);
-        border: 1px solid var(--fjord);
-      }
-      .btn-signal {
-        background: var(--signal);
-        color: #fff;
-        font-weight: 700;
-      }
-      .btn-signal:hover { background: var(--signal-hover); }
-      .side-toggle {
-        background: var(--mist);
-        border: 1px solid var(--mist);
-        color: var(--fjord);
-      }
       .side-toggle.active {
         background: var(--fjord);
-        border-color: var(--fjord);
         color: #fff;
+        border-color: var(--fjord);
       }
-      #patientNotesInput {
-        background: var(--note);
+      .btn-signal,
+      .btn-metal {
+        color: #fff;
+        font-weight: 700;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        box-shadow: var(--specular);
+      }
+      .btn-signal { background: var(--signal); }
+      .btn-signal:hover { background: var(--signal-hover); }
+      .btn-metal { background: linear-gradient(180deg, #243E5A 0%, var(--fjord) 100%); }
+      .btn-metal:hover { background: var(--fjord-deep); }
+      #protocolPresetSelect {
+        background: var(--card-sheen);
+        color: var(--fjord);
+        border: 1px solid rgba(255, 255, 255, 0.85);
+        border-radius: 8px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+        font-weight: 600;
+      }
+      #protocolPresetSelect optgroup {
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: var(--fjord);
+        background: #E8EFF2;
+      }
+      #protocolPresetSelect option { color: var(--ink); background: #fff; }
+      #patientNotesInput,
+      .notes-box {
+        background: rgba(235, 240, 243, 0.8);
         color: var(--ink);
-        border: 1px solid var(--line);
-        border-left: 3px solid var(--signal);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-left: 2px solid var(--signal);
+        border-radius: 8px;
       }
       #activeProgramList input,
       #activeProgramList select {
         color: var(--ink);
-        background: #fff;
-        border-color: var(--line);
+        background: rgba(255, 255, 255, 0.86);
+        border-color: #CAD3D6;
       }
     }
   </style>
 </head>
-<body class="bg-[#F4F8FA] text-[#1A2C3F] min-h-screen flex flex-col">
+<body class="text-[#1A2C3F] min-h-screen flex flex-col">
 
   <!-- ================= HEADER (NO-PRINT) ================= -->
-  <header class="clinic-header no-print bg-[#1D354E] text-white border-b border-[#1D354E] sticky top-0 z-30 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+  <header class="clinic-header no-print text-white sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-16 py-2 flex flex-wrap items-center justify-between gap-2">
       
       <!-- Clinic Brand -->
       <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 to-red-600 flex items-center justify-center shadow-md">
+        <div class="mark-metal w-10 h-10 flex items-center justify-center">
           <span class="text-white font-black text-xl tracking-tighter">PW</span>
         </div>
         <div>
@@ -156,19 +214,19 @@
       </div>
 
       <!-- Center: Code Lookup Bar (Michael's Load Feature) -->
-      <div class="flex items-center bg-slate-100 rounded-lg p-1 border border-slate-200 space-x-1.5">
+      <div class="header-tool flex items-center p-1 space-x-1.5">
         <span class="text-xs font-bold text-slate-500 px-2 uppercase tracking-wider">Code:</span>
         <input type="text" id="lookupCodeInput" placeholder="PW-XXXX" 
                class="w-24 px-2 py-1 text-xs font-mono font-bold uppercase bg-white border border-[#B8C5CB] rounded text-[#1A2C3F] focus:outline-none focus:ring-1 focus:ring-[#1D354E] text-center">
         <button onclick="loadProgramByCode()" 
-                class="px-2.5 py-1 bg-[#E2E8EB] hover:bg-white text-[#1D354E] text-xs font-bold rounded transition shadow-sm">
+                class="btn-metal px-2.5 py-1 text-xs rounded transition">
           Load
         </button>
       </div>
 
       <!-- Right: Active Code Badge & Clinic Controls -->
       <div class="flex items-center space-x-3">
-        <div class="hidden sm:flex items-center bg-slate-100 rounded-lg p-1 border border-slate-200">
+        <div class="header-tool hidden sm:flex items-center p-1">
           <span class="text-xs font-semibold text-slate-500 px-2 uppercase tracking-wider">Active:</span>
           <span id="headerCodeBadge" class="badge-selected px-2.5 py-1 rounded text-sm font-mono font-bold shadow-sm">PW-NEW</span>
         </div>
@@ -957,29 +1015,29 @@
       filtered.forEach(ex => {
         const dosing = dosingFromExercise(ex);
         const typeBadge = ex.type === "stretch"
-          ? `<span class="text-[10px] bg-violet-100 text-violet-800 font-semibold px-1.5 py-0.5 rounded">STRETCH</span>`
+          ? `<span class="frost-chip text-[10px] font-semibold px-1.5 py-0.5">STRETCH</span>`
           : ex.type === "strength"
-            ? `<span class="text-[10px] bg-sky-100 text-sky-800 font-semibold px-1.5 py-0.5 rounded">STRENGTH</span>`
+            ? `<span class="frost-chip text-[10px] font-semibold px-1.5 py-0.5">STRENGTH</span>`
             : "";
         const slots = photoSlots(ex.photos);
         const thumbs = slots.map(src =>
-          `<img src="${escapeHtml(src)}" alt="" class="${slots.length === 1 ? "w-16 h-12" : "w-12 h-12"} rounded ${photoFitClass(src)} border border-slate-200 flex-shrink-0">`
+          `<img src="${escapeHtml(src)}" alt="" class="diagram-frame ${slots.length === 1 ? "w-16 h-12" : "w-12 h-12"} ${photoFitClass(src)} flex-shrink-0">`
         ).join("");
         const card = document.createElement("div");
-        card.className = "bg-white p-3 rounded-xl border border-[#B8C5CB] shadow-sm flex items-center justify-between transition";
+        card.className = "bg-white p-3 border border-[#B8C5CB] flex flex-wrap items-center justify-between gap-2 transition";
         card.innerHTML = `
-          <div class="flex items-center space-x-3">
+          <div class="flex items-center gap-3 min-w-0 flex-1">
             <div class="flex gap-1 flex-shrink-0">${thumbs}</div>
-            <div>
-              <div class="flex items-center space-x-2">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
                 <h3 class="text-sm font-bold text-[#1D354E]">${ex.name}</h3>
                 ${typeBadge}
-                ${ex.starter ? `<span class="text-[10px] bg-amber-100 text-amber-800 font-semibold px-1.5 py-0.5 rounded">STARTER</span>` : ''}
+                ${ex.starter ? `<span class="frost-chip text-[10px] font-semibold px-1.5 py-0.5">STARTER</span>` : ''}
               </div>
               <p class="text-xs text-[#1A2C3F] mt-0.5">${dosing.sets}x${dosing.reps} · Hold ${dosing.hold}s · ${dosing.freq}</p>
             </div>
           </div>
-          <button onclick="addToProgram('${ex.id}')" class="px-3 py-1.5 bg-slate-900 hover:bg-blue-600 text-white font-semibold text-xs rounded-lg transition shadow-sm">
+          <button onclick="addToProgram('${ex.id}')" class="btn-metal shrink-0 px-3 py-1.5 text-xs transition">
             + Add
           </button>
         `;
@@ -1346,7 +1404,7 @@
         row.className = "bg-white p-3 rounded-lg border border-[#B8C5CB] shadow-sm space-y-2";
         const slots = photoSlots(item.photos);
         const photoBoxes = slots.map(src =>
-          `<img src="${escapeHtml(src)}" alt="" class="h-28 w-full ${photoFitClass(src)} rounded border border-slate-200">`
+          `<img src="${escapeHtml(src)}" alt="" class="diagram-frame h-28 w-full ${photoFitClass(src)}">`
         ).join("");
         row.innerHTML = `
           ${item.baseId === "custom" ? `

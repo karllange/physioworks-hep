@@ -9,43 +9,111 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; background: #F4F8FA; color: #1A2C3F; }
-    .clinic-header { background: #1D354E; color: #fff; }
-    .surface-card { background: #fff; border: 1px solid #B8C5CB; }
-    .surface-card:hover { box-shadow: 0 4px 12px rgba(29, 53, 78, 0.08); }
-    .notes-box { background: #EBF0F3; border: 1px solid #B8C5CB; border-left: 3px solid #D22D3B; color: #1A2C3F; }
-    .badge-selected { background: #CAD3D6; color: #1D354E; border: 1px solid #1D354E; }
-    .btn-signal { background: #D22D3B; color: #fff; font-weight: 700; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F0F4F6;
+      background-image: linear-gradient(180deg, #E8EFF2 0%, #F4F8FA 100%);
+      background-attachment: fixed;
+      color: #1A2C3F;
+    }
+    .clinic-header {
+      background: linear-gradient(145deg, #1D354E 0%, #132334 100%);
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 16px rgba(19, 35, 52, 0.15);
+    }
+    .mark-metal {
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.05));
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+    }
+    .surface-card {
+      background: linear-gradient(155deg, rgba(255, 255, 255, 0.92) 0%, rgba(222, 231, 236, 0.75) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.95), 0 4px 18px -2px rgba(29, 53, 78, 0.07);
+      border-radius: 14px;
+    }
+    .notes-box {
+      background: rgba(235, 240, 243, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-left: 2px solid #D22D3B;
+      color: #1A2C3F;
+      border-radius: 8px;
+    }
+    .frost-chip, .badge-selected {
+      background: rgba(202, 211, 214, 0.35);
+      color: #1D354E;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 9999px;
+    }
+    .clinic-header .badge-selected {
+      background: rgba(240, 244, 246, 0.94);
+      color: #1D354E;
+    }
+    .btn-signal {
+      background: #D22D3B;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    }
     .btn-signal:hover { background: #B82330; }
+    .diagram-frame {
+      background: #fff;
+      border: 1px solid rgba(29, 53, 78, 0.16);
+      border-radius: 8px;
+    }
+    .dose-panel {
+      background: rgba(235, 240, 243, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+    }
     .done-check {
       appearance: none;
       width: 1.15rem;
       height: 1.15rem;
-      border: 2px solid #1D354E;
-      background: #E2E8EB;
-      border-radius: 0.3rem;
+      border-radius: 4px;
+      border: 1px solid #CAD3D6;
+      background: linear-gradient(180deg, #ffffff, #E2E8EB);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
       display: grid;
       place-content: center;
     }
-    .done-check:checked { background: #1D354E; }
+    .done-check:checked {
+      background: #1D354E;
+      border-color: #1D354E;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    }
     .done-check:checked::after {
       content: "";
-      width: 0.35rem;
-      height: 0.6rem;
+      width: 0.32rem;
+      height: 0.55rem;
       border: solid #CAD3D6;
       border-width: 0 2px 2px 0;
       transform: rotate(45deg) translate(-1px, -1px);
     }
     .done-check:focus-visible { outline: 2px solid #1D354E; outline-offset: 2px; }
+    @media print {
+      body, .surface-card, .notes-box, .dose-panel, .frost-chip {
+        background: #fff !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        color: #000 !important;
+      }
+    }
   </style>
 </head>
-<body class="bg-[#F4F8FA] text-[#1A2C3F] min-h-screen pb-12">
+<body class="text-[#1A2C3F] min-h-screen pb-12">
 
   <!-- Mobile-Friendly Header -->
   <header class="clinic-header sticky top-0 z-30 shadow-sm">
     <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-9 h-9 rounded-lg bg-white/10 border border-white/30 flex items-center justify-center">
+        <div class="mark-metal w-9 h-9 flex items-center justify-center">
           <span class="text-white font-black text-lg">PW</span>
         </div>
         <div>
@@ -64,7 +132,7 @@
   <main class="max-w-2xl mx-auto px-4 py-6 space-y-5">
 
     <!-- Manual Code Lookup Box -->
-    <div id="codeEntryCard" class="surface-card p-5 rounded-2xl text-center space-y-3">
+    <div id="codeEntryCard" class="surface-card p-5 text-center space-y-3">
       <h2 class="text-sm font-bold text-[#1D354E]">Enter Your Access Code</h2>
       <p class="text-xs text-[#1A2C3F]">Find the 6-character code printed at the top of your exercise handout.</p>
       <div class="flex max-w-xs mx-auto space-x-2">
@@ -77,7 +145,7 @@
     </div>
 
     <!-- Active Program Display Card -->
-    <div id="programHeaderCard" class="hidden surface-card p-5 rounded-2xl space-y-3">
+    <div id="programHeaderCard" class="hidden surface-card p-5 space-y-3">
       <div class="border-b border-[#E2E8EB] pb-3">
         <span class="badge-selected text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Prescription Routine</span>
         <h2 id="programTitle" class="text-lg font-black text-[#1D354E] mt-1">Rehabilitation Program</h2>
@@ -266,11 +334,11 @@
       program.exercises.forEach((ex, idx) => {
         const slots = photoSlots(ex.photos);
         const card = document.createElement("div");
-        card.className = "surface-card p-4 rounded-2xl space-y-3";
+        card.className = "surface-card p-4 space-y-3";
         card.innerHTML = `
           <div class="flex items-center justify-between border-b border-[#E2E8EB] pb-2">
             <div class="flex items-center space-x-2">
-              <span class="w-6 h-6 rounded-full bg-[#CAD3D6] text-[#1D354E] border border-[#1D354E] font-bold text-xs flex items-center justify-center">${idx + 1}</span>
+              <span class="frost-chip w-6 h-6 font-bold text-xs flex items-center justify-center">${idx + 1}</span>
               <h3 class="text-sm font-bold text-[#1D354E]">[${escapeHtml(ex.side)}] ${escapeHtml(ex.name)}</h3>
             </div>
             <label class="flex items-center space-x-1.5 cursor-pointer">
@@ -283,11 +351,11 @@
             ${slots.map((src, slot) => `
             <div class="space-y-1">
               ${slots.length === 1 ? "" : `<span class="text-[10px] font-bold text-[#1D354E] uppercase tracking-wider block text-center">${slot === 0 ? "Start Position" : "Finish / Hold"}</span>`}
-              <img src="${escapeHtml(src)}" alt="" class="w-full h-32 ${photoFitClass(src)} rounded-lg border border-[#B8C5CB]">
+              <img src="${escapeHtml(src)}" alt="" class="diagram-frame w-full h-32 ${photoFitClass(src)}">
             </div>`).join("")}
           </div>
 
-          <div class="bg-[#EBF0F3] border border-[#B8C5CB] rounded-xl p-2.5 flex justify-around text-center">
+          <div class="dose-panel p-2.5 flex justify-around text-center">
             <div>
               <span class="text-[10px] font-bold text-[#1D354E] uppercase block">Sets</span>
               <span class="text-xs font-black text-[#1A2C3F]">${ex.sets}</span>
