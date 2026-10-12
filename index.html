@@ -85,7 +85,7 @@
       .clinic-header {
         position: relative;
         overflow: hidden;
-        background: linear-gradient(90deg, #F6F8FA 0%, #DEE3EB 28%, #495B7F 55%, #152850 82%, #11224A 100%);
+        background: linear-gradient(90deg, #EBF8FD 0%, #D2F0FA 25%, #92D7F3 55%, #2B5784 85%, #11224A 100%);
         border-bottom: 3px solid #B61328;
         box-shadow: 0 8px 24px rgba(17, 34, 74, 0.12);
       }
@@ -103,7 +103,7 @@
         letter-spacing: -0.03em;
         font-size: 1.35rem;
         line-height: 1.1;
-        background: linear-gradient(100deg, #11224A 0%, #1D354E 40%, #D22D3B 90%);
+        background: linear-gradient(100deg, #11224A 0%, #1D354E 45%, #D22D3B 90%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -250,13 +250,13 @@
   <!-- ================= HEADER (NO-PRINT) ================= -->
   <header class="clinic-header no-print sticky top-0 z-30">
     <svg class="speed-lines" viewBox="0 0 280 72" aria-hidden="true">
-      <path d="M-8 16 C 48 6, 96 30, 168 12" fill="none" stroke="rgba(73, 91, 127, 0.25)" stroke-width="1.6"/>
-      <path d="M-8 30 C 58 20, 118 44, 198 24" fill="none" stroke="rgba(73, 91, 127, 0.25)" stroke-width="1.3"/>
-      <path d="M-8 46 C 70 36, 130 56, 220 38" fill="none" stroke="rgba(73, 91, 127, 0.25)" stroke-width="1.1"/>
+      <path d="M-8 16 C 48 6, 96 30, 168 12" fill="none" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.6"/>
+      <path d="M-8 30 C 58 20, 118 44, 198 24" fill="none" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.3"/>
+      <path d="M-8 46 C 70 36, 130 56, 220 38" fill="none" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.1"/>
     </svg>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-16 py-2 flex flex-wrap items-center justify-between gap-3">
       <div>
-        <span class="brand-mark">PhysioWorks</span>
+        <span class="brand-mark">Physio Works !</span>
         <p class="brand-sub">HEP Builder</p>
       </div>
       <div class="header-tool flex items-center p-1 space-x-1.5">
@@ -279,7 +279,7 @@
   <div class="print-only page-break-avoid p-4 border-b-2 border-slate-900">
     <div class="flex justify-between items-start">
       <div>
-        <h1 class="text-2xl font-black text-slate-900 whitespace-nowrap"><span class="text-blue-700">Physio</span> <span class="text-red-600">Works!</span> Physical Therapy</h1>
+        <h1 class="text-2xl font-black text-slate-900 whitespace-nowrap"><span class="text-blue-700">Physio</span> Works <span class="text-red-600">!</span> Physical Therapy</h1>
         <p class="text-sm font-bold text-slate-700" id="printClinicLocation">Silverdale Clinic</p>
         <p class="text-sm text-slate-600 font-medium">Home Exercise & Rehabilitation Prescription</p>
       </div>
@@ -846,10 +846,72 @@
 
     function photoFitClass(src) {
       const value = String(src);
-      if (value.includes("image/svg") || value.startsWith("assets/") || value.includes("placehold.co")) {
+      if (value.includes("image/svg") || value.startsWith("assets/") || value.startsWith("data:") || value.includes("placehold.co")) {
         return "object-contain bg-white";
       }
       return "object-cover";
+    }
+
+    const FAMILY_DRAWINGS = [
+      [/\bplank\b/, "assets/090-standard-plank-start.webp"],
+      [/\bbridge\b/, "assets/187-supine-glute-bridge-start.webp"],
+      [/\blunge\b/, "assets/067-lunge-matrix-start.webp"],
+      [/\bsquat\b/, "assets/022-squat-start.webp"],
+      [/\bstep\b/, "assets/057-forward-step-up-start.webp"],
+      [/press-up|press up|prone press/, "assets/191-prone-press-up-mckenzie-extension.webp"]
+    ];
+
+    function advanceExerciseImage(img) {
+      const rest = String(img.dataset.fallbacks || "").split("|").filter(Boolean);
+      if (!rest.length) {
+        img.onerror = null;
+        return;
+      }
+      img.dataset.fallbacks = rest.slice(1).join("|");
+      img.src = rest[0];
+    }
+
+    function regionBadgePath(ex) {
+      const haystack = `${ex.category || ""} ${ex.name || ""} ${ex.id || ""}`.toLowerCase();
+      if (/knee|hip|ankle|balance|foot|calf/.test(haystack)) return "assets/fallback_knee.webp";
+      if (/lumbar|thoracic|cervical|core|spine|back|trunk/.test(haystack)) return "assets/fallback_spine.webp";
+      if (/shoulder|elbow|wrist|hand|scap/.test(haystack)) return "assets/fallback_shoulder.webp";
+      return "assets/fallback_generic.webp";
+    }
+
+    function navyBadgeDataUri() {
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#ffffff"/><g fill="none" stroke="#11224A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><circle cx="100" cy="42" r="16"/><path d="M100 58 v46 M68 82 h64 M100 104 l-24 58 M100 104 l24 58"/></g></svg>`;
+      return "data:image/svg+xml," + encodeURIComponent(svg);
+    }
+
+    function ownedDrawingFrames(ex) {
+      const photos = (ex.photos || []).filter(Boolean).map(String);
+      const captured = photos.filter(src => src.startsWith("data:") || src.startsWith("blob:"));
+      if (captured.length) return captured.slice(0, 2);
+      if (ex.image_status === "pending_asset") return [];
+      return photos.filter(src => /^assets\/.+\.webp(\?|$)/i.test(src)).slice(0, 2);
+    }
+
+    function familyDrawing(ex) {
+      const haystack = `${ex.name || ""} ${ex.id || ""}`.toLowerCase().replace(/[-/]/g, " ");
+      if (/\b(deadlift|rdl|heel raise|calf raise|row|rows)\b/.test(haystack) && !/\b(squat|bridge|lunge|step|plank|press up|press-up)\b/.test(haystack)) {
+        return "";
+      }
+      for (const [pattern, src] of FAMILY_DRAWINGS) {
+        if (pattern.test(haystack)) return src;
+      }
+      if (/\bpress\b/.test(haystack) && /leg|shuttle|shoulder|chest|bench/.test(haystack)) return "";
+      return "";
+    }
+
+    function exerciseFigureTags(ex, className) {
+      const tail = [regionBadgePath(ex), navyBadgeDataUri()];
+      const owned = ownedDrawingFrames(ex);
+      const frames = owned.length ? owned : [familyDrawing(ex) || tail[0]];
+      return frames.map(src => {
+        const fallbacks = tail.filter(item => item !== src);
+        return `<img src="${escapeHtml(src)}" data-fallbacks="${escapeHtml(fallbacks.join("|"))}" alt="" class="diagram-frame ${className} ${photoFitClass(src)}" onerror="advanceExerciseImage(this)">`;
+      }).join("");
     }
 
     async function loadExercisesData() {
@@ -1049,10 +1111,7 @@
           : ex.type === "strength"
             ? `<span class="frost-chip text-[10px] font-semibold px-1.5 py-0.5">STRENGTH</span>`
             : "";
-        const slots = photoSlots(ex.photos);
-        const thumbs = slots.map(src =>
-          `<img src="${escapeHtml(src)}" alt="" class="diagram-frame ${slots.length === 1 ? "w-16 h-12" : "w-12 h-12"} ${photoFitClass(src)} flex-shrink-0">`
-        ).join("");
+        const thumbs = exerciseFigureTags(ex, "w-16 h-12 flex-shrink-0");
         const card = document.createElement("div");
         card.className = "bg-white p-3 flex flex-wrap items-center justify-between gap-2 transition";
         card.innerHTML = `
@@ -1436,14 +1495,12 @@
       currentProgram.forEach((item, index) => {
         const row = document.createElement("div");
         row.className = "bg-white p-3 rounded-lg border border-[#B8C5CB] shadow-sm space-y-2";
-        const slots = photoSlots(item.photos);
-        const photoBoxes = slots.map(src =>
-          `<img src="${escapeHtml(src)}" alt="" class="diagram-frame h-28 w-full ${photoFitClass(src)}">`
-        ).join("");
+        const photoBoxes = exerciseFigureTags(item, "h-28 w-full");
+        const figureCount = ownedDrawingFrames(item).length || 1;
         row.innerHTML = `
           ${item.baseId === "custom" ? `
           <div class="space-y-1.5">
-            <div class="${slots.length === 1 ? "" : "grid grid-cols-2 gap-1.5"}">
+            <div class="${figureCount === 1 ? "" : "grid grid-cols-2 gap-1.5"}">
               ${photoBoxes}
             </div>
             <button type="button" onclick="snapCustomDemo('${item.uniqueInstanceId}')" class="inline-flex items-center gap-1 px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white font-semibold text-[10px] rounded-lg">${(item.demoPhotos || 0) === 1 ? "📷 Snap Finish" : "📷 Snap Demo"}</button>
@@ -1451,6 +1508,7 @@
           ` : ""}
           <div class="flex items-center justify-between gap-2">
             <div class="flex items-center space-x-2 min-w-0">
+              ${item.baseId === "custom" ? "" : exerciseFigureTags(item, "w-14 h-12 flex-shrink-0")}
               <span class="text-xs font-bold text-slate-400 font-mono">#${index + 1}</span>
               <span class="text-xs font-bold text-[#1D354E] truncate">${escapeHtml(item.name)}</span>
             </div>
@@ -1628,10 +1686,7 @@
       currentProgram.forEach((item, index) => {
         const card = document.createElement("div");
         card.className = "exercise-card page-break-avoid p-3 border-2 border-slate-900 rounded-lg";
-        const printSlots = photoSlots(item.photos);
-        const printFrames = printSlots.map(src =>
-          `<img src="${escapeHtml(src)}" alt="" class="print-photo rounded">`
-        ).join("");
+        const printFrames = exerciseFigureTags(item, "print-photo rounded");
         card.innerHTML = `
           <div class="flex space-x-4">
           <div class="flex space-x-2 flex-shrink-0">
