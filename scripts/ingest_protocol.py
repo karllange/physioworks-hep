@@ -197,9 +197,35 @@ def blank_exercise():
     return {"name": "", "sets": None, "reps": None, "hold_sec": None, "frequency": "", "cues": ""}
 
 
+def excluded_fragment(name):
+    text = re.sub(r"\s+", " ", name or "").strip().lower()
+    return any(re.search(pattern, text) for pattern in EXCLUDE_PATTERNS)
+
+
+def early_postop(phase):
+    number = phase.get("number") or 0
+    label = " ".join(str(phase.get(key) or "") for key in ("purpose", "label", "weeks"))
+    if number == 1 or re.search(r"maximum protection", label, re.I):
+        return True
+    return bool(re.match(r"0\b", str(phase.get("weeks") or "")))
+
+
+def note_passive_extension(phase, text):
+    if not early_postop(phase) or not re.search(r"passive extension overpressure", text or "", re.I):
+        return
+    note = "Passive extension overpressure."
+    precautions = phase.get("precautions") or ""
+    if "passive extension overpressure" not in precautions.lower():
+        phase["precautions"] = f"{precautions} {note}".strip()
+
+
 def flush_exercise(phase, current):
-    if phase and current and current["name"]:
-        phase["exercises"].append(current)
+    if not phase or not current or not current["name"]:
+        return
+    if excluded_fragment(current["name"]):
+        note_passive_extension(phase, current["name"])
+        return
+    phase["exercises"].append(current)
 
 
 def open_phase(phases, number, label):
@@ -474,6 +500,13 @@ def link_exercises(parsed_doc, catalog, starter=True):
     for phase in parsed_doc["phases"]:
         ids = []
         doses = {}
+        kept = []
+        for exercise in phase["exercises"]:
+            if excluded_fragment(exercise["name"]):
+                note_passive_extension(phase, exercise["name"])
+                continue
+            kept.append(exercise)
+        phase["exercises"] = kept
         for exercise in phase["exercises"]:
             match = match_exercise(exercise["name"], catalog)
             if match:
@@ -564,6 +597,14 @@ SKIP_ITEM_RE = re.compile(
     r"mobiliz|\bmanual technique\b|\bmobs\b|\biastm\b|\bcupping\b|\bscar\b|tissue work|\bmodalit|\boverpressure\b|glide of|oscillation",
     re.I,
 )
+EXCLUDE_PATTERNS = [
+    r"^heavy compound exercise",
+    r"^single leg$",
+    r"^passive extension overpressure$",
+    r"^compound exercise",
+    r"^phase \d",
+    r"^criteria",
+]
 GAP_PROMPT = (
     "Clinical line illustration of {name} for a physical therapy home program. "
     "One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. "
@@ -671,6 +712,8 @@ def exercise_pieces(body):
             continue
         if len(stem_tokens(name)) < 2 and not alias_match(name, [{"id": rule[1], "name": name} for rule in ALIAS_RULES]):
             continue
+        if excluded_fragment(name):
+            continue
         pieces.append(name)
     return pieces
 
@@ -777,6 +820,10 @@ def parse_criteria_page(page):
     precautions = sentence_join(join_wrapped(right_lines))
     if dose_note:
         precautions = f"{precautions} Dosing: {dose_note}.".strip()
+    early = int(header.group("number")) == 1 or re.search(r"maximum protection", purpose or "", re.I) or re.match(r"0\b", weeks or "")
+    if early and re.search(r"passive extension overpressure", exercise_block, re.I):
+        if "passive extension overpressure" not in precautions.lower():
+            precautions = f"{precautions} Passive extension overpressure.".strip()
     return {
         "title": title,
         "number": int(header.group("number")),

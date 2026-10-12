@@ -5109,7 +5109,7 @@
       }
     },
     "criteria": "0°-90° of knee AROM. 30 consecutive SLR without lag",
-    "precautions": "NWB w/ crutches for 6 weeks. Protect fixation (medial aspect). Increase knee flexion ROM gradually by 10°-15° each week. Patellar mobilization (superior, inferior, medial ONLY). NO lateral mobilization. No closed chained exercises for 6 weeks"
+    "precautions": "NWB w/ crutches for 6 weeks. Protect fixation (medial aspect). Increase knee flexion ROM gradually by 10°-15° each week. Patellar mobilization (superior, inferior, medial ONLY). NO lateral mobilization. No closed chained exercises for 6 weeks Passive extension overpressure."
   },
   {
     "id": "mpfl-reconstruction-phase-2",
@@ -9127,7 +9127,7 @@
       }
     },
     "criteria": "0°-90° of knee AROM. 30 consecutive SLR without lag",
-    "precautions": "NWB w/ crutches for 6 weeks. If patient had meniscus repair limit ROM to 60°. Protect fixation. Increase knee flexion ROM gradually by 10°-15° each week"
+    "precautions": "NWB w/ crutches for 6 weeks. If patient had meniscus repair limit ROM to 60°. Protect fixation. Increase knee flexion ROM gradually by 10°-15° each week Passive extension overpressure."
   },
   {
     "id": "tibial-plateau-fracture-phase-2",
@@ -10079,7 +10079,7 @@
       }
     },
     "criteria": "0°-90° of knee AROM. Independent transfers and gait with appropriate AD",
-    "precautions": "WBAT w/ AD. Monitor wound healing. Monitor for signs of DVT (Pt should be taking at least 81mg aspirin. 2x/day per surgeon prescription). Avoid putting pillows or towel rolls under knee to promote extension"
+    "precautions": "WBAT w/ AD. Monitor wound healing. Monitor for signs of DVT (Pt should be taking at least 81mg aspirin. 2x/day per surgeon prescription). Avoid putting pillows or towel rolls under knee to promote extension Passive extension overpressure."
   },
   {
     "id": "tka-phase-2",
