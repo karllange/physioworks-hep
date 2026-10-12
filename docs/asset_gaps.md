@@ -2961,17 +2961,6 @@ Suggested Grok prompt:
 Clinical line illustration of TRX Cossack Squat for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of TRX Cossack Squat as two separate frames.
 ```
 
-## 1-2-kneeling-hip-flexor — 1/2 Kneeling Hip Flexor
-
-- Category: hip
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of 1/2 Kneeling Hip Flexor for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of 1/2 Kneeling Hip Flexor as two separate frames.
-```
-
 ## wall-sits — Wall Sits
 
 - Category: hip

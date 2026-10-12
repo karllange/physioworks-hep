@@ -107,6 +107,8 @@ EXPLICIT = [
 def normalize(value):
     text = str(value or "").lower().replace("°", " deg ")
     text = text.replace("’", "'").replace("–", "-").replace("—", "-")
+    text = text.replace("½", " half ")
+    text = re.sub(r"\b1\s*/\s*2\b", " half ", text)
     text = re.sub(r"side[- ]?lying", "side lying", text)
     text = re.sub(r"[^a-z0-9\s]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
@@ -323,9 +325,15 @@ def reconcile():
     print(f"{'Protocol slots remapped in this run':<52} {slots:>7}")
     print(f"{'Net remaining gaps in docs/asset_gaps.md':<52} {remaining_gap_count(gaps):>7}")
     print(f"{'Gap sections removed':<52} {gaps_removed:>7}")
+    still_pending = [entry for entry in catalog if not has_drawing(entry)]
     print(f"{'Unresolved protocol exercise ids':<52} {len(missing):>7}")
+    print(f"{'Exercises that still lack images':<52} {len(still_pending):>7}")
     for protocol_id, exercise_id in missing[:20]:
         print(f"  missing {protocol_id} -> {exercise_id}")
+    print("")
+    print("Still lacking an image")
+    for entry in still_pending:
+        print(f"  {entry['id']} — {entry['name']}")
     return 1 if missing else 0
 
 

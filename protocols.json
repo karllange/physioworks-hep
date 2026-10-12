@@ -3448,7 +3448,7 @@
       "3-way-balance-reaches",
       "star-drill",
       "quadruped-hip-extension-on-bench",
-      "1-2-kneeling-hip-flexor",
+      "hip-104",
       "hip-101",
       "balance-101",
       "band-resisted-seated-internal-rotation-external-rotation",
@@ -3510,12 +3510,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "quadruped-hip-extension-on-bench": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "1-2-kneeling-hip-flexor": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -3618,6 +3612,12 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-106": {
+        "sets": 2,
+        "reps": 10,
+        "hold_sec": 2,
+        "frequency": "Daily (7x/wk)"
+      },
+      "hip-104": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,

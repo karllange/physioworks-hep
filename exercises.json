@@ -251,7 +251,8 @@
     "aliases": [
       "Couch Stretch",
       "Intro To Couch Stretch",
-      "Couch Stretch Progression"
+      "Couch Stretch Progression",
+      "1/2 Kneeling Hip Flexor"
     ]
   },
   {
@@ -8550,30 +8551,6 @@
     },
     "cues": [
       "Set up for TRX Cossack Squat in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "1-2-kneeling-hip-flexor",
-    "name": "1/2 Kneeling Hip Flexor",
-    "category": "hip",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for 1/2 Kneeling Hip Flexor in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
