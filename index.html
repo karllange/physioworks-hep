@@ -53,12 +53,92 @@
       100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
     }
     .dictate-live { animation: dictatePulse 1.3s ease-out infinite; }
+
+    :root {
+      --ice: #F4F8FA;
+      --fjord: #1D354E;
+      --ink: #1A2C3F;
+      --card: #FFFFFF;
+      --line: #B8C5CB;
+      --silver: #CAD3D6;
+      --mist: #E2E8EB;
+      --note: #EBF0F3;
+      --signal: #D22D3B;
+      --signal-hover: #B82330;
+      --lift: 0 4px 12px rgba(29, 53, 78, 0.08);
+    }
+    @media screen {
+      body { background: var(--ice); color: var(--ink); }
+      .clinic-header { background: var(--fjord); color: #fff; border-color: transparent; }
+      .clinic-header .text-slate-500,
+      .clinic-header .text-blue-700,
+      .clinic-header .text-red-600,
+      .clinic-header .text-slate-800,
+      .clinic-header .font-extrabold { color: #fff; }
+      main h2, main h3, .modal-title { color: var(--fjord); }
+      main .text-slate-400,
+      main .text-slate-500,
+      main .text-slate-600,
+      main .text-slate-700,
+      main .text-slate-800 { color: var(--ink); }
+      .surface-card,
+      #catalogList > div,
+      #activeProgramList > div.bg-white {
+        background: var(--card);
+        border-color: var(--line);
+      }
+      #catalogList > div,
+      #activeProgramList > div.bg-white { transition: box-shadow 0.15s ease, border-color 0.15s ease; }
+      #catalogList > div:hover,
+      #activeProgramList > div.bg-white:hover { box-shadow: var(--lift); }
+      .filter-pill {
+        background: var(--mist);
+        color: var(--fjord);
+        border: 1px solid var(--mist);
+      }
+      .filter-pill.active,
+      .badge-selected,
+      .clinic-header .badge-selected,
+      #protocolPresetSelect {
+        background: var(--silver);
+        color: var(--fjord);
+        border: 1px solid var(--fjord);
+      }
+      .btn-signal {
+        background: var(--signal);
+        color: #fff;
+        font-weight: 700;
+      }
+      .btn-signal:hover { background: var(--signal-hover); }
+      .side-toggle {
+        background: var(--mist);
+        border: 1px solid var(--mist);
+        color: var(--fjord);
+      }
+      .side-toggle.active {
+        background: var(--fjord);
+        border-color: var(--fjord);
+        color: #fff;
+      }
+      #patientNotesInput {
+        background: var(--note);
+        color: var(--ink);
+        border: 1px solid var(--line);
+        border-left: 3px solid var(--signal);
+      }
+      #activeProgramList input,
+      #activeProgramList select {
+        color: var(--ink);
+        background: #fff;
+        border-color: var(--line);
+      }
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+<body class="bg-[#F4F8FA] text-[#1A2C3F] min-h-screen flex flex-col">
 
   <!-- ================= HEADER (NO-PRINT) ================= -->
-  <header class="no-print bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+  <header class="clinic-header no-print bg-[#1D354E] text-white border-b border-[#1D354E] sticky top-0 z-30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
       <!-- Clinic Brand -->
@@ -69,7 +149,7 @@
         <div>
           <div class="flex items-center space-x-2">
             <span class="font-extrabold text-lg tracking-tight whitespace-nowrap"><span class="text-blue-700">Physio</span> <span class="text-red-600">Works!</span></span>
-            <span class="px-2 py-0.5 text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200 rounded-full">HEP PRO</span>
+            <span class="badge-selected px-2 py-0.5 text-xs font-semibold rounded-full">HEP PRO</span>
           </div>
           <p class="text-[11px] text-slate-500 font-medium">Zero-PHI Clinical Prescribing Engine</p>
         </div>
@@ -79,9 +159,9 @@
       <div class="flex items-center bg-slate-100 rounded-lg p-1 border border-slate-200 space-x-1.5">
         <span class="text-xs font-bold text-slate-500 px-2 uppercase tracking-wider">Code:</span>
         <input type="text" id="lookupCodeInput" placeholder="PW-XXXX" 
-               class="w-24 px-2 py-1 text-xs font-mono font-bold uppercase bg-white border border-slate-200 rounded text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-600 text-center">
+               class="w-24 px-2 py-1 text-xs font-mono font-bold uppercase bg-white border border-[#B8C5CB] rounded text-[#1A2C3F] focus:outline-none focus:ring-1 focus:ring-[#1D354E] text-center">
         <button onclick="loadProgramByCode()" 
-                class="px-2.5 py-1 bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold rounded transition shadow-sm">
+                class="px-2.5 py-1 bg-[#E2E8EB] hover:bg-white text-[#1D354E] text-xs font-bold rounded transition shadow-sm">
           Load
         </button>
       </div>
@@ -90,13 +170,13 @@
       <div class="flex items-center space-x-3">
         <div class="hidden sm:flex items-center bg-slate-100 rounded-lg p-1 border border-slate-200">
           <span class="text-xs font-semibold text-slate-500 px-2 uppercase tracking-wider">Active:</span>
-          <span id="headerCodeBadge" class="bg-white px-2.5 py-1 rounded text-sm font-mono font-bold text-blue-700 shadow-sm">PW-NEW</span>
+          <span id="headerCodeBadge" class="badge-selected px-2.5 py-1 rounded text-sm font-mono font-bold shadow-sm">PW-NEW</span>
         </div>
-        <select id="clinicSelect" class="text-sm bg-white border border-slate-200 rounded-lg px-3 py-1.5 font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <select id="clinicSelect" class="text-sm bg-white border border-[#B8C5CB] rounded-lg px-3 py-1.5 font-medium text-[#1A2C3F] focus:outline-none focus:ring-2 focus:ring-white">
           <option value="Silverdale">Silverdale Clinic</option>
           <option value="Kent">Kent Clinic</option>
         </select>
-        <button onclick="resetProgram()" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-2 py-1">New</button>
+        <button onclick="resetProgram()" class="text-xs font-semibold text-white/80 hover:text-white px-2 py-1">New</button>
       </div>
     </div>
   </header>
@@ -130,7 +210,7 @@
     <section class="lg:col-span-7 flex flex-col space-y-4">
       
       <!-- Search & Filters -->
-      <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-3">
+      <div class="surface-card bg-white p-4 rounded-xl border shadow-sm space-y-3">
         <div class="flex flex-wrap items-center gap-2">
           <div class="relative flex-1 min-w-[220px]">
             <input type="text" id="searchInput" oninput="filterCatalog()" placeholder="Search name, body area, or shorthand (neck, ankle, core)..." 
@@ -156,7 +236,7 @@
             <span aria-hidden="true">📄</span>
             <span>Ingest MD Protocol</span>
           </button>
-          <select id="protocolPresetSelect" onchange="applyProtocolPreset()" aria-label="Load protocol preset" class="text-xs font-medium bg-blue-50 border border-blue-200 text-blue-800 rounded-lg px-2.5 py-2 hover:bg-blue-100 transition focus:outline-none w-[22rem] max-w-full">
+          <select id="protocolPresetSelect" onchange="applyProtocolPreset()" aria-label="Load protocol preset" class="text-xs font-semibold rounded-lg px-2.5 py-2 transition focus:outline-none w-[22rem] max-w-full">
             <option value="">Load Protocol Preset...</option>
           </select>
         </div>
@@ -168,19 +248,19 @@
 
         <!-- Filter Chips: Full Clinic Body Map -->
         <div class="flex flex-wrap gap-1.5" id="filterPillsContainer">
-          <button onclick="setFilter('all')" class="filter-pill active px-3 py-1 rounded-full text-xs font-semibold bg-slate-900 text-white transition">All</button>
-          <button onclick="setFilter('starter')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-900 hover:bg-amber-200 border border-amber-300 transition">⭐ Starter 50</button>
-          <button onclick="setFilter('knee')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Knee</button>
-          <button onclick="setFilter('lumbar')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Lumbar</button>
-          <button onclick="setFilter('hip')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Hip</button>
-          <button onclick="setFilter('shoulder')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Shoulder</button>
-          <button onclick="setFilter('cervical')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Cervical</button>
-          <button onclick="setFilter('thoracic')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Thoracic</button>
-          <button onclick="setFilter('ankle')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Ankle</button>
-          <button onclick="setFilter('balance')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Balance</button>
-          <button onclick="setFilter('core')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Core</button>
-          <button onclick="setFilter('elbow_wrist')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Elbow/Wrist</button>
-          <button onclick="setFilter('hand')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Hand</button>
+          <button onclick="setFilter('all')" class="filter-pill active px-3 py-1 rounded-full text-xs font-semibold transition">All</button>
+          <button onclick="setFilter('starter')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">⭐ Starter 50</button>
+          <button onclick="setFilter('knee')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Knee</button>
+          <button onclick="setFilter('lumbar')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Lumbar</button>
+          <button onclick="setFilter('hip')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Hip</button>
+          <button onclick="setFilter('shoulder')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Shoulder</button>
+          <button onclick="setFilter('cervical')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Cervical</button>
+          <button onclick="setFilter('thoracic')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Thoracic</button>
+          <button onclick="setFilter('ankle')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Ankle</button>
+          <button onclick="setFilter('balance')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Balance</button>
+          <button onclick="setFilter('core')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Core</button>
+          <button onclick="setFilter('elbow_wrist')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Elbow/Wrist</button>
+          <button onclick="setFilter('hand')" class="filter-pill px-3 py-1 rounded-full text-xs font-semibold transition">Hand</button>
         </div>
       </div>
 
@@ -193,14 +273,14 @@
     <!-- RIGHT COLUMN: Active Program Builder (5 cols) -->
     <section class="lg:col-span-5 flex flex-col space-y-4">
       
-      <div class="bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col h-[calc(100vh-140px)]">
+      <div class="surface-card bg-white rounded-xl border shadow-sm flex flex-col h-[calc(100vh-140px)]">
         
         <!-- Builder Header -->
         <div class="p-4 border-b border-slate-200 bg-slate-50/50 rounded-t-xl space-y-2">
           <div class="flex justify-between items-center">
-            <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center space-x-2">
+            <h2 class="text-sm font-bold text-[#1D354E] uppercase tracking-wider flex items-center space-x-2">
               <span>📋 Active Routine</span>
-              <span id="activeCountBadge" class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded-full font-bold">0</span>
+              <span id="activeCountBadge" class="badge-selected text-xs px-2 py-0.5 rounded-full font-bold">0</span>
             </h2>
             <button onclick="generateFreshCode()" class="text-xs font-semibold text-blue-600 hover:underline">New Code</button>
           </div>
@@ -229,17 +309,17 @@
         <!-- Builder Actions Footer -->
         <div class="p-4 border-t border-slate-200 bg-slate-50 rounded-b-xl space-y-2">
           <div class="grid grid-cols-2 gap-1.5">
-            <button type="button" onclick="openSaveTemplateModal()" class="w-full py-2 px-2 bg-white border border-slate-300 hover:border-blue-600 hover:text-blue-700 text-slate-700 rounded-lg font-bold text-xs transition">Save Routine as Template</button>
+            <button type="button" onclick="openSaveTemplateModal()" class="btn-signal w-full py-2 px-2 rounded-lg text-xs transition">Save Routine as Template</button>
             <button type="button" onclick="exportClinicTemplates()" class="w-full py-2 px-2 bg-white border border-slate-300 hover:border-blue-600 hover:text-blue-700 text-slate-700 rounded-lg font-bold text-xs transition">Export Templates JSON</button>
           </div>
           <div class="grid grid-cols-3 gap-1.5">
             <!-- Copy EMR Note Button -->
-            <button onclick="copyEmrSnippet()" class="w-full flex items-center justify-center space-x-1 py-2.5 px-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold text-xs shadow-sm transition">
+            <button onclick="copyEmrSnippet()" class="btn-signal w-full flex items-center justify-center space-x-1 py-2.5 px-2 rounded-lg text-xs shadow-sm transition">
               <span>📋</span>
               <span id="copyEmrBtnText">Copy EMR Note</span>
             </button>
             <!-- Print Handout Button -->
-            <button onclick="triggerPrintHandout()" class="w-full flex items-center justify-center space-x-1 py-2.5 px-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold text-xs shadow-sm transition">
+            <button onclick="triggerPrintHandout()" class="btn-signal w-full flex items-center justify-center space-x-1 py-2.5 px-2 rounded-lg text-xs shadow-sm transition">
               <span>🖨️</span>
               <span>Print Handout</span>
             </button>
@@ -502,8 +582,8 @@
         button.setAttribute("aria-pressed", active ? "true" : "false");
         button.title = preset.text;
         button.className = active
-          ? "px-2 py-1 rounded-full text-[11px] font-bold border border-amber-500 bg-amber-100 text-amber-950 shadow-sm"
-          : "px-2 py-1 rounded-full text-[11px] font-semibold border border-slate-200 bg-white text-slate-600 hover:border-slate-400";
+          ? "badge-selected px-2 py-1 rounded-full text-[11px] font-bold"
+          : "px-2 py-1 rounded-full text-[11px] font-semibold border border-[#E2E8EB] bg-[#E2E8EB] text-[#1D354E]";
         button.textContent = `${active ? "☑" : "☐"} ${preset.icon} ${preset.label}`;
         button.addEventListener("click", () => toggleClinicalDirective(preset.id));
         container.appendChild(button);
@@ -513,7 +593,7 @@
         button.type = "button";
         button.title = text;
         button.setAttribute("aria-pressed", "true");
-        button.className = "px-2 py-1 rounded-full text-[11px] font-bold border border-amber-500 bg-amber-100 text-amber-950 shadow-sm max-w-[240px] truncate";
+        button.className = "badge-selected px-2 py-1 rounded-full text-[11px] font-bold max-w-[240px] truncate";
         button.textContent = "☑ " + text;
         button.addEventListener("click", () => {
           currentProgramState.directives = currentProgramState.directives.filter(item => item !== text);
@@ -847,12 +927,8 @@
     // --- 4. Catalog Rendering & Filtering ---
     function setFilter(filterType) {
       currentFilter = filterType;
-      document.querySelectorAll('.filter-pill').forEach(btn => {
-        btn.classList.remove('bg-slate-900', 'text-white');
-        btn.classList.add('bg-slate-100', 'text-slate-700');
-      });
-      event.target.classList.remove('bg-slate-100', 'text-slate-700');
-      event.target.classList.add('bg-slate-900', 'text-white');
+      document.querySelectorAll('.filter-pill').forEach(btn => btn.classList.remove('active'));
+      if (event && event.target) event.target.classList.add('active');
       renderCatalog();
     }
 
@@ -890,17 +966,17 @@
           `<img src="${escapeHtml(src)}" alt="" class="${slots.length === 1 ? "w-16 h-12" : "w-12 h-12"} rounded ${photoFitClass(src)} border border-slate-200 flex-shrink-0">`
         ).join("");
         const card = document.createElement("div");
-        card.className = "bg-white p-3 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between hover:border-slate-300 transition";
+        card.className = "bg-white p-3 rounded-xl border border-[#B8C5CB] shadow-sm flex items-center justify-between transition";
         card.innerHTML = `
           <div class="flex items-center space-x-3">
             <div class="flex gap-1 flex-shrink-0">${thumbs}</div>
             <div>
               <div class="flex items-center space-x-2">
-                <h3 class="text-sm font-bold text-slate-800">${ex.name}</h3>
+                <h3 class="text-sm font-bold text-[#1D354E]">${ex.name}</h3>
                 ${typeBadge}
                 ${ex.starter ? `<span class="text-[10px] bg-amber-100 text-amber-800 font-semibold px-1.5 py-0.5 rounded">STARTER</span>` : ''}
               </div>
-              <p class="text-xs text-slate-500 mt-0.5">${dosing.sets}x${dosing.reps} · Hold ${dosing.hold}s · ${dosing.freq}</p>
+              <p class="text-xs text-[#1A2C3F] mt-0.5">${dosing.sets}x${dosing.reps} · Hold ${dosing.hold}s · ${dosing.freq}</p>
             </div>
           </div>
           <button onclick="addToProgram('${ex.id}')" class="px-3 py-1.5 bg-slate-900 hover:bg-blue-600 text-white font-semibold text-xs rounded-lg transition shadow-sm">
@@ -1267,7 +1343,7 @@
       }
       currentProgram.forEach((item, index) => {
         const row = document.createElement("div");
-        row.className = "bg-white p-3 rounded-lg border border-slate-200 shadow-sm space-y-2";
+        row.className = "bg-white p-3 rounded-lg border border-[#B8C5CB] shadow-sm space-y-2";
         const slots = photoSlots(item.photos);
         const photoBoxes = slots.map(src =>
           `<img src="${escapeHtml(src)}" alt="" class="h-28 w-full ${photoFitClass(src)} rounded border border-slate-200">`
@@ -1284,7 +1360,7 @@
           <div class="flex items-center justify-between gap-2">
             <div class="flex items-center space-x-2 min-w-0">
               <span class="text-xs font-bold text-slate-400 font-mono">#${index + 1}</span>
-              <span class="text-xs font-bold text-slate-800 truncate">${escapeHtml(item.name)}</span>
+              <span class="text-xs font-bold text-[#1D354E] truncate">${escapeHtml(item.name)}</span>
             </div>
             <div class="flex items-center shrink-0">
               <button type="button" onclick="moveProgramItemUp(${index})" ${index === 0 ? "disabled" : ""} title="Move up" class="text-xs text-slate-500 hover:text-slate-800 font-bold px-1 disabled:opacity-30 disabled:cursor-not-allowed">▲</button>
@@ -1298,11 +1374,11 @@
             <span class="text-[10px] text-slate-400 font-semibold uppercase mr-1">Side:</span>
             ${['Left', 'Right', 'Bilateral'].map(side => `
               <button type="button" onclick="setSide('${item.uniqueInstanceId}', '${side}')" 
-                      class="px-2 py-0.5 text-[10px] rounded font-semibold transition ${item.side === side ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}">
+                      class="side-toggle px-2 py-0.5 text-[10px] rounded font-semibold transition ${item.side === side ? 'active' : ''}">
                 ${side}
               </button>
             `).join('')}
-            ${item.side === "Unilateral" ? `<span class="px-2 py-0.5 text-[10px] rounded font-semibold bg-blue-600 text-white">One side</span>` : ""}
+            ${item.side === "Unilateral" ? `<span class="side-toggle active px-2 py-0.5 text-[10px] rounded font-semibold">One side</span>` : ""}
           </div>
 
           <!-- Dosing Preset -->

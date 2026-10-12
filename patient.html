@@ -9,26 +9,53 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body { font-family: 'Inter', sans-serif; background: #F4F8FA; color: #1A2C3F; }
+    .clinic-header { background: #1D354E; color: #fff; }
+    .surface-card { background: #fff; border: 1px solid #B8C5CB; }
+    .surface-card:hover { box-shadow: 0 4px 12px rgba(29, 53, 78, 0.08); }
+    .notes-box { background: #EBF0F3; border: 1px solid #B8C5CB; border-left: 3px solid #D22D3B; color: #1A2C3F; }
+    .badge-selected { background: #CAD3D6; color: #1D354E; border: 1px solid #1D354E; }
+    .btn-signal { background: #D22D3B; color: #fff; font-weight: 700; }
+    .btn-signal:hover { background: #B82330; }
+    .done-check {
+      appearance: none;
+      width: 1.15rem;
+      height: 1.15rem;
+      border: 2px solid #1D354E;
+      background: #E2E8EB;
+      border-radius: 0.3rem;
+      display: grid;
+      place-content: center;
+    }
+    .done-check:checked { background: #1D354E; }
+    .done-check:checked::after {
+      content: "";
+      width: 0.35rem;
+      height: 0.6rem;
+      border: solid #CAD3D6;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+    .done-check:focus-visible { outline: 2px solid #1D354E; outline-offset: 2px; }
   </style>
 </head>
-<body class="bg-slate-100 text-slate-900 min-h-screen pb-12">
+<body class="bg-[#F4F8FA] text-[#1A2C3F] min-h-screen pb-12">
 
   <!-- Mobile-Friendly Header -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+  <header class="clinic-header sticky top-0 z-30 shadow-sm">
     <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-blue-700 to-red-600 flex items-center justify-center shadow">
+        <div class="w-9 h-9 rounded-lg bg-white/10 border border-white/30 flex items-center justify-center">
           <span class="text-white font-black text-lg">PW</span>
         </div>
         <div>
-          <h1 class="text-base font-extrabold tracking-tight whitespace-nowrap"><span class="text-blue-700">Physio</span> <span class="text-red-600">Works!</span></h1>
-          <p class="text-[11px] text-slate-500 font-medium" id="headerLocation">Physical Therapy</p>
+          <h1 class="text-base font-extrabold tracking-tight whitespace-nowrap text-white">Physio Works!</h1>
+          <p class="text-[11px] text-white/80 font-medium" id="headerLocation">Physical Therapy</p>
         </div>
       </div>
       <div class="text-right">
-        <span class="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Access Code</span>
-        <span id="displayAccessCode" class="text-xs font-mono font-bold bg-slate-100 px-2 py-0.5 rounded border border-slate-200 text-blue-700">PW-VIEW</span>
+        <span class="text-[10px] uppercase font-bold text-white/70 block tracking-wider">Access Code</span>
+        <span id="displayAccessCode" class="badge-selected text-xs font-mono font-bold px-2 py-0.5 rounded">PW-VIEW</span>
       </div>
     </div>
   </header>
@@ -37,36 +64,36 @@
   <main class="max-w-2xl mx-auto px-4 py-6 space-y-5">
 
     <!-- Manual Code Lookup Box -->
-    <div id="codeEntryCard" class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm text-center space-y-3">
-      <h2 class="text-sm font-bold text-slate-800">Enter Your Access Code</h2>
-      <p class="text-xs text-slate-500">Find the 6-character code printed at the top of your exercise handout.</p>
+    <div id="codeEntryCard" class="surface-card p-5 rounded-2xl text-center space-y-3">
+      <h2 class="text-sm font-bold text-[#1D354E]">Enter Your Access Code</h2>
+      <p class="text-xs text-[#1A2C3F]">Find the 6-character code printed at the top of your exercise handout.</p>
       <div class="flex max-w-xs mx-auto space-x-2">
         <input type="text" id="manualCodeInput" placeholder="PW-XXXX" 
-               class="flex-1 px-3 py-2 text-center text-sm font-mono font-bold uppercase bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-        <button onclick="submitManualCode()" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-lg transition shadow-sm">
+               class="flex-1 px-3 py-2 text-center text-sm font-mono font-bold uppercase bg-white border border-[#B8C5CB] rounded-lg text-[#1A2C3F] focus:outline-none focus:ring-2 focus:ring-[#1D354E]">
+        <button onclick="submitManualCode()" class="btn-signal px-4 py-2 text-xs rounded-lg transition shadow-sm">
           View
         </button>
       </div>
     </div>
 
     <!-- Active Program Display Card -->
-    <div id="programHeaderCard" class="hidden bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-      <div class="border-b border-slate-100 pb-3">
-        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200">Prescription Routine</span>
-        <h2 id="programTitle" class="text-lg font-black text-slate-900 mt-1">Rehabilitation Program</h2>
+    <div id="programHeaderCard" class="hidden surface-card p-5 rounded-2xl space-y-3">
+      <div class="border-b border-[#E2E8EB] pb-3">
+        <span class="badge-selected text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Prescription Routine</span>
+        <h2 id="programTitle" class="text-lg font-black text-[#1D354E] mt-1">Rehabilitation Program</h2>
       </div>
-      <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 space-y-1">
-        <span class="text-xs font-bold text-slate-700 flex items-center space-x-1">
+      <div class="notes-box rounded-xl p-3.5 space-y-1">
+        <span class="text-xs font-bold text-[#1D354E] flex items-center space-x-1">
           <span>💬</span>
           <span>Therapist Instructions</span>
         </span>
-        <p id="therapistNotes" class="text-xs text-slate-600 leading-relaxed font-medium">Perform within pain-free tolerance.</p>
+        <p id="therapistNotes" class="text-xs text-[#1A2C3F] leading-relaxed font-medium">Perform within pain-free tolerance.</p>
       </div>
     </div>
 
     <!-- Clinical Directives Banner -->
-    <div id="clinicalDirectivesBanner" class="hidden bg-amber-50 border-2 border-amber-500 rounded-2xl p-4 shadow-sm space-y-2">
-      <h2 class="text-sm font-black text-amber-950 uppercase tracking-wide">Clinical Precautions & Care Instructions</h2>
+    <div id="clinicalDirectivesBanner" class="notes-box hidden rounded-2xl p-4 space-y-2">
+      <h2 class="text-sm font-black text-[#1D354E] uppercase tracking-wide">Clinical Precautions & Care Instructions</h2>
       <ul id="clinicalDirectivesList" class="space-y-2"></ul>
     </div>
 
@@ -224,7 +251,7 @@
           const icon = match ? match[1] : "⚠️";
           const text = match ? match[2] : String(directive);
           const item = document.createElement("li");
-          item.className = "flex items-start gap-2 text-sm font-bold text-amber-950 leading-snug";
+          item.className = "flex items-start gap-2 text-sm font-bold text-[#1A2C3F] leading-snug";
           item.innerHTML = `<span class="text-base leading-none">${escapeHtml(icon)}</span><span>${escapeHtml(text)}</span>`;
           directiveList.appendChild(item);
         });
@@ -239,49 +266,49 @@
       program.exercises.forEach((ex, idx) => {
         const slots = photoSlots(ex.photos);
         const card = document.createElement("div");
-        card.className = "bg-white p-4 rounded-2xl border border-slate-200 shadow-sm space-y-3";
+        card.className = "surface-card p-4 rounded-2xl space-y-3";
         card.innerHTML = `
-          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <div class="flex items-center justify-between border-b border-[#E2E8EB] pb-2">
             <div class="flex items-center space-x-2">
-              <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-700 font-bold text-xs flex items-center justify-center">${idx + 1}</span>
-              <h3 class="text-sm font-bold text-slate-800">[${escapeHtml(ex.side)}] ${escapeHtml(ex.name)}</h3>
+              <span class="w-6 h-6 rounded-full bg-[#CAD3D6] text-[#1D354E] border border-[#1D354E] font-bold text-xs flex items-center justify-center">${idx + 1}</span>
+              <h3 class="text-sm font-bold text-[#1D354E]">[${escapeHtml(ex.side)}] ${escapeHtml(ex.name)}</h3>
             </div>
             <label class="flex items-center space-x-1.5 cursor-pointer">
-              <input type="checkbox" class="w-4 h-4 rounded text-blue-600 focus:ring-0">
-              <span class="text-xs text-slate-500 font-medium">Done</span>
+              <input type="checkbox" class="done-check" aria-label="Mark ${escapeHtml(ex.name)} done">
+              <span class="text-xs text-[#1A2C3F] font-medium">Done</span>
             </label>
           </div>
 
           <div class="${slots.length === 1 ? "" : "grid grid-cols-2 gap-2"}">
             ${slots.map((src, slot) => `
             <div class="space-y-1">
-              ${slots.length === 1 ? "" : `<span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block text-center">${slot === 0 ? "Start Position" : "Finish / Hold"}</span>`}
-              <img src="${escapeHtml(src)}" alt="" class="w-full h-32 ${photoFitClass(src)} rounded-lg border border-slate-200">
+              ${slots.length === 1 ? "" : `<span class="text-[10px] font-bold text-[#1D354E] uppercase tracking-wider block text-center">${slot === 0 ? "Start Position" : "Finish / Hold"}</span>`}
+              <img src="${escapeHtml(src)}" alt="" class="w-full h-32 ${photoFitClass(src)} rounded-lg border border-[#B8C5CB]">
             </div>`).join("")}
           </div>
 
-          <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-2.5 flex justify-around text-center">
+          <div class="bg-[#EBF0F3] border border-[#B8C5CB] rounded-xl p-2.5 flex justify-around text-center">
             <div>
-              <span class="text-[10px] font-bold text-slate-500 uppercase block">Sets</span>
-              <span class="text-xs font-black text-slate-800">${ex.sets}</span>
+              <span class="text-[10px] font-bold text-[#1D354E] uppercase block">Sets</span>
+              <span class="text-xs font-black text-[#1A2C3F]">${ex.sets}</span>
             </div>
-            <div class="border-l border-blue-200 pl-3">
-              <span class="text-[10px] font-bold text-slate-500 uppercase block">Reps</span>
-              <span class="text-xs font-black text-slate-800">${ex.reps}</span>
+            <div class="border-l border-[#B8C5CB] pl-3">
+              <span class="text-[10px] font-bold text-[#1D354E] uppercase block">Reps</span>
+              <span class="text-xs font-black text-[#1A2C3F]">${ex.reps}</span>
             </div>
-            <div class="border-l border-blue-200 pl-3">
-              <span class="text-[10px] font-bold text-slate-500 uppercase block">Hold</span>
-              <span class="text-xs font-black text-slate-800">${escapeHtml(formatHold(ex.hold))}</span>
+            <div class="border-l border-[#B8C5CB] pl-3">
+              <span class="text-[10px] font-bold text-[#1D354E] uppercase block">Hold</span>
+              <span class="text-xs font-black text-[#1A2C3F]">${escapeHtml(formatHold(ex.hold))}</span>
             </div>
-            <div class="border-l border-blue-200 pl-3">
-              <span class="text-[10px] font-bold text-slate-500 uppercase block">Frequency</span>
-              <span class="text-xs font-black text-slate-800">${ex.freq}</span>
+            <div class="border-l border-[#B8C5CB] pl-3">
+              <span class="text-[10px] font-bold text-[#1D354E] uppercase block">Frequency</span>
+              <span class="text-xs font-black text-[#1A2C3F]">${ex.freq}</span>
             </div>
           </div>
 
           <div class="pt-1">
-            <span class="text-xs font-bold text-slate-700 block mb-1">Key Form Cues:</span>
-            <ul class="text-xs text-slate-600 space-y-1 list-disc list-inside">
+            <span class="text-xs font-bold text-[#1D354E] block mb-1">Key Form Cues:</span>
+            <ul class="text-xs text-[#1A2C3F] space-y-1 list-disc list-inside">
               ${(ex.cues || []).map(c => `<li>${escapeHtml(c)}</li>`).join('')}
             </ul>
           </div>
