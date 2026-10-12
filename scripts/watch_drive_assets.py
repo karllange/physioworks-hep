@@ -10,6 +10,7 @@ pushes origin main. Pass --no-git to process without publishing.
 """
 
 import argparse
+import fnmatch
 import json
 import re
 import shutil
@@ -18,7 +19,7 @@ import sys
 import time
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG_PATH = ROOT / "exercises.json"
@@ -27,6 +28,8 @@ PRIORITY_PATH = ROOT / "docs" / "asset_batches" / "batch_01_priority.md"
 DEFAULT_INTAKE = ROOT / "raw_grok_outputs"
 ASSETS = ROOT / "assets"
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp"}
+TEMP_DOWNLOAD_PATTERNS = ("*.tmp", "*.crdownload", "*.~*")
+STABLE_SECONDS = 1.0
 COMMIT_MESSAGE = "feat(assets): ingest and optimize new exercise diagrams from grok batch"
 GENERIC_RE = re.compile(
     r"^(?:grok[_-]?output|output|image|img|untitled|screenshot|download|dsc|img)[_-]?\d+$",
@@ -104,19 +107,43 @@ def match_exercise(stem, by_slug, pending_queue):
     return ""
 
 
+def is_temp_download(path):
+    name = Path(path).name
+    return any(fnmatch.fnmatch(name, pattern) for pattern in TEMP_DOWNLOAD_PATTERNS)
+
+
+def is_html_redirect(path):
+    try:
+        header = Path(path).read_bytes()[:512]
+    except OSError:
+        return False
+    text = header.decode("utf-8", errors="ignore")
+    lowered = text.lstrip("\ufeff \t\r\n").lower()
+    return (
+        lowered.startswith("<!doctype")
+        or lowered.startswith("<html")
+        or "accounts.google.com" in lowered
+    )
+
+
 def to_square_webp(source, destination):
-    with Image.open(source) as image:
-        frame = image.convert("RGBA")
-        width, height = frame.size
-        side = min(width, height)
-        left = (width - side) // 2
-        top = (height - side) // 2
-        cropped = frame.crop((left, top, left + side, top + side))
-        resized = cropped.resize((800, 800), Image.Resampling.LANCZOS)
-        background = Image.new("RGB", (800, 800), "white")
-        background.paste(resized, mask=resized.getchannel("A"))
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        background.save(destination, "WEBP", quality=85, method=6)
+    try:
+        with Image.open(source) as image:
+            frame = image.convert("RGBA")
+            width, height = frame.size
+            side = min(width, height)
+            left = (width - side) // 2
+            top = (height - side) // 2
+            cropped = frame.crop((left, top, left + side, top + side))
+            resized = cropped.resize((800, 800), Image.Resampling.LANCZOS)
+            background = Image.new("RGB", (800, 800), "white")
+            background.paste(resized, mask=resized.getchannel("A"))
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            background.save(destination, "WEBP", quality=85, method=6)
+    except (UnidentifiedImageError, OSError, IOError):
+        print(f"Corrupt or incomplete file detected: {Path(source).name}. Waiting for full write or skipping.")
+        return False
+    return True
 
 
 def activate(entry, relative_url):
@@ -128,15 +155,26 @@ def activate(entry, relative_url):
 def stable_files(folder):
     found = []
     for path in sorted(Path(folder).iterdir()):
-        if not path.is_file() or path.suffix.lower() not in IMAGE_SUFFIXES:
+        if not path.is_file() or path.name.startswith("."):
             continue
-        if path.name.startswith("."):
+        if is_temp_download(path):
             continue
-        first = path.stat().st_size
-        time.sleep(0.3)
-        if not path.exists() or path.stat().st_size != first or first == 0:
+        if path.suffix.lower() not in IMAGE_SUFFIXES:
             continue
-        found.append(path)
+        if is_html_redirect(path):
+            print(f"Skipping non-image/HTML redirect file: {path.name}")
+            continue
+        try:
+            first = path.stat().st_size
+        except OSError:
+            continue
+        time.sleep(STABLE_SECONDS)
+        try:
+            still_there = path.exists() and path.stat().st_size == first and first > 0
+        except OSError:
+            still_there = False
+        if still_there:
+            found.append(path)
     return found
 
 
@@ -175,7 +213,8 @@ def process_batch(intake, catalog_path, gaps_path, priority_path, publish):
             print(f"skip {source.name}: no exercise match")
             continue
         destination = ASSETS / f"{exercise_id}.webp"
-        to_square_webp(source, destination)
+        if not to_square_webp(source, destination):
+            continue
         relative = f"assets/{exercise_id}.webp"
         activate(entry, relative)
         gaps, _removed = remove_gap_sections(gaps, {exercise_id})
@@ -208,12 +247,20 @@ def self_test():
         catalog_path = root / "exercises.json"
         gaps_path = root / "gaps.md"
         priority_path = root / "priority.md"
-        catalog = [{
-            "id": "hamstring-curls-progression",
-            "name": "Hamstring Curls Progression",
-            "image_status": "pending_asset",
-            "photos": ["https://placehold.co/300x200"],
-        }]
+        catalog = [
+            {
+                "id": "hamstring-curls-progression",
+                "name": "Hamstring Curls Progression",
+                "image_status": "pending_asset",
+                "photos": ["https://placehold.co/300x200"],
+            },
+            {
+                "id": "split-squat",
+                "name": "Split Squat",
+                "image_status": "pending_asset",
+                "photos": ["https://placehold.co/300x200"],
+            },
+        ]
         dump_json(catalog_path, catalog)
         gaps_path.write_text(
             "# Gaps\n\n## hamstring-curls-progression — Hamstring Curls Progression\n\nbody\n\n## other — Other\n\nkeep\n",
@@ -221,6 +268,13 @@ def self_test():
         )
         priority_path.write_text("Exercise ID: `hamstring-curls-progression`\n", encoding="utf-8")
         Image.new("RGB", (120, 40), (210, 45, 59)).save(intake / "grok_output_1.png")
+        (intake / "login.jpg").write_text(
+            "<!doctype html><html><base href=\"https://accounts.google.com\">",
+            encoding="utf-8",
+        )
+        (intake / "partial.png.crdownload").write_bytes(b"still downloading")
+        (intake / "notes.~tmp").write_bytes(b"editor swap")
+        (intake / "split-squat.png").write_bytes(b"not a real image")
         original_assets = ASSETS
         test_assets = root / "assets"
         globals()["ASSETS"] = test_assets
@@ -228,15 +282,21 @@ def self_test():
             count = process_batch(intake, catalog_path, gaps_path, priority_path, publish=False)
         finally:
             globals()["ASSETS"] = original_assets
-        updated = load_json(catalog_path)[0]
+        updated = load_json(catalog_path)
+        hamstring = updated[0]
+        split_squat = updated[1]
         webp = test_assets / "hamstring-curls-progression.webp"
         with Image.open(webp) as image:
             size = image.size
         gaps = gaps_path.read_text(encoding="utf-8")
         ok = (
             count == 1
-            and updated["image_status"] == "active"
-            and updated["image_url"] == "assets/hamstring-curls-progression.webp"
+            and hamstring["image_status"] == "active"
+            and hamstring["image_url"] == "assets/hamstring-curls-progression.webp"
+            and split_squat["image_status"] == "pending_asset"
+            and not (test_assets / "split-squat.webp").exists()
+            and (intake / "login.jpg").exists()
+            and (intake / "partial.png.crdownload").exists()
             and size == (800, 800)
             and "hamstring-curls-progression" not in gaps
             and "## other — Other" in gaps
