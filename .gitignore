@@ -2,3 +2,4 @@
 raw_grok_outputs/
 *.zip
 .env
+scripts/__pycache__/
