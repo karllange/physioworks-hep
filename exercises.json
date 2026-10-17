@@ -2463,11 +2463,12 @@
       "Keep the shoulder relaxed."
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/standing-pendulum.webp",
+      "assets/standing-pendulum.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/standing-pendulum.webp"
   },
   {
     "id": "supine-passive-external-rotation",
@@ -2603,11 +2604,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/ankle-pumps.webp",
+      "assets/ankle-pumps.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/ankle-pumps.webp"
   },
   {
     "id": "short-foot",
@@ -5559,11 +5561,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/pallof-press.webp",
+      "assets/pallof-press.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/pallof-press.webp"
   },
   {
     "id": "standing-knee-flexion",
@@ -8367,11 +8370,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/split-squat.webp",
+      "assets/split-squat.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/split-squat.webp"
   },
   {
     "id": "depth-jump-progression",
@@ -8823,10 +8827,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/hip-hikes.webp",
+      "assets/hip-hikes.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/hip-hikes.webp"
   }
 ]
