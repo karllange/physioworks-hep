@@ -222,6 +222,17 @@ Suggested Grok prompt:
 Clinical line illustration of Gentle Ankle Circles for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Gentle Ankle Circles as two separate frames.
 ```
 
+## ankle-pumps — Ankle Pumps
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Ankle Pumps for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Ankle Pumps as two separate frames.
+```
+
 ## short-foot — Short Foot
 
 - Category: ankle
@@ -1520,6 +1531,17 @@ Suggested Grok prompt:
 Clinical line illustration of Standing Hip Rotations On Stool for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Standing Hip Rotations On Stool as two separate frames.
 ```
 
+## pallof-press — Pallof Press
+
+- Category: hip
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Pallof Press for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Pallof Press as two separate frames.
+```
+
 ## standing-knee-flexion — Standing Knee Flexion
 
 - Category: knee
@@ -2796,6 +2818,17 @@ Suggested Grok prompt:
 Clinical line illustration of Toe Walks for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Toe Walks as two separate frames.
 ```
 
+## split-squat — Split Squat
+
+- Category: ankle
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Split Squat for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Split Squat as two separate frames.
+```
+
 ## depth-jump-progression — Depth Jump Progression
 
 - Category: ankle
@@ -2993,4 +3026,15 @@ Suggested Grok prompt:
 
 ```
 Clinical line illustration of Sled Push/pull for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Sled Push/pull as two separate frames.
+```
+
+## hip-hikes — Hip Hikes
+
+- Category: knee
+- Type: strength
+
+Suggested Grok prompt:
+
+```
+Clinical line illustration of Hip Hikes for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Hip Hikes as two separate frames.
 ```
