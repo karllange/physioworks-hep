@@ -141,8 +141,8 @@
     "video_url": "",
     "aliases": [
       "Leg Extension",
-      "Double Leg Extension On Machine 90°-60°",
-      "Double Leg Extension Holds On Machine At 0°",
+      "Double Leg Extension On Machine 90\u00b0-60\u00b0",
+      "Double Leg Extension Holds On Machine At 0\u00b0",
       "Full ROM Double Leg Extension On Machine",
       "TKA Leg Extension Progression",
       "Leg Extensions On Exxentric"
@@ -593,7 +593,7 @@
   },
   {
     "id": "shld-402",
-    "name": "Band External Rotation at 0° with Towel Roll",
+    "name": "Band External Rotation at 0\u00b0 with Towel Roll",
     "category": "shoulder",
     "type": "strength",
     "starter": true,
@@ -615,7 +615,7 @@
     "video_url": "",
     "aliases": [
       "Side-Lying External Rotation",
-      "Scapular Plane External Rotation < 20°"
+      "Scapular Plane External Rotation < 20\u00b0"
     ]
   },
   {
@@ -659,8 +659,8 @@
       "Keep the low back quiet and do not shrug as the arms rise"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/106-lateral-lunge-with-slider-start.jpg",
+      "assets/106-lateral-lunge-with-slider-finish.jpg"
     ],
     "video_url": ""
   },
@@ -755,8 +755,8 @@
       "Keep the elbow still so the motion comes from the forearm, not the shoulder"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": ""
   },
@@ -896,8 +896,8 @@
       "Keep the knee still so the shin muscles, not the hip, do the work"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/061-side-stepping-with-resistance-at-ankles-start.jpg",
+      "assets/061-side-stepping-with-resistance-at-ankles-finish.jpg"
     ],
     "video_url": ""
   },
@@ -919,8 +919,8 @@
       "Lower slowly, and use one leg only when two-leg raises stay steady"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/010-supine-straight-leg-raises-start.jpg",
+      "assets/010-supine-straight-leg-raises-finish.jpg"
     ],
     "video_url": "",
     "aliases": [
@@ -975,8 +975,8 @@
       "Keep the hips square and let the eyes move with the head"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
     "aliases": [
@@ -2496,7 +2496,7 @@
   },
   {
     "id": "band-internal-rotation-at-0",
-    "name": "Band Internal Rotation at 0°",
+    "name": "Band Internal Rotation at 0\u00b0",
     "category": "shoulder",
     "type": "strength",
     "starter": true,
@@ -2845,8 +2845,7 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/038-supine-piriformis-stretch-with-foot-on-ground.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -4168,8 +4167,7 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/015-seated-table-hamstring-stretch.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -4336,8 +4334,7 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -4528,8 +4525,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/059-prone-hip-extension-start.jpg",
+      "assets/059-prone-hip-extension-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -4865,8 +4862,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/057-forward-step-up-start.jpg",
+      "assets/057-forward-step-up-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5105,8 +5102,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/025-seated-long-arc-quad-start.jpg",
+      "assets/025-seated-long-arc-quad-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5177,8 +5174,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5201,8 +5198,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5393,8 +5390,7 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5489,8 +5485,7 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/093-half-kneeling-hip-flexor-stretch.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5586,8 +5581,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5706,8 +5701,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -5874,8 +5869,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/059-prone-hip-extension-start.jpg",
+      "assets/059-prone-hip-extension-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -6114,15 +6109,15 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/059-prone-hip-extension-start.jpg",
+      "assets/095-hip-abduction-with-resistance-loop-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
   },
   {
     "id": "runner-s-stretch",
-    "name": "Runner’s Stretch",
+    "name": "Runner\u2019s Stretch",
     "category": "hip",
     "type": "stretch",
     "starter": false,
@@ -6133,7 +6128,7 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for Runner’s Stretch in a comfortable position",
+      "Set up for Runner\u2019s Stretch in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
@@ -6170,7 +6165,7 @@
   },
   {
     "id": "world-s-greatest-stretch",
-    "name": "World’s Greatest Stretch",
+    "name": "World\u2019s Greatest Stretch",
     "category": "hip",
     "type": "stretch",
     "starter": false,
@@ -6181,7 +6176,7 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for World’s Greatest Stretch in a comfortable position",
+      "Set up for World\u2019s Greatest Stretch in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
@@ -6506,7 +6501,7 @@
   },
   {
     "id": "scapular-plane-shoulder-elevation-90",
-    "name": "Scapular Plane Shoulder Elevation < 90°",
+    "name": "Scapular Plane Shoulder Elevation < 90\u00b0",
     "category": "shoulder",
     "type": "strength",
     "starter": false,
@@ -6517,7 +6512,7 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for Scapular Plane Shoulder Elevation < 90° in a comfortable position",
+      "Set up for Scapular Plane Shoulder Elevation < 90\u00b0 in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
@@ -6834,8 +6829,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
@@ -8515,8 +8510,8 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/061-side-stepping-with-resistance-at-ankles-start.jpg",
+      "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
     "image_status": "pending_asset"
