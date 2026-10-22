@@ -2575,30 +2575,6 @@
     "image_status": "pending_asset"
   },
   {
-    "id": "elevated-ice",
-    "name": "Elevated/Ice",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Elevated/Ice in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
     "id": "gentle-ankle-circles",
     "name": "Gentle Ankle Circles",
     "category": "ankle",
@@ -2924,55 +2900,6 @@
     "image_url": "assets/double-leg-shuttle-press.webp"
   },
   {
-    "id": "initiate-wb-with-crutches-in-the-boot",
-    "name": "Initiate WB With Crutches In The Boot",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Initiate WB With Crutches In The Boot in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/initiate-wb-with-crutches-in-the-boot.webp",
-      "assets/initiate-wb-with-crutches-in-the-boot.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/initiate-wb-with-crutches-in-the-boot.webp"
-  },
-  {
-    "id": "out-of-boot",
-    "name": "Out Of Boot",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Out Of Boot in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
     "id": "star-drill-on-wedge",
     "name": "Star Drill On Wedge",
     "category": "ankle",
@@ -3021,31 +2948,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/tibial-rotation.webp"
-  },
-  {
-    "id": "double-leg-wall-sit-progression-on",
-    "name": "Double Leg Wall Sit Progression On",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Double Leg Wall Sit Progression On in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/double-leg-wall-sit-progression-on.webp",
-      "assets/double-leg-wall-sit-progression-on.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/double-leg-wall-sit-progression-on.webp"
   },
   {
     "id": "inv-isometric",
@@ -3198,106 +3100,6 @@
     "image_url": "assets/closed-chained-dorsiflexion-ankle-circles.webp"
   },
   {
-    "id": "lsd-progression",
-    "name": "LSD Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for LSD Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/lsd-progression.webp",
-      "assets/lsd-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lsd-progression.webp"
-  },
-  {
-    "id": "fwd-step-down-progression",
-    "name": "Fwd Step Down Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Fwd Step Down Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/fwd-step-down-progression.webp",
-      "assets/fwd-step-down-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/fwd-step-down-progression.webp"
-  },
-  {
-    "id": "sl-squat-progression",
-    "name": "SL Squat Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for SL Squat Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/single-leg-squat.webp",
-      "assets/single-leg-squat.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/single-leg-squat.webp"
-  },
-  {
-    "id": "shuttle-press-variations",
-    "name": "Shuttle Press Variations",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Shuttle Press Variations in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/shuttle-press-variations.webp",
-      "assets/shuttle-press-variations.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shuttle-press-variations.webp"
-  },
-  {
     "id": "sled-pulls",
     "name": "Sled Pulls",
     "category": "ankle",
@@ -3448,56 +3250,6 @@
     "image_url": "assets/heel-walks-toe-walks.webp"
   },
   {
-    "id": "deadlift-romanian-deadlift-variations",
-    "name": "Deadlift/Romanian Deadlift Variations",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Deadlift/Romanian Deadlift Variations in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/romanian-deadlift.webp",
-      "assets/romanian-deadlift.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/romanian-deadlift.webp"
-  },
-  {
-    "id": "lateral-squat-progression",
-    "name": "Lateral Squat Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Lateral Squat Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/lateral-squat-progression.webp",
-      "assets/lateral-squat-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lateral-squat-progression.webp"
-  },
-  {
     "id": "farmer-walks",
     "name": "Farmer Walks",
     "category": "ankle",
@@ -3621,81 +3373,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/mini-hops.webp"
-  },
-  {
-    "id": "jogging-progression",
-    "name": "Jogging Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Jogging Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/jogging-progression.webp",
-      "assets/jogging-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/jogging-progression.webp"
-  },
-  {
-    "id": "snap-down-progression",
-    "name": "Snap Down Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Snap Down Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/snap-down-progression.webp",
-      "assets/snap-down-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/snap-down-progression.webp"
-  },
-  {
-    "id": "jump-progression",
-    "name": "Jump Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Jump Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/jump-progression.webp",
-      "assets/jump-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/jump-progression.webp"
   },
   {
     "id": "multiplanar-hops",
@@ -4023,31 +3700,6 @@
     "image_url": "assets/sled-pushes.webp"
   },
   {
-    "id": "hurdle-hop-variations",
-    "name": "Hurdle Hop Variations",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Hurdle Hop Variations in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/hurdle-hop-variations.webp",
-      "assets/hurdle-hop-variations.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hurdle-hop-variations.webp"
-  },
-  {
     "id": "sprinting-drills",
     "name": "Sprinting Drills",
     "category": "ankle",
@@ -4071,56 +3723,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/sprinting-drills.webp"
-  },
-  {
-    "id": "weighted-baps-board",
-    "name": "Weighted Baps Board",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Weighted Baps Board in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/weighted-baps-board.webp",
-      "assets/weighted-baps-board.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-baps-board.webp"
-  },
-  {
-    "id": "weighted-toe-walks",
-    "name": "Weighted Toe Walks",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Weighted Toe Walks in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/weighted-toe-walks.webp",
-      "assets/weighted-toe-walks.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-toe-walks.webp"
   },
   {
     "id": "seated-knee-bend-off-table",
@@ -4221,31 +3823,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/nu-step-and-bike.webp"
-  },
-  {
-    "id": "weight-shifting-with-ue-assistance",
-    "name": "Weight Shifting With UE Assistance",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Weight Shifting With UE Assistance in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/weight-shifting-with-ue-assistance.webp",
-      "assets/weight-shifting-with-ue-assistance.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weight-shifting-with-ue-assistance.webp"
   },
   {
     "id": "gait-training-with-crutches",
@@ -4448,30 +4025,6 @@
     "image_url": "assets/high-hurdle.webp"
   },
   {
-    "id": "more-aggressive-prom",
-    "name": "More Aggressive PROM",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for More Aggressive PROM in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
     "id": "prone-quad-stretch",
     "name": "Prone Quad Stretch",
     "category": "knee",
@@ -4520,31 +4073,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/quadruped-hip-extension-over-bench-holds.webp"
-  },
-  {
-    "id": "wall-sit-progression",
-    "name": "Wall Sit Progression",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Wall Sit Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/wall-sit-progression.webp",
-      "assets/wall-sit-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/wall-sit-progression.webp"
   },
   {
     "id": "sidelying-shuttle-press",
@@ -4672,55 +4200,6 @@
     "image_url": "assets/dip-bar-assisted-slantboard-squat.webp"
   },
   {
-    "id": "ankle-weight",
-    "name": "Ankle Weight",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 3,
-      "reps": 6,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Ankle Weight in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "romanian-deadlift-progression",
-    "name": "Romanian Deadlift Progression",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 3,
-      "reps": 6,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Romanian Deadlift Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/romanian-deadlift.webp",
-      "assets/romanian-deadlift.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/romanian-deadlift.webp"
-  },
-  {
     "id": "kickstand-squat-on-wall",
     "name": "Kickstand Squat On Wall",
     "category": "knee",
@@ -4796,56 +4275,6 @@
     "image_url": "assets/slantboard-step-downs.webp"
   },
   {
-    "id": "nordic-progression",
-    "name": "Nordic Progression",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Nordic Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/nordic-progression.webp",
-      "assets/nordic-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/nordic-progression.webp"
-  },
-  {
-    "id": "loaded-lsd",
-    "name": "Loaded LSD",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Loaded LSD in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/loaded-lsd.webp",
-      "assets/loaded-lsd.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/loaded-lsd.webp"
-  },
-  {
     "id": "forward-step-downs",
     "name": "Forward Step Downs",
     "category": "knee",
@@ -4894,31 +4323,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/anti-rotation-and-balance-training.webp"
-  },
-  {
-    "id": "weighted-hops",
-    "name": "Weighted Hops",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 3,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Weighted Hops in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/weighted-hops.webp",
-      "assets/weighted-hops.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-hops.webp"
   },
   {
     "id": "kb-swings",
@@ -4996,80 +4400,6 @@
     "image_url": "assets/rotational-deadlifts.webp"
   },
   {
-    "id": "4-exercises-performed-in-succession",
-    "name": "4 Exercises Performed In Succession",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for 4 Exercises Performed In Succession in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "plyometric-jump-3-reps",
-    "name": "Plyometric Jump 3 Reps",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Plyometric Jump 3 Reps in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/plyometric-jump-3-reps.webp",
-      "assets/plyometric-jump-3-reps.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/plyometric-jump-3-reps.webp"
-  },
-  {
-    "id": "drop-set-or-weighted-jump-3-reps",
-    "name": "Drop Set Or Weighted Jump 3 Reps",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Drop Set Or Weighted Jump 3 Reps in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/drop-set-or-weighted-jump-3-reps.webp",
-      "assets/drop-set-or-weighted-jump-3-reps.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/drop-set-or-weighted-jump-3-reps.webp"
-  },
-  {
     "id": "accelerated-jump-2-3",
     "name": "Accelerated Jump 2-3",
     "category": "knee",
@@ -5095,31 +4425,6 @@
     "image_url": "assets/accelerated-jump-2-3.webp"
   },
   {
-    "id": "short-arc-quad-progression",
-    "name": "Short Arc Quad Progression",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Short Arc Quad Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/short-arc-quad-progression.webp",
-      "assets/short-arc-quad-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/short-arc-quad-progression.webp"
-  },
-  {
     "id": "knee-circles",
     "name": "Knee Circles",
     "category": "knee",
@@ -5143,31 +4448,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/knee-circles.webp"
-  },
-  {
-    "id": "dl-machine-extension-holds-at-0-degrees",
-    "name": "DL Machine Extension Holds At 0 Degrees",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 3,
-      "reps": 6,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for DL Machine Extension Holds At 0 Degrees in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/dl-machine-extension-holds-at-0-degrees.webp",
-      "assets/dl-machine-extension-holds-at-0-degrees.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/dl-machine-extension-holds-at-0-degrees.webp"
   },
   {
     "id": "dl-extension",
@@ -5291,30 +4571,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/circumduction-at-30-flexion.webp"
-  },
-  {
-    "id": "70-degrees-of-hip-flexion",
-    "name": "70 Degrees Of Hip Flexion",
-    "category": "hip",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for 70 Degrees Of Hip Flexion in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
   },
   {
     "id": "supine-internal-rotation",
@@ -6115,30 +5371,6 @@
     "image_url": "assets/1-2-kneeling-halos.webp"
   },
   {
-    "id": "focus-on-problem-areas",
-    "name": "Focus On Problem Areas",
-    "category": "hip",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Focus On Problem Areas in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
     "id": "hip-90-90",
     "name": "Hip 90/90",
     "category": "hip",
@@ -6264,31 +5496,6 @@
     "image_url": "assets/wall-hip-flexion.webp"
   },
   {
-    "id": "copenhagen-progression",
-    "name": "Copenhagen Progression",
-    "category": "hip",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Copenhagen Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/copenhagen-progression.webp",
-      "assets/copenhagen-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/copenhagen-progression.webp"
-  },
-  {
     "id": "leg-press-machine",
     "name": "Leg Press Machine",
     "category": "hip",
@@ -6389,56 +5596,6 @@
     "image_url": "assets/hamstring-and-slantboard.webp"
   },
   {
-    "id": "hurdle-progression",
-    "name": "Hurdle Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Hurdle Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/hurdle-progression.webp",
-      "assets/hurdle-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hurdle-progression.webp"
-  },
-  {
-    "id": "gait-progression",
-    "name": "Gait Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Gait Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/gait-progression.webp",
-      "assets/gait-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/gait-progression.webp"
-  },
-  {
     "id": "cable-decels",
     "name": "Cable Decels",
     "category": "shoulder",
@@ -6462,31 +5619,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/cable-decels.webp"
-  },
-  {
-    "id": "split-squat-progression",
-    "name": "Split Squat Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Split Squat Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/split-squat-progression.webp",
-      "assets/split-squat-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/split-squat-progression.webp"
   },
   {
     "id": "dip-bar-assisted-slant-board-squat",
@@ -6613,55 +5745,6 @@
     "image_url": "assets/arm-hangs-outside-of-the-sling.webp"
   },
   {
-    "id": "prom-arom-of-the-elbow",
-    "name": "PROM/AROM Of The Elbow",
-    "category": "elbow_wrist",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for PROM/AROM Of The Elbow in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/prom-arom-of-the-elbow.webp",
-      "assets/prom-arom-of-the-elbow.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/prom-arom-of-the-elbow.webp"
-  },
-  {
-    "id": "cervical-prom-stretching",
-    "name": "Cervical PROM Stretching",
-    "category": "cervical",
-    "type": "stretch",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Cervical PROM Stretching in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
     "id": "ball-squeezes",
     "name": "Ball Squeezes",
     "category": "shoulder",
@@ -6737,31 +5820,6 @@
     "image_url": "assets/cross-symmetry-walk-outs.webp"
   },
   {
-    "id": "flexion-progression",
-    "name": "Flexion Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Flexion Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/flexion-progression.webp",
-      "assets/flexion-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/flexion-progression.webp"
-  },
-  {
     "id": "scapular-rowing-off-of-table",
     "name": "Scapular Rowing Off Of Table",
     "category": "shoulder",
@@ -6787,31 +5845,6 @@
     "image_url": "assets/scapular-rowing-off-of-table.webp"
   },
   {
-    "id": "external-rotation-progression",
-    "name": "External Rotation Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for External Rotation Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/external-rotation-progression.webp",
-      "assets/external-rotation-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/external-rotation-progression.webp"
-  },
-  {
     "id": "rotator-cuff-series",
     "name": "Rotator Cuff Series",
     "category": "shoulder",
@@ -6835,31 +5868,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/rotator-cuff-series.webp"
-  },
-  {
-    "id": "pnf-pattern-progression",
-    "name": "PNF Pattern Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for PNF Pattern Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/pnf-pattern-progression.webp",
-      "assets/pnf-pattern-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/pnf-pattern-progression.webp"
   },
   {
     "id": "i-y-ts-w-slider-on-the-wall",
@@ -6910,55 +5918,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/ube-light-resistance-with-b-ue.webp"
-  },
-  {
-    "id": "light-isotonics",
-    "name": "Light Isotonics",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Light Isotonics in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "standing-unweighted-flex",
-    "name": "Standing Unweighted Flex",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Standing Unweighted Flex in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/standing-unweighted-flex.webp",
-      "assets/standing-unweighted-flex.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-unweighted-flex.webp"
   },
   {
     "id": "band-resisted-ext",
@@ -7036,105 +5995,6 @@
     "image_url": "assets/prone-row.webp"
   },
   {
-    "id": "band-resisted-biceps-curls-and-triceps",
-    "name": "Band Resisted Biceps Curls And Triceps",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Band Resisted Biceps Curls And Triceps in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/band-resisted-biceps-curls-and-triceps.webp",
-      "assets/band-resisted-biceps-curls-and-triceps.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/band-resisted-biceps-curls-and-triceps.webp"
-  },
-  {
-    "id": "ckc-progression",
-    "name": "CKC Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for CKC Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/ckc-progression.webp",
-      "assets/ckc-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ckc-progression.webp"
-  },
-  {
-    "id": "push-up-plus-progression",
-    "name": "Push Up Plus Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Push Up Plus Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/push-up-plus-progression.webp",
-      "assets/push-up-plus-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/push-up-plus-progression.webp"
-  },
-  {
-    "id": "aggressive-prom-stretching-to-achieve",
-    "name": "Aggressive PROM Stretching To Achieve",
-    "category": "shoulder",
-    "type": "stretch",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Aggressive PROM Stretching To Achieve in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
     "id": "trx-rows",
     "name": "TRX Rows",
     "category": "shoulder",
@@ -7185,31 +6045,6 @@
     "image_url": "assets/behind-the-back-stretch-rope.webp"
   },
   {
-    "id": "biceps-curls-and-triceps-extensions",
-    "name": "Biceps Curls And Triceps Extensions",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Biceps Curls And Triceps Extensions in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/biceps-curls-and-triceps-extensions.webp",
-      "assets/biceps-curls-and-triceps-extensions.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/biceps-curls-and-triceps-extensions.webp"
-  },
-  {
     "id": "shoulder-taps",
     "name": "Shoulder Taps",
     "category": "shoulder",
@@ -7258,104 +6093,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/wall-end-range-isometrics.webp"
-  },
-  {
-    "id": "functional-external-rotation-internal-rotation-breakout-progression",
-    "name": "Functional External Rotation/Internal Rotation Breakout Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Functional External Rotation/Internal Rotation Breakout Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/functional-external-rotation-internal-rotation-breakout-progression.webp",
-      "assets/functional-external-rotation-internal-rotation-breakout-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/functional-external-rotation-internal-rotation-breakout-progression.webp"
-  },
-  {
-    "id": "intro-to-functional-movements",
-    "name": "Intro To Functional Movements",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Intro To Functional Movements in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "gross-movements",
-    "name": "Gross Movements",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Gross Movements in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "shoulder-circle-progression",
-    "name": "Shoulder Circle Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Shoulder Circle Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/shoulder-circle-progression.webp",
-      "assets/shoulder-circle-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-circle-progression.webp"
   },
   {
     "id": "shoulder-press",
@@ -7583,56 +6320,6 @@
     "image_url": "assets/chest-press.webp"
   },
   {
-    "id": "bench-progression",
-    "name": "Bench Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Bench Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/bench-progression.webp",
-      "assets/bench-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/bench-progression.webp"
-  },
-  {
-    "id": "over-the-shoulder-weighted-ball-catch",
-    "name": "Over The Shoulder Weighted Ball Catch",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Over The Shoulder Weighted Ball Catch in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/over-the-shoulder-weighted-ball-catch.webp",
-      "assets/over-the-shoulder-weighted-ball-catch.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/over-the-shoulder-weighted-ball-catch.webp"
-  },
-  {
     "id": "suitcase-carry",
     "name": "Suitcase Carry",
     "category": "shoulder",
@@ -7656,55 +6343,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/suitcase-carry.webp"
-  },
-  {
-    "id": "weighted-ball-taps-on-the-wall",
-    "name": "Weighted Ball Taps On The Wall",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Weighted Ball Taps On The Wall in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/weighted-ball-taps-on-the-wall.webp",
-      "assets/weighted-ball-taps-on-the-wall.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-ball-taps-on-the-wall.webp"
-  },
-  {
-    "id": "plyo-variations",
-    "name": "Plyo Variations",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Plyo Variations in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
   },
   {
     "id": "push-press",
@@ -7830,30 +6468,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/scapular-plane-internal-rotation.webp"
-  },
-  {
-    "id": "abduction-beginning-at-2-weeks",
-    "name": "Abduction Beginning At 2 Weeks",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Abduction Beginning At 2 Weeks in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
   },
   {
     "id": "arom-of-wrist-and-hand",
@@ -8030,30 +6644,6 @@
     "image_url": "assets/gait-training-w-ad.webp"
   },
   {
-    "id": "tissue-work-to",
-    "name": "Tissue Work To",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Tissue Work To in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
     "id": "farmer-carries",
     "name": "Farmer Carries",
     "category": "knee",
@@ -8179,31 +6769,6 @@
     "image_url": "assets/incline-treadmill-walking.webp"
   },
   {
-    "id": "get-up-from-floor-progression",
-    "name": "Get Up From Floor Progression",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Get Up From Floor Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/get-up-from-floor-progression.webp",
-      "assets/get-up-from-floor-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/get-up-from-floor-progression.webp"
-  },
-  {
     "id": "eccentric-shuttle-press",
     "name": "Eccentric Shuttle Press",
     "category": "knee",
@@ -8252,30 +6817,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/lateral-step-downs.webp"
-  },
-  {
-    "id": "incorporate-more-compound-movements",
-    "name": "Incorporate More Compound Movements",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Incorporate More Compound Movements in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
   },
   {
     "id": "seated-lumbar-flexion",
@@ -8503,56 +7044,6 @@
     "image_url": "assets/split-squat.webp"
   },
   {
-    "id": "depth-jump-progression",
-    "name": "Depth Jump Progression",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Depth Jump Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/depth-jump-progression.webp",
-      "assets/depth-jump-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/depth-jump-progression.webp"
-  },
-  {
-    "id": "hamstring-curls-progression",
-    "name": "Hamstring Curls Progression",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Hamstring Curls Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/hamstring-curls-progression.webp",
-      "assets/hamstring-curls-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hamstring-curls-progression.webp"
-  },
-  {
     "id": "shuttle-press",
     "name": "Shuttle Press",
     "category": "knee",
@@ -8601,31 +7092,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/sled-pulls-sled-pushes.webp"
-  },
-  {
-    "id": "lateral-squat-variations",
-    "name": "Lateral Squat Variations",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Lateral Squat Variations in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/lateral-squat-variations.webp",
-      "assets/lateral-squat-variations.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lateral-squat-variations.webp"
   },
   {
     "id": "nu-step",
@@ -8826,80 +7292,6 @@
     "video_url": "",
     "image_status": "active",
     "image_url": "assets/arom-of-the-elbow.webp"
-  },
-  {
-    "id": "standing-flexion-progression",
-    "name": "Standing Flexion Progression",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Standing Flexion Progression in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/standing-flexion-progression.webp",
-      "assets/standing-flexion-progression.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-flexion-progression.webp"
-  },
-  {
-    "id": "shoulder-press-variations",
-    "name": "Shoulder Press Variations",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Shoulder Press Variations in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "assets/shoulder-press-variations.webp",
-      "assets/shoulder-press-variations.webp"
-    ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-press-variations.webp"
-  },
-  {
-    "id": "prom-of-the-elbow",
-    "name": "PROM Of The Elbow",
-    "category": "elbow_wrist",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for PROM Of The Elbow in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
   },
   {
     "id": "feet-together-on-foam",
