@@ -300,6 +300,9 @@
   <!-- ================= MAIN WORKSPACE (NO-PRINT) ================= -->
   <main class="no-print max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full grid grid-cols-1 min-[900px]:grid-cols-2 gap-4">
 
+    <!-- Clinical Reasoning (PHI scrub -> Gemini -> routine); mounted by scripts/reasoning-ui.js -->
+    <div id="reasoningEngineMount" class="min-w-0 min-[900px]:col-span-2"></div>
+
     <section class="alpine-panel flex flex-col gap-3 p-4 min-w-0">
       <h2 class="text-sm font-bold tracking-wide text-[#11224A] uppercase">Exercise Library</h2>
       <div class="space-y-3">
@@ -618,6 +621,8 @@
   </div>
 
   <!-- ================= JAVASCRIPT APPLICATION CORE ================= -->
+  <script src="scripts/phi-scrubber.js"></script>
+  <script src="scripts/reasoning-ui.js"></script>
   <script>
     // --- 1. Exercise Catalog State & Loader ---
     let catalogData = [];
@@ -1157,7 +1162,9 @@
         freq: dosing.freq,
         dosePreset: template.type === "stretch" ? "standard_stretch" : "standard_strength",
         cues: [...(template.cues || [])],
-        photos: [...(template.photos || [])]
+        photos: [...(template.photos || [])],
+        status: "active", // ADDED: New AI safety net field
+        note: ""          // ADDED: New AI safety net field
       };
 
       if (dosePresetId && dosePresetId !== "custom") {
@@ -1360,7 +1367,9 @@
           freq: saved.freq,
           dosePreset: "custom",
           cues: [...(saved.cues || [])],
-          photos: [...(saved.photos || [])]
+          photos: [...(saved.photos || [])],
+          status: "active",
+          note: ""
         };
         currentProgram.push(item);
         return item;
@@ -1464,15 +1473,22 @@
       URL.revokeObjectURL(link.href);
     }
 
+    // --- ADDED: Auto-Clear Engine Utility ---
+    function clearProgram() {
+      currentProgram = [];
+      currentProgramState.directives = [];
+      const titleInput = document.getElementById("programTitleInput");
+      if (titleInput) titleInput.value = "";
+      const notesInput = document.getElementById("patientNotesInput");
+      if (notesInput) notesInput.value = "";
+      renderDirectiveChips();
+      renderActiveProgram();
+    }
+
     function resetProgram() {
       if (confirm("Clear current builder and start new routine?")) {
-        currentProgram = [];
-        currentProgramState.directives = [];
-        document.getElementById("programTitleInput").value = "";
-        document.getElementById("patientNotesInput").value = "";
+        clearProgram();
         generateFreshCode();
-        renderDirectiveChips();
-        renderActiveProgram();
       }
     }
 
@@ -1494,10 +1510,28 @@
       }
       currentProgram.forEach((item, index) => {
         const row = document.createElement("div");
-        row.className = "bg-white p-3 rounded-lg border border-[#B8C5CB] shadow-sm space-y-2";
+        
+        // --- ADDED: THE CLINICAL SAFETY NET RENDERING ---
+        let cardStyle = "bg-white p-3 rounded-lg border border-[#B8C5CB] shadow-sm space-y-2";
+        let warningHtml = "";
+        
+        if (item.status === "hold") {
+          // Red alert styling
+          cardStyle = "p-3 rounded-lg border-2 border-[#dc3545] bg-[#fff8f8] shadow-sm space-y-2";
+          warningHtml = `
+            <div class="text-[#dc3545] font-bold px-2 py-1.5 mb-1 text-[11px] border border-[#dc3545] bg-white rounded shadow-sm flex items-start gap-1.5">
+              <span class="text-[14px]">⚠️</span> 
+              <span>CLINICAL HOLD: ${escapeHtml(item.note || "MD Protocol Restriction")}</span>
+            </div>
+          `;
+        }
+        
+        row.className = cardStyle;
         const photoBoxes = exerciseFigureTags(item, "h-28 w-full");
         const figureCount = ownedDrawingFrames(item).length || 1;
+        
         row.innerHTML = `
+          ${warningHtml}
           ${item.baseId === "custom" ? `
           <div class="space-y-1.5">
             <div class="${figureCount === 1 ? "" : "grid grid-cols-2 gap-1.5"}">
@@ -1748,7 +1782,9 @@
         dosePreset: type === "stretch" ? "standard_stretch" : "standard_strength",
         cues,
         region: inferMovementRegion(name),
-        photos: customMovementGraphics(name, inferMovementRegion(name))
+        photos: customMovementGraphics(name, inferMovementRegion(name)),
+        status: "active",
+        note: ""
       });
 
       renderActiveProgram();
@@ -3017,7 +3053,9 @@
         cues: entry.cues && entry.cues.length ? [...entry.cues] : ["Perform with control and within the surgeon protocol."],
         region: inferMovementRegion(entry.name),
         demoPhotos: 0,
-        photos: customMovementGraphics(entry.name, inferMovementRegion(entry.name))
+        photos: customMovementGraphics(entry.name, inferMovementRegion(entry.name)),
+        status: "active",
+        note: ""
       });
     }
 
@@ -3061,6 +3099,6 @@
       saveCurrentProgramLocally();
       window.open(patientPageUrl(currentAccessCode), "_blank");
     }
-  </script>
+</script>
 </body>
 </html>
