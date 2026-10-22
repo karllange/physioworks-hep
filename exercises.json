@@ -1109,10 +1109,12 @@
       "Keep breathing; do not tuck the pelvis hard or hold the breath"
     ],
     "photos": [
-      "assets/177-quadruped-transverse-abdominis-drawing-in-start.webp",
-      "assets/177-quadruped-transverse-abdominis-drawing-in-finish.webp"
+      "assets/core-101.webp",
+      "assets/core-101.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-101.webp"
   },
   {
     "id": "core-102",
@@ -1132,10 +1134,12 @@
       "Stack the top shoulder over the supporting shoulder and do not roll the hips forward"
     ],
     "photos": [
-      "assets/178-side-plank-from-knees-start.webp",
-      "assets/178-side-plank-from-knees-finish.webp"
+      "assets/core-102.webp",
+      "assets/core-102.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-102.webp"
   },
   {
     "id": "core-103",
@@ -1155,10 +1159,12 @@
       "If the pelvis rocks, lift less high"
     ],
     "photos": [
-      "assets/179-supine-marching-with-core-brace-start.webp",
-      "assets/179-supine-marching-with-core-brace-finish.webp"
+      "assets/core-103.webp",
+      "assets/core-103.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-103.webp"
   },
   {
     "id": "hip-modified-thomas-stretch-01",
@@ -1178,10 +1184,12 @@
       "Keep the low back flat on the table and do not let the hanging thigh swing out"
     ],
     "photos": [
-      "assets/002-modified-thomas-stretch.webp",
-      "assets/002-modified-thomas-stretch.webp"
+      "assets/hip-modified-thomas-stretch-01.webp",
+      "assets/hip-modified-thomas-stretch-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-modified-thomas-stretch-01.webp"
   },
   {
     "id": "hip-supine-bridge-01",
@@ -1201,10 +1209,12 @@
       "Lower slowly and keep the ribs down so the low back does not arch"
     ],
     "photos": [
-      "assets/003-supine-bridge-start.webp",
-      "assets/003-supine-bridge-finish.webp"
+      "assets/hip-supine-bridge-01.webp",
+      "assets/hip-supine-bridge-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-supine-bridge-01.webp"
   },
   {
     "id": "knee-mini-squat-with-counter-support-01",
@@ -1224,10 +1234,12 @@
       "Stand back up through the heels without locking the knees hard"
     ],
     "photos": [
-      "assets/004-mini-squat-with-counter-support-start.webp",
-      "assets/004-mini-squat-with-counter-support-finish.webp"
+      "assets/knee-mini-squat-with-counter-support-01.webp",
+      "assets/knee-mini-squat-with-counter-support-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-mini-squat-with-counter-support-01.webp"
   },
   {
     "id": "knee-seated-hamstring-stretch-01",
@@ -1247,10 +1259,12 @@
       "Keep the knee soft-straight and do not round hard through the low back"
     ],
     "photos": [
-      "assets/006-seated-hamstring-stretch.webp",
-      "assets/006-seated-hamstring-stretch.webp"
+      "assets/knee-seated-hamstring-stretch-01.webp",
+      "assets/knee-seated-hamstring-stretch-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-seated-hamstring-stretch-01.webp"
   },
   {
     "id": "hip-supine-gluteal-sets-01",
@@ -1270,10 +1284,12 @@
       "Hold the contraction, then fully relax before the next one"
     ],
     "photos": [
-      "assets/013-supine-gluteal-sets.webp",
-      "assets/013-supine-gluteal-sets.webp"
+      "assets/hip-supine-gluteal-sets-01.webp",
+      "assets/hip-supine-gluteal-sets-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-supine-gluteal-sets-01.webp"
   },
   {
     "id": "knee-seated-table-hamstring-stretch-01",
@@ -1293,10 +1309,12 @@
       "Keep the foot relaxed and do not bounce at the end of the motion"
     ],
     "photos": [
-      "assets/015-seated-table-hamstring-stretch.webp",
-      "assets/015-seated-table-hamstring-stretch.webp"
+      "assets/knee-seated-table-hamstring-stretch-01.webp",
+      "assets/knee-seated-table-hamstring-stretch-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-seated-table-hamstring-stretch-01.webp"
   },
   {
     "id": "knee-squat-01",
@@ -1316,8 +1334,8 @@
       "Keep the chest up and stand by driving through both heels"
     ],
     "photos": [
-      "assets/022-squat-start.webp",
-      "assets/022-squat-finish.webp"
+      "assets/knee-squat-01.webp",
+      "assets/knee-squat-01.webp"
     ],
     "video_url": "",
     "aliases": [
@@ -1328,7 +1346,9 @@
       "Goblet Squat",
       "Loaded Goblet Squat Progression",
       "Squat Progression"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/knee-squat-01.webp"
   },
   {
     "id": "hip-supine-hip-adduction-isometric-with-ball-01",
@@ -1348,10 +1368,12 @@
       "Hold the squeeze, then release without letting the knees fall open"
     ],
     "photos": [
-      "assets/026-supine-hip-adduction-isometric-with-ball.webp",
-      "assets/026-supine-hip-adduction-isometric-with-ball.webp"
+      "assets/hip-supine-hip-adduction-isometric-with-ball-01.webp",
+      "assets/hip-supine-hip-adduction-isometric-with-ball-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-supine-hip-adduction-isometric-with-ball-01.webp"
   },
   {
     "id": "hip-bridge-with-hip-abduction-and-resistance-01",
@@ -1371,10 +1393,12 @@
       "Lower with control and keep the band tension even"
     ],
     "photos": [
-      "assets/056-bridge-with-hip-abduction-and-resistance-start.webp",
-      "assets/056-bridge-with-hip-abduction-and-resistance-finish.webp"
+      "assets/hip-bridge-with-hip-abduction-and-resistance-01.webp",
+      "assets/hip-bridge-with-hip-abduction-and-resistance-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-bridge-with-hip-abduction-and-resistance-01.webp"
   },
   {
     "id": "knee-forward-step-up-01",
@@ -1394,10 +1418,12 @@
       "Lower with control until the back foot taps down"
     ],
     "photos": [
-      "assets/057-forward-step-up-start.webp",
-      "assets/057-forward-step-up-finish.webp"
+      "assets/knee-forward-step-up-01.webp",
+      "assets/knee-forward-step-up-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-forward-step-up-01.webp"
   },
   {
     "id": "hip-prone-hip-extension-01",
@@ -1472,10 +1498,12 @@
       "Control the return step so the knees do not collapse inward"
     ],
     "photos": [
-      "assets/068-side-stepping-with-resistance-at-feet-start.webp",
-      "assets/068-side-stepping-with-resistance-at-feet-finish.webp"
+      "assets/hip-side-stepping-with-resistance-at-feet-01.webp",
+      "assets/hip-side-stepping-with-resistance-at-feet-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-side-stepping-with-resistance-at-feet-01.webp"
   },
   {
     "id": "hip-prone-hip-extension-on-table-01",
@@ -1495,10 +1523,12 @@
       "Lower slowly and avoid arching the low back to get higher"
     ],
     "photos": [
-      "assets/094-prone-hip-extension-on-table-start.webp",
-      "assets/094-prone-hip-extension-on-table-finish.webp"
+      "assets/hip-prone-hip-extension-on-table-01.webp",
+      "assets/hip-prone-hip-extension-on-table-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-prone-hip-extension-on-table-01.webp"
   },
   {
     "id": "hip-hip-abduction-with-resistance-loop-01",
@@ -1543,10 +1573,12 @@
       "Return with control and keep the stance knee soft"
     ],
     "photos": [
-      "assets/096-hip-extension-with-resistance-loop-start.webp",
-      "assets/096-hip-extension-with-resistance-loop-finish.webp"
+      "assets/hip-hip-extension-with-resistance-loop-01.webp",
+      "assets/hip-hip-extension-with-resistance-loop-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-hip-extension-with-resistance-loop-01.webp"
   },
   {
     "id": "knee-seated-inferior-patellar-glide-01",
@@ -1566,10 +1598,12 @@
       "Use a comfortable pressure and do not force the kneecap into the joint"
     ],
     "photos": [
-      "assets/098-seated-inferior-patellar-glide.webp",
-      "assets/098-seated-inferior-patellar-glide.webp"
+      "assets/knee-seated-inferior-patellar-glide-01.webp",
+      "assets/knee-seated-inferior-patellar-glide-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-seated-inferior-patellar-glide-01.webp"
   },
   {
     "id": "lumbar-hooklying-single-knee-to-chest-stretch-01",
@@ -1589,10 +1623,12 @@
       "Keep the head and shoulders relaxed and do not pull through pain"
     ],
     "photos": [
-      "assets/102-hooklying-single-knee-to-chest-stretch.webp",
-      "assets/102-hooklying-single-knee-to-chest-stretch.webp"
+      "assets/lumbar-hooklying-single-knee-to-chest-stretch-01.webp",
+      "assets/lumbar-hooklying-single-knee-to-chest-stretch-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-hooklying-single-knee-to-chest-stretch-01.webp"
   },
   {
     "id": "shoulder-standing-shoulder-horizontal-abduction-with-resistance-01",
