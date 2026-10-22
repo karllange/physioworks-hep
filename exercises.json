@@ -17,10 +17,12 @@
       "Keep the heel down and do not lift the hip to cheat the contraction"
     ],
     "photos": [
-      "assets/180-quad-set-with-towel-roll.webp",
-      "assets/180-quad-set-with-towel-roll.webp"
+      "assets/knee-101.webp",
+      "assets/knee-101.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-101.webp"
   },
   {
     "id": "knee-102",
@@ -40,10 +42,12 @@
       "Lower slowly and do not let the knee bend or the pelvis roll"
     ],
     "photos": [
-      "assets/181-straight-leg-raise-supine-start.webp",
-      "assets/181-straight-leg-raise-supine-finish.webp"
+      "assets/knee-102.webp",
+      "assets/knee-102.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-102.webp"
   },
   {
     "id": "knee-103",
@@ -86,10 +90,12 @@
       "Keep the knee over the second toe and do not lock the hip into a lean"
     ],
     "photos": [
-      "assets/183-terminal-knee-extension-band-start.webp",
-      "assets/183-terminal-knee-extension-band-finish.webp"
+      "assets/knee-104.webp",
+      "assets/knee-104.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-104.webp"
   },
   {
     "id": "knee-105",
@@ -109,13 +115,15 @@
       "Keep the heel in line with the hip and do not let the knee fall outward"
     ],
     "photos": [
-      "assets/184-heel-slide.webp",
-      "assets/184-heel-slide.webp"
+      "assets/knee-105.webp",
+      "assets/knee-105.webp"
     ],
     "video_url": "",
     "aliases": [
       "Hooklying Heel Slides"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/knee-105.webp"
   },
   {
     "id": "knee-106",
@@ -135,8 +143,8 @@
       "Lower through the last few degrees instead of dropping the foot"
     ],
     "photos": [
-      "assets/185-long-arc-quad-start.webp",
-      "assets/185-long-arc-quad-finish.webp"
+      "assets/knee-106.webp",
+      "assets/knee-106.webp"
     ],
     "video_url": "",
     "aliases": [
@@ -146,7 +154,9 @@
       "Full ROM Double Leg Extension On Machine",
       "TKA Leg Extension Progression",
       "Leg Extensions On Exxentric"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/knee-106.webp"
   },
   {
     "id": "hip-101",
@@ -356,13 +366,15 @@
       "Do not let the low back sag or the pelvis rotate toward the moving leg"
     ],
     "photos": [
-      "assets/034-bird-dog-start.webp",
-      "assets/034-bird-dog-finish.webp"
+      "assets/lumbar-203.webp",
+      "assets/lumbar-203.webp"
     ],
     "video_url": "",
     "aliases": [
       "Birddog Progression"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/lumbar-203.webp"
   },
   {
     "id": "lumbar-204",
@@ -410,10 +422,12 @@
       "Keep the motion small and do not lift the hips into a bridge"
     ],
     "photos": [
-      "assets/151-pelvic-tilt.webp",
-      "assets/151-pelvic-tilt.webp"
+      "assets/lumbar-205.webp",
+      "assets/lumbar-205.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-205.webp"
   },
   {
     "id": "thor-101",
@@ -456,10 +470,12 @@
       "Do not let the low back arch or the neck crank backward"
     ],
     "photos": [
-      "assets/153-foam-roller-thoracic-extension.webp",
-      "assets/153-foam-roller-thoracic-extension.webp"
+      "assets/thor-102.webp",
+      "assets/thor-102.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/thor-102.webp"
   },
   {
     "id": "thor-103",
@@ -479,10 +495,12 @@
       "Keep the hips square so the twist stays in the upper back"
     ],
     "photos": [
-      "assets/154-quadruped-thread-the-needle.webp",
-      "assets/154-quadruped-thread-the-needle.webp"
+      "assets/thor-103.webp",
+      "assets/thor-103.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/thor-103.webp"
   },
   {
     "id": "cerv-301",
@@ -502,10 +520,12 @@
       "Keep the chest up so the motion is at the neck, not a slump of the trunk"
     ],
     "photos": [
-      "assets/155-seated-chin-tuck-with-retraction.webp",
-      "assets/155-seated-chin-tuck-with-retraction.webp"
+      "assets/cerv-301.webp",
+      "assets/cerv-301.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-301.webp"
   },
   {
     "id": "cerv-302",
@@ -525,10 +545,12 @@
       "Use only a light hand assist and do not pull the head forward"
     ],
     "photos": [
-      "assets/156-upper-trapezius-stretch.webp",
-      "assets/156-upper-trapezius-stretch.webp"
+      "assets/cerv-302.webp",
+      "assets/cerv-302.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-302.webp"
   },
   {
     "id": "cerv-303",
@@ -548,10 +570,12 @@
       "The stretch should land at the angle of the neck and the top of the shoulder blade"
     ],
     "photos": [
-      "assets/157-levator-scapulae-stretch.webp",
-      "assets/157-levator-scapulae-stretch.webp"
+      "assets/cerv-303.webp",
+      "assets/cerv-303.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-303.webp"
   },
   {
     "id": "cerv-304",
@@ -601,13 +625,15 @@
       "Keep the shoulders down and the elbows softly bent"
     ],
     "photos": [
-      "assets/159-standing-band-horizontal-abduction-start.webp",
-      "assets/159-standing-band-horizontal-abduction-finish.webp"
+      "assets/shld-401.webp",
+      "assets/shld-401.webp"
     ],
     "video_url": "",
     "aliases": [
       "Prone Horizontal Abduction (T's)"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/shld-401.webp"
   },
   {
     "id": "shld-402",
