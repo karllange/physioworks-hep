@@ -250,8 +250,8 @@
       "Shift slightly forward until the stretch is in the front of the hip, not the low back"
     ],
     "photos": [
-      "assets/189-half-kneeling-hip-flexor-stretch.webp",
-      "assets/189-half-kneeling-hip-flexor-stretch.webp"
+      "assets/hip-104.webp",
+      "assets/hip-104.webp"
     ],
     "video_url": "",
     "aliases": [
@@ -259,7 +259,9 @@
       "Intro To Couch Stretch",
       "Couch Stretch Progression",
       "1/2 Kneeling Hip Flexor"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/hip-104.webp"
   },
   {
     "id": "hip-105",
@@ -380,13 +382,15 @@
       "Exhale as the limbs move and do not let the ribs flare"
     ],
     "photos": [
-      "assets/118-supine-dead-bug-with-leg-extension-start.webp",
-      "assets/118-supine-dead-bug-with-leg-extension-finish.webp"
+      "assets/lumbar-204.webp",
+      "assets/lumbar-204.webp"
     ],
     "video_url": "",
     "aliases": [
       "Deadbug Progression"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/lumbar-204.webp"
   },
   {
     "id": "lumbar-205",
@@ -1383,10 +1387,12 @@
       "Lower slowly and keep the low back quiet"
     ],
     "photos": [
-      "assets/059-prone-hip-extension-start.webp",
-      "assets/059-prone-hip-extension-finish.webp"
+      "assets/hip-prone-hip-extension-01.webp",
+      "assets/hip-prone-hip-extension-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-prone-hip-extension-01.webp"
   },
   {
     "id": "hip-side-stepping-with-resistance-at-ankles-01",
@@ -1480,10 +1486,12 @@
       "Return slowly and keep the pelvis level"
     ],
     "photos": [
-      "assets/095-hip-abduction-with-resistance-loop-start.webp",
-      "assets/095-hip-abduction-with-resistance-loop-finish.webp"
+      "assets/hip-hip-abduction-with-resistance-loop-01.webp",
+      "assets/hip-hip-abduction-with-resistance-loop-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-hip-abduction-with-resistance-loop-01.webp"
   },
   {
     "id": "hip-hip-extension-with-resistance-loop-01",
@@ -1694,10 +1702,12 @@
       "Lower with control and keep the low back quiet"
     ],
     "photos": [
-      "assets/054-clamshell-with-resistance-start.webp",
-      "assets/054-clamshell-with-resistance-finish.webp"
+      "assets/hip-clamshell-with-resistance-01.webp",
+      "assets/hip-clamshell-with-resistance-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-clamshell-with-resistance-01.webp"
   },
   {
     "id": "hip-sidelying-hip-adduction-01",
@@ -2161,10 +2171,12 @@
       "Keep the low back flat and feel the stretch in the front of the hanging hip"
     ],
     "photos": [
-      "assets/108-thomas-stretch-on-table.webp",
-      "assets/108-thomas-stretch-on-table.webp"
+      "assets/hip-thomas-stretch-on-table-01.webp",
+      "assets/hip-thomas-stretch-on-table-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-thomas-stretch-on-table-01.webp"
   },
   {
     "id": "core-modified-side-plank-hip-abduction-01",
@@ -2207,10 +2219,12 @@
       "Stay tall and do not let the front knee cave in"
     ],
     "photos": [
-      "assets/113-half-kneeling-diagonal-chops-with-medicine-ball-start.webp",
-      "assets/113-half-kneeling-diagonal-chops-with-medicine-ball-finish.webp"
+      "assets/core-half-kneeling-diagonal-chops-medicine-ball-01.webp",
+      "assets/core-half-kneeling-diagonal-chops-medicine-ball-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-half-kneeling-diagonal-chops-medicine-ball-01.webp"
   },
   {
     "id": "core-bird-dog-on-foam-roll-01",
@@ -2322,10 +2336,12 @@
       "Keep the pelvis level and lower with control"
     ],
     "photos": [
-      "assets/121-single-leg-bridge-with-leg-supported-start.webp",
-      "assets/121-single-leg-bridge-with-leg-supported-finish.webp"
+      "assets/hip-single-leg-bridge-leg-supported-01.webp",
+      "assets/hip-single-leg-bridge-leg-supported-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-single-leg-bridge-leg-supported-01.webp"
   },
   {
     "id": "lumbar-standing-sidebends-01",
