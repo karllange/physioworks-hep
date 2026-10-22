@@ -1934,10 +1934,12 @@
       "Keep the neck long and do not let the hips roll forward"
     ],
     "photos": [
-      "assets/020-side-plank-on-elbow-start.webp",
-      "assets/020-side-plank-on-elbow-finish.webp"
+      "assets/core-side-plank-on-elbow-01.webp",
+      "assets/core-side-plank-on-elbow-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-side-plank-on-elbow-01.webp"
   },
   {
     "id": "lumbar-standing-lumbar-extension-01",
@@ -2563,10 +2565,12 @@
       "Move slowly and keep the shoulders relaxed"
     ],
     "photos": [
-      "assets/147-seated-cervical-rotation-arom.webp",
-      "assets/147-seated-cervical-rotation-arom.webp"
+      "assets/cerv-seated-cervical-rotation-arom-01.webp",
+      "assets/cerv-seated-cervical-rotation-arom-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-seated-cervical-rotation-arom-01.webp"
   },
   {
     "id": "cerv-seated-cervical-extension-arom-01",
@@ -2586,10 +2590,12 @@
       "Do not force the head backward"
     ],
     "photos": [
-      "assets/148-seated-cervical-extension-arom.webp",
-      "assets/148-seated-cervical-extension-arom.webp"
+      "assets/cerv-seated-cervical-extension-arom-01.webp",
+      "assets/cerv-seated-cervical-extension-arom-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-seated-cervical-extension-arom-01.webp"
   },
   {
     "id": "cerv-seated-cervical-flexion-arom-01",
@@ -2609,10 +2615,12 @@
       "Keep the motion slow and pain free"
     ],
     "photos": [
-      "assets/149-seated-cervical-flexion-arom.webp",
-      "assets/149-seated-cervical-flexion-arom.webp"
+      "assets/cerv-seated-cervical-flexion-arom-01.webp",
+      "assets/cerv-seated-cervical-flexion-arom-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-seated-cervical-flexion-arom-01.webp"
   },
   {
     "id": "cerv-seated-cervical-sidebending-arom-01",
@@ -2632,10 +2640,12 @@
       "Keep the shoulders down and do not rotate the head"
     ],
     "photos": [
-      "assets/150-seated-cervical-sidebending-arom.webp",
-      "assets/150-seated-cervical-sidebending-arom.webp"
+      "assets/cerv-seated-cervical-sidebending-arom-01.webp",
+      "assets/cerv-seated-cervical-sidebending-arom-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-seated-cervical-sidebending-arom-01.webp"
   },
   {
     "id": "standing-pendulum",
@@ -2680,11 +2690,12 @@
       "Stop at the first stretch or the surgeon's limit."
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/supine-passive-external-rotation.webp",
+      "assets/supine-passive-external-rotation.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/supine-passive-external-rotation.webp"
   },
   {
     "id": "band-internal-rotation-at-0",
@@ -2702,11 +2713,12 @@
       "Elbow at 90 degrees at side, rotate inward across stomach."
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/band-internal-rotation-at-0.webp",
+      "assets/band-internal-rotation-at-0.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/band-internal-rotation-at-0.webp"
   },
   {
     "id": "standing-scaption-full-can",
@@ -2724,11 +2736,12 @@
       "Raise arms in scapular plane (30 deg forward of coronal plane), thumbs up, stop at 90 deg."
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/standing-scaption-full-can.webp",
+      "assets/standing-scaption-full-can.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/standing-scaption-full-can.webp"
   },
   {
     "id": "gentle-ankle-circles",
