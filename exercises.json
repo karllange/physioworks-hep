@@ -1698,10 +1698,12 @@
       "Keep the standing knee tracking over the toes and the trunk upright"
     ],
     "photos": [
-      "assets/105-lunge-matrix-on-slider-start.webp",
-      "assets/105-lunge-matrix-on-slider.webp"
+      "assets/knee-lunge-matrix-on-slider-01.webp",
+      "assets/knee-lunge-matrix-on-slider-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-lunge-matrix-on-slider-01.webp"
   },
   {
     "id": "knee-lateral-lunge-with-slider-01",
@@ -1750,13 +1752,15 @@
       "Press through the front heel to return to standing"
     ],
     "photos": [
-      "assets/107-lunge-on-slider-start.webp",
-      "assets/107-lunge-on-slider-finish.webp"
+      "assets/knee-lunge-on-slider-01.webp",
+      "assets/knee-lunge-on-slider-01.webp"
     ],
     "video_url": "",
     "aliases": [
       "Reverse Slider Lunge"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/knee-lunge-on-slider-01.webp"
   },
   {
     "id": "hip-clamshell-with-resistance-01",
@@ -1801,10 +1805,12 @@
       "Lower slowly and keep the toes pointing forward"
     ],
     "photos": [
-      "assets/066-sidelying-hip-adduction-start.webp",
-      "assets/066-sidelying-hip-adduction-finish.webp"
+      "assets/hip-sidelying-hip-adduction-01.webp",
+      "assets/hip-sidelying-hip-adduction-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-sidelying-hip-adduction-01.webp"
   },
   {
     "id": "knee-lunge-matrix-01",
@@ -1824,14 +1830,16 @@
       "Keep the front knee tracking over the toes and the trunk upright"
     ],
     "photos": [
-      "assets/067-lunge-matrix-start.webp",
-      "assets/067-lunge-matrix.webp"
+      "assets/knee-lunge-matrix-01.webp",
+      "assets/knee-lunge-matrix-01.webp"
     ],
     "video_url": "",
     "aliases": [
       "Lunge Progression",
       "Reverse Lunges"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/knee-lunge-matrix-01.webp"
   },
   {
     "id": "hip-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees-01",
@@ -1876,10 +1884,12 @@
       "Return to the middle and repeat to the other side"
     ],
     "photos": [
-      "assets/001-supine-lower-trunk-rotation.webp",
-      "assets/001-supine-lower-trunk-rotation.webp"
+      "assets/lumbar-supine-lower-trunk-rotation-01.webp",
+      "assets/lumbar-supine-lower-trunk-rotation-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-supine-lower-trunk-rotation-01.webp"
   },
   {
     "id": "lumbar-prone-press-up-on-elbows-01",
@@ -2173,10 +2183,12 @@
       "Move only as far as a gentle nerve glide, not a strong stretch"
     ],
     "photos": [
-      "assets/084-standing-egypt-nerve-glide.webp",
-      "assets/084-standing-egypt-nerve-glide.webp"
+      "assets/elbow-standing-egypt-nerve-glide-01.webp",
+      "assets/elbow-standing-egypt-nerve-glide-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/elbow-standing-egypt-nerve-glide-01.webp"
   },
   {
     "id": "core-standard-plank-01",
@@ -2196,10 +2208,12 @@
       "Do not let the hips pike up or the low back sag"
     ],
     "photos": [
-      "assets/090-standard-plank-start.webp",
-      "assets/090-standard-plank-finish.webp"
+      "assets/core-standard-plank-01.webp",
+      "assets/core-standard-plank-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-standard-plank-01.webp"
   },
   {
     "id": "lumbar-seated-lumbar-extension-01",
@@ -2219,10 +2233,12 @@
       "Return upright without forcing the motion"
     ],
     "photos": [
-      "assets/092-seated-lumbar-extension.webp",
-      "assets/092-seated-lumbar-extension.webp"
+      "assets/lumbar-seated-lumbar-extension-01.webp",
+      "assets/lumbar-seated-lumbar-extension-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-seated-lumbar-extension-01.webp"
   },
   {
     "id": "knee-supine-isometric-hamstring-set-01",
@@ -2242,10 +2258,12 @@
       "Hold the hamstring contraction, then relax"
     ],
     "photos": [
-      "assets/100-supine-isometric-hamstring-set.webp",
-      "assets/100-supine-isometric-hamstring-set.webp"
+      "assets/knee-supine-isometric-hamstring-set-01.webp",
+      "assets/knee-supine-isometric-hamstring-set-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-supine-isometric-hamstring-set-01.webp"
   },
   {
     "id": "hip-thomas-stretch-on-table-01",
@@ -2290,10 +2308,12 @@
       "Lower the leg with control and keep the hips lifted"
     ],
     "photos": [
-      "assets/112-modified-side-plank-with-hip-abduction-start.webp",
-      "assets/112-modified-side-plank-with-hip-abduction-finish.webp"
+      "assets/core-modified-side-plank-hip-abduction-01.webp",
+      "assets/core-modified-side-plank-hip-abduction-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-modified-side-plank-hip-abduction-01.webp"
   },
   {
     "id": "core-half-kneeling-diagonal-chops-medicine-ball-01",
@@ -2338,10 +2358,12 @@
       "Move slowly and do not let the low back sag"
     ],
     "photos": [
-      "assets/114-bird-dog-on-foam-roll-start.webp",
-      "assets/114-bird-dog-on-foam-roll-finish.webp"
+      "assets/core-bird-dog-on-foam-roll-01.webp",
+      "assets/core-bird-dog-on-foam-roll-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-bird-dog-on-foam-roll-01.webp"
   },
   {
     "id": "core-half-kneeling-diagonal-lift-01",
@@ -2361,10 +2383,12 @@
       "Keep the ribs stacked and the front knee over the foot"
     ],
     "photos": [
-      "assets/115-half-kneeling-diagonal-lift-with-resistance-opposite-forward-leg-start.webp",
-      "assets/115-half-kneeling-diagonal-lift-with-resistance-opposite-forward-leg-finish.webp"
+      "assets/core-half-kneeling-diagonal-lift-01.webp",
+      "assets/core-half-kneeling-diagonal-lift-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-half-kneeling-diagonal-lift-01.webp"
   },
   {
     "id": "core-swiss-ball-march-01",
@@ -2384,10 +2408,12 @@
       "Keep the ribs down and the motion slow"
     ],
     "photos": [
-      "assets/119-swiss-ball-march.webp",
-      "assets/119-swiss-ball-march.webp"
+      "assets/core-swiss-ball-march-01.webp",
+      "assets/core-swiss-ball-march-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-swiss-ball-march-01.webp"
   },
   {
     "id": "lumbar-full-superman-on-table-01",
@@ -2407,10 +2433,12 @@
       "Lower slowly and do not crank the neck back"
     ],
     "photos": [
-      "assets/120-full-superman-on-table-start.webp",
-      "assets/120-full-superman-on-table-finish.webp"
+      "assets/lumbar-full-superman-on-table-01.webp",
+      "assets/lumbar-full-superman-on-table-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-full-superman-on-table-01.webp"
   },
   {
     "id": "hip-single-leg-bridge-leg-supported-01",
@@ -2455,10 +2483,12 @@
       "Return to the middle and repeat to the other side"
     ],
     "photos": [
-      "assets/123-standing-sidebends.webp",
-      "assets/123-standing-sidebends.webp"
+      "assets/lumbar-standing-sidebends-01.webp",
+      "assets/lumbar-standing-sidebends-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-standing-sidebends-01.webp"
   },
   {
     "id": "knee-prone-knee-extension-hang-01",
@@ -2478,15 +2508,17 @@
       "Stay relaxed and do not force the knee down"
     ],
     "photos": [
-      "assets/143-prone-knee-extension-hang.webp",
-      "assets/143-prone-knee-extension-hang.webp"
+      "assets/knee-prone-knee-extension-hang-01.webp",
+      "assets/knee-prone-knee-extension-hang-01.webp"
     ],
     "video_url": "",
     "aliases": [
       "Extension Prop",
       "Foot On Ottoman",
       "Passive Extension"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/knee-prone-knee-extension-hang-01.webp"
   },
   {
     "id": "cerv-gentle-levator-scapulae-stretch-01",
@@ -2506,10 +2538,12 @@
       "Keep the stretch in the back of the neck, not the shoulder joint"
     ],
     "photos": [
-      "assets/146-gentle-levator-scapulae-stretch.webp",
-      "assets/146-gentle-levator-scapulae-stretch.webp"
+      "assets/cerv-gentle-levator-scapulae-stretch-01.webp",
+      "assets/cerv-gentle-levator-scapulae-stretch-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/cerv-gentle-levator-scapulae-stretch-01.webp"
   },
   {
     "id": "cerv-seated-cervical-rotation-arom-01",
