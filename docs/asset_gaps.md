@@ -79,17 +79,6 @@ Suggested Grok prompt:
 Clinical line illustration of Cross Train Rather Than Just Running for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Cross Train Rather Than Just Running as two separate frames.
 ```
 
-## progress-to-sled — Progress To Sled
-
-- Category: knee
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of Progress To Sled for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Progress To Sled as two separate frames.
-```
-
 ## more-aggressive-prom — More Aggressive PROM
 
 - Category: knee
@@ -121,50 +110,6 @@ Suggested Grok prompt:
 
 ```
 Clinical line illustration of 4 Exercises Performed In Succession for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of 4 Exercises Performed In Succession as two separate frames.
-```
-
-## drop-set-or-weighted-jump-3-reps — Drop Set Or Weighted Jump 3 Reps
-
-- Category: knee
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of Drop Set Or Weighted Jump 3 Reps for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Drop Set Or Weighted Jump 3 Reps as two separate frames.
-```
-
-## accelerated-jump-2-3 — Accelerated Jump 2-3
-
-- Category: knee
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of Accelerated Jump 2-3 for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of Accelerated Jump 2-3 as two separate frames.
-```
-
-## dl-extension — DL Extension
-
-- Category: shoulder
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of DL Extension for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of DL Extension as two separate frames.
-```
-
-## sl-extension — SL Extension
-
-- Category: shoulder
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of SL Extension for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of SL Extension as two separate frames.
 ```
 
 ## sl-holds — SL Holds

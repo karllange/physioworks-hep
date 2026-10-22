@@ -4510,11 +4510,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/progress-to-sled.webp",
+      "assets/progress-to-sled.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/progress-to-sled.webp"
   },
   {
     "id": "low-hurdle",
@@ -5181,11 +5182,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/drop-set-or-weighted-jump-3-reps.webp",
+      "assets/drop-set-or-weighted-jump-3-reps.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/drop-set-or-weighted-jump-3-reps.webp"
   },
   {
     "id": "accelerated-jump-2-3",
@@ -5205,11 +5207,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/accelerated-jump-2-3.webp",
+      "assets/accelerated-jump-2-3.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/accelerated-jump-2-3.webp"
   },
   {
     "id": "short-arc-quad-progression",
@@ -5289,7 +5292,7 @@
   {
     "id": "dl-extension",
     "name": "DL Extension",
-    "category": "shoulder",
+    "category": "knee",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -5304,16 +5307,17 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/dl-extension.webp",
+      "assets/dl-extension.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/dl-extension.webp"
   },
   {
     "id": "sl-extension",
     "name": "SL Extension",
-    "category": "shoulder",
+    "category": "knee",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -5328,11 +5332,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/sl-extension.webp",
+      "assets/sl-extension.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/sl-extension.webp"
   },
   {
     "id": "sl-holds",
