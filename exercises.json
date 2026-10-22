@@ -166,10 +166,12 @@
       "Stop before the low back twists; the motion stays in the hip"
     ],
     "photos": [
-      "assets/186-side-lying-clamshell-start.webp",
-      "assets/186-side-lying-clamshell-finish.webp"
+      "assets/hip-101.webp",
+      "assets/hip-101.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-101.webp"
   },
   {
     "id": "hip-102",
@@ -189,15 +191,17 @@
       "Keep the knees from splaying out or pinching together"
     ],
     "photos": [
-      "assets/187-supine-glute-bridge-start.webp",
-      "assets/187-supine-glute-bridge-finish.webp"
+      "assets/hip-102.webp",
+      "assets/hip-102.webp"
     ],
     "video_url": "",
     "aliases": [
       "Double Leg Hip Thruster Holds",
       "Hip Thruster Progression",
       "Hip Thrust Progression"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/hip-102.webp"
   },
   {
     "id": "hip-103",
@@ -217,14 +221,16 @@
       "Point the toes forward and do not hike the pelvis toward the ribs"
     ],
     "photos": [
-      "assets/188-side-lying-hip-abduction-start.webp",
-      "assets/188-side-lying-hip-abduction-finish.webp"
+      "assets/hip-103.webp",
+      "assets/hip-103.webp"
     ],
     "video_url": "",
     "aliases": [
       "Sidelying Hip Abduction",
       "Sidelying Abduction"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/hip-103.webp"
   },
   {
     "id": "hip-104",
@@ -273,10 +279,12 @@
       "Draw the uncrossed thigh in until the stretch is deep in the buttock"
     ],
     "photos": [
-      "assets/190-figure-4-piriformis-stretch.webp",
-      "assets/190-figure-4-piriformis-stretch.webp"
+      "assets/hip-105.webp",
+      "assets/hip-105.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-105.webp"
   },
   {
     "id": "lumbar-201",
@@ -296,10 +304,12 @@
       "Stop at the height that eases or centralizes symptoms, then lower with control"
     ],
     "photos": [
-      "assets/191-prone-press-up-mckenzie-extension.webp",
-      "assets/191-prone-press-up-mckenzie-extension.webp"
+      "assets/lumbar-201.webp",
+      "assets/lumbar-201.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-201.webp"
   },
   {
     "id": "lumbar-202",
@@ -319,10 +329,12 @@
       "Hug gently to open the low back without holding the breath"
     ],
     "photos": [
-      "assets/101-supine-double-knee-to-chest.webp",
-      "assets/101-supine-double-knee-to-chest.webp"
+      "assets/lumbar-202.webp",
+      "assets/lumbar-202.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-202.webp"
   },
   {
     "id": "lumbar-203",
