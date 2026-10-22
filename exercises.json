@@ -67,10 +67,12 @@
       "Glide the kneecap toward the hip without compressing it into the femur"
     ],
     "photos": [
-      "assets/182-seated-superior-patellar-glide.webp",
-      "assets/182-seated-superior-patellar-glide.webp"
+      "assets/knee-103.webp",
+      "assets/knee-103.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/knee-103.webp"
   },
   {
     "id": "knee-104",
@@ -447,10 +449,12 @@
       "Keep the knees together so the rotation stays in the mid-back"
     ],
     "photos": [
-      "assets/152-side-lying-open-book.webp",
-      "assets/152-side-lying-open-book.webp"
+      "assets/thor-101.webp",
+      "assets/thor-101.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/thor-101.webp"
   },
   {
     "id": "thor-102",
