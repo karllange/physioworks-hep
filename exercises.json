@@ -1412,15 +1412,17 @@
       "Do not let the trailing leg drag or the trunk lean"
     ],
     "photos": [
-      "assets/061-side-stepping-with-resistance-at-ankles-start.webp",
-      "assets/061-side-stepping-with-resistance-at-ankles-finish.webp"
+      "assets/hip-side-stepping-with-resistance-at-ankles-01.webp",
+      "assets/hip-side-stepping-with-resistance-at-ankles-01.webp"
     ],
     "video_url": "",
     "aliases": [
       "Lateral Band Walks/skaters",
       "LBW/Skaters",
       "Side Stepping"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/hip-side-stepping-with-resistance-at-ankles-01.webp"
   },
   {
     "id": "hip-side-stepping-with-resistance-at-feet-01",
