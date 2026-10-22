@@ -1648,10 +1648,12 @@
       "Return slowly and keep the shoulders down away from the ears"
     ],
     "photos": [
-      "assets/103-standing-shoulder-horizontal-abduction-with-resistance-start.webp",
-      "assets/103-standing-shoulder-horizontal-abduction-with-resistance-finish.webp"
+      "assets/shoulder-standing-shoulder-horizontal-abduction-with-resistance-01.webp",
+      "assets/shoulder-standing-shoulder-horizontal-abduction-with-resistance-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/shoulder-standing-shoulder-horizontal-abduction-with-resistance-01.webp"
   },
   {
     "id": "hip-bridge-with-heels-on-swiss-ball-01",
@@ -1671,10 +1673,12 @@
       "Keep the ball steady and lower the hips without dropping them"
     ],
     "photos": [
-      "assets/104-bridge-with-heels-on-swiss-ball-start.webp",
-      "assets/104-bridge-with-heels-on-swiss-ball-finish.webp"
+      "assets/hip-bridge-with-heels-on-swiss-ball-01.webp",
+      "assets/hip-bridge-with-heels-on-swiss-ball-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-bridge-with-heels-on-swiss-ball-01.webp"
   },
   {
     "id": "knee-lunge-matrix-on-slider-01",
@@ -1717,14 +1721,16 @@
       "Push through the standing heel to return, keeping the knee over the toes"
     ],
     "photos": [
-      "assets/106-lateral-lunge-with-slider-start.webp",
-      "assets/106-lateral-lunge-with-slider-finish.webp"
+      "assets/knee-lateral-lunge-with-slider-01.webp",
+      "assets/knee-lateral-lunge-with-slider-01.webp"
     ],
     "video_url": "",
     "aliases": [
       "Lateral Lunges With TRX",
       "Lateral Lunges"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/knee-lateral-lunge-with-slider-01.webp"
   },
   {
     "id": "knee-lunge-on-slider-01",
@@ -1845,10 +1851,12 @@
       "Hold the contraction, then relax without rounding the low back"
     ],
     "photos": [
-      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.webp",
-      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.webp"
+      "assets/hip-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees-01.webp",
+      "assets/hip-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees-01.webp"
   },
   {
     "id": "lumbar-supine-lower-trunk-rotation-01",
@@ -1891,10 +1899,12 @@
       "Hold the comfortable extension, then rest back down"
     ],
     "photos": [
-      "assets/017-prone-press-up-on-elbows.webp",
-      "assets/017-prone-press-up-on-elbows.webp"
+      "assets/lumbar-prone-press-up-on-elbows-01.webp",
+      "assets/lumbar-prone-press-up-on-elbows-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-prone-press-up-on-elbows-01.webp"
   },
   {
     "id": "core-side-plank-on-elbow-01",
@@ -1937,10 +1947,12 @@
       "Return upright without forcing the motion"
     ],
     "photos": [
-      "assets/021-standing-lumbar-extension.webp",
-      "assets/021-standing-lumbar-extension.webp"
+      "assets/lumbar-standing-lumbar-extension-01.webp",
+      "assets/lumbar-standing-lumbar-extension-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-standing-lumbar-extension-01.webp"
   },
   {
     "id": "lumbar-childs-pose-stretch-01",
@@ -1960,10 +1972,12 @@
       "Breathe and keep the stretch comfortable through the back"
     ],
     "photos": [
-      "assets/033-child-s-pose-stretch.webp",
-      "assets/033-child-s-pose-stretch.webp"
+      "assets/lumbar-childs-pose-stretch-01.webp",
+      "assets/lumbar-childs-pose-stretch-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/lumbar-childs-pose-stretch-01.webp"
   },
   {
     "id": "hip-supine-piriformis-stretch-foot-on-ground-01",
@@ -1983,10 +1997,12 @@
       "Draw the thigh in until a stretch is felt deep in the buttock"
     ],
     "photos": [
-      "assets/038-supine-piriformis-stretch-with-foot-on-ground.webp",
-      "assets/038-supine-piriformis-stretch-with-foot-on-ground.webp"
+      "assets/hip-supine-piriformis-stretch-foot-on-ground-01.webp",
+      "assets/hip-supine-piriformis-stretch-foot-on-ground-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-supine-piriformis-stretch-foot-on-ground-01.webp"
   },
   {
     "id": "core-mountain-climbers-slow-01",
@@ -2006,10 +2022,12 @@
       "Keep the hips level and do not bounce"
     ],
     "photos": [
-      "assets/039-mountain-climbers-slow-start.webp",
-      "assets/039-mountain-climbers-slow-finish.webp"
+      "assets/core-mountain-climbers-slow-01.webp",
+      "assets/core-mountain-climbers-slow-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-mountain-climbers-slow-01.webp"
   },
   {
     "id": "core-standing-diagonal-chops-medicine-ball-01",
@@ -2029,10 +2047,12 @@
       "Control the return and keep the trunk from collapsing"
     ],
     "photos": [
-      "assets/040-standing-diagonal-chops-with-medicine-ball-start.webp",
-      "assets/040-standing-diagonal-chops-with-medicine-ball-finish.webp"
+      "assets/core-standing-diagonal-chops-medicine-ball-01.webp",
+      "assets/core-standing-diagonal-chops-medicine-ball-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-standing-diagonal-chops-medicine-ball-01.webp"
   },
   {
     "id": "core-plank-on-knees-01",
@@ -2052,10 +2072,12 @@
       "Brace the stomach and do not let the low back sag"
     ],
     "photos": [
-      "assets/042-plank-on-knees-start.webp",
-      "assets/042-plank-on-knees-finish.webp"
+      "assets/core-plank-on-knees-01.webp",
+      "assets/core-plank-on-knees-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/core-plank-on-knees-01.webp"
   },
   {
     "id": "hip-bent-knee-fallouts-01",
@@ -2075,10 +2097,12 @@
       "Bring the knee back to the middle with control"
     ],
     "photos": [
-      "assets/055-bent-knee-fallouts-start.webp",
-      "assets/055-bent-knee-fallouts-finish.webp"
+      "assets/hip-bent-knee-fallouts-01.webp",
+      "assets/hip-bent-knee-fallouts-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_status": "active",
+    "image_url": "assets/hip-bent-knee-fallouts-01.webp"
   },
   {
     "id": "core-supine-transversus-abdominis-bracing-01",
@@ -2098,13 +2122,15 @@
       "Keep the ribs down and the low back quiet"
     ],
     "photos": [
-      "assets/062-supine-transversus-abdominis-bracing-hands-on-stomach.webp",
-      "assets/062-supine-transversus-abdominis-bracing-hands-on-stomach.webp"
+      "assets/core-supine-transversus-abdominis-bracing-01.webp",
+      "assets/core-supine-transversus-abdominis-bracing-01.webp"
     ],
     "video_url": "",
     "aliases": [
       "TA Setting"
-    ]
+    ],
+    "image_status": "active",
+    "image_url": "assets/core-supine-transversus-abdominis-bracing-01.webp"
   },
   {
     "id": "hip-sidelying-tfl-stretch-01",
