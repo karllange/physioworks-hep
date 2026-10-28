@@ -2162,10 +2162,12 @@
       "Keep the pelvis stacked and do not twist the low back"
     ],
     "photos": [
-      "assets/069-sidelying-tfl-stretch.webp",
-      "assets/069-sidelying-tfl-stretch.webp"
+      "assets/hip-sidelying-tfl-stretch-01.webp",
+      "assets/hip-sidelying-tfl-stretch-01.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "image_url": "assets/hip-sidelying-tfl-stretch-01.webp",
+    "image_status": "active"
   },
   {
     "id": "elbow-standing-egypt-nerve-glide-01",
