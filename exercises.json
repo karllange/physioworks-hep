@@ -4712,11 +4712,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/sl-machine.webp",
+      "assets/sl-machine.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/sl-machine.webp"
   },
   {
     "id": "circumduction-at-30-flexion",
