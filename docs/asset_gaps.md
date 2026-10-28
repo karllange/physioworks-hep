@@ -112,17 +112,6 @@ Suggested Grok prompt:
 Clinical line illustration of 4 Exercises Performed In Succession for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of 4 Exercises Performed In Succession as two separate frames.
 ```
 
-## sl-holds — SL Holds
-
-- Category: shoulder
-- Type: strength
-
-Suggested Grok prompt:
-
-```
-Clinical line illustration of SL Holds for a physical therapy home program. One adult figure, navy blue line art on a solid white #FFFFFF background, high contrast so it prints clearly in black and white. No text, no labels, no watermark, square 800 by 800 composition, simple anatomy, and a clear joint position. Show the start position and the finish or hold position of SL Holds as two separate frames.
-```
-
 ## 70-degrees-of-hip-flexion — 70 Degrees Of Hip Flexion
 
 - Category: hip

@@ -3838,12 +3838,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/bulgarian-split-squat.webp",
-      "assets/bulgarian-split-squat.webp"
+      "assets/bulgarian-split.webp",
+      "assets/bulgarian-split.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/bulgarian-split-squat.webp"
+    "image_url": "assets/bulgarian-split.webp"
   },
   {
     "id": "sled-pushes",
@@ -4688,11 +4688,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+      "assets/sl-holds.webp",
+      "assets/sl-holds.webp"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "active",
+    "image_url": "assets/sl-holds.webp"
   },
   {
     "id": "sl-machine",
