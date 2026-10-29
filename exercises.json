@@ -141,8 +141,8 @@
     "video_url": "",
     "aliases": [
       "Leg Extension",
-      "Double Leg Extension On Machine 90°-60°",
-      "Double Leg Extension Holds On Machine At 0°",
+      "Double Leg Extension On Machine 90\u00b0-60\u00b0",
+      "Double Leg Extension Holds On Machine At 0\u00b0",
       "Full ROM Double Leg Extension On Machine",
       "TKA Leg Extension Progression",
       "Leg Extensions On Exxentric"
@@ -555,17 +555,15 @@
       "Do not shrug, arch the low back, or pinch the blades hard"
     ],
     "photos": [
-      "assets/cerv-304.webp",
-      "assets/cerv-304.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
     "aliases": [
       "Prone Scapular Retraction",
       "Scapular Setting",
       "Scapular Depression"
-    ],
-    "image_status": "active",
-    "image_url": "assets/cerv-304.webp"
+    ]
   },
   {
     "id": "shld-401",
@@ -595,7 +593,7 @@
   },
   {
     "id": "shld-402",
-    "name": "Band External Rotation at 0° with Towel Roll",
+    "name": "Band External Rotation at 0\u00b0 with Towel Roll",
     "category": "shoulder",
     "type": "strength",
     "starter": true,
@@ -611,16 +609,14 @@
       "Do not let the elbow drift forward or the shoulder hike"
     ],
     "photos": [
-      "assets/shld-402.webp",
-      "assets/shld-402.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
     "aliases": [
       "Side-Lying External Rotation",
-      "Scapular Plane External Rotation < 20°"
-    ],
-    "image_status": "active",
-    "image_url": "assets/shld-402.webp"
+      "Scapular Plane External Rotation < 20\u00b0"
+    ]
   },
   {
     "id": "shld-403",
@@ -640,12 +636,10 @@
       "Stop at a stretch in the back of the shoulder; do not force a pinch in the front"
     ],
     "photos": [
-      "assets/shld-403.webp",
-      "assets/shld-403.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shld-403.webp"
+    "video_url": ""
   },
   {
     "id": "shld-404",
@@ -665,12 +659,10 @@
       "Keep the low back quiet and do not shrug as the arms rise"
     ],
     "photos": [
-      "assets/shld-404.webp",
-      "assets/shld-404.webp"
+      "assets/106-lateral-lunge-with-slider-start.jpg",
+      "assets/106-lateral-lunge-with-slider-finish.jpg"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shld-404.webp"
+    "video_url": ""
   },
   {
     "id": "shld-405",
@@ -690,16 +682,14 @@
       "Keep the ribs down and stop before the low back arches to gain height"
     ],
     "photos": [
-      "assets/shld-405.webp",
-      "assets/shld-405.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
     "aliases": [
       "Weighted Flexion In Supine",
       "PVC Pipe"
-    ],
-    "image_status": "active",
-    "image_url": "assets/shld-405.webp"
+    ]
   },
   {
     "id": "elbow-101",
@@ -719,12 +709,10 @@
       "Keep the shoulder relaxed so the stretch stays on the top of the forearm"
     ],
     "photos": [
-      "assets/elbow-101.webp",
-      "assets/elbow-101.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/elbow-101.webp"
+    "video_url": ""
   },
   {
     "id": "elbow-102",
@@ -744,12 +732,10 @@
       "Make the lowering phase the work and do not let the wrist drop"
     ],
     "photos": [
-      "assets/elbow-102.webp",
-      "assets/elbow-102.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/elbow-102.webp"
+    "video_url": ""
   },
   {
     "id": "elbow-103",
@@ -769,12 +755,10 @@
       "Keep the elbow still so the motion comes from the forearm, not the shoulder"
     ],
     "photos": [
-      "assets/elbow-103.webp",
-      "assets/elbow-103.webp"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/elbow-103.webp"
+    "video_url": ""
   },
   {
     "id": "hand-101",
@@ -794,12 +778,10 @@
       "Keep the wrist neutral and do not force a painful end range"
     ],
     "photos": [
-      "assets/hand-101.webp",
-      "assets/hand-101.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hand-101.webp"
+    "video_url": ""
   },
   {
     "id": "hand-102",
@@ -819,12 +801,10 @@
       "Keep the wrist neutral and do not hyperextend the thumb joints"
     ],
     "photos": [
-      "assets/hand-102.webp",
-      "assets/hand-102.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hand-102.webp"
+    "video_url": ""
   },
   {
     "id": "hand-103",
@@ -844,12 +824,10 @@
       "Keep the thumb opposed so the grip is a full fist, not a pinch"
     ],
     "photos": [
-      "assets/hand-103.webp",
-      "assets/hand-103.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hand-103.webp"
+    "video_url": ""
   },
   {
     "id": "ankle-101",
@@ -869,15 +847,13 @@
       "Do not let the arch collapse or the foot turn out"
     ],
     "photos": [
-      "assets/ankle-101.webp",
-      "assets/ankle-101.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
     "aliases": [
       "Gentle Gastroc"
-    ],
-    "image_status": "active",
-    "image_url": "assets/ankle-101.webp"
+    ]
   },
   {
     "id": "ankle-102",
@@ -897,12 +873,10 @@
       "Keep the knee tracking over the second toe"
     ],
     "photos": [
-      "assets/ankle-102.webp",
-      "assets/ankle-102.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ankle-102.webp"
+    "video_url": ""
   },
   {
     "id": "ankle-103",
@@ -922,12 +896,10 @@
       "Keep the knee still so the shin muscles, not the hip, do the work"
     ],
     "photos": [
-      "assets/ankle-103.webp",
-      "assets/ankle-103.webp"
+      "assets/061-side-stepping-with-resistance-at-ankles-start.jpg",
+      "assets/061-side-stepping-with-resistance-at-ankles-finish.jpg"
     ],
-    "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ankle-103.webp"
+    "video_url": ""
   },
   {
     "id": "ankle-104",
@@ -947,17 +919,15 @@
       "Lower slowly, and use one leg only when two-leg raises stay steady"
     ],
     "photos": [
-      "assets/ankle-104.webp",
-      "assets/ankle-104.webp"
+      "assets/010-supine-straight-leg-raises-start.jpg",
+      "assets/010-supine-straight-leg-raises-finish.jpg"
     ],
     "video_url": "",
     "aliases": [
       "Band Resisted Ankle PF",
       "Resisted Isotonic PF",
       "Deficit Calf"
-    ],
-    "image_status": "active",
-    "image_url": "assets/ankle-104.webp"
+    ]
   },
   {
     "id": "balance-101",
@@ -977,17 +947,15 @@
       "Look at a fixed point; light fingertip support is allowed at first"
     ],
     "photos": [
-      "assets/balance-101.webp",
-      "assets/balance-101.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
     "aliases": [
       "Stork Stance Holds",
       "Stork Stance Banded Reps",
       "Stork Stance"
-    ],
-    "image_status": "active",
-    "image_url": "assets/balance-101.webp"
+    ]
   },
   {
     "id": "balance-102",
@@ -1007,15 +975,13 @@
       "Keep the hips square and let the eyes move with the head"
     ],
     "photos": [
-      "assets/balance-102.webp",
-      "assets/balance-102.webp"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
     "aliases": [
       "Tandem Stance"
-    ],
-    "image_status": "active",
-    "image_url": "assets/balance-102.webp"
+    ]
   },
   {
     "id": "balance-103",
@@ -1035,15 +1001,13 @@
       "Keep the trunk upright so the correction stays at the hips and ankles"
     ],
     "photos": [
-      "assets/balance-103.webp",
-      "assets/balance-103.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
     "aliases": [
       "Weight Shifting"
-    ],
-    "image_status": "active",
-    "image_url": "assets/balance-103.webp"
+    ]
   },
   {
     "id": "core-101",
@@ -2532,7 +2496,7 @@
   },
   {
     "id": "band-internal-rotation-at-0",
-    "name": "Band Internal Rotation at 0°",
+    "name": "Band Internal Rotation at 0\u00b0",
     "category": "shoulder",
     "type": "strength",
     "starter": true,
@@ -2616,12 +2580,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/gentle-ankle-circles.webp",
-      "assets/gentle-ankle-circles.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/gentle-ankle-circles.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "ankle-pumps",
@@ -2666,12 +2629,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/short-foot.webp",
-      "assets/short-foot.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/short-foot.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "toe-spreading",
@@ -2691,12 +2653,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/toe-spreading.webp",
-      "assets/toe-spreading.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/toe-spreading.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "toe-curling",
@@ -2716,12 +2677,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/toe-curling.webp",
-      "assets/toe-curling.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/toe-curling.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "toe-lifts",
@@ -2741,12 +2701,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/toe-lifts.webp",
-      "assets/toe-lifts.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/toe-lifts.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "towel-scrunch",
@@ -2766,12 +2725,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/towel-scrunch.webp",
-      "assets/towel-scrunch.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/towel-scrunch.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hamstring-curls",
@@ -2791,12 +2749,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hamstring-curls.webp",
-      "assets/hamstring-curls.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hamstring-curls.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "exaggerated-ankle-circles",
@@ -2816,12 +2773,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/exaggerated-ankle-circles.webp",
-      "assets/exaggerated-ankle-circles.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/exaggerated-ankle-circles.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "great-toe-rom",
@@ -2841,12 +2797,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/great-toe-rom.webp",
-      "assets/great-toe-rom.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/great-toe-rom.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "seated-baps-board",
@@ -2866,12 +2821,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/seated-baps-board.webp",
-      "assets/seated-baps-board.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/seated-baps-board.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "foot-intrinsic-strengthening-exercises-short-foot",
@@ -2891,12 +2845,10 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/foot-intrinsic-strengthening-exercises-short-foot.webp",
-      "assets/foot-intrinsic-strengthening-exercises-short-foot.webp"
+      "assets/038-supine-piriformis-stretch-with-foot-on-ground.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/foot-intrinsic-strengthening-exercises-short-foot.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "double-leg-shuttle-press",
@@ -2916,12 +2868,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/double-leg-shuttle-press.webp",
-      "assets/double-leg-shuttle-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/double-leg-shuttle-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "initiate-wb-with-crutches-in-the-boot",
@@ -2941,12 +2892,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/initiate-wb-with-crutches-in-the-boot.webp",
-      "assets/initiate-wb-with-crutches-in-the-boot.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/initiate-wb-with-crutches-in-the-boot.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "out-of-boot",
@@ -2990,12 +2940,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/star-drill-on-wedge.webp",
-      "assets/star-drill-on-wedge.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/star-drill-on-wedge.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "tibial-rotation",
@@ -3015,12 +2964,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/tibial-rotation.webp",
-      "assets/tibial-rotation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/tibial-rotation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "double-leg-wall-sit-progression-on",
@@ -3040,12 +2988,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/double-leg-wall-sit-progression-on.webp",
-      "assets/double-leg-wall-sit-progression-on.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/double-leg-wall-sit-progression-on.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "inv-isometric",
@@ -3065,12 +3012,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/inv-isometric.webp",
-      "assets/inv-isometric.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/inv-isometric.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "split-squat-w-wedge",
@@ -3090,12 +3036,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/split-squat-w-wedge.webp",
-      "assets/split-squat-w-wedge.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/split-squat-w-wedge.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "standing-baps-board",
@@ -3115,12 +3060,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-baps-board.webp",
-      "assets/standing-baps-board.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-baps-board.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "tm-walking",
@@ -3140,12 +3084,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/tm-walking.webp",
-      "assets/tm-walking.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/tm-walking.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "retro-walking",
@@ -3165,12 +3108,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/retro-walking.webp",
-      "assets/retro-walking.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/retro-walking.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "closed-chained-dorsiflexion-ankle-circles",
@@ -3190,12 +3132,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/closed-chained-dorsiflexion-ankle-circles.webp",
-      "assets/closed-chained-dorsiflexion-ankle-circles.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/closed-chained-dorsiflexion-ankle-circles.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "lsd-progression",
@@ -3215,12 +3156,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lsd-progression.webp",
-      "assets/lsd-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lsd-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "fwd-step-down-progression",
@@ -3240,12 +3180,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/fwd-step-down-progression.webp",
-      "assets/fwd-step-down-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/fwd-step-down-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sl-squat-progression",
@@ -3290,12 +3229,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shuttle-press-variations.webp",
-      "assets/shuttle-press-variations.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shuttle-press-variations.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sled-pulls",
@@ -3315,12 +3253,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sled-pulls.webp",
-      "assets/sled-pulls.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sled-pulls.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "star-drill-on-unstable-surface",
@@ -3340,12 +3277,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/star-drill-on-unstable-surface.webp",
-      "assets/star-drill-on-unstable-surface.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/star-drill-on-unstable-surface.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sl-romanian-deadlift-reaches",
@@ -3365,12 +3301,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sl-romanian-deadlift-reaches.webp",
-      "assets/sl-romanian-deadlift-reaches.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sl-romanian-deadlift-reaches.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "tandem-walking",
@@ -3390,12 +3325,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/tandem-walking.webp",
-      "assets/tandem-walking.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/tandem-walking.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "db-rdls",
@@ -3415,12 +3349,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/db-rdls.webp",
-      "assets/db-rdls.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/db-rdls.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "add-weight",
@@ -3464,12 +3397,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/heel-walks-toe-walks.webp",
-      "assets/heel-walks-toe-walks.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/heel-walks-toe-walks.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "increase-distance",
@@ -3538,12 +3470,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lateral-squat-progression.webp",
-      "assets/lateral-squat-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lateral-squat-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "farmer-walks",
@@ -3563,12 +3494,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/farmer-walks.webp",
-      "assets/farmer-walks.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/farmer-walks.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "toe-raises",
@@ -3588,12 +3518,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/toe-raises.webp",
-      "assets/toe-raises.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/toe-raises.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "tib-bar",
@@ -3613,12 +3542,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/tib-bar.webp",
-      "assets/tib-bar.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/tib-bar.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "agility-ladder",
@@ -3638,12 +3566,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/agility-ladder.webp",
-      "assets/agility-ladder.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/agility-ladder.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "mini-hops",
@@ -3663,12 +3590,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/mini-hops.webp",
-      "assets/mini-hops.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/mini-hops.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "jogging-progression",
@@ -3688,12 +3614,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/jogging-progression.webp",
-      "assets/jogging-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/jogging-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "snap-down-progression",
@@ -3713,12 +3638,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/snap-down-progression.webp",
-      "assets/snap-down-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/snap-down-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "jump-progression",
@@ -3738,12 +3662,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/jump-progression.webp",
-      "assets/jump-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/jump-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "multiplanar-hops",
@@ -3763,12 +3686,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/multiplanar-hops.webp",
-      "assets/multiplanar-hops.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/multiplanar-hops.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "medicine-ball-drops",
@@ -3788,12 +3710,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/medicine-ball-drops.webp",
-      "assets/medicine-ball-drops.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/medicine-ball-drops.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "3-way-hurdle-hop",
@@ -3813,12 +3734,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/3-way-hurdle-hop.webp",
-      "assets/3-way-hurdle-hop.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/3-way-hurdle-hop.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hop-over-hurdle-in-sagittal-plane",
@@ -3838,12 +3758,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hop-over-hurdle-in-sagittal-plane.webp",
-      "assets/hop-over-hurdle-in-sagittal-plane.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hop-over-hurdle-in-sagittal-plane.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hop-over-hurdle",
@@ -3863,12 +3782,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hop-over-hurdle.webp",
-      "assets/hop-over-hurdle.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hop-over-hurdle.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "lateral-shuffles",
@@ -3888,12 +3806,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lateral-shuffles.webp",
-      "assets/lateral-shuffles.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lateral-shuffles.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "reactive-cutting",
@@ -3913,12 +3830,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/reactive-cutting.webp",
-      "assets/reactive-cutting.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/reactive-cutting.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "pro-agility",
@@ -3938,12 +3854,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/pro-agility.webp",
-      "assets/pro-agility.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/pro-agility.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "add-more-load-to-functional-movements",
@@ -3987,12 +3902,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/cutting-footwork-drill.webp",
-      "assets/cutting-footwork-drill.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/cutting-footwork-drill.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cone-cutting",
@@ -4012,12 +3926,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/cone-cutting.webp",
-      "assets/cone-cutting.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/cone-cutting.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "exxentric-squat",
@@ -4037,12 +3950,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/exxentric-squat.webp",
-      "assets/exxentric-squat.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/exxentric-squat.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "bulgarian-split",
@@ -4087,12 +3999,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sled-pushes.webp",
-      "assets/sled-pushes.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sled-pushes.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hurdle-hop-variations",
@@ -4112,12 +4023,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hurdle-hop-variations.webp",
-      "assets/hurdle-hop-variations.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hurdle-hop-variations.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "compound-exercise-at",
@@ -4161,12 +4071,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sprinting-drills.webp",
-      "assets/sprinting-drills.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sprinting-drills.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "weighted-baps-board",
@@ -4186,12 +4095,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/weighted-baps-board.webp",
-      "assets/weighted-baps-board.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-baps-board.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cross-train-rather-than-just-running",
@@ -4235,12 +4143,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/weighted-toe-walks.webp",
-      "assets/weighted-toe-walks.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-toe-walks.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "seated-knee-bend-off-table",
@@ -4260,12 +4167,10 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/seated-knee-bend-off-table.webp",
-      "assets/seated-knee-bend-off-table.webp"
+      "assets/015-seated-table-hamstring-stretch.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/seated-knee-bend-off-table.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "physioball-knee-flexion",
@@ -4285,12 +4190,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/physioball-knee-flexion.webp",
-      "assets/physioball-knee-flexion.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/physioball-knee-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "wall-slides",
@@ -4310,12 +4214,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/wall-slides.webp",
-      "assets/wall-slides.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/wall-slides.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "nu-step-and-bike",
@@ -4335,12 +4238,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/nu-step-and-bike.webp",
-      "assets/nu-step-and-bike.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/nu-step-and-bike.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "weight-shifting-with-ue-assistance",
@@ -4360,12 +4262,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/weight-shifting-with-ue-assistance.webp",
-      "assets/weight-shifting-with-ue-assistance.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weight-shifting-with-ue-assistance.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "gait-training-with-crutches",
@@ -4385,12 +4286,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/gait-training-with-crutches.webp",
-      "assets/gait-training-with-crutches.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/gait-training-with-crutches.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "low-hurdle-gait-training",
@@ -4410,12 +4310,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/low-hurdle-gait-training.webp",
-      "assets/low-hurdle-gait-training.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/low-hurdle-gait-training.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "kicking-into-physio-ball-isometric-holds",
@@ -4435,12 +4334,10 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/kicking-into-physio-ball-isometric-holds.webp",
-      "assets/kicking-into-physio-ball-isometric-holds.webp"
+      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/kicking-into-physio-ball-isometric-holds.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "leg-press-into-physioball",
@@ -4460,12 +4357,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/leg-press-into-physioball.webp",
-      "assets/leg-press-into-physioball.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/leg-press-into-physioball.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sl-balance-reaches",
@@ -4485,12 +4381,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sl-balance-reaches.webp",
-      "assets/sl-balance-reaches.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sl-balance-reaches.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "progress-to-sled",
@@ -4510,12 +4405,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/progress-to-sled.webp",
-      "assets/progress-to-sled.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/progress-to-sled.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "low-hurdle",
@@ -4535,12 +4429,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/low-hurdle.webp",
-      "assets/low-hurdle.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/low-hurdle.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "high-hurdle",
@@ -4560,12 +4453,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/high-hurdle.webp",
-      "assets/high-hurdle.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/high-hurdle.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "more-aggressive-prom",
@@ -4609,12 +4501,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/prone-quad-stretch.webp",
-      "assets/prone-quad-stretch.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/prone-quad-stretch.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "quadruped-hip-extension-over-bench-holds",
@@ -4634,12 +4525,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/quadruped-hip-extension-over-bench-holds.webp",
-      "assets/quadruped-hip-extension-over-bench-holds.webp"
+      "assets/059-prone-hip-extension-start.jpg",
+      "assets/059-prone-hip-extension-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/quadruped-hip-extension-over-bench-holds.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "wall-sit-progression",
@@ -4659,12 +4549,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/wall-sit-progression.webp",
-      "assets/wall-sit-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/wall-sit-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sidelying-shuttle-press",
@@ -4684,12 +4573,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sidelying-shuttle-press.webp",
-      "assets/sidelying-shuttle-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sidelying-shuttle-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hip-hike-holds",
@@ -4709,12 +4597,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hip-hike-holds.webp",
-      "assets/hip-hike-holds.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hip-hike-holds.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hip-hike-reps",
@@ -4734,12 +4621,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hip-hike-reps.webp",
-      "assets/hip-hike-reps.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hip-hike-reps.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sl-shuttle-press",
@@ -4759,12 +4645,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sl-shuttle-press.webp",
-      "assets/sl-shuttle-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sl-shuttle-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "dip-bar-assisted-slantboard-squat",
@@ -4784,12 +4669,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/dip-bar-assisted-slantboard-squat.webp",
-      "assets/dip-bar-assisted-slantboard-squat.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/dip-bar-assisted-slantboard-squat.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "ankle-weight",
@@ -4858,12 +4742,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/kickstand-squat-on-wall.webp",
-      "assets/kickstand-squat-on-wall.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/kickstand-squat-on-wall.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "split-squat-isometric-holds",
@@ -4883,12 +4766,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/split-squat-isometric-holds.webp",
-      "assets/split-squat-isometric-holds.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/split-squat-isometric-holds.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "slantboard-step-downs",
@@ -4908,12 +4790,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/slantboard-step-downs.webp",
-      "assets/slantboard-step-downs.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/slantboard-step-downs.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "nordic-progression",
@@ -4933,12 +4814,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/nordic-progression.webp",
-      "assets/nordic-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/nordic-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "loaded-lsd",
@@ -4958,12 +4838,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/loaded-lsd.webp",
-      "assets/loaded-lsd.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/loaded-lsd.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "forward-step-downs",
@@ -4983,12 +4862,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/forward-step-downs.webp",
-      "assets/forward-step-downs.webp"
+      "assets/057-forward-step-up-start.jpg",
+      "assets/057-forward-step-up-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/forward-step-downs.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "anti-rotation-and-balance-training",
@@ -5008,12 +4886,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/anti-rotation-and-balance-training.webp",
-      "assets/anti-rotation-and-balance-training.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/anti-rotation-and-balance-training.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "weighted-hops",
@@ -5033,12 +4910,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/weighted-hops.webp",
-      "assets/weighted-hops.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-hops.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "kb-swings",
@@ -5058,12 +4934,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/kb-swings.webp",
-      "assets/kb-swings.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/kb-swings.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "heavy-sl-machine-extension",
@@ -5083,12 +4958,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/heavy-sl-machine-extension.webp",
-      "assets/heavy-sl-machine-extension.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/heavy-sl-machine-extension.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "rotational-deadlifts",
@@ -5108,12 +4982,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/rotational-deadlifts.webp",
-      "assets/rotational-deadlifts.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/rotational-deadlifts.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "4-exercises-performed-in-succession",
@@ -5157,12 +5030,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/plyometric-jump-3-reps.webp",
-      "assets/plyometric-jump-3-reps.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/plyometric-jump-3-reps.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "drop-set-or-weighted-jump-3-reps",
@@ -5182,12 +5054,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/drop-set-or-weighted-jump-3-reps.webp",
-      "assets/drop-set-or-weighted-jump-3-reps.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/drop-set-or-weighted-jump-3-reps.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "accelerated-jump-2-3",
@@ -5207,12 +5078,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/accelerated-jump-2-3.webp",
-      "assets/accelerated-jump-2-3.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/accelerated-jump-2-3.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "short-arc-quad-progression",
@@ -5232,12 +5102,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/short-arc-quad-progression.webp",
-      "assets/short-arc-quad-progression.webp"
+      "assets/025-seated-long-arc-quad-start.jpg",
+      "assets/025-seated-long-arc-quad-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/short-arc-quad-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "knee-circles",
@@ -5257,12 +5126,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/knee-circles.webp",
-      "assets/knee-circles.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/knee-circles.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "dl-machine-extension-holds-at-0-degrees",
@@ -5282,17 +5150,16 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/dl-machine-extension-holds-at-0-degrees.webp",
-      "assets/dl-machine-extension-holds-at-0-degrees.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/dl-machine-extension-holds-at-0-degrees.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "dl-extension",
     "name": "DL Extension",
-    "category": "knee",
+    "category": "shoulder",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -5307,17 +5174,16 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/dl-extension.webp",
-      "assets/dl-extension.webp"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/dl-extension.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sl-extension",
     "name": "SL Extension",
-    "category": "knee",
+    "category": "shoulder",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -5332,12 +5198,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sl-extension.webp",
-      "assets/sl-extension.webp"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sl-extension.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sl-holds",
@@ -5405,12 +5270,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/circumduction-at-30-flexion.webp",
-      "assets/circumduction-at-30-flexion.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/circumduction-at-30-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "70-degrees-of-hip-flexion",
@@ -5454,12 +5318,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/supine-internal-rotation.webp",
-      "assets/supine-internal-rotation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/supine-internal-rotation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "contract-relax-for-internal-rotation-external-rotation",
@@ -5503,12 +5366,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/prone-lying.webp",
-      "assets/prone-lying.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/prone-lying.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "ball-assisted-hip-flexion",
@@ -5528,12 +5390,10 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/ball-assisted-hip-flexion.webp",
-      "assets/ball-assisted-hip-flexion.webp"
+      "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ball-assisted-hip-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "rotations-on-stool",
@@ -5553,12 +5413,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/rotations-on-stool.webp",
-      "assets/rotations-on-stool.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/rotations-on-stool.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "bike-no-recumbent-bike",
@@ -5578,12 +5437,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/bike-no-recumbent-bike.webp",
-      "assets/bike-no-recumbent-bike.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/bike-no-recumbent-bike.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hooklying-abd-add-holds",
@@ -5603,12 +5461,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hooklying-abd-add-holds.webp",
-      "assets/hooklying-abd-add-holds.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hooklying-abd-add-holds.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "1-2-kneeling-hip",
@@ -5628,12 +5485,10 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/1-2-kneeling-hip.webp",
-      "assets/1-2-kneeling-hip.webp"
+      "assets/093-half-kneeling-hip-flexor-stretch.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/1-2-kneeling-hip.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "quadruped-rock-backs",
@@ -5653,12 +5508,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/quadruped-rock-backs.webp",
-      "assets/quadruped-rock-backs.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/quadruped-rock-backs.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "standing-hip-rotations-on-stool",
@@ -5678,12 +5532,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-hip-rotations-on-stool.webp",
-      "assets/standing-hip-rotations-on-stool.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-hip-rotations-on-stool.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "pallof-press",
@@ -5728,12 +5581,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-knee-flexion.webp",
-      "assets/standing-knee-flexion.webp"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-knee-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cable-column-rotation",
@@ -5753,12 +5605,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/cable-column-rotation.webp",
-      "assets/cable-column-rotation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/cable-column-rotation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "gentle-hip-circles",
@@ -5778,12 +5629,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/gentle-hip-circles.webp",
-      "assets/gentle-hip-circles.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/gentle-hip-circles.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "aarom-with-physioball",
@@ -5803,12 +5653,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/aarom-with-physioball.webp",
-      "assets/aarom-with-physioball.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/aarom-with-physioball.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "active-knee",
@@ -5852,12 +5701,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-hip-extension.webp",
-      "assets/standing-hip-extension.webp"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-hip-extension.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "prone-resisted-internal-rotation-external-rotation",
@@ -5877,12 +5725,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/prone-resisted-internal-rotation-external-rotation.webp",
-      "assets/prone-resisted-internal-rotation-external-rotation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/prone-resisted-internal-rotation-external-rotation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "seated-internal-rotation-external-rotation",
@@ -5902,12 +5749,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/seated-internal-rotation-external-rotation.webp",
-      "assets/seated-internal-rotation-external-rotation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/seated-internal-rotation-external-rotation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cable-resisted-4-way-hip-strengthening",
@@ -5927,12 +5773,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/cable-resisted-4-way-hip-strengthening.webp",
-      "assets/cable-resisted-4-way-hip-strengthening.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/cable-resisted-4-way-hip-strengthening.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "seated-hip-flexion",
@@ -5952,12 +5797,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/seated-hip-flexion.webp",
-      "assets/seated-hip-flexion.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/seated-hip-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "standing-hip-flexion",
@@ -5977,12 +5821,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-hip-flexion.webp",
-      "assets/standing-hip-flexion.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-hip-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "3-way-balance-reaches",
@@ -6002,12 +5845,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/3-way-balance-reaches.webp",
-      "assets/3-way-balance-reaches.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/3-way-balance-reaches.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "quadruped-hip-extension-on-bench",
@@ -6027,12 +5869,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/quadruped-hip-extension-on-bench.webp",
-      "assets/quadruped-hip-extension-on-bench.webp"
+      "assets/059-prone-hip-extension-start.jpg",
+      "assets/059-prone-hip-extension-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/quadruped-hip-extension-on-bench.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "band-resisted-seated-internal-rotation-external-rotation",
@@ -6052,12 +5893,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/band-resisted-seated-internal-rotation-external-rotation.webp",
-      "assets/band-resisted-seated-internal-rotation-external-rotation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/band-resisted-seated-internal-rotation-external-rotation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "rolling-patterns",
@@ -6077,12 +5917,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/rolling-patterns.webp",
-      "assets/rolling-patterns.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/rolling-patterns.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "leg-curls",
@@ -6102,12 +5941,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/leg-curls.webp",
-      "assets/leg-curls.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/leg-curls.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hyperextension-holds",
@@ -6127,12 +5965,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hyperextension-holds.webp",
-      "assets/hyperextension-holds.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hyperextension-holds.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hyperextension-reps",
@@ -6152,12 +5989,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hyperextension-reps.webp",
-      "assets/hyperextension-reps.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hyperextension-reps.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "4-corner-balance-reach",
@@ -6177,12 +6013,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/4-corner-balance-reach.webp",
-      "assets/4-corner-balance-reach.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/4-corner-balance-reach.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "kb-pass-through",
@@ -6202,12 +6037,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/kb-pass-through.webp",
-      "assets/kb-pass-through.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/kb-pass-through.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "1-2-kneeling-halos",
@@ -6227,12 +6061,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/1-2-kneeling-halos.webp",
-      "assets/1-2-kneeling-halos.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/1-2-kneeling-halos.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "focus-on-problem-areas",
@@ -6276,16 +6109,15 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hip-90-90.webp",
-      "assets/hip-90-90.webp"
+      "assets/059-prone-hip-extension-start.jpg",
+      "assets/095-hip-abduction-with-resistance-loop-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hip-90-90.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "runner-s-stretch",
-    "name": "Runner’s Stretch",
+    "name": "Runner\u2019s Stretch",
     "category": "hip",
     "type": "stretch",
     "starter": false,
@@ -6296,17 +6128,16 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for Runner’s Stretch in a comfortable position",
+      "Set up for Runner\u2019s Stretch in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/runner-s-stretch.webp",
-      "assets/runner-s-stretch.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/runner-s-stretch.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sumo-squat",
@@ -6326,16 +6157,15 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sumo-squat.webp",
-      "assets/sumo-squat.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sumo-squat.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "world-s-greatest-stretch",
-    "name": "World’s Greatest Stretch",
+    "name": "World\u2019s Greatest Stretch",
     "category": "hip",
     "type": "stretch",
     "starter": false,
@@ -6346,17 +6176,16 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for World’s Greatest Stretch in a comfortable position",
+      "Set up for World\u2019s Greatest Stretch in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/world-s-greatest-stretch.webp",
-      "assets/world-s-greatest-stretch.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/world-s-greatest-stretch.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "wall-hip-flexion",
@@ -6376,12 +6205,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/wall-hip-flexion.webp",
-      "assets/wall-hip-flexion.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/wall-hip-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "copenhagen-progression",
@@ -6401,12 +6229,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/copenhagen-progression.webp",
-      "assets/copenhagen-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/copenhagen-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "leg-press-machine",
@@ -6426,12 +6253,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/leg-press-machine.webp",
-      "assets/leg-press-machine.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/leg-press-machine.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "mini-jumps",
@@ -6451,12 +6277,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/mini-jumps.webp",
-      "assets/mini-jumps.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/mini-jumps.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "ladder-decels",
@@ -6476,12 +6301,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/ladder-decels.webp",
-      "assets/ladder-decels.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ladder-decels.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hamstring-and-slantboard",
@@ -6501,12 +6325,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hamstring-and-slantboard.webp",
-      "assets/hamstring-and-slantboard.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hamstring-and-slantboard.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hurdle-progression",
@@ -6526,12 +6349,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hurdle-progression.webp",
-      "assets/hurdle-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hurdle-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "gait-progression",
@@ -6551,12 +6373,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/gait-progression.webp",
-      "assets/gait-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/gait-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cable-decels",
@@ -6576,12 +6397,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/cable-decels.webp",
-      "assets/cable-decels.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/cable-decels.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "split-squat-progression",
@@ -6601,12 +6421,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/split-squat-progression.webp",
-      "assets/split-squat-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/split-squat-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "dip-bar-assisted-slant-board-squat",
@@ -6626,12 +6445,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/dip-bar-assisted-slant-board-squat.webp",
-      "assets/dip-bar-assisted-slant-board-squat.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/dip-bar-assisted-slant-board-squat.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "flexion-on-step",
@@ -6651,12 +6469,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/flexion-on-step.webp",
-      "assets/flexion-on-step.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/flexion-on-step.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "double-leg",
@@ -6684,7 +6501,7 @@
   },
   {
     "id": "scapular-plane-shoulder-elevation-90",
-    "name": "Scapular Plane Shoulder Elevation < 90°",
+    "name": "Scapular Plane Shoulder Elevation < 90\u00b0",
     "category": "shoulder",
     "type": "strength",
     "starter": false,
@@ -6695,17 +6512,16 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for Scapular Plane Shoulder Elevation < 90° in a comfortable position",
+      "Set up for Scapular Plane Shoulder Elevation < 90\u00b0 in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/scapular-plane-shoulder-elevation-90.webp",
-      "assets/scapular-plane-shoulder-elevation-90.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/scapular-plane-shoulder-elevation-90.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "arm-hangs-outside-of-the-sling",
@@ -6725,12 +6541,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/arm-hangs-outside-of-the-sling.webp",
-      "assets/arm-hangs-outside-of-the-sling.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/arm-hangs-outside-of-the-sling.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "prom-arom-of-the-elbow",
@@ -6750,12 +6565,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/prom-arom-of-the-elbow.webp",
-      "assets/prom-arom-of-the-elbow.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/prom-arom-of-the-elbow.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cervical-prom-stretching",
@@ -6799,12 +6613,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/ball-squeezes.webp",
-      "assets/ball-squeezes.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ball-squeezes.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "shoulder-doorway-isometrics-25-50",
@@ -6824,12 +6637,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shoulder-doorway-isometrics-25-50.webp",
-      "assets/shoulder-doorway-isometrics-25-50.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-doorway-isometrics-25-50.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cross-symmetry-walk-outs",
@@ -6849,12 +6661,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/cross-symmetry-walk-outs.webp",
-      "assets/cross-symmetry-walk-outs.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/cross-symmetry-walk-outs.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "flexion-progression",
@@ -6874,12 +6685,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/flexion-progression.webp",
-      "assets/flexion-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/flexion-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "scapular-rowing-off-of-table",
@@ -6899,12 +6709,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/scapular-rowing-off-of-table.webp",
-      "assets/scapular-rowing-off-of-table.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/scapular-rowing-off-of-table.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "external-rotation-progression",
@@ -6924,12 +6733,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/external-rotation-progression.webp",
-      "assets/external-rotation-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/external-rotation-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "rotator-cuff-series",
@@ -6949,12 +6757,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/rotator-cuff-series.webp",
-      "assets/rotator-cuff-series.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/rotator-cuff-series.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "pnf-pattern-progression",
@@ -6974,12 +6781,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/pnf-pattern-progression.webp",
-      "assets/pnf-pattern-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/pnf-pattern-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "i-y-ts-w-slider-on-the-wall",
@@ -6999,12 +6805,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/i-y-ts-w-slider-on-the-wall.webp",
-      "assets/i-y-ts-w-slider-on-the-wall.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/i-y-ts-w-slider-on-the-wall.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "ube-light-resistance-with-b-ue",
@@ -7024,12 +6829,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/ube-light-resistance-with-b-ue.webp",
-      "assets/ube-light-resistance-with-b-ue.webp"
+      "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
+      "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ube-light-resistance-with-b-ue.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "light-isotonics",
@@ -7073,12 +6877,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-unweighted-flex.webp",
-      "assets/standing-unweighted-flex.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-unweighted-flex.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "band-resisted-ext",
@@ -7098,12 +6901,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/band-resisted-ext.webp",
-      "assets/band-resisted-ext.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/band-resisted-ext.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "band-resisted-seated-row",
@@ -7123,12 +6925,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/band-resisted-seated-row.webp",
-      "assets/band-resisted-seated-row.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/band-resisted-seated-row.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "prone-row",
@@ -7148,12 +6949,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/prone-row.webp",
-      "assets/prone-row.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/prone-row.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "band-resisted-biceps-curls-and-triceps",
@@ -7173,12 +6973,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/band-resisted-biceps-curls-and-triceps.webp",
-      "assets/band-resisted-biceps-curls-and-triceps.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/band-resisted-biceps-curls-and-triceps.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "ckc-progression",
@@ -7198,12 +6997,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/ckc-progression.webp",
-      "assets/ckc-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ckc-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "push-up-plus-progression",
@@ -7223,12 +7021,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/push-up-plus-progression.webp",
-      "assets/push-up-plus-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/push-up-plus-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "aggressive-prom-stretching-to-achieve",
@@ -7272,12 +7069,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/trx-rows.webp",
-      "assets/trx-rows.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/trx-rows.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "behind-the-back-stretch-rope",
@@ -7297,12 +7093,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/behind-the-back-stretch-rope.webp",
-      "assets/behind-the-back-stretch-rope.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/behind-the-back-stretch-rope.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "biceps-curls-and-triceps-extensions",
@@ -7322,12 +7117,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/biceps-curls-and-triceps-extensions.webp",
-      "assets/biceps-curls-and-triceps-extensions.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/biceps-curls-and-triceps-extensions.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "shoulder-taps",
@@ -7347,12 +7141,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shoulder-taps.webp",
-      "assets/shoulder-taps.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-taps.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "wall-end-range-isometrics",
@@ -7372,12 +7165,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/wall-end-range-isometrics.webp",
-      "assets/wall-end-range-isometrics.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/wall-end-range-isometrics.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "functional-external-rotation-internal-rotation-breakout-progression",
@@ -7397,12 +7189,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/functional-external-rotation-internal-rotation-breakout-progression.webp",
-      "assets/functional-external-rotation-internal-rotation-breakout-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/functional-external-rotation-internal-rotation-breakout-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "intro-to-functional-movements",
@@ -7470,12 +7261,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shoulder-circle-progression.webp",
-      "assets/shoulder-circle-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-circle-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "shoulder-press",
@@ -7495,12 +7285,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shoulder-press.webp",
-      "assets/shoulder-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "bent-over-rows",
@@ -7520,12 +7309,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/bent-over-rows.webp",
-      "assets/bent-over-rows.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/bent-over-rows.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "lat-pull-down",
@@ -7545,12 +7333,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lat-pull-down.webp",
-      "assets/lat-pull-down.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lat-pull-down.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "exxentric-machine",
@@ -7570,12 +7357,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/exxentric-machine.webp",
-      "assets/exxentric-machine.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/exxentric-machine.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "d2-pattern",
@@ -7595,12 +7381,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/d2-pattern.webp",
-      "assets/d2-pattern.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/d2-pattern.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "lat-pulldown",
@@ -7620,12 +7405,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lat-pulldown.webp",
-      "assets/lat-pulldown.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lat-pulldown.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "trx-ys",
@@ -7645,12 +7429,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/trx-ys.webp",
-      "assets/trx-ys.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/trx-ys.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "flexion-abduction-scapation",
@@ -7670,12 +7453,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/flexion-abduction-scapation.webp",
-      "assets/flexion-abduction-scapation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/flexion-abduction-scapation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "chest-press",
@@ -7695,12 +7477,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/chest-press.webp",
-      "assets/chest-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/chest-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "bench-progression",
@@ -7720,12 +7501,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/bench-progression.webp",
-      "assets/bench-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/bench-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "over-the-shoulder-weighted-ball-catch",
@@ -7745,12 +7525,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/over-the-shoulder-weighted-ball-catch.webp",
-      "assets/over-the-shoulder-weighted-ball-catch.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/over-the-shoulder-weighted-ball-catch.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "suitcase-carry",
@@ -7770,12 +7549,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/suitcase-carry.webp",
-      "assets/suitcase-carry.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/suitcase-carry.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "weighted-ball-taps-on-the-wall",
@@ -7795,12 +7573,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/weighted-ball-taps-on-the-wall.webp",
-      "assets/weighted-ball-taps-on-the-wall.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/weighted-ball-taps-on-the-wall.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "plyo-variations",
@@ -7844,12 +7621,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/push-press.webp",
-      "assets/push-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/push-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "barbell-inverted-row",
@@ -7869,12 +7645,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/barbell-inverted-row.webp",
-      "assets/barbell-inverted-row.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/barbell-inverted-row.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "shoulder-isometrics-in-neutral",
@@ -7894,12 +7669,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shoulder-isometrics-in-neutral.webp",
-      "assets/shoulder-isometrics-in-neutral.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-isometrics-in-neutral.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "rhythmic-stabilization-drills",
@@ -7919,12 +7693,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/rhythmic-stabilization-drills.webp",
-      "assets/rhythmic-stabilization-drills.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/rhythmic-stabilization-drills.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "scapular-plane-internal-rotation",
@@ -7944,12 +7717,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/scapular-plane-internal-rotation.webp",
-      "assets/scapular-plane-internal-rotation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/scapular-plane-internal-rotation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "abduction-beginning-at-2-weeks",
@@ -7993,12 +7765,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/arom-of-wrist-and-hand.webp",
-      "assets/arom-of-wrist-and-hand.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/arom-of-wrist-and-hand.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "end-range-y-t-i-w",
@@ -8018,12 +7789,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/end-range-y-t-i-w.webp",
-      "assets/end-range-y-t-i-w.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/end-range-y-t-i-w.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "push-ups",
@@ -8043,12 +7813,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/push-ups.webp",
-      "assets/push-ups.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/push-ups.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "gait-training-with-rw",
@@ -8068,12 +7837,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/gait-training-with-rw.webp",
-      "assets/gait-training-with-rw.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/gait-training-with-rw.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "feet-together",
@@ -8117,12 +7885,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/marching-on-foam.webp",
-      "assets/marching-on-foam.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/marching-on-foam.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "gait-training-w-ad",
@@ -8142,12 +7909,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/gait-training-w-ad.webp",
-      "assets/gait-training-w-ad.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/gait-training-w-ad.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "tissue-work-to",
@@ -8191,12 +7957,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/farmer-carries.webp",
-      "assets/farmer-carries.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/farmer-carries.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "standing-hamstring-activation",
@@ -8216,12 +7981,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-hamstring-activation.webp",
-      "assets/standing-hamstring-activation.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-hamstring-activation.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "3-way-balance-reach",
@@ -8241,12 +8005,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/3-way-balance-reach.webp",
-      "assets/3-way-balance-reach.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/3-way-balance-reach.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "toe-heel-walking",
@@ -8266,12 +8029,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/toe-heel-walking.webp",
-      "assets/toe-heel-walking.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/toe-heel-walking.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "incline-treadmill-walking",
@@ -8291,12 +8053,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/incline-treadmill-walking.webp",
-      "assets/incline-treadmill-walking.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/incline-treadmill-walking.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "get-up-from-floor-progression",
@@ -8316,12 +8077,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/get-up-from-floor-progression.webp",
-      "assets/get-up-from-floor-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/get-up-from-floor-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "eccentric-shuttle-press",
@@ -8341,12 +8101,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/eccentric-shuttle-press.webp",
-      "assets/eccentric-shuttle-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/eccentric-shuttle-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "lateral-step-downs",
@@ -8366,12 +8125,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lateral-step-downs.webp",
-      "assets/lateral-step-downs.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lateral-step-downs.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "incorporate-more-compound-movements",
@@ -8415,12 +8173,11 @@
       "Move slowly and stay within the range allowed for this phase"
     ],
     "photos": [
-      "assets/seated-lumbar-flexion.webp",
-      "assets/seated-lumbar-flexion.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/seated-lumbar-flexion.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "cat-camel",
@@ -8440,12 +8197,11 @@
       "Move slowly and stay within the range allowed for this phase"
     ],
     "photos": [
-      "assets/cat-camel.webp",
-      "assets/cat-camel.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/cat-camel.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "modified-curl-up-mcgill",
@@ -8465,12 +8221,11 @@
       "Move slowly and stay within the range allowed for this phase"
     ],
     "photos": [
-      "assets/modified-curl-up-mcgill.webp",
-      "assets/modified-curl-up-mcgill.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/modified-curl-up-mcgill.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "ankle-circles",
@@ -8490,12 +8245,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/ankle-circles.webp",
-      "assets/ankle-circles.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/ankle-circles.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "star-drill",
@@ -8515,12 +8269,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/star-drill.webp",
-      "assets/star-drill.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/star-drill.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hamstring-ball-curls",
@@ -8540,12 +8293,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hamstring-ball-curls.webp",
-      "assets/hamstring-ball-curls.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hamstring-ball-curls.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "prone-hamstring-curls",
@@ -8565,12 +8317,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/prone-hamstring-curls.webp",
-      "assets/prone-hamstring-curls.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/prone-hamstring-curls.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "toe-walks",
@@ -8590,12 +8341,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/toe-walks.webp",
-      "assets/toe-walks.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/toe-walks.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "split-squat",
@@ -8640,12 +8390,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/depth-jump-progression.webp",
-      "assets/depth-jump-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/depth-jump-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hamstring-curls-progression",
@@ -8665,12 +8414,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hamstring-curls-progression.webp",
-      "assets/hamstring-curls-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/hamstring-curls-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "shuttle-press",
@@ -8690,12 +8438,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shuttle-press.webp",
-      "assets/shuttle-press.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shuttle-press.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sled-pulls-sled-pushes",
@@ -8715,12 +8462,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sled-pulls-sled-pushes.webp",
-      "assets/sled-pulls-sled-pushes.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sled-pulls-sled-pushes.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "lateral-squat-variations",
@@ -8740,12 +8486,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lateral-squat-variations.webp",
-      "assets/lateral-squat-variations.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/lateral-squat-variations.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "nu-step",
@@ -8765,12 +8510,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/nu-step.webp",
-      "assets/nu-step.webp"
+      "assets/061-side-stepping-with-resistance-at-ankles-start.jpg",
+      "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/nu-step.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "dl-machine-extension",
@@ -8790,12 +8534,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/dl-machine-extension.webp",
-      "assets/dl-machine-extension.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/dl-machine-extension.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "trx-cossack-squat",
@@ -8815,12 +8558,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/trx-cossack-squat.webp",
-      "assets/trx-cossack-squat.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/trx-cossack-squat.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "wall-sits",
@@ -8840,12 +8582,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/wall-sits.webp",
-      "assets/wall-sits.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/wall-sits.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "tall-kneeling-halos",
@@ -8865,12 +8606,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/tall-kneeling-halos.webp",
-      "assets/tall-kneeling-halos.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/tall-kneeling-halos.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "standing-hamstring-curl",
@@ -8890,12 +8630,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-hamstring-curl.webp",
-      "assets/standing-hamstring-curl.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-hamstring-curl.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "tibial-rotations-w-slider",
@@ -8915,12 +8654,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/tibial-rotations-w-slider.webp",
-      "assets/tibial-rotations-w-slider.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/tibial-rotations-w-slider.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "arom-of-the-elbow",
@@ -8940,12 +8678,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/arom-of-the-elbow.webp",
-      "assets/arom-of-the-elbow.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/arom-of-the-elbow.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "standing-flexion-progression",
@@ -8965,12 +8702,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/standing-flexion-progression.webp",
-      "assets/standing-flexion-progression.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/standing-flexion-progression.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "shoulder-press-variations",
@@ -8990,12 +8726,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/shoulder-press-variations.webp",
-      "assets/shoulder-press-variations.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/shoulder-press-variations.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "prom-of-the-elbow",
@@ -9039,12 +8774,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/feet-together-on-foam.webp",
-      "assets/feet-together-on-foam.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/feet-together-on-foam.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "sled-push-pull",
@@ -9064,12 +8798,11 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sled-push-pull.webp",
-      "assets/sled-push-pull.webp"
+      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
+      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "active",
-    "image_url": "assets/sled-push-pull.webp"
+    "image_status": "pending_asset"
   },
   {
     "id": "hip-hikes",
