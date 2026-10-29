@@ -4038,12 +4038,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/low-hurdle-gait-training.webp",
-      "assets/low-hurdle-gait-training.webp"
+      "assets/low-hurdle.webp",
+      "assets/low-hurdle.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/low-hurdle-gait-training.webp"
+    "image_url": "assets/low-hurdle.webp"
   },
   {
     "id": "kicking-into-physio-ball-isometric-holds",
@@ -5361,12 +5361,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/band-resisted-seated-internal-rotation-external-rotation.webp",
-      "assets/band-resisted-seated-internal-rotation-external-rotation.webp"
+      "assets/seated-internal-rotation-external-rotation.webp",
+      "assets/seated-internal-rotation-external-rotation.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/band-resisted-seated-internal-rotation-external-rotation.webp"
+    "image_url": "assets/seated-internal-rotation-external-rotation.webp"
   },
   {
     "id": "rolling-patterns",
@@ -6410,12 +6410,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/lat-pulldown.webp",
-      "assets/lat-pulldown.webp"
+      "assets/lat-pull-down.webp",
+      "assets/lat-pull-down.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/lat-pulldown.webp"
+    "image_url": "assets/lat-pull-down.webp"
   },
   {
     "id": "trx-ys",
@@ -6834,12 +6834,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/farmer-carries.webp",
-      "assets/farmer-carries.webp"
+      "assets/farmer-walks.webp",
+      "assets/farmer-walks.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/farmer-carries.webp"
+    "image_url": "assets/farmer-walks.webp"
   },
   {
     "id": "standing-hamstring-activation",
@@ -6884,12 +6884,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/3-way-balance-reach.webp",
-      "assets/3-way-balance-reach.webp"
+      "assets/3-way-balance-reaches.webp",
+      "assets/3-way-balance-reaches.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/3-way-balance-reach.webp"
+    "image_url": "assets/3-way-balance-reaches.webp"
   },
   {
     "id": "toe-heel-walking",
@@ -6959,12 +6959,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/eccentric-shuttle-press.webp",
-      "assets/eccentric-shuttle-press.webp"
+      "assets/shuttle-press.webp",
+      "assets/shuttle-press.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/eccentric-shuttle-press.webp"
+    "image_url": "assets/shuttle-press.webp"
   },
   {
     "id": "lateral-step-downs",
@@ -7084,12 +7084,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/ankle-circles.webp",
-      "assets/ankle-circles.webp"
+      "assets/gentle-ankle-circles.webp",
+      "assets/gentle-ankle-circles.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/ankle-circles.webp"
+    "image_url": "assets/gentle-ankle-circles.webp"
   },
   {
     "id": "star-drill",
@@ -7134,12 +7134,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/hamstring-ball-curls.webp",
-      "assets/hamstring-ball-curls.webp"
+      "assets/physioball-knee-flexion.webp",
+      "assets/physioball-knee-flexion.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/hamstring-ball-curls.webp"
+    "image_url": "assets/physioball-knee-flexion.webp"
   },
   {
     "id": "prone-hamstring-curls",
@@ -7159,12 +7159,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/prone-hamstring-curls.webp",
-      "assets/prone-hamstring-curls.webp"
+      "assets/hamstring-curls.webp",
+      "assets/hamstring-curls.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/prone-hamstring-curls.webp"
+    "image_url": "assets/hamstring-curls.webp"
   },
   {
     "id": "toe-walks",
@@ -7434,12 +7434,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/tibial-rotations-w-slider.webp",
-      "assets/tibial-rotations-w-slider.webp"
+      "assets/tibial-rotation.webp",
+      "assets/tibial-rotation.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/tibial-rotations-w-slider.webp"
+    "image_url": "assets/tibial-rotation.webp"
   },
   {
     "id": "arom-of-the-elbow",
@@ -7509,12 +7509,12 @@
       "Stop if pain increases and return to the start position"
     ],
     "photos": [
-      "assets/sled-push-pull.webp",
-      "assets/sled-push-pull.webp"
+      "assets/sled-pulls-sled-pushes.webp",
+      "assets/sled-pulls-sled-pushes.webp"
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/sled-push-pull.webp"
+    "image_url": "assets/sled-pulls-sled-pushes.webp"
   },
   {
     "id": "hip-hikes",
