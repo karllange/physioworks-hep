@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-10-30",
+  "total_exercises": 298,
+  "missing_count": 9,
+  "illustrated_count": 289,
+  "by_region": {
+    "knee": [
+      {
+        "id": "active-knee",
+        "name": "Active Knee",
+        "category": "knee",
+        "type": "strength",
+        "image_status": "pending_asset",
+        "image_url": "",
+        "reason": "placeholder"
+      },
+      {
+        "id": "double-leg",
+        "name": "Double Leg",
+        "category": "knee",
+        "type": "strength",
+        "image_status": "pending_asset",
+        "image_url": "",
+        "reason": "placeholder"
+      },
+      {
+        "id": "feet-together",
+        "name": "Feet Together",
+        "category": "knee",
+        "type": "strength",
+        "image_status": "pending_asset",
+        "image_url": "",
+        "reason": "placeholder"
+      }
+    ],
+    "hip": [
+      {
+        "id": "1-2-kneeling-hip",
+        "name": "1/2 Kneeling Hip",
+        "category": "hip",
+        "type": "strength",
+        "image_status": "active",
+        "image_url": "assets/1-2-kneeling-hip.webp",
+        "reason": "missing_file"
+      },
+      {
+        "id": "bike-no-recumbent-bike",
+        "name": "Bike *** No Recumbent Bike",
+        "category": "hip",
+        "type": "strength",
+        "image_status": "active",
+        "image_url": "assets/bike-no-recumbent-bike.webp",
+        "reason": "missing_file"
+      },
+      {
+        "id": "circumduction-at-30-flexion",
+        "name": "Circumduction At 30 Flexion",
+        "category": "hip",
+        "type": "strength",
+        "image_status": "active",
+        "image_url": "assets/circumduction-at-30-flexion.webp",
+        "reason": "missing_file"
+      },
+      {
+        "id": "contract-relax-for-internal-rotation-external-rotation",
+        "name": "Contract Relax For Internal Rotation/External Rotation",
+        "category": "hip",
+        "type": "strength",
+        "image_status": "pending_asset",
+        "image_url": "",
+        "reason": "placeholder"
+      },
+      {
+        "id": "standing-hip-rotations-on-stool",
+        "name": "Standing Hip Rotations On Stool",
+        "category": "hip",
+        "type": "strength",
+        "image_status": "active",
+        "image_url": "assets/standing-hip-rotations-on-stool.webp",
+        "reason": "missing_file"
+      }
+    ],
+    "shoulder": [
+      {
+        "id": "scapular-plane-internal-rotation",
+        "name": "Scapular Plane Internal Rotation",
+        "category": "shoulder",
+        "type": "strength",
+        "image_status": "active",
+        "image_url": "assets/scapular-plane-internal-rotation.webp",
+        "reason": "missing_file"
+      }
+    ]
+  }
+}

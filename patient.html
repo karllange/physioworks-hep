@@ -307,11 +307,10 @@
     }
 
     function photoSlots(photos) {
-      const list = (photos || []).filter(Boolean);
+      const list = (photos || []).map(String).filter(src => src && !src.includes("placehold.co"));
       if (!list.length) return [];
       const [first, second] = list;
-      const placeholder = src => String(src).includes("placehold.co");
-      if (!second || second === first || (placeholder(first) && placeholder(second))) return [first];
+      if (!second || second === first) return [first];
       return [first, second];
     }
 
@@ -332,14 +331,40 @@
       [/press-up|press up|prone press/, "assets/191-prone-press-up-mckenzie-extension.webp"]
     ];
 
+    function collapseDuplicateFigures(img) {
+      const parent = img && img.parentElement;
+      if (!parent) return;
+      const seen = new Set();
+      [...parent.querySelectorAll("img.diagram-frame")].forEach(node => {
+        const key = node.currentSrc || node.src;
+        if (seen.has(key)) node.remove();
+        else seen.add(key);
+      });
+      if (parent.querySelectorAll("img.diagram-frame").length < 2) {
+        parent.classList.remove("grid", "grid-cols-2", "gap-1.5", "gap-2");
+      }
+    }
+
     function advanceExerciseImage(img) {
       const rest = String(img.dataset.fallbacks || "").split("|").filter(Boolean);
-      if (!rest.length) {
-        img.onerror = null;
+      if (rest.length) {
+        img.dataset.fallbacks = rest.slice(1).join("|");
+        img.src = rest[0];
         return;
       }
-      img.dataset.fallbacks = rest.slice(1).join("|");
-      img.src = rest[0];
+      if (img.dataset.regionFallback === "1") {
+        img.dataset.regionFallback = "";
+        img.onerror = null;
+        img.src = clinicalPlaceholderSrc({
+          id: img.dataset.exId || "",
+          name: img.dataset.exName || "",
+          category: img.dataset.exCategory || "",
+          region: img.dataset.exRegion || ""
+        });
+        collapseDuplicateFigures(img);
+        return;
+      }
+      img.onerror = null;
     }
 
     function regionBadgePath(ex) {
@@ -359,8 +384,10 @@
       const photos = (ex.photos || []).filter(Boolean).map(String);
       const captured = photos.filter(src => src.startsWith("data:") || src.startsWith("blob:"));
       if (captured.length) return captured.slice(0, 2);
-      if (ex.image_status === "pending_asset") return [];
-      return photos.filter(src => /^assets\/.+\.webp(\?|$)/i.test(src)).slice(0, 2);
+      const webps = photos.filter(src => /^assets\/.+\.webp(\?|$)/i.test(src));
+      if (webps.length) return webps.slice(0, 2);
+      if (/^assets\/.+\.webp(\?|$)/i.test(String(ex.image_url || ""))) return [String(ex.image_url)];
+      return [];
     }
 
     function familyDrawing(ex) {
@@ -371,13 +398,111 @@
       return "";
     }
 
+    function figureSubject(ex) {
+      const source = ex || {};
+      return {
+        id: source.id || source.baseId || "",
+        baseId: source.baseId || source.id || "",
+        name: source.name || "Exercise",
+        category: source.category || "",
+        type: source.type || "",
+        image_status: source.image_status || "",
+        image_url: source.image_url || "",
+        photos: Array.isArray(source.photos) ? source.photos.filter(Boolean) : [],
+        region: source.region || ""
+      };
+    }
+
+    function regionBadgeMarkup(region) {
+      const icons = {
+        shoulder: '<circle cx="70" cy="28" r="10" fill="none" stroke="#111" stroke-width="2"/><path d="M70 38 v22 M54 48 h32 M86 48 l16 10" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>',
+        spine: '<path d="M70 18 c10 8 10 12 0 18 c-10 6 -10 12 0 18 c10 6 10 12 0 18 c-10 6 -10 12 0 18" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"/><path d="M56 40 h28 M56 58 h28 M56 76 h28" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>',
+        knee: '<path d="M52 18 h16 l8 30 h-10 l-2 34 h-16 l4 -34 h-10 z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/><path d="M48 50 h32" fill="none" stroke="#111" stroke-width="2"/>',
+        hip: '<path d="M38 72 q32 -40 64 0" fill="none" stroke="#111" stroke-width="2.4"/><circle cx="50" cy="64" r="7" fill="none" stroke="#111" stroke-width="2"/><circle cx="90" cy="64" r="7" fill="none" stroke="#111" stroke-width="2"/>',
+        ankle: '<path d="M48 22 v34 l26 10 v-8 l24 8" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="48" cy="56" r="5" fill="none" stroke="#111" stroke-width="2"/>',
+        cervical: '<circle cx="70" cy="26" r="12" fill="none" stroke="#111" stroke-width="2"/><path d="M70 38 v16 M56 68 h28" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>',
+        lumbar: '<path d="M70 16 c12 10 12 16 0 24 c-12 8 -8 16 2 28" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"/><path d="M46 78 q24 -16 48 0" fill="none" stroke="#111" stroke-width="2.2" stroke-linecap="round"/><circle cx="72" cy="52" r="3.5" fill="#111"/>',
+        thoracic: '<path d="M70 14 v50" fill="none" stroke="#111" stroke-width="2.2" stroke-linecap="round"/><path d="M70 26 c16 5 16 14 0 18 c-16 -4 -16 -13 0 -18" fill="none" stroke="#111" stroke-width="2"/><path d="M70 40 c18 5 18 16 0 20 c-18 -4 -18 -15 0 -20" fill="none" stroke="#111" stroke-width="2"/>',
+        core: '<path d="M50 20 h40 v50 h-40 z" fill="none" stroke="#111" stroke-width="2"/><path d="M70 20 v50 M50 36 h40 M50 50 h40" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>',
+        balance: '<circle cx="70" cy="16" r="8" fill="none" stroke="#111" stroke-width="2"/><path d="M70 24 v22 M56 36 h28 M70 46 l-2 30 M74 54 l16 12" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+        elbow_wrist: '<path d="M36 70 l26 -40 h30" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="62" cy="30" r="4" fill="none" stroke="#111" stroke-width="2"/><path d="M92 30 v8 M88 38 h8" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>',
+        hand: '<path d="M54 74 v-18 M63 74 v-30 M72 74 v-34 M81 74 v-26" fill="none" stroke="#111" stroke-width="2.2" stroke-linecap="round"/><path d="M50 74 h40 v8 h-40 z" fill="none" stroke="#111" stroke-width="2"/><path d="M50 78 l-10 -16" fill="none" stroke="#111" stroke-width="2.2" stroke-linecap="round"/>',
+        general: '<circle cx="70" cy="22" r="10" fill="none" stroke="#111" stroke-width="2"/><path d="M70 32 v22 M52 44 h36 M70 54 l-12 24 M70 54 l12 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>'
+      };
+      return icons[region] || icons.general;
+    }
+
+    function regionLabel(region) {
+      return {
+        shoulder: "Shoulder", spine: "Spine", knee: "Knee", hip: "Hip", ankle: "Ankle",
+        cervical: "Neck", general: "General", lumbar: "Lumbar", thoracic: "Thoracic",
+        core: "Core", balance: "Balance", elbow_wrist: "Elbow / Wrist", hand: "Hand"
+      }[region] || "General";
+    }
+
+    function exerciseRegionKey(ex) {
+      const source = ex || {};
+      const aliases = { spine: "lumbar" };
+      const known = new Set(["knee", "hip", "shoulder", "lumbar", "cervical", "thoracic", "core", "ankle", "balance", "elbow_wrist", "hand", "general"]);
+      const category = aliases[String(source.category || "").toLowerCase().trim()] || String(source.category || "").toLowerCase().trim();
+      if (known.has(category)) return category;
+      const region = aliases[String(source.region || "").toLowerCase().trim()] || String(source.region || "").toLowerCase().trim();
+      if (known.has(region)) return region;
+      const haystack = `${source.name || ""} ${source.id || ""} ${source.baseId || ""}`.toLowerCase();
+      if (/elbow|wrist|forearm/.test(haystack)) return "elbow_wrist";
+      if (/\bhand\b|finger|thumb|grip/.test(haystack)) return "hand";
+      if (/cervical|\bneck\b|\bchin\b/.test(haystack)) return "cervical";
+      if (/thoracic|\bribs?\b/.test(haystack)) return "thoracic";
+      if (/lumbar|low back|mckenzie/.test(haystack)) return "lumbar";
+      if (/\bcore\b|\bplank\b|dead bug|bird dog|abdominal/.test(haystack)) return "core";
+      if (/balance|tandem/.test(haystack)) return "balance";
+      if (/ankle|\bfoot\b|\bfeet\b|calf|heel/.test(haystack)) return "ankle";
+      if (/shoulder|scap|rotator/.test(haystack)) return "shoulder";
+      if (/\bhips?\b|glute/.test(haystack)) return "hip";
+      if (/knee|patell|quad/.test(haystack)) return "knee";
+      if (/spine|\bbacks?\b|trunk/.test(haystack)) return "lumbar";
+      return "general";
+    }
+
+    function placeholderRegionLabel(region) {
+      if (region === "cervical") return "Cervical";
+      return regionLabel(region);
+    }
+
+    function clinicalPlaceholderSrc(ex) {
+      const subject = ex || {};
+      const region = exerciseRegionKey(subject);
+      const label = placeholderRegionLabel(region);
+      const lines = [];
+      const raw = String(subject.name || "Exercise").replace(/\s+/g, " ").trim().slice(0, 42);
+      const width = 18;
+      if (raw.length <= width) lines.push(raw);
+      else {
+        const cut = raw.lastIndexOf(" ", width);
+        const at = cut > 6 ? cut : width;
+        lines.push(raw.slice(0, at).trim());
+        let rest = raw.slice(at).trim();
+        if (rest.length > width) rest = rest.slice(0, width - 1).trimEnd() + "…";
+        if (rest) lines.push(rest);
+      }
+      const nameMarkup = lines.map((line, index) => `<text x="240" y="${352 + index * 30}" text-anchor="middle" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">${escapeHtml(line)}</text>`).join("");
+      const scale = 1.7;
+      const tx = (240 - 70 * scale).toFixed(1);
+      const ty = (162 - 48 * scale).toFixed(1);
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480"><rect width="480" height="480" fill="#ffffff"/><rect x="14" y="14" width="452" height="452" rx="22" fill="none" stroke="#111111" stroke-width="8"/><circle cx="240" cy="162" r="108" fill="#ffffff" stroke="#111111" stroke-width="6"/><g transform="translate(${tx},${ty}) scale(${scale})">${regionBadgeMarkup(region)}</g><text x="240" y="312" text-anchor="middle" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="2">${escapeHtml(String(label).toUpperCase())}</text>${nameMarkup}</svg>`;
+      return "data:image/svg+xml," + encodeURIComponent(svg);
+    }
+
     function exerciseFigureTags(ex, className) {
-      const tail = [regionBadgePath(ex), navyBadgeDataUri()];
-      const owned = ownedDrawingFrames(ex);
-      const frames = owned.length ? owned : [familyDrawing(ex) || tail[0]];
+      const subject = figureSubject(ex);
+      const owned = ownedDrawingFrames(subject);
+      const frames = owned.length ? owned : [clinicalPlaceholderSrc(subject)];
       return frames.map(src => {
-        const fallbacks = tail.filter(item => item !== src);
-        return `<img src="${escapeHtml(src)}" data-fallbacks="${escapeHtml(fallbacks.join("|"))}" alt="" class="diagram-frame ${className} ${photoFitClass(src)}" onerror="advanceExerciseImage(this)">`;
+        const webp = /^assets\/.+\.webp(\?|$)/i.test(src);
+        const fallback = webp
+          ? ` data-region-fallback="1" data-ex-id="${escapeHtml(subject.id || subject.baseId || "")}" data-ex-name="${escapeHtml(subject.name || "")}" data-ex-category="${escapeHtml(subject.category || "")}" data-ex-region="${escapeHtml(subject.region || "")}"`
+          : "";
+        return `<img src="${escapeHtml(src)}" data-fallbacks=""${fallback} alt="" class="diagram-frame ${className} ${photoFitClass(src)}" onerror="advanceExerciseImage(this)">`;
       }).join("");
     }
 
