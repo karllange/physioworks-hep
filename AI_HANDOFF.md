@@ -6,14 +6,22 @@ Shared state for every agent in `AGENTS.md`. Newest entry first in each section.
 
 ### 2026-11-01
 
+- Phase 1 code PR opened (grok/phase1-contraindication-engine), waiting for Karl's tap; not merged. Adds `hep-safety.js` (block-and-warn contraindication engine with negation, PROM-only, surgery/phase I–VII/side detection), structured `movementType`/joint fields on every exercise, removal of 24 junk/duplicate catalog rows, a compact PHI-scrubbed share link with a 160 px QR and code fallback, dictation off by default, and "No patient names or DOBs" warnings. Tests: `node tests/run.js --browser`.
 - Read-only deep audit completed; roadmap added under Pending Tasks (PR grok/audit-roadmap). No code changed.
 - Master Project Blueprint Manager installed: `AGENTS.md` and `AI_HANDOFF.md` created (PR grok/blueprint-manager).
 
 ## Pending Tasks
 
-- Catalog is at 368 exercises; goal is 400+.
-- Automated contraindication filters: goal, not yet built.
-- Asset gaps are tracked in `docs/asset_gaps.md`.
+- Catalog is at 344 exercises after the Phase 1 cleanup (was 368); goal is 400+.
+- Automated contraindication filters: built in the Phase 1 PR; live once Karl merges it.
+- Asset gaps are tracked in `docs/asset_gaps.md`. `docs/asset_gaps.md`, `docs/asset_batches` and `scripts/batch_asset_prompts.py` still list some removed ids; clean up in a later PR.
+
+### Phase 1 follow-ups for clinician review (from `node scripts/check_protocol_conflicts.js`)
+
+- 4 exercises in `protocols.json` conflict with their own phase precautions and are now skipped when that preset is loaded: RCR phase 1 Band External Rotation at 0° and Scapular Plane Shoulder Elevation < 90° ("No AROM"); RCR phase 2 Scapular Rowing Off Of Table ("No extension"); RCR phase 3 Rotator Cuff Series ("No active IR"). Karl or Michael decide: fix the precaution text or the exercise list.
+- 6 catalog rows were kept for review rather than removed: 1-2-kneeling-hip, more-aggressive-prom, aggressive-prom-stretching-to-achieve, initiate-wb-with-crutches-in-the-boot, sl-holds, flexion-on-step.
+- The printed paper handout shows the therapist notes as typed; only the share link and QR are scrubbed.
+- The access code still works only on the device that created it (localStorage).
 
 ### Audit roadmap — 2026-11-01 (read-only audit, no code changed)
 
@@ -52,11 +60,18 @@ Evidence from a fresh clone and headless-browser runs. Line numbers refer to `ma
 
 ## Next Immediate Micro-Step
 
-- [Mac/PC Deep Build] List the exercises still missing to reach 400, by body region, as a docs-only PR.
+- [Phone-Friendly] Karl reviews and taps the Phase 1 PR, then decides on the 4 protocol conflicts above.
 
 ## Gemini Review Log
 
 Newest entry first. Each entry: date, PR, verdict, applied fixes, skipped suggestions and why.
+
+### 2026-11-01 — Gemini Clinical Safety Check Approved (gemini-3.5-flash)
+
+- Scope: grok/phase1-contraindication-engine, code PR. Reviewed as a clinical-safety code reviewer on a condensed summary: full `hep-safety.js` plus the `index.html` safety gate. PHI: none.
+- Verdict: pass, 0 issues. Nothing to apply or skip.
+- Before the review, a report-only run of every protocol's own precautions against its exercises found 39 over-blocks. Fixed: angle-limited rules ("No ER > 30°") and duration-limited avoidance now warn; motion-specific "no resisted" applies to those motions only; mid-sentence "without" no longer negates; scapular-only drills warn under shoulder limits. 4 genuine conflicts are left for clinician review (Pending Tasks).
+- Not merged: code PR, waits for Karl's tap.
 
 ### 2026-11-01 — Gemini Clinical Safety Check Approved (gemini-3.5-flash)
 
