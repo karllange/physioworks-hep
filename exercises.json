@@ -20,7 +20,19 @@
       "assets/180-quad-set-with-towel-roll.webp",
       "assets/180-quad-set-with-towel-roll.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-102",
@@ -43,13 +55,27 @@
       "assets/181-straight-leg-raise-supine-start.webp",
       "assets/181-straight-leg-raise-supine-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-103",
     "name": "Seated Superior Patellar Glide",
     "category": "knee",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -66,7 +92,17 @@
       "assets/182-seated-superior-patellar-glide.webp",
       "assets/182-seated-superior-patellar-glide.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "PROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-104",
@@ -89,7 +125,19 @@
       "assets/183-terminal-knee-extension-band-start.webp",
       "assets/183-terminal-knee-extension-band-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "knee-105",
@@ -115,7 +163,19 @@
     "video_url": "",
     "aliases": [
       "Hooklying Heel Slides"
-    ]
+    ],
+    "movementType": "AAROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-106",
@@ -141,12 +201,24 @@
     "video_url": "",
     "aliases": [
       "Leg Extension",
-      "Double Leg Extension On Machine 90\u00b0-60\u00b0",
-      "Double Leg Extension Holds On Machine At 0\u00b0",
+      "Double Leg Extension On Machine 90°-60°",
+      "Double Leg Extension Holds On Machine At 0°",
       "Full ROM Double Leg Extension On Machine",
       "TKA Leg Extension Progression",
       "Leg Extensions On Exxentric"
-    ]
+    ],
+    "movementType": "AROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-101",
@@ -169,7 +241,20 @@
       "assets/186-side-lying-clamshell-start.webp",
       "assets/186-side-lying-clamshell-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction",
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-102",
@@ -197,7 +282,19 @@
       "Double Leg Hip Thruster Holds",
       "Hip Thruster Progression",
       "Hip Thrust Progression"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-103",
@@ -224,7 +321,19 @@
     "aliases": [
       "Sidelying Hip Abduction",
       "Sidelying Abduction"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-104",
@@ -253,7 +362,19 @@
       "Intro To Couch Stretch",
       "Couch Stretch Progression",
       "1/2 Kneeling Hip Flexor"
-    ]
+    ],
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-105",
@@ -276,7 +397,19 @@
       "assets/190-figure-4-piriformis-stretch.webp",
       "assets/190-figure-4-piriformis-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-201",
@@ -299,7 +432,19 @@
       "assets/191-prone-press-up-mckenzie-extension.webp",
       "assets/191-prone-press-up-mckenzie-extension.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [
+      "lumbar_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-202",
@@ -322,7 +467,20 @@
       "assets/101-supine-double-knee-to-chest.webp",
       "assets/101-supine-double-knee-to-chest.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-203",
@@ -348,7 +506,20 @@
     "video_url": "",
     "aliases": [
       "Birddog Progression"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-204",
@@ -374,7 +545,17 @@
     "video_url": "",
     "aliases": [
       "Deadbug Progression"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-205",
@@ -397,7 +578,17 @@
       "assets/151-pelvic-tilt.webp",
       "assets/151-pelvic-tilt.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "thor-101",
@@ -420,7 +611,17 @@
       "assets/152-side-lying-open-book.webp",
       "assets/152-side-lying-open-book.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "thoracic"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "thor-102",
@@ -443,7 +644,17 @@
       "assets/153-foam-roller-thoracic-extension.webp",
       "assets/153-foam-roller-thoracic-extension.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "thoracic"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "thor-103",
@@ -466,7 +677,17 @@
       "assets/154-quadruped-thread-the-needle.webp",
       "assets/154-quadruped-thread-the-needle.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "thoracic"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-301",
@@ -489,7 +710,19 @@
       "assets/155-seated-chin-tuck-with-retraction.webp",
       "assets/155-seated-chin-tuck-with-retraction.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [
+      "cervical_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-302",
@@ -512,7 +745,17 @@
       "assets/156-upper-trapezius-stretch.webp",
       "assets/156-upper-trapezius-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-303",
@@ -535,7 +778,17 @@
       "assets/157-levator-scapulae-stretch.webp",
       "assets/157-levator-scapulae-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-304",
@@ -563,7 +816,17 @@
       "Prone Scapular Retraction",
       "Scapular Setting",
       "Scapular Depression"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shld-401",
@@ -589,11 +852,23 @@
     "video_url": "",
     "aliases": [
       "Prone Horizontal Abduction (T's)"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_abduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shld-402",
-    "name": "Band External Rotation at 0\u00b0 with Towel Roll",
+    "name": "Band External Rotation at 0° with Towel Roll",
     "category": "shoulder",
     "type": "strength",
     "starter": true,
@@ -615,8 +890,18 @@
     "video_url": "",
     "aliases": [
       "Side-Lying External Rotation",
-      "Scapular Plane External Rotation < 20\u00b0"
-    ]
+      "Scapular Plane External Rotation < 20°"
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shld-403",
@@ -639,7 +924,20 @@
       "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_er",
+      "shoulder_ir"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shld-404",
@@ -662,7 +960,19 @@
       "assets/106-lateral-lunge-with-slider-start.jpg",
       "assets/106-lateral-lunge-with-slider-finish.jpg"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shld-405",
@@ -689,7 +999,19 @@
     "aliases": [
       "Weighted Flexion In Supine",
       "PVC Pipe"
-    ]
+    ],
+    "movementType": "AAROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "elbow-101",
@@ -712,7 +1034,19 @@
       "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "wrist"
+    ],
+    "motions": [
+      "wrist_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "elbow-102",
@@ -735,7 +1069,19 @@
       "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "wrist"
+    ],
+    "motions": [
+      "wrist_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "elbow-103",
@@ -758,13 +1104,24 @@
       "assets/037-standing-terminal-knee-extension-with-resistance-start.jpg",
       "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "elbow",
+      "wrist"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hand-101",
     "name": "Tendon Gliding (Hook, Straight Fist, Full Fist)",
     "category": "hand",
-    "type": "strength",
+    "type": "stretch",
     "starter": true,
     "default_dosing": {
       "sets": 2,
@@ -781,7 +1138,17 @@
       "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hand"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hand-102",
@@ -804,7 +1171,17 @@
       "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hand"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hand-103",
@@ -827,7 +1204,17 @@
       "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hand"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ankle-101",
@@ -853,7 +1240,20 @@
     "video_url": "",
     "aliases": [
       "Gentle Gastroc"
-    ]
+    ],
+    "movementType": "Stretch",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "ankle-102",
@@ -876,7 +1276,20 @@
       "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "ankle-103",
@@ -899,7 +1312,22 @@
       "assets/061-side-stepping-with-resistance-at-ankles-start.jpg",
       "assets/061-side-stepping-with-resistance-at-ankles-finish.jpg"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ankle-104",
@@ -927,7 +1355,21 @@
       "Band Resisted Ankle PF",
       "Resisted Isotonic PF",
       "Deficit Calf"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "balance-101",
@@ -955,7 +1397,17 @@
       "Stork Stance Holds",
       "Stork Stance Banded Reps",
       "Stork Stance"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "balance-102",
@@ -981,7 +1433,17 @@
     "video_url": "",
     "aliases": [
       "Tandem Stance"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "balance-103",
@@ -1007,7 +1469,17 @@
     "video_url": "",
     "aliases": [
       "Weight Shifting"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "core-101",
@@ -1030,7 +1502,17 @@
       "assets/177-quadruped-transverse-abdominis-drawing-in-start.webp",
       "assets/177-quadruped-transverse-abdominis-drawing-in-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-102",
@@ -1053,7 +1535,17 @@
       "assets/178-side-plank-from-knees-start.webp",
       "assets/178-side-plank-from-knees-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-103",
@@ -1076,7 +1568,20 @@
       "assets/179-supine-marching-with-core-brace-start.webp",
       "assets/179-supine-marching-with-core-brace-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-modified-thomas-stretch-01",
@@ -1099,7 +1604,19 @@
       "assets/002-modified-thomas-stretch.webp",
       "assets/002-modified-thomas-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-supine-bridge-01",
@@ -1122,7 +1639,19 @@
       "assets/003-supine-bridge-start.webp",
       "assets/003-supine-bridge-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-mini-squat-with-counter-support-01",
@@ -1145,7 +1674,23 @@
       "assets/004-mini-squat-with-counter-support-start.webp",
       "assets/004-mini-squat-with-counter-support-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "knee-seated-hamstring-stretch-01",
@@ -1168,7 +1713,17 @@
       "assets/006-seated-hamstring-stretch.webp",
       "assets/006-seated-hamstring-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-supine-gluteal-sets-01",
@@ -1191,7 +1746,17 @@
       "assets/013-supine-gluteal-sets.webp",
       "assets/013-supine-gluteal-sets.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-seated-table-hamstring-stretch-01",
@@ -1214,7 +1779,17 @@
       "assets/015-seated-table-hamstring-stretch.webp",
       "assets/015-seated-table-hamstring-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-squat-01",
@@ -1246,7 +1821,23 @@
       "Goblet Squat",
       "Loaded Goblet Squat Progression",
       "Squat Progression"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-supine-hip-adduction-isometric-with-ball-01",
@@ -1269,7 +1860,19 @@
       "assets/026-supine-hip-adduction-isometric-with-ball.webp",
       "assets/026-supine-hip-adduction-isometric-with-ball.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_adduction"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-bridge-with-hip-abduction-and-resistance-01",
@@ -1292,7 +1895,20 @@
       "assets/056-bridge-with-hip-abduction-and-resistance-start.webp",
       "assets/056-bridge-with-hip-abduction-and-resistance-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction",
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "knee-forward-step-up-01",
@@ -1315,7 +1931,23 @@
       "assets/057-forward-step-up-start.webp",
       "assets/057-forward-step-up-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-prone-hip-extension-01",
@@ -1338,7 +1970,19 @@
       "assets/059-prone-hip-extension-start.webp",
       "assets/059-prone-hip-extension-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-side-stepping-with-resistance-at-ankles-01",
@@ -1366,7 +2010,24 @@
       "Lateral Band Walks/skaters",
       "LBW/Skaters",
       "Side Stepping"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_abduction",
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-side-stepping-with-resistance-at-feet-01",
@@ -1389,7 +2050,23 @@
       "assets/068-side-stepping-with-resistance-at-feet-start.webp",
       "assets/068-side-stepping-with-resistance-at-feet-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_abduction",
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-prone-hip-extension-on-table-01",
@@ -1412,7 +2089,19 @@
       "assets/094-prone-hip-extension-on-table-start.webp",
       "assets/094-prone-hip-extension-on-table-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-hip-abduction-with-resistance-loop-01",
@@ -1435,7 +2124,19 @@
       "assets/095-hip-abduction-with-resistance-loop-start.webp",
       "assets/095-hip-abduction-with-resistance-loop-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-hip-extension-with-resistance-loop-01",
@@ -1458,13 +2159,25 @@
       "assets/096-hip-extension-with-resistance-loop-start.webp",
       "assets/096-hip-extension-with-resistance-loop-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "knee-seated-inferior-patellar-glide-01",
     "name": "Seated Inferior Patellar Glide",
     "category": "knee",
-    "type": "strength",
+    "type": "stretch",
     "starter": true,
     "default_dosing": {
       "sets": 2,
@@ -1481,7 +2194,17 @@
       "assets/098-seated-inferior-patellar-glide.webp",
       "assets/098-seated-inferior-patellar-glide.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "PROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-hooklying-single-knee-to-chest-stretch-01",
@@ -1504,7 +2227,20 @@
       "assets/102-hooklying-single-knee-to-chest-stretch.webp",
       "assets/102-hooklying-single-knee-to-chest-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shoulder-standing-shoulder-horizontal-abduction-with-resistance-01",
@@ -1527,7 +2263,19 @@
       "assets/103-standing-shoulder-horizontal-abduction-with-resistance-start.webp",
       "assets/103-standing-shoulder-horizontal-abduction-with-resistance-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_abduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-bridge-with-heels-on-swiss-ball-01",
@@ -1550,7 +2298,21 @@
       "assets/104-bridge-with-heels-on-swiss-ball-start.webp",
       "assets/104-bridge-with-heels-on-swiss-ball-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-lunge-matrix-on-slider-01",
@@ -1573,7 +2335,23 @@
       "assets/105-lunge-matrix-on-slider-start.webp",
       "assets/105-lunge-matrix-on-slider.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "knee-lateral-lunge-with-slider-01",
@@ -1600,7 +2378,23 @@
     "aliases": [
       "Lateral Lunges With TRX",
       "Lateral Lunges"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "knee-lunge-on-slider-01",
@@ -1626,7 +2420,23 @@
     "video_url": "",
     "aliases": [
       "Reverse Slider Lunge"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-clamshell-with-resistance-01",
@@ -1649,7 +2459,20 @@
       "assets/054-clamshell-with-resistance-start.webp",
       "assets/054-clamshell-with-resistance-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction",
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-sidelying-hip-adduction-01",
@@ -1672,7 +2495,19 @@
       "assets/066-sidelying-hip-adduction-start.webp",
       "assets/066-sidelying-hip-adduction-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_adduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-lunge-matrix-01",
@@ -1699,7 +2534,23 @@
     "aliases": [
       "Lunge Progression",
       "Reverse Lunges"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees-01",
@@ -1722,7 +2573,19 @@
       "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.webp",
       "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_adduction"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-supine-lower-trunk-rotation-01",
@@ -1745,7 +2608,21 @@
       "assets/001-supine-lower-trunk-rotation.webp",
       "assets/001-supine-lower-trunk-rotation.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "lumbar_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-prone-press-up-on-elbows-01",
@@ -1768,7 +2645,20 @@
       "assets/017-prone-press-up-on-elbows.webp",
       "assets/017-prone-press-up-on-elbows.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "elbow",
+      "lumbar"
+    ],
+    "motions": [
+      "lumbar_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-side-plank-on-elbow-01",
@@ -1791,7 +2681,18 @@
       "assets/020-side-plank-on-elbow-start.webp",
       "assets/020-side-plank-on-elbow-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "elbow",
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-standing-lumbar-extension-01",
@@ -1814,7 +2715,19 @@
       "assets/021-standing-lumbar-extension.webp",
       "assets/021-standing-lumbar-extension.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [
+      "lumbar_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-childs-pose-stretch-01",
@@ -1837,7 +2750,19 @@
       "assets/033-child-s-pose-stretch.webp",
       "assets/033-child-s-pose-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [
+      "lumbar_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-supine-piriformis-stretch-foot-on-ground-01",
@@ -1860,7 +2785,20 @@
       "assets/038-supine-piriformis-stretch-with-foot-on-ground.webp",
       "assets/038-supine-piriformis-stretch-with-foot-on-ground.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hip",
+      "foot"
+    ],
+    "motions": [
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-mountain-climbers-slow-01",
@@ -1883,7 +2821,21 @@
       "assets/039-mountain-climbers-slow-start.webp",
       "assets/039-mountain-climbers-slow-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder",
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-standing-diagonal-chops-medicine-ball-01",
@@ -1906,7 +2858,23 @@
       "assets/040-standing-diagonal-chops-with-medicine-ball-start.webp",
       "assets/040-standing-diagonal-chops-with-medicine-ball-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion",
+      "lumbar_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "core-plank-on-knees-01",
@@ -1929,7 +2897,17 @@
       "assets/042-plank-on-knees-start.webp",
       "assets/042-plank-on-knees-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-bent-knee-fallouts-01",
@@ -1952,7 +2930,20 @@
       "assets/055-bent-knee-fallouts-start.webp",
       "assets/055-bent-knee-fallouts-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction",
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-supine-transversus-abdominis-bracing-01",
@@ -1978,7 +2969,17 @@
     "video_url": "",
     "aliases": [
       "TA Setting"
-    ]
+    ],
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-sidelying-tfl-stretch-01",
@@ -2001,13 +3002,23 @@
       "assets/069-sidelying-tfl-stretch.webp",
       "assets/069-sidelying-tfl-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "elbow-standing-egypt-nerve-glide-01",
     "name": "Standing Ulnar Nerve Glide",
     "category": "elbow_wrist",
-    "type": "strength",
+    "type": "stretch",
     "starter": true,
     "default_dosing": {
       "sets": 2,
@@ -2024,7 +3035,17 @@
       "assets/084-standing-egypt-nerve-glide.webp",
       "assets/084-standing-egypt-nerve-glide.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "elbow"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-standard-plank-01",
@@ -2047,7 +3068,17 @@
       "assets/090-standard-plank-start.webp",
       "assets/090-standard-plank-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-seated-lumbar-extension-01",
@@ -2070,7 +3101,19 @@
       "assets/092-seated-lumbar-extension.webp",
       "assets/092-seated-lumbar-extension.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [
+      "lumbar_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-supine-isometric-hamstring-set-01",
@@ -2093,7 +3136,17 @@
       "assets/100-supine-isometric-hamstring-set.webp",
       "assets/100-supine-isometric-hamstring-set.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-thomas-stretch-on-table-01",
@@ -2116,7 +3169,19 @@
       "assets/108-thomas-stretch-on-table.webp",
       "assets/108-thomas-stretch-on-table.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-modified-side-plank-hip-abduction-01",
@@ -2139,7 +3204,20 @@
       "assets/112-modified-side-plank-with-hip-abduction-start.webp",
       "assets/112-modified-side-plank-with-hip-abduction-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-half-kneeling-diagonal-chops-medicine-ball-01",
@@ -2162,7 +3240,23 @@
       "assets/113-half-kneeling-diagonal-chops-with-medicine-ball-start.webp",
       "assets/113-half-kneeling-diagonal-chops-with-medicine-ball-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion",
+      "lumbar_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "core-bird-dog-on-foam-roll-01",
@@ -2185,7 +3279,20 @@
       "assets/114-bird-dog-on-foam-roll-start.webp",
       "assets/114-bird-dog-on-foam-roll-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-half-kneeling-diagonal-lift-01",
@@ -2208,7 +3315,17 @@
       "assets/115-half-kneeling-diagonal-lift-with-resistance-opposite-forward-leg-start.webp",
       "assets/115-half-kneeling-diagonal-lift-with-resistance-opposite-forward-leg-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "core-swiss-ball-march-01",
@@ -2231,7 +3348,19 @@
       "assets/119-swiss-ball-march.webp",
       "assets/119-swiss-ball-march.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-full-superman-on-table-01",
@@ -2254,7 +3383,21 @@
       "assets/120-full-superman-on-table-start.webp",
       "assets/120-full-superman-on-table-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_extension",
+      "lumbar_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-single-leg-bridge-leg-supported-01",
@@ -2277,7 +3420,19 @@
       "assets/121-single-leg-bridge-with-leg-supported-start.webp",
       "assets/121-single-leg-bridge-with-leg-supported-finish.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lumbar-standing-sidebends-01",
@@ -2300,7 +3455,17 @@
       "assets/123-standing-sidebends.webp",
       "assets/123-standing-sidebends.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-prone-knee-extension-hang-01",
@@ -2328,7 +3493,19 @@
       "Extension Prop",
       "Foot On Ottoman",
       "Passive Extension"
-    ]
+    ],
+    "movementType": "PROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-gentle-levator-scapulae-stretch-01",
@@ -2351,7 +3528,17 @@
       "assets/146-gentle-levator-scapulae-stretch.webp",
       "assets/146-gentle-levator-scapulae-stretch.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "Stretch",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-seated-cervical-rotation-arom-01",
@@ -2374,7 +3561,19 @@
       "assets/147-seated-cervical-rotation-arom.webp",
       "assets/147-seated-cervical-rotation-arom.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [
+      "cervical_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-seated-cervical-extension-arom-01",
@@ -2397,7 +3596,19 @@
       "assets/148-seated-cervical-extension-arom.webp",
       "assets/148-seated-cervical-extension-arom.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [
+      "cervical_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-seated-cervical-flexion-arom-01",
@@ -2420,7 +3631,19 @@
       "assets/149-seated-cervical-flexion-arom.webp",
       "assets/149-seated-cervical-flexion-arom.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [
+      "cervical_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cerv-seated-cervical-sidebending-arom-01",
@@ -2443,13 +3666,25 @@
       "assets/150-seated-cervical-sidebending-arom.webp",
       "assets/150-seated-cervical-sidebending-arom.webp"
     ],
-    "video_url": ""
+    "video_url": "",
+    "movementType": "AROM",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [
+      "cervical_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-pendulum",
     "name": "Standing Pendulum",
     "category": "shoulder",
-    "type": "strength",
+    "type": "stretch",
     "starter": true,
     "default_dosing": {
       "sets": 2,
@@ -2468,13 +3703,25 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/standing-pendulum.webp"
+    "image_url": "assets/standing-pendulum.webp",
+    "movementType": "PROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "supine-passive-external-rotation",
     "name": "Supine Passive External Rotation",
     "category": "shoulder",
-    "type": "strength",
+    "type": "stretch",
     "starter": true,
     "default_dosing": {
       "sets": 2,
@@ -2492,11 +3739,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "PROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "band-internal-rotation-at-0",
-    "name": "Band Internal Rotation at 0\u00b0",
+    "name": "Band Internal Rotation at 0°",
     "category": "shoulder",
     "type": "strength",
     "starter": true,
@@ -2514,7 +3771,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-scaption-full-can",
@@ -2536,31 +3803,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "elevated-ice",
-    "name": "Elevated/Ice",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Elevated/Ice in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "shoulder_abduction",
+      "shoulder_flexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "gentle-ankle-circles",
@@ -2584,7 +3840,22 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ankle-pumps",
@@ -2609,7 +3880,20 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/ankle-pumps.webp"
+    "image_url": "assets/ankle-pumps.webp",
+    "movementType": "AROM",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "short-foot",
@@ -2633,7 +3917,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "toe-spreading",
@@ -2657,7 +3951,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "toe-curling",
@@ -2681,7 +3985,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "toe-lifts",
@@ -2705,7 +4019,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "towel-scrunch",
@@ -2729,7 +4053,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle",
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hamstring-curls",
@@ -2753,7 +4089,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "exaggerated-ankle-circles",
@@ -2777,7 +4125,22 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "great-toe-rom",
@@ -2801,7 +4164,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "seated-baps-board",
@@ -2825,7 +4198,22 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "foot-intrinsic-strengthening-exercises-short-foot",
@@ -2848,7 +4236,17 @@
       "assets/038-supine-piriformis-stretch-with-foot-on-ground.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "double-leg-shuttle-press",
@@ -2872,7 +4270,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "initiate-wb-with-crutches-in-the-boot",
@@ -2896,31 +4306,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "out-of-boot",
-    "name": "Out Of Boot",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Out Of Boot in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": true
   },
   {
     "id": "star-drill-on-wedge",
@@ -2944,7 +4340,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "tibial-rotation",
@@ -2968,7 +4374,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "double-leg-wall-sit-progression-on",
@@ -2992,7 +4408,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": true,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "inv-isometric",
@@ -3016,7 +4444,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_eversion",
+      "ankle_inversion"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "split-squat-w-wedge",
@@ -3040,7 +4481,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "standing-baps-board",
@@ -3064,7 +4521,22 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "tm-walking",
@@ -3088,7 +4560,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "retro-walking",
@@ -3112,7 +4594,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "closed-chained-dorsiflexion-ankle-circles",
@@ -3136,7 +4628,22 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "lsd-progression",
@@ -3160,7 +4667,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "fwd-step-down-progression",
@@ -3184,7 +4703,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sl-squat-progression",
@@ -3209,7 +4744,23 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/single-leg-squat.webp"
+    "image_url": "assets/single-leg-squat.webp",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "shuttle-press-variations",
@@ -3233,7 +4784,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sled-pulls",
@@ -3257,7 +4820,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "star-drill-on-unstable-surface",
@@ -3281,7 +4856,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sl-romanian-deadlift-reaches",
@@ -3305,7 +4890,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "tandem-walking",
@@ -3329,7 +4927,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "db-rdls",
@@ -3353,31 +4961,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "add-weight",
-    "name": "Add Weight",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Add Weight in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "hip_extension"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "heel-walks-toe-walks",
@@ -3401,31 +4998,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "increase-distance",
-    "name": "Increase Distance",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Increase Distance in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle",
+      "foot"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "deadlift-romanian-deadlift-variations",
@@ -3450,7 +5037,20 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/romanian-deadlift.webp"
+    "image_url": "assets/romanian-deadlift.webp",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "lateral-squat-progression",
@@ -3474,7 +5074,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "farmer-walks",
@@ -3498,7 +5114,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "toe-raises",
@@ -3522,7 +5148,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle",
+      "foot"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "tib-bar",
@@ -3546,7 +5186,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "agility-ladder",
@@ -3570,7 +5223,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "mini-hops",
@@ -3594,7 +5258,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "jogging-progression",
@@ -3618,7 +5296,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "snap-down-progression",
@@ -3642,7 +5331,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "jump-progression",
@@ -3666,7 +5367,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "multiplanar-hops",
@@ -3690,7 +5405,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "medicine-ball-drops",
@@ -3714,7 +5443,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": true,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "3-way-hurdle-hop",
@@ -3738,7 +5477,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion",
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hop-over-hurdle-in-sagittal-plane",
@@ -3762,7 +5517,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion",
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hop-over-hurdle",
@@ -3786,7 +5557,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion",
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "lateral-shuffles",
@@ -3810,7 +5597,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "reactive-cutting",
@@ -3834,7 +5631,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "pro-agility",
@@ -3858,31 +5666,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "add-more-load-to-functional-movements",
-    "name": "Add More Load To Functional Movements",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 3,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Add More Load To Functional Movements in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "cutting-footwork-drill",
@@ -3906,7 +5701,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle",
+      "foot"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "cone-cutting",
@@ -3930,7 +5737,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "exxentric-squat",
@@ -3954,7 +5772,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "bulgarian-split",
@@ -3979,7 +5813,21 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/bulgarian-split-squat.webp"
+    "image_url": "assets/bulgarian-split-squat.webp",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": true
   },
   {
     "id": "sled-pushes",
@@ -4003,7 +5851,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hurdle-hop-variations",
@@ -4027,31 +5887,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "compound-exercise-at",
-    "name": "Compound Exercise At",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Compound Exercise At in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion",
+      "hip_extension"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sprinting-drills",
@@ -4075,7 +5927,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "weighted-baps-board",
@@ -4099,31 +5962,22 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "cross-train-rather-than-just-running",
-    "name": "Cross Train Rather Than Just Running",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Cross Train Rather Than Just Running in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "weighted-toe-walks",
@@ -4147,7 +6001,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle",
+      "foot"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "seated-knee-bend-off-table",
@@ -4170,7 +6038,19 @@
       "assets/015-seated-table-hamstring-stretch.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "physioball-knee-flexion",
@@ -4194,7 +6074,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "wall-slides",
@@ -4218,7 +6110,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "nu-step-and-bike",
@@ -4242,7 +6144,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "weight-shifting-with-ue-assistance",
@@ -4266,7 +6184,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "gait-training-with-crutches",
@@ -4290,7 +6218,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "low-hurdle-gait-training",
@@ -4314,7 +6252,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "kicking-into-physio-ball-isometric-holds",
@@ -4337,7 +6289,19 @@
       "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "leg-press-into-physioball",
@@ -4361,7 +6325,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sl-balance-reaches",
@@ -4385,7 +6361,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "progress-to-sled",
@@ -4409,7 +6396,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "low-hurdle",
@@ -4433,7 +6432,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "high-hurdle",
@@ -4457,13 +6469,26 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "more-aggressive-prom",
     "name": "More Aggressive PROM",
     "category": "knee",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -4481,7 +6506,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "PROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "prone-quad-stretch",
@@ -4505,7 +6540,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "quadruped-hip-extension-over-bench-holds",
@@ -4529,7 +6576,19 @@
       "assets/059-prone-hip-extension-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "wall-sit-progression",
@@ -4553,7 +6612,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": true,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sidelying-shuttle-press",
@@ -4577,7 +6648,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-hike-holds",
@@ -4601,7 +6684,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-hike-reps",
@@ -4625,7 +6720,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "sl-shuttle-press",
@@ -4649,7 +6756,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "dip-bar-assisted-slantboard-squat",
@@ -4673,31 +6792,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "ankle-weight",
-    "name": "Ankle Weight",
-    "category": "ankle",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 3,
-      "reps": 6,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Ankle Weight in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "romanian-deadlift-progression",
@@ -4722,7 +6833,20 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/romanian-deadlift.webp"
+    "image_url": "assets/romanian-deadlift.webp",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "kickstand-squat-on-wall",
@@ -4746,7 +6870,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "split-squat-isometric-holds",
@@ -4770,7 +6910,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": true,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "slantboard-step-downs",
@@ -4794,7 +6950,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "nordic-progression",
@@ -4818,7 +6990,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "loaded-lsd",
@@ -4842,7 +7026,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "forward-step-downs",
@@ -4866,7 +7062,23 @@
       "assets/057-forward-step-up-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "anti-rotation-and-balance-training",
@@ -4890,7 +7102,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "ankle"
+    ],
+    "motions": [
+      "lumbar_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "weighted-hops",
@@ -4914,7 +7139,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "kb-swings",
@@ -4938,7 +7177,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "heavy-sl-machine-extension",
@@ -4962,7 +7213,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "rotational-deadlifts",
@@ -4986,31 +7249,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "4-exercises-performed-in-succession",
-    "name": "4 Exercises Performed In Succession",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for 4 Exercises Performed In Succession in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "hip_extension"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "plyometric-jump-3-reps",
@@ -5034,7 +7286,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "drop-set-or-weighted-jump-3-reps",
@@ -5058,7 +7324,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "accelerated-jump-2-3",
@@ -5082,7 +7362,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "short-arc-quad-progression",
@@ -5106,7 +7400,19 @@
       "assets/025-seated-long-arc-quad-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "knee-circles",
@@ -5130,7 +7436,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "dl-machine-extension-holds-at-0-degrees",
@@ -5154,11 +7470,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "dl-extension",
-    "name": "DL Extension",
+    "name": "DL Machine Knee Extension",
     "category": "shoulder",
     "type": "strength",
     "starter": false,
@@ -5178,11 +7506,23 @@
       "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "sl-extension",
-    "name": "SL Extension",
+    "name": "SL Machine Knee Extension",
     "category": "shoulder",
     "type": "strength",
     "starter": false,
@@ -5202,12 +7542,24 @@
       "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "sl-holds",
     "name": "SL Holds",
-    "category": "shoulder",
+    "category": "knee",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -5226,31 +7578,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "sl-machine",
-    "name": "SL Machine",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for SL Machine in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "knee_extension"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": true,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": true
   },
   {
     "id": "circumduction-at-30-flexion",
@@ -5274,31 +7614,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "70-degrees-of-hip-flexion",
-    "name": "70 Degrees Of Hip Flexion",
-    "category": "hip",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for 70 Degrees Of Hip Flexion in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "supine-internal-rotation",
@@ -5322,13 +7648,25 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "contract-relax-for-internal-rotation-external-rotation",
     "name": "Contract Relax For Internal Rotation/External Rotation",
     "category": "hip",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -5346,13 +7684,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "prone-lying",
     "name": "Prone Lying",
     "category": "hip",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -5370,7 +7718,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ball-assisted-hip-flexion",
@@ -5393,7 +7751,19 @@
       "assets/097-long-sitting-isometric-hip-adduction-and-extension-with-ball-at-knees.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "rotations-on-stool",
@@ -5417,11 +7787,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "bike-no-recumbent-bike",
-    "name": "Bike *** No Recumbent Bike",
+    "name": "Stationary Bike (Upright; No Recumbent Bike)",
     "category": "hip",
     "type": "strength",
     "starter": false,
@@ -5441,7 +7821,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hooklying-abd-add-holds",
@@ -5465,7 +7859,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction",
+      "hip_adduction"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "1-2-kneeling-hip",
@@ -5488,13 +7895,23 @@
       "assets/093-half-kneeling-hip-flexor-stretch.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "quadruped-rock-backs",
     "name": "Quadruped Rock Backs",
     "category": "knee",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -5512,7 +7929,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-hip-rotations-on-stool",
@@ -5536,7 +7963,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "pallof-press",
@@ -5561,7 +8000,17 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/pallof-press.webp"
+    "image_url": "assets/pallof-press.webp",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-knee-flexion",
@@ -5585,7 +8034,19 @@
       "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "cable-column-rotation",
@@ -5609,7 +8070,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "gentle-hip-circles",
@@ -5633,7 +8104,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "aarom-with-physioball",
@@ -5657,31 +8140,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "active-knee",
-    "name": "Active Knee",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Active Knee in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "hip"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-hip-extension",
@@ -5705,7 +8174,19 @@
       "assets/037-standing-terminal-knee-extension-with-resistance-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "prone-resisted-internal-rotation-external-rotation",
@@ -5729,7 +8210,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "seated-internal-rotation-external-rotation",
@@ -5753,7 +8244,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cable-resisted-4-way-hip-strengthening",
@@ -5777,7 +8280,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "seated-hip-flexion",
@@ -5801,7 +8314,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-hip-flexion",
@@ -5825,7 +8350,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "3-way-balance-reaches",
@@ -5849,7 +8386,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "quadruped-hip-extension-on-bench",
@@ -5873,7 +8420,19 @@
       "assets/059-prone-hip-extension-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "band-resisted-seated-internal-rotation-external-rotation",
@@ -5897,7 +8456,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "rolling-patterns",
@@ -5921,7 +8490,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "leg-curls",
@@ -5945,7 +8524,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hyperextension-holds",
@@ -5969,7 +8560,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_extension",
+      "lumbar_extension"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hyperextension-reps",
@@ -5993,7 +8598,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar",
+      "hip"
+    ],
+    "motions": [
+      "hip_extension",
+      "lumbar_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "4-corner-balance-reach",
@@ -6017,7 +8636,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "kb-pass-through",
@@ -6041,7 +8670,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "1-2-kneeling-halos",
@@ -6065,37 +8704,25 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "focus-on-problem-areas",
-    "name": "Focus On Problem Areas",
-    "category": "hip",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Focus On Problem Areas in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "shoulder_flexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "hip-90-90",
     "name": "Hip 90/90",
     "category": "hip",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -6113,11 +8740,24 @@
       "assets/095-hip-abduction-with-resistance-loop-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion",
+      "hip_rotation"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "runner-s-stretch",
-    "name": "Runner\u2019s Stretch",
+    "name": "Runner’s Stretch",
     "category": "hip",
     "type": "stretch",
     "starter": false,
@@ -6128,7 +8768,7 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for Runner\u2019s Stretch in a comfortable position",
+      "Set up for Runner’s Stretch in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
@@ -6137,7 +8777,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "sumo-squat",
@@ -6161,11 +8813,27 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "world-s-greatest-stretch",
-    "name": "World\u2019s Greatest Stretch",
+    "name": "World’s Greatest Stretch",
     "category": "hip",
     "type": "stretch",
     "starter": false,
@@ -6176,7 +8844,7 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for World\u2019s Greatest Stretch in a comfortable position",
+      "Set up for World’s Greatest Stretch in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
@@ -6185,7 +8853,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "hip"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "wall-hip-flexion",
@@ -6209,7 +8887,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "copenhagen-progression",
@@ -6233,7 +8923,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_adduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "leg-press-machine",
@@ -6257,7 +8959,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "mini-jumps",
@@ -6281,7 +8995,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "ladder-decels",
@@ -6305,31 +9033,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "hamstring-and-slantboard",
-    "name": "Hamstring And Slantboard",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 12,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Hamstring And Slantboard in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hurdle-progression",
@@ -6353,7 +9067,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "gait-progression",
@@ -6377,7 +9105,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "cable-decels",
@@ -6401,7 +9141,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "split-squat-progression",
@@ -6425,31 +9177,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "dip-bar-assisted-slant-board-squat",
-    "name": "Dip Bar Assisted Slant Board Squat",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 3,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Dip Bar Assisted Slant Board Squat in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "flexion-on-step",
@@ -6473,35 +9217,27 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "double-leg",
-    "name": "Double Leg",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 3,
-      "reps": 6,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Double Leg in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "AAROM",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": true
   },
   {
     "id": "scapular-plane-shoulder-elevation-90",
-    "name": "Scapular Plane Shoulder Elevation < 90\u00b0",
+    "name": "Scapular Plane Shoulder Elevation < 90°",
     "category": "shoulder",
     "type": "strength",
     "starter": false,
@@ -6512,7 +9248,7 @@
       "frequency": "Daily (7x/wk)"
     },
     "cues": [
-      "Set up for Scapular Plane Shoulder Elevation < 90\u00b0 in a comfortable position",
+      "Set up for Scapular Plane Shoulder Elevation < 90° in a comfortable position",
       "Move slowly and stay within the range allowed for this phase",
       "Stop if pain increases and return to the start position"
     ],
@@ -6521,13 +9257,26 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion",
+      "shoulder_abduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "arm-hangs-outside-of-the-sling",
     "name": "Arm Hangs Outside Of The Sling",
     "category": "shoulder",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -6545,7 +9294,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "PROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "prom-arom-of-the-elbow",
@@ -6569,7 +9328,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "elbow"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cervical-prom-stretching",
@@ -6593,7 +9362,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "PROM",
+    "joints": [
+      "cervical"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ball-squeezes",
@@ -6617,7 +9396,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hand"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "shoulder-doorway-isometrics-25-50",
@@ -6641,7 +9430,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_isometric"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cross-symmetry-walk-outs",
@@ -6665,7 +9466,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "flexion-progression",
@@ -6689,7 +9500,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "scapular-rowing-off-of-table",
@@ -6713,7 +9534,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "external-rotation-progression",
@@ -6737,7 +9570,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "rotator-cuff-series",
@@ -6761,7 +9604,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_er",
+      "shoulder_ir"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "pnf-pattern-progression",
@@ -6785,7 +9641,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "i-y-ts-w-slider-on-the-wall",
@@ -6809,7 +9675,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_abduction",
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ube-light-resistance-with-b-ue",
@@ -6833,7 +9712,17 @@
       "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "light-isotonics",
@@ -6857,7 +9746,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-unweighted-flex",
@@ -6881,7 +9780,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "band-resisted-ext",
@@ -6905,7 +9814,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "band-resisted-seated-row",
@@ -6929,7 +9848,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "prone-row",
@@ -6953,7 +9884,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "band-resisted-biceps-curls-and-triceps",
@@ -6977,7 +9920,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder",
+      "elbow"
+    ],
+    "motions": [
+      "elbow_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ckc-progression",
@@ -7001,7 +9957,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "push-up-plus-progression",
@@ -7025,7 +9991,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "aggressive-prom-stretching-to-achieve",
@@ -7049,7 +10025,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "PROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "trx-rows",
@@ -7073,7 +10059,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "behind-the-back-stretch-rope",
@@ -7097,7 +10095,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_extension",
+      "shoulder_ir"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "biceps-curls-and-triceps-extensions",
@@ -7121,7 +10132,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder",
+      "elbow"
+    ],
+    "motions": [
+      "elbow_flexion",
+      "shoulder_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shoulder-taps",
@@ -7145,7 +10170,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "wall-end-range-isometrics",
@@ -7169,7 +10204,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "functional-external-rotation-internal-rotation-breakout-progression",
@@ -7193,55 +10238,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "intro-to-functional-movements",
-    "name": "Intro To Functional Movements",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Intro To Functional Movements in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "gross-movements",
-    "name": "Gross Movements",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Gross Movements in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "shoulder-circle-progression",
@@ -7265,7 +10272,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shoulder-press",
@@ -7289,7 +10306,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "bent-over-rows",
@@ -7313,55 +10342,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "lat-pull-down",
-    "name": "Lat Pull Down",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Lat Pull Down in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "shoulder_extension"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "exxentric-machine",
-    "name": "Exxentric Machine",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Exxentric Machine in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
-    ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "d2-pattern",
@@ -7385,7 +10378,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_abduction",
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "lat-pulldown",
@@ -7409,7 +10415,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "trx-ys",
@@ -7433,7 +10451,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_abduction",
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "flexion-abduction-scapation",
@@ -7457,7 +10488,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_abduction",
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "chest-press",
@@ -7481,7 +10525,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "bench-progression",
@@ -7505,7 +10561,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "over-the-shoulder-weighted-ball-catch",
@@ -7529,7 +10595,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": true,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "suitcase-carry",
@@ -7553,7 +10629,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "weighted-ball-taps-on-the-wall",
@@ -7577,7 +10663,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": true,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "plyo-variations",
@@ -7601,7 +10697,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": true,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "push-press",
@@ -7625,7 +10731,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "barbell-inverted-row",
@@ -7649,7 +10767,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shoulder-isometrics-in-neutral",
@@ -7673,7 +10803,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_isometric"
+    ],
+    "isometric": true,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "rhythmic-stabilization-drills",
@@ -7697,7 +10839,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_isometric"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "scapular-plane-internal-rotation",
@@ -7721,31 +10875,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "abduction-beginning-at-2-weeks",
-    "name": "Abduction Beginning At 2 Weeks",
-    "category": "shoulder",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Abduction Beginning At 2 Weeks in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "shoulder_ir"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "arom-of-wrist-and-hand",
@@ -7769,7 +10911,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "wrist",
+      "hand"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "end-range-y-t-i-w",
@@ -7793,7 +10946,20 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_abduction",
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "push-ups",
@@ -7817,7 +10983,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "gait-training-with-rw",
@@ -7841,31 +11017,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "feet-together",
-    "name": "Feet Together",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Feet Together in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "marching-on-foam",
@@ -7889,7 +11051,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "gait-training-w-ad",
@@ -7913,31 +11087,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "tissue-work-to",
-    "name": "Tissue Work To",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Tissue Work To in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
-    ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "farmer-carries",
@@ -7961,7 +11121,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "standing-hamstring-activation",
@@ -7985,7 +11155,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "3-way-balance-reach",
@@ -8009,7 +11191,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "toe-heel-walking",
@@ -8033,7 +11225,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle",
+      "foot"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "incline-treadmill-walking",
@@ -8057,7 +11263,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "get-up-from-floor-progression",
@@ -8081,7 +11297,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "eccentric-shuttle-press",
@@ -8105,7 +11332,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "lateral-step-downs",
@@ -8129,37 +11368,29 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
-  },
-  {
-    "id": "incorporate-more-compound-movements",
-    "name": "Incorporate More Compound Movements",
-    "category": "knee",
-    "type": "strength",
-    "starter": false,
-    "default_dosing": {
-      "sets": 2,
-      "reps": 10,
-      "hold_sec": 2,
-      "frequency": "Daily (7x/wk)"
-    },
-    "cues": [
-      "Set up for Incorporate More Compound Movements in a comfortable position",
-      "Move slowly and stay within the range allowed for this phase",
-      "Stop if pain increases and return to the start position"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
     ],
-    "photos": [
-      "https://placehold.co/300x200/e2e8f0/1e293b?text=Start",
-      "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
     ],
-    "video_url": "",
-    "image_status": "pending_asset"
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "seated-lumbar-flexion",
     "name": "Seated Lumbar Flexion",
     "category": "lumbar",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -8177,13 +11408,25 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [
+      "lumbar_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "cat-camel",
     "name": "Cat-Camel",
     "category": "lumbar",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -8201,7 +11444,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Stretch",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "modified-curl-up-mcgill",
@@ -8225,7 +11478,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "lumbar"
+    ],
+    "motions": [
+      "lumbar_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "ankle-circles",
@@ -8249,7 +11514,22 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_eversion",
+      "ankle_inversion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "star-drill",
@@ -8273,7 +11553,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hamstring-ball-curls",
@@ -8297,7 +11587,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "prone-hamstring-curls",
@@ -8321,7 +11623,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "toe-walks",
@@ -8345,7 +11659,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle",
+      "foot"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "split-squat",
@@ -8370,7 +11698,23 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/split-squat.webp"
+    "image_url": "assets/split-squat.webp",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "depth-jump-progression",
@@ -8394,7 +11738,21 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "ankle_dorsiflexion",
+      "ankle_plantarflexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": true,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hamstring-curls-progression",
@@ -8418,7 +11776,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "shuttle-press",
@@ -8442,7 +11812,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sled-pulls-sled-pushes",
@@ -8466,7 +11848,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "lateral-squat-variations",
@@ -8490,7 +11884,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "nu-step",
@@ -8514,7 +11924,23 @@
       "assets/068-side-stepping-with-resistance-at-feet-finish.jpg"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "dl-machine-extension",
@@ -8538,7 +11964,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "trx-cossack-squat",
@@ -8562,7 +12000,23 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "hip",
+      "knee",
+      "ankle"
+    ],
+    "motions": [
+      "hip_flexion",
+      "knee_extension",
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "wall-sits",
@@ -8586,7 +12040,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": true,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "tall-kneeling-halos",
@@ -8610,7 +12076,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-hamstring-curl",
@@ -8634,7 +12112,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "tibial-rotations-w-slider",
@@ -8658,7 +12148,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "arom-of-the-elbow",
@@ -8682,7 +12182,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "AROM",
+    "joints": [
+      "elbow"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "standing-flexion-progression",
@@ -8706,7 +12216,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": true
   },
   {
     "id": "shoulder-press-variations",
@@ -8730,13 +12250,25 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "shoulder"
+    ],
+    "motions": [
+      "shoulder_flexion"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "prom-of-the-elbow",
     "name": "PROM Of The Elbow",
     "category": "elbow_wrist",
-    "type": "strength",
+    "type": "stretch",
     "starter": false,
     "default_dosing": {
       "sets": 2,
@@ -8754,7 +12286,17 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "PROM",
+    "joints": [
+      "elbow"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   },
   {
     "id": "feet-together-on-foam",
@@ -8778,7 +12320,18 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "ankle",
+      "knee"
+    ],
+    "motions": [],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "sled-push-pull",
@@ -8802,7 +12355,19 @@
       "https://placehold.co/300x200/cbd5e1/1e293b?text=Finish"
     ],
     "video_url": "",
-    "image_status": "pending_asset"
+    "image_status": "pending_asset",
+    "movementType": "Resisted",
+    "joints": [
+      "knee"
+    ],
+    "motions": [
+      "knee_extension"
+    ],
+    "isometric": false,
+    "weightBearing": true,
+    "impact": false,
+    "chain": "closed",
+    "needsReview": false
   },
   {
     "id": "hip-hikes",
@@ -8827,6 +12392,18 @@
     ],
     "video_url": "",
     "image_status": "active",
-    "image_url": "assets/hip-hikes.webp"
+    "image_url": "assets/hip-hikes.webp",
+    "movementType": "Resisted",
+    "joints": [
+      "hip"
+    ],
+    "motions": [
+      "hip_abduction"
+    ],
+    "isometric": false,
+    "weightBearing": false,
+    "impact": false,
+    "chain": "open",
+    "needsReview": false
   }
 ]
