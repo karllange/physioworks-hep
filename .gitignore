@@ -3,3 +3,4 @@ raw_grok_outputs/
 *.zip
 .env
 scripts/__pycache__/
+.DS_Store
