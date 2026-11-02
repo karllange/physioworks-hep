@@ -1847,6 +1847,141 @@
       }
     }
 
+    function matchThumb(exercise) {
+      const subject = figureSubject(exercise);
+      const frames = ownedDrawingFrames(subject);
+      const src = frames[0] || clinicalPlaceholderSrc(subject);
+      return `<img src="${escapeHtml(src)}" alt="" class="w-12 h-9 object-contain bg-white rounded border border-slate-200">`;
+    }
+
+    function matchOptionRow(exercise, instanceId, loaded) {
+      const tags = escapeHtml(regionLabel(exerciseRegionKey(exercise))) + " · " + escapeHtml(String(exercise.type || "exercise").toUpperCase());
+      const body = `
+        <span class="shrink-0">${matchThumb(exercise)}</span>
+        <span class="min-w-0 flex-1">
+          <span class="block text-[11px] font-bold text-slate-800 truncate">${escapeHtml(exercise.name)}</span>
+          <span class="block text-[10px] font-semibold uppercase tracking-wide text-slate-500">${tags}</span>
+        </span>`;
+      if (loaded) {
+        return `<div class="flex items-center gap-2 rounded-lg border border-[#1D354E] bg-slate-50 px-2 py-1.5">${body}<span class="shrink-0 text-[10px] font-bold text-[#1D354E]">Loaded</span></div>`;
+      }
+      return `<button type="button" onclick="swapProgramMatch('${instanceId}', '${exercise.id}')" class="flex w-full items-center gap-2 rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-left hover:border-[#1D354E]">${body}</button>`;
+    }
+
+    function renderMatchPicker(item) {
+      const options = item.matchOptions;
+      if (!options || options.exact) return "";
+      const dictated = options.dictatedName || item.name;
+      const query = options.query || "";
+      let rows = "";
+      if (query.trim()) {
+        const hits = catalogData.filter(exercise => exercise.id !== item.baseId && exerciseMatchesQuery(exercise, query)).slice(0, 6);
+        rows = hits.length
+          ? hits.map(exercise => matchOptionRow(exercise, item.uniqueInstanceId, false)).join("")
+          : `<p class="text-[11px] text-slate-500 px-1">No library exercise matches that search.</p>`;
+      } else {
+        const current = catalogData.find(exercise => exercise.id === item.baseId);
+        const alternatives = (options.alternativeIds || [])
+          .map(id => catalogData.find(exercise => exercise.id === id))
+          .filter(exercise => exercise && exercise.id !== item.baseId)
+          .slice(0, 4);
+        rows = (current ? matchOptionRow(current, item.uniqueInstanceId, true) : "")
+          + alternatives.map(exercise => matchOptionRow(exercise, item.uniqueInstanceId, false)).join("");
+      }
+      const panel = options.open ? `
+        <div class="rounded-lg border border-slate-200 bg-slate-50 p-2 space-y-1.5" data-match-panel="${escapeHtml(item.uniqueInstanceId)}">
+          <p class="text-[10px] font-bold uppercase tracking-wide text-slate-500">${query.trim() ? "Library search" : "Closest library matches"}</p>
+          ${rows}
+          <input type="search" data-match-search="${escapeHtml(item.uniqueInstanceId)}" value="${escapeHtml(query)}" oninput="setMatchQuery('${item.uniqueInstanceId}', this.value)" placeholder="Search the exercise library" class="w-full bg-white border border-slate-200 rounded px-2 py-1 text-[11px]">
+          <button type="button" onclick="keepDictatedAsCustom('${item.uniqueInstanceId}')" class="w-full text-left px-2 py-1.5 rounded-lg border border-dashed border-slate-300 text-[11px] font-semibold text-slate-700 hover:bg-white">Keep as Custom Exercise ('${escapeHtml(dictated)}')</button>
+        </div>` : "";
+      return `
+        <div class="space-y-1.5">
+          <button type="button" onclick="toggleMatchPicker('${item.uniqueInstanceId}')" class="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-bold text-[#1D354E] hover:bg-slate-200" aria-expanded="${options.open ? "true" : "false"}">Swap Match / Options</button>
+          ${panel}
+        </div>`;
+    }
+
+    function toggleMatchPicker(instanceId) {
+      const item = currentProgram.find(entry => entry.uniqueInstanceId === instanceId);
+      if (!item || !item.matchOptions) return;
+      item.matchOptions.open = !item.matchOptions.open;
+      renderActiveProgram();
+      if (item.matchOptions.open) {
+        const input = document.querySelector('[data-match-search="' + instanceId + '"]');
+        if (input) input.focus();
+      }
+    }
+
+    function setMatchQuery(instanceId, value) {
+      const item = currentProgram.find(entry => entry.uniqueInstanceId === instanceId);
+      if (!item || !item.matchOptions) return;
+      item.matchOptions.query = value;
+      item.matchOptions.open = true;
+      renderActiveProgram();
+      const input = document.querySelector('[data-match-search="' + instanceId + '"]');
+      if (input) {
+        input.focus();
+        const end = input.value.length;
+        try { input.setSelectionRange(end, end); } catch (err) { /* search inputs can reject a range */ }
+      }
+    }
+
+    function swapProgramMatch(instanceId, exerciseId) {
+      const item = currentProgram.find(entry => entry.uniqueInstanceId === instanceId);
+      const template = catalogData.find(entry => entry.id === exerciseId);
+      if (!item || !template) return;
+      const verdict = evaluateSafety(template, item.side);
+      if (verdict.status === "block") {
+        const override = requestOverride(template.name, verdict);
+        if (!override) return;
+        item.override = override;
+      } else if (item.override) {
+        delete item.override;
+      }
+      const spoken = item.dictationCues || [];
+      item.baseId = template.id;
+      item.name = template.name;
+      item.type = template.type || item.type || "strength";
+      item.category = template.category || "";
+      item.region = template.category || item.region || "";
+      item.cues = [...(template.cues || [])];
+      spoken.forEach(cue => {
+        if (!item.cues.includes(cue)) item.cues.push(cue);
+      });
+      item.photos = [...(template.photos || [])];
+      if (item.matchOptions) item.matchOptions.open = true;
+      renderActiveProgram();
+      saveCurrentProgramLocally();
+      const input = document.querySelector('[data-match-search="' + instanceId + '"]');
+      if (input) input.focus();
+    }
+
+    function keepDictatedAsCustom(instanceId) {
+      const item = currentProgram.find(entry => entry.uniqueInstanceId === instanceId);
+      if (!item) return;
+      const name = (item.matchOptions && item.matchOptions.dictatedName) || item.name;
+      const region = inferMovementRegion(name);
+      const spoken = item.dictationCues && item.dictationCues.length
+        ? item.dictationCues.slice()
+        : ["Perform with control and within comfortable tolerance."];
+      item.baseId = "custom";
+      item.name = name;
+      item.region = region;
+      item.cues = spoken;
+      item.note = (item.dictationCues || []).join(" ");
+      item.photos = customMovementGraphics(name, region);
+      item.demoPhotos = 0;
+      item.matchOptions = null;
+      const verdict = itemSafety(item);
+      if (verdict.status === "block" && !item.override) {
+        const override = requestOverride(name, verdict);
+        if (override) item.override = override;
+      }
+      renderActiveProgram();
+      saveCurrentProgramLocally();
+    }
+
     function renderActiveProgram() {
       const container = document.getElementById("activeProgramList");
       // Keep a reference: the placeholder is detached while the program has items.
@@ -1907,6 +2042,8 @@
               <button type="button" onclick="removeFromProgram('${item.uniqueInstanceId}')" class="text-xs text-red-500 hover:text-red-700 font-bold px-1.5">✕</button>
             </div>
           </div>
+          ${renderMatchPicker(item)}
+          ${item.note ? `<p class="text-[11px] text-slate-600">Spoken cues: ${escapeHtml(item.note)}</p>` : ""}
           ${safetyHtml}
 
           <!-- Lateral Selector Chips -->
@@ -2427,19 +2564,8 @@
         const overlaps = accepted.some(item => candidate.start < item.end && item.start < candidate.end);
         if (!overlaps) accepted.push(candidate);
       });
-      clauseSpans(normalized).forEach(clause => {
-        const covered = accepted.some(match => match.start < clause.end && clause.start < match.end);
-        if (covered || matchIsNegated(normalized, clause.start) || /^\s*(?:no|avoid|without|dont|do not)\b/.test(clause.text)) return;
-        const exercise = fuzzyExerciseForClause(clause.text);
-        if (!exercise) return;
-        accepted.push({
-          id: exercise.id,
-          exercise,
-          phrase: clause.text,
-          start: clause.start,
-          end: clause.end
-        });
-      });
+      // Exact phrase hits only. A paraphrase is scored by the library matcher
+      // so the program card can offer the closest exercises instead of a custom placeholder.
       accepted.sort((a, b) => a.start - b.start);
       const kept = [];
       accepted.forEach(match => {
@@ -2751,6 +2877,180 @@
       return [customMovementSvg(name, key, "Start"), customMovementSvg(name, key, "Finish")];
     }
 
+    const MATCH_STOP = new Set(["the", "a", "an", "of", "on", "in", "with", "for", "to", "and", "you", "your", "as", "at", "from", "into", "or", "per", "via", "please", "also", "then", "just", "patient", "do", "doing", "this", "that", "it", "is", "are", "was", "be", "position", "while", "making", "sure", "edge"]);
+    const MATCH_HIGH = new Set(["hamstring", "quad", "glute", "gluteal", "gastroc", "gastrocnemius", "cervical", "lumbar", "thoracic", "hip", "knee", "shoulder", "ankle", "wrist", "elbow", "neck", "core", "pec", "pectoral", "lat", "rotator", "scap", "scapular", "patella", "achilles", "stretch", "isometric", "lunge", "clam", "clamshell", "pressup", "curl", "bridge", "squat", "raise", "glide", "tuck", "extension", "flexion", "rotation", "abduction", "adduction"]);
+    const MATCH_MEDIUM = new Set(["seated", "sitting", "supine", "prone", "sidelying", "standing", "hooklying", "quadruped", "halfkneeling", "slider", "strap", "towel", "band", "ball", "wall", "table", "stool", "foam", "roller"]);
+    const TOKEN_CANON = {
+      quadricep: "quad",
+      quadriceps: "quad",
+      gluteal: "glute",
+      gastrocnemius: "gastroc",
+      calf: "gastroc",
+      sitting: "seated",
+      clamshell: "clam",
+      pressup: "pressup"
+    };
+
+    function stemMatchToken(token) {
+      let value = token;
+      if (value.endsWith("ies") && value.length > 5) value = value.slice(0, -3) + "y";
+      else if (/(ches|shes|sses|xes|zes)$/.test(value) && value.length > 4) value = value.slice(0, -2);
+      else if (value.endsWith("s") && !value.endsWith("ss") && value.length > 4) value = value.slice(0, -1);
+      return TOKEN_CANON[value] || value;
+    }
+
+    function matchTokens(text) {
+      const prepared = normalizeSpeech(text)
+        .replace(/\|/g, " ")
+        .replace(/\bpress[\s-]?ups?\b/g, " pressup ")
+        .replace(/\bside[\s-]?lying\b/g, " sidelying ")
+        .replace(/\bhalf[\s-]?kneeling\b/g, " halfkneeling ");
+      const seen = [];
+      prepared.split(/\s+/).forEach(raw => {
+        const token = stemMatchToken(raw);
+        if (token.length < 3 || MATCH_STOP.has(token) || /^\d/.test(token) || seen.includes(token)) return;
+        seen.push(token);
+      });
+      return seen;
+    }
+
+    function tokenWeight(token, tokens) {
+      if (token === "press" && tokens.includes("up")) return 3;
+      if (MATCH_HIGH.has(token)) return 3;
+      if (MATCH_MEDIUM.has(token)) return 2;
+      return 1;
+    }
+
+    function tokensOverlap(left, right) {
+      if (left === right) return true;
+      if (left.length >= 5 && right.length >= 5 && (left.startsWith(right) || right.startsWith(left))) return true;
+      return false;
+    }
+
+    let matchDocFreqCache = null;
+    function matchDocumentFreq() {
+      const list = Array.isArray(catalogData) ? catalogData : [];
+      const key = list.length + ":" + (list[0] && list[0].id || "");
+      if (matchDocFreqCache && matchDocFreqCache.key === key) return matchDocFreqCache;
+      const freq = new Map();
+      list.forEach(exercise => {
+        new Set(matchTokens(exercise.name)).forEach(token => {
+          freq.set(token, (freq.get(token) || 0) + 1);
+        });
+      });
+      matchDocFreqCache = { key, freq, docs: list.length };
+      return matchDocFreqCache;
+    }
+
+    function scaledTokenWeight(token, tokens) {
+      const { freq, docs } = matchDocumentFreq();
+      const df = freq.get(token) || 0;
+      const idf = Math.log((docs + 1) / (df + 1)) + 1;
+      return tokenWeight(token, tokens) * idf;
+    }
+
+    function scoreLibraryExercise(queryTokens, exercise) {
+      const nameTokens = matchTokens(exercise.name);
+      if (!queryTokens.length || !nameTokens.length) return 0;
+      const used = new Set();
+      let matchedWeight = 0;
+      let matchedCount = 0;
+      let clinicalHits = 0;
+      queryTokens.forEach(token => {
+        const index = nameTokens.findIndex((nameToken, nameIndex) => !used.has(nameIndex) && tokensOverlap(token, nameToken));
+        if (index === -1) return;
+        used.add(index);
+        if (tokenWeight(token, queryTokens) >= 2) clinicalHits += 1;
+        matchedWeight += scaledTokenWeight(token, queryTokens);
+        matchedCount += 1;
+      });
+      // One generic word ("walk") is not enough to claim a library exercise.
+      // A muscle, movement, position, or equipment word is, and so are two shared title words.
+      if (!matchedWeight || (!clinicalHits && matchedCount < 2)) return 0;
+      const queryWeight = queryTokens.reduce((sum, token) => sum + scaledTokenWeight(token, queryTokens), 0) || 1;
+      const precision = matchedWeight / queryWeight;
+      const recall = matchedCount / nameTokens.length;
+      let score = matchedWeight + precision * 3 + recall * 2;
+      const category = stemMatchToken(String(exercise.category || "").toLowerCase());
+      if (category && queryTokens.some(token => tokensOverlap(token, category))) score += 0.4;
+      return score;
+    }
+
+    function isExactLibraryTitle(searchText, exercise) {
+      const query = normalizeSpeech(searchText).replace(/\|/g, " ").replace(/\s+/g, " ").trim();
+      if (!query) return false;
+      const name = normalizeSpeech(exercise.name).replace(/\([^)]*\)/g, " ").replace(/\|/g, " ").replace(/\s+/g, " ").trim();
+      if (query === name) return true;
+      return exerciseVoicePhrases(exercise).some(phrase => phrase === query);
+    }
+
+    function libraryMatchReport(searchText) {
+      const queryTokens = matchTokens(searchText);
+      if (!queryTokens.length || !Array.isArray(catalogData)) {
+        return { bestGuess: null, alternativeMatches: [], exact: false, score: 0 };
+      }
+      const ranked = [];
+      catalogData.forEach(exercise => {
+        const exact = isExactLibraryTitle(searchText, exercise);
+        const score = scoreLibraryExercise(queryTokens, exercise) + (exact ? 20 : 0);
+        if (score > 0) ranked.push({ exercise, score, exact });
+      });
+      ranked.sort((a, b) => b.score - a.score || a.exercise.name.length - b.exercise.name.length);
+      if (!ranked.length) return { bestGuess: null, alternativeMatches: [], exact: false, score: 0 };
+      const exactRow = ranked.find(row => row.exact);
+      if (exactRow) {
+        return { bestGuess: exactRow.exercise, alternativeMatches: [], exact: true, score: exactRow.score };
+      }
+      return {
+        bestGuess: ranked[0].exercise,
+        alternativeMatches: ranked.slice(1, 5).map(row => row.exercise),
+        exact: false,
+        score: ranked[0].score
+      };
+    }
+
+    function stripDoseFromName(text) {
+      return String(text || "")
+        .replace(/\b\d+\s*(?:sets?\s*)?(?:x|by)\s*\d+\b[\s\S]*$/i, " ")
+        .replace(/\b\d+\s+sets?\b[\s\S]*$/i, " ")
+        .replace(/\bsets?\s+of\s+\d+\b[\s\S]*$/i, " ")
+        .replace(/\bx\s*\d+\b[\s\S]*$/i, " ")
+        .replace(/\b\d+\s+(?:to\s+)?\d*\s*times\b[\s\S]*$/i, " ")
+        .replace(/\b(?:hourly|every hour|qd|bid|tid|qid)\b/g, " ")
+        .replace(/\btempo\s+\d+-\d+-\d+(?:-\d+)?\b/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function tidySpokenSearch(text) {
+      return stripDoseFromName(text)
+        .replace(/\b(?:left|right|bilateral|bilat|both sides|both|each side|per side|one side|one arm|single arm|unilateral)\b/g, " ")
+        .replace(/\b(?:please|also|then|just|patient)\b/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function spokenCueLines(cueSource) {
+      const text = String(cueSource || "").replace(/\s+/g, " ").trim();
+      if (!text || isDoseOnlyClause(text)) return [];
+      const sentence = text.charAt(0).toUpperCase() + text.slice(1);
+      return [/[.!?]$/.test(sentence) ? sentence : sentence + "."];
+    }
+
+    function splitSpokenNameAndCues(raw) {
+      const source = String(raw || "").replace(/\|/g, " ").replace(/\s+/g, " ").trim();
+      const cueLead = /\b(?:as you|making sure(?:\s+to)?|make sure(?:\s+to)?|holding for|on the edge of|while you|trying to|remember to|be sure(?:\s+to)?)\b/i;
+      const cueAt = source.search(cueLead);
+      const nameSource = cueAt === -1 ? source : source.slice(0, cueAt);
+      const cueSource = cueAt === -1 ? "" : source.slice(cueAt);
+      const searchText = tidySpokenSearch(nameSource);
+      return {
+        searchText,
+        dictatedName: titleCaseMovement(searchText),
+        cues: spokenCueLines(cueSource)
+      };
+    }
+
     function customMovementFromClause(text) {
       if (/\b(?:sitting extensions?|extension in sitting|seated extensions?|seated mckenzie)\b/.test(text)) {
         return {
@@ -2783,28 +3083,13 @@
             : ["Walk the hand up the wall within a comfortable range."]
         };
       }
-      let core = text
-        .replace(/\b\d+\s*(?:sets?\s*)?(?:x|by)\s*\d+\b[\s\S]*$/, "")
-        .replace(/\bx\s*\d+\b[\s\S]*$/, "")
-        .replace(/\b\d+\s+(?:to\s+)?\d*\s*times\b[\s\S]*$/, "")
-        .replace(/\bhold(?:\s+for)?\s+\d+\b[\s\S]*$/, "")
-        .replace(/\btempo\s+\d+-\d+-\d+(?:-\d+)?\b/g, " ")
-        .replace(/\b\d+-\d+-\d+(?:-\d+)?\s+tempo\b/g, " ")
-        .replace(/\b(?:hourly|every hour|qd|bid|tid|qid)\b/g, " ")
-        .replace(/\bfor the (?:shoulder|knee|hip|ankle|back|neck|spine)\b[\s\S]*$/, "")
-        .split(/\b(?:where|youre|doing|against)\b/)[0];
-      core = core
-        .replace(/\b(?:one arm|one side|single arm|unilateral|left|right|bilateral|bilat|both sides|both|each side|per side)\b/g, " ")
-        .replace(/\b(?:with|for|the|a|an|on|to)\b/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
+      const split = splitSpokenNameAndCues(text);
+      const core = split.searchText;
       if (!core || isDirectiveOnlyClause(core)) return null;
-      const words = core.split(" ").filter(word => word.length > 1);
-      if (!words.length) return null;
       const wax = /\bwax on\b/.test(text) && /\bwax off\b/.test(text);
-      const name = titleCaseMovement(words.slice(0, 6).join(" ")) + (wax ? " (Wax On, Wax Off)" : "");
-      const cues = [];
-      if (wax) cues.push("Perform wax on, wax off motion against the wall.");
+      const name = split.dictatedName + (wax ? " (Wax On, Wax Off)" : "");
+      const cues = split.cues.slice();
+      if (wax && !cues.length) cues.push("Perform wax on, wax off motion against the wall.");
       const where = text.match(/\bwhere\b(.+)/);
       if (where && !cues.length) {
         const detail = where[1].replace(/\bx\s*\d+\b[\s\S]*$/, "").replace(/\bfor the \w+[\s\S]*$/, "").replace(/\s+/g, " ").trim();
@@ -2888,13 +3173,17 @@
         if (!side && distinctSideCount(doseSpan) === 1) side = sideForText(doseSpan);
         if (!side) side = "Bilateral";
         const doseSource = exercisesInSegment === 1 ? doseSpan : windowText;
+        const hostClause = clauseSpans(normalized).find(clause => match.start < clause.end && clause.start < match.end);
+        const spokenSplit = hostClause ? splitSpokenNameAndCues(hostClause.text) : { cues: [] };
         return {
           custom: false,
+          guess: false,
           id: match.id,
           name: match.exercise.name,
           side,
           dosePreset: dosingPresetForText(doseSource, match.exercise),
           overrides: spokenDoseOverrides(parseSpokenDose(doseSource)),
+          spokenCues: spokenSplit.cues,
           start: match.start
         };
       });
@@ -2903,6 +3192,25 @@
         const covered = matches.some(match => match.start < clause.end && clause.start < match.end);
         if (covered || isDirectiveOnlyClause(clause.text) || isDoseOnlyClause(clause.text) || isUnmatchedAbbreviation(clause.text)) return;
         if (/^\s*(?:please\s+|and\s+|then\s+)*(?:no|avoid|without|dont|do not)\b/.test(clause.text)) return;
+        const split = splitSpokenNameAndCues(clause.text);
+        const report = split.searchText ? libraryMatchReport(split.searchText) : { bestGuess: null, exact: false, alternativeMatches: [] };
+        if (report.bestGuess) {
+          const spoken = parseSpokenDose(clause.text);
+          catalogExercises.push({
+            custom: false,
+            guess: !report.exact,
+            id: report.bestGuess.id,
+            name: report.bestGuess.name,
+            side: sideForText(clause.text) || "Bilateral",
+            dosePreset: dosingPresetForText(clause.text, report.bestGuess),
+            overrides: spokenDoseOverrides(spoken),
+            spokenCues: split.cues,
+            dictatedName: split.dictatedName,
+            alternativeIds: report.exact ? [] : report.alternativeMatches.map(exercise => exercise.id),
+            start: clause.start
+          });
+          return;
+        }
         const built = customMovementFromClause(clause.text);
         if (!built) return;
         const spoken = parseSpokenDose(clause.text);
@@ -2937,6 +3245,8 @@
         return {
           id: entry.custom ? "custom" : entry.id,
           name: entry.name,
+          guess: !!entry.guess,
+          dictatedName: entry.dictatedName || "",
           side: entry.side || "",
           sets: entry.custom ? entry.sets : (overrides.sets != null ? overrides.sets : null),
           reps: entry.custom ? entry.reps : (overrides.reps != null ? overrides.reps : null),
@@ -2953,7 +3263,8 @@
       const hold = row.hold || "—";
       const side = row.side || "—";
       const freq = row.freq ? " · " + row.freq : "";
-      return row.id + " · sets " + sets + " · reps " + reps + " · hold " + hold + " · " + side + freq;
+      const guess = row.guess ? "≈ " + row.name + " · " : "";
+      return guess + row.id + " · sets " + sets + " · reps " + reps + " · hold " + hold + " · " + side + freq;
     }
 
     function formatDictationBadge(model, multiline) {
@@ -3063,12 +3374,32 @@
           return;
         }
         const added = addToProgram(entry.id, entry.side, entry.dosePreset, false, { skipped });
-        if (added) addedCount += 1;
-        if (!added || !entry.overrides) return;
-        const keys = Object.keys(entry.overrides);
-        if (!keys.length) return;
-        keys.forEach(key => { added[key] = entry.overrides[key]; });
-        added.dosePreset = "custom";
+        if (!added) return;
+        addedCount += 1;
+        if (entry.overrides) {
+          const keys = Object.keys(entry.overrides);
+          if (keys.length) {
+            keys.forEach(key => { added[key] = entry.overrides[key]; });
+            added.dosePreset = "custom";
+          }
+        }
+        if (entry.spokenCues && entry.spokenCues.length) {
+          const extra = entry.spokenCues.filter(cue => !(added.cues || []).includes(cue));
+          if (extra.length) {
+            added.cues = [...(added.cues || []), ...extra];
+            added.note = extra.join(" ");
+            added.dictationCues = extra;
+          }
+        }
+        if (entry.guess) {
+          added.matchOptions = {
+            exact: false,
+            dictatedName: entry.dictatedName || entry.name,
+            alternativeIds: entry.alternativeIds || [],
+            open: false,
+            query: ""
+          };
+        }
       });
       refreshSafety(true);
       showPrescribeToast(prescribeSummary(addedCount, parsed.directives.length) + skippedSummary(skipped));

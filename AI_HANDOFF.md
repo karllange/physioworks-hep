@@ -6,6 +6,7 @@ Shared state for every agent in `AGENTS.md`. Newest entry first in each section.
 
 ### 2026-11-02
 
+- Dictate Plan / Paste now best-guesses a library exercise instead of dropping straight to "Custom Clinic Movement". Cue clauses ("as you…", "making sure to…", "holding for…", "on the edge of…") leave the title and land on the card as spoken cues. A non-exact match loads the top library exercise (real start/end images) and shows a Swap Match / Options picker: top alternatives, a library search box, and Keep as Custom with the cleaned dictated name. Exact titles and voice aliases stay exact and do not show the picker. Lives in `index.html`. Checked in the browser with "Hamstring stretch in seated position as you lean forward from the hips holding for 30 seconds" (best guess Seated Hamstring Stretch, alternatives are the other hamstring exercises, hold 30s, cues preserved through swap and Keep as Custom). Rare clinical words outrank a generic word such as "stretch". A phrase that shares no muscle, movement, position, or equipment word, and fewer than two title words, stays a custom card under the full cleaned name. UI change, waits for Karl's tap.
 - Resolved all merge conflicts on `feat/reasoning-engine` with `origin/main`.
 - Staged and committed a clean resolution:
   - **`exercises.json`**: Resolved conflict by retaining our active/illustrated list, then ran `node scripts/classify_catalog.js` to process safety metadata and protocol references, producing a compliant, valid **290-exercise database**.
@@ -68,7 +69,7 @@ Evidence from a fresh clone and headless-browser runs. Line numbers refer to `ma
 
 ## Next Immediate Micro-Step
 
-- [Mac/PC Deep Build] Karl runs `git push origin feat/reasoning-engine` from terminal to push the resolved merge conflicts, then reviews and merges the PR.
+- [Mac/PC Deep Build] Karl reviews the Dictate Plan matcher in `index.html` on `feat/reasoning-engine` (best-guess library match plus Swap Match / Options). UI file, so the PR waits for his tap.
 
 ## Gemini Review Log
 
