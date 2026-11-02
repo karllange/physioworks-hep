@@ -202,6 +202,7 @@
 
   </main>
 
+  <script src="./hep-safety.js"></script>
   <script>
     function codeFromLocation() {
       const queryCode = new URLSearchParams(window.location.search).get("code");
@@ -263,8 +264,32 @@
       };
     }
 
+    // Compact share links (#p=): exercise ids + doses + preset directive ids + scrubbed free text.
+    function payloadFromCompact(compact) {
+      const program = HEPSafety.decodeCompactProgram(compact);
+      const presets = HEPSafety.DIRECTIVE_PRESETS || [];
+      const directives = program.directiveIds
+        .map(id => presets.find(preset => preset.id === id))
+        .filter(Boolean)
+        .map(preset => preset.icon + " " + preset.text)
+        .concat(program.customDirectives);
+      return { ...program, directives };
+    }
+
     document.addEventListener("DOMContentLoaded", async () => {
       const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      const compact = hashParams.get("p");
+      if (compact && window.HEPSafety) {
+        try {
+          const program = await programFromPayload(payloadFromCompact(compact));
+          if (!program.code) program.code = codeFromLocation();
+          if (program.code) localStorage.setItem("PW_HEP_" + program.code, JSON.stringify(program));
+          renderProgram(program);
+          return;
+        } catch (error) {
+          console.warn("Share link could not be read; falling back to code lookup.", error);
+        }
+      }
       const encoded = hashParams.get("d");
       if (encoded) {
         try {

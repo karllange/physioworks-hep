@@ -9,6 +9,12 @@ ROOT = Path(__file__).resolve().parent.parent
 STAGING = ROOT / "protocols"
 CATALOG_PATH = ROOT / "exercises.json"
 REGISTRY_PATH = ROOT / "protocols.json"
+# Protocol prose that was once ingested as exercises (see scripts/classify_catalog.js).
+REMOVED_IDS = set(json.loads((ROOT / "scripts" / "catalog_removals.json").read_text(encoding="utf-8")))
+MERGED_IDS = {
+    "lat-pull-down": "lat-pulldown",
+    "dip-bar-assisted-slant-board-squat": "dip-bar-assisted-slantboard-squat",
+}
 
 STOPWORDS = {"a", "an", "the", "and", "with", "of", "on", "at", "to", "for", "in", "or"}
 DOSE_KEYS = {"sets", "reps", "rep", "hold", "frequency", "freq", "cues", "cue", "instructions", "precautions", "precaution"}
@@ -505,10 +511,14 @@ def link_exercises(parsed_doc, catalog, starter=True):
             if excluded_fragment(exercise["name"]):
                 note_passive_extension(phase, exercise["name"])
                 continue
+            if slugify(exercise["name"]) in REMOVED_IDS:
+                continue
             kept.append(exercise)
         phase["exercises"] = kept
         for exercise in phase["exercises"]:
-            match = match_exercise(exercise["name"], catalog)
+            merged = MERGED_IDS.get(slugify(exercise["name"]))
+            match = next((item for item in catalog if item["id"] == merged), None) if merged else None
+            match = match or match_exercise(exercise["name"], catalog)
             if match:
                 exercise_id = match["id"]
                 matched += 1
@@ -1001,6 +1011,7 @@ def ingest(argv):
     registry.extend(fresh)
     CATALOG_PATH.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     REGISTRY_PATH.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print("Next: run `node scripts/classify_catalog.js` to add safety fields to new exercises.")
     gap_count = append_asset_gaps(added)
     print("")
     print("Protocol ingestion summary")

@@ -13,10 +13,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <!-- Tesseract.js: OCR stays in browser memory. Images are not uploaded. -->
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="./hep-safety.js"></script>
 
   <style>
     body { font-family: 'Inter', sans-serif; }
     
+    .safety-block { border-color: #b91c1c !important; background: #fef2f2 !important; }
+    .safety-warn { border-color: #b45309 !important; background: #fffbeb !important; }
+    .phi-warning { font-size: 11px; font-weight: 600; color: #9a3412; }
+    #printQrCode img, #printQrCode canvas { width: 160px !important; height: 160px !important; image-rendering: pixelated; }
+
     /* Print Engine: Clean, High-Contrast B&W Laser Handout */
     @media print {
       body, .surface-card, .notes-box, .frost-chip, .diagram-frame {
@@ -284,11 +290,12 @@
         <p class="text-sm text-slate-600 font-medium">Home Exercise & Rehabilitation Prescription</p>
       </div>
       <div class="text-right flex items-center space-x-4">
-        <div id="printQrCode" class="w-20 h-20 border border-slate-300 p-1 flex items-center justify-center"></div>
+        <div id="printQrCode" class="border border-slate-300 p-1 flex items-center justify-center" style="width:172px;height:172px"></div>
         <div>
           <div class="text-xs uppercase font-bold text-slate-500">Access Code</div>
           <div id="printCodeDisplay" class="text-2xl font-mono font-black text-slate-900">PW-0000</div>
           <div class="text-[10px] text-slate-500 mt-1">Scan for mobile video clips</div>
+          <div id="printQrFallback" class="hidden text-[10px] text-slate-700 mt-1 max-w-[220px] break-all"></div>
         </div>
       </div>
     </div>
@@ -313,7 +320,7 @@
             <span class="absolute left-3 top-2.5 text-slate-400">🔍</span>
           </div>
           <div class="shrink-0 inline-flex rounded-lg shadow-sm">
-            <button type="button" id="dictatePlanBtn" onclick="toggleDictatePlan()" aria-pressed="false"
+            <button type="button" id="dictatePlanBtn" onclick="toggleDictatePlan()" aria-pressed="false" title="Voice dictation is off until you confirm: Chrome sends the audio to Google. Say no patient names or DOBs."
                     class="relative whitespace-nowrap inline-flex items-center gap-1.5 px-3 py-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold text-xs rounded-l-lg transition">
               <span id="dictateLiveDot" class="hidden absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-red-500 ring-2 ring-white"></span>
               <span id="dictatePlanIcon" aria-hidden="true">🎙️</span>
@@ -387,7 +394,8 @@
             </label>
           </div>
 
-          <input type="text" id="programTitleInput" placeholder="Program Title (e.g. Knee Rehabilitation - Phase 1)" 
+          <p class="phi-warning" id="phiWarningProgram">⚠️ No patient names or DOBs in the title, notes, or custom exercise names. Share links remove names, dates, phone numbers, emails, MRNs, and addresses.</p>
+          <input type="text" id="programTitleInput" placeholder="Program Title (e.g. Knee Rehabilitation - Phase 1). No patient names or DOBs" 
                  class="w-full px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600">
 
           <div class="space-y-1.5">
@@ -395,8 +403,9 @@
             <div id="directiveChipList" class="flex flex-wrap gap-1.5"></div>
           </div>
 
-          <textarea id="patientNotesInput" rows="2" placeholder="Therapist instructions for patient (Zero PHI: no names)..." 
+          <textarea id="patientNotesInput" rows="2" placeholder="Therapist instructions for patient. No patient names or DOBs..." 
                     class="w-full px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+          <div id="safetyPanel" class="hidden rounded-lg border px-3 py-2 text-[11px] space-y-1" aria-live="polite"></div>
         </div>
 
         <!-- Selected Exercises List -->
@@ -439,7 +448,7 @@
       </div>
       <label class="block space-y-1">
         <span class="text-xs font-semibold text-slate-600">Template Title</span>
-        <input id="templateTitleInput" required placeholder="Michael's Balance Progression" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+        <input id="templateTitleInput" required placeholder="Balance Progression - Level 2 (no patient names)" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
       </label>
       <label class="block space-y-1">
         <span class="text-xs font-semibold text-slate-600">Category</span>
@@ -470,7 +479,8 @@
       <div class="flex items-start justify-between gap-3">
         <div>
           <h2 id="dictatePasteTitle" class="text-base font-bold text-slate-900">Dictate or Paste Eval Plan</h2>
-          <p class="text-xs text-slate-500 mt-0.5">Paste an eval blurb or type the plan. Names, side, dosing, and precautions are picked up automatically.</p>
+          <p class="text-xs text-slate-500 mt-0.5">Paste an eval blurb or type the plan. Exercise names, side, dosing, and precautions are picked up automatically.</p>
+          <p class="phi-warning mt-1">⚠️ No patient names or DOBs.</p>
         </div>
         <button type="button" onclick="closeDictatePasteModal()" class="text-slate-400 hover:text-slate-700 font-bold px-1" aria-label="Close">✕</button>
       </div>
@@ -503,6 +513,7 @@
 
       <div id="protocolPastePanel" class="space-y-1.5">
         <label for="protocolPasteInput" class="text-xs font-semibold text-slate-600">Paste raw text from inbound fax, CimFAX OCR, or surgeon discharge orders</label>
+        <p class="phi-warning">⚠️ No patient names or DOBs. Delete the patient header before pasting; only the protocol is needed.</p>
         <textarea id="protocolPasteInput" rows="8" placeholder="Right TKA, Phase 1, Weeks 0-2. WBAT. Flexion limited to 90°. Ice and elevate. Quad sets, heel slides, patellar mobs, ankle pumps."
                   class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white"></textarea>
       </div>
@@ -558,6 +569,10 @@
           <ul id="protocolPreviewRestrictions" class="mt-1 space-y-1 text-xs text-slate-700"></ul>
         </div>
         <div>
+          <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Safety Checks</p>
+          <ul id="protocolPreviewWarnings" class="mt-1 space-y-1 text-xs text-amber-800"></ul>
+        </div>
+        <div>
           <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Matched Exercise Candidates</p>
           <ul id="protocolPreviewExercises" class="mt-1 space-y-1 text-xs text-slate-700"></ul>
         </div>
@@ -582,6 +597,7 @@
 
       <label class="block space-y-1">
         <span class="text-xs font-semibold text-slate-600">Exercise Name</span>
+        <span class="phi-warning block">⚠️ No patient names or DOBs.</span>
         <input id="customExerciseName" required placeholder="e.g. Seated Hamstring Stretch"
                class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
       </label>
@@ -642,6 +658,7 @@
     const currentProgramState = { directives: [] };
     let currentAccessCode = generateCodeString();
 
+    // Keep in sync with HEPSafety.DIRECTIVE_PRESETS (patient.html decodes share links by these ids).
     const clinicalDirectivePresets = [
       { id: "ice", icon: "🧊", label: "Ice", text: "Use ice on the affected extremity for 20 min, 2-3x/day (max 1x/hour)." },
       { id: "heat", icon: "🔥", label: "Heat", text: "Use moist heat for 15-20 min prior to exercises or for stiffness." },
@@ -664,6 +681,7 @@
       if (index === -1) currentProgramState.directives.push(text);
       else currentProgramState.directives.splice(index, 1);
       renderDirectiveChips();
+      refreshSafety();
     }
 
     function renderDirectiveChips() {
@@ -693,6 +711,7 @@
         button.addEventListener("click", () => {
           currentProgramState.directives = currentProgramState.directives.filter(item => item !== text);
           renderDirectiveChips();
+          refreshSafety();
         });
         container.appendChild(button);
       });
@@ -714,7 +733,12 @@
       await loadProtocolRegistry();
       renderProtocolPresets();
       renderDirectiveChips();
-      renderCatalog();
+      let safetyTimer = null;
+      document.getElementById("patientNotesInput").addEventListener("input", () => {
+        clearTimeout(safetyTimer);
+        safetyTimer = setTimeout(() => refreshSafety(), 250);
+      });
+      refreshSafety(true);
     });
 
     const clinicDosingDefaults = {
@@ -1087,6 +1111,7 @@
         title: document.getElementById("programTitleInput").value,
         notes: document.getElementById("patientNotesInput").value,
         directives: [...currentProgramState.directives],
+        safetyContext: { ...safetyContext },
         exercises: currentProgram.map(item => {
           const copy = { ...item };
           delete copy.cpt;
@@ -1120,6 +1145,9 @@
       document.getElementById("programTitleInput").value = data.title || "";
       document.getElementById("patientNotesInput").value = data.notes || "";
       currentProgramState.directives = Array.isArray(data.directives) ? [...data.directives] : [];
+      safetyContext = data.safetyContext && typeof data.safetyContext === "object"
+        ? { protocolText: data.safetyContext.protocolText || "", extraText: data.safetyContext.extraText || "" }
+        : { protocolText: "", extraText: "" };
       currentProgram = (data.exercises || []).map(item => {
         const copy = { ...item };
         delete copy.cpt;
@@ -1127,7 +1155,7 @@
       });
 
       renderDirectiveChips();
-      renderActiveProgram();
+      refreshSafety(true);
       input.value = "";
       alert(`Loaded program: ${data.title || currentAccessCode}`);
     }
@@ -1143,6 +1171,248 @@
     function filterCatalog() {
       currentSearchTerm = document.getElementById("searchInput").value.toLowerCase();
       renderCatalog();
+    }
+
+
+    // --- 4b. Contraindication safety engine (hep-safety.js) ---
+    // Restrictions come from the applied protocol text, the therapist notes, the
+    // directive chips, and restriction sentences from dictation. Evaluations are
+    // cached per exercise + side so catalog filtering stays instant.
+    let safetyContext = { protocolText: "", extraText: "" };
+    let safetyState = { signature: null, analysis: null, rules: [], ctx: {}, cache: new Map() };
+    let dictationConsent = false;
+
+    function safetySourceText() {
+      const notes = document.getElementById("patientNotesInput");
+      return [
+        safetyContext.protocolText,
+        notes ? notes.value : "",
+        currentProgramState.directives.join("\n"),
+        safetyContext.extraText
+      ].filter(Boolean).join("\n");
+    }
+
+    function recomputeSafety() {
+      const text = safetySourceText();
+      if (text === safetyState.signature) return false;
+      const analysis = window.HEPSafety ? HEPSafety.analyzeProtocolText(text) : null;
+      safetyState = {
+        signature: text,
+        analysis,
+        rules: analysis ? analysis.rules : [],
+        ctx: analysis ? { surgicalSide: analysis.side, surgicalJoint: analysis.surgery ? analysis.surgery.joint : null } : {},
+        cache: new Map()
+      };
+      return true;
+    }
+
+    // Re-render only when the restriction text actually changed.
+    function refreshSafety(force) {
+      recomputeSafety();
+      if (safetyState.renderedSignature === safetyState.signature && !force) return;
+      safetyState.renderedSignature = safetyState.signature;
+      renderSafetyPanel();
+      renderCatalog();
+      renderActiveProgram();
+    }
+
+    function safetyExerciseFor(item) {
+      const template = item && item.baseId && item.baseId !== "custom" ? catalogData.find(e => e.id === item.baseId) : null;
+      return template || { name: item.name, category: item.region || "", aliases: [] };
+    }
+
+    function evaluateSafety(exercise, side) {
+      if (!window.HEPSafety) return { status: "warn", reasons: [{ level: "warn", why: "Safety engine did not load; check restrictions by hand.", source: "" }] };
+      recomputeSafety();
+      const key = (exercise.id || "custom:" + exercise.name) + "|" + (side || "");
+      if (safetyState.cache.has(key)) return safetyState.cache.get(key);
+      const verdict = safetyState.rules.length
+        ? HEPSafety.evaluateExercise(exercise, safetyState.rules, safetyState.ctx, side)
+        : { status: "ok", reasons: [] };
+      safetyState.cache.set(key, verdict);
+      return verdict;
+    }
+
+    function itemSafety(item) {
+      return evaluateSafety(safetyExerciseFor(item), item.side);
+    }
+
+    function uniqueReasons(verdict, level) {
+      const seen = new Set();
+      return (verdict.reasons || []).filter(r => (!level || r.level === level)).filter(r => {
+        const key = r.why + "|" + r.source;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    }
+
+    function reasonText(reason) {
+      return reason.why + (reason.source ? " Restriction: \u201c" + reason.source + "\u201d" : "");
+    }
+
+    function requestOverride(label, verdict) {
+      const reasons = uniqueReasons(verdict, "block");
+      const list = reasons.map(r => "\u2022 " + reasonText(r)).join("\n");
+      const note = window.prompt(
+        "BLOCKED: " + label + "\n\n" + list +
+        "\n\nTo add it anyway, type a clinician override note (required). It shows on the program and in the EMR note."
+      );
+      if (note == null) return null;
+      const clean = note.trim();
+      if (clean.length < 5) {
+        alert("Override not saved. Enter a short clinical reason (at least 5 characters).");
+        return null;
+      }
+      return { note: clean, reasons: reasons.map(reasonText), at: new Date().toISOString() };
+    }
+
+    function requestAddToProgram(exerciseId) {
+      const template = catalogData.find(e => e.id === exerciseId);
+      if (!template) return null;
+      const verdict = evaluateSafety(template, "Bilateral");
+      if (verdict.status !== "block") return addToProgram(exerciseId);
+      const override = requestOverride(template.name, verdict);
+      if (!override) return null;
+      return addToProgram(exerciseId, "Bilateral", null, true, { override });
+    }
+
+    function overrideItem(instanceId) {
+      const item = currentProgram.find(i => i.uniqueInstanceId === instanceId);
+      if (!item) return;
+      const override = requestOverride(item.name, itemSafety(item));
+      if (!override) return;
+      item.override = override;
+      renderActiveProgram();
+    }
+
+    // Central gate for items that are not catalog entries (custom, dictation, protocol extras).
+    function gateCustomProgramItem(item, opts) {
+      const options = opts || {};
+      const verdict = itemSafety(item);
+      if (verdict.status === "block" && !item.override) {
+        if (options.interactive) {
+          const override = requestOverride(item.name, verdict);
+          if (!override) return null;
+          item.override = override;
+        } else {
+          if (options.skipped) options.skipped.push({ name: item.name, verdict });
+          return null;
+        }
+      }
+      if (dedupeProgramItem(item)) {
+        if (options.interactive) alert(item.name + " (" + item.side + ") is already in the program.");
+        return null;
+      }
+      currentProgram.push(item);
+      return item;
+    }
+
+    function skippedSummary(skipped) {
+      if (!skipped.length) return "";
+      const names = [...new Set(skipped.map(entry => entry.name))];
+      return " ⛔ Not added (blocked by restrictions): " + names.join(", ") + ". Use Override in the catalog to add one deliberately.";
+    }
+
+    function normalizedExerciseName(name) {
+      return String(name || "").toLowerCase().replace(/\([^)]*\)/g, " ").replace(/[^a-z0-9]+/g, " ").replace(/\b(\w+?)s\b/g, "$1").trim();
+    }
+
+    // Same exercise on the same side is not added twice (e.g. catalog + protocol extra "Ankle Pumps").
+    function dedupeProgramItem(item) {
+      const key = normalizedExerciseName(item.name);
+      return currentProgram.some(existing => normalizedExerciseName(existing.name) === key && existing.side === item.side);
+    }
+
+    function unresolvedBlockedItems() {
+      return currentProgram.filter(item => itemSafety(item).status === "block" && !item.override);
+    }
+
+    function confirmSafeToShare(action) {
+      const blocked = unresolvedBlockedItems();
+      if (!blocked.length) return true;
+      alert(
+        action + " stopped. These exercises conflict with the active restrictions:\n\n" +
+        blocked.map(item => "\u2022 " + item.name + ": " + uniqueReasons(itemSafety(item), "block").map(r => r.why).join(" ")).join("\n") +
+        "\n\nRemove them, or use Override on each one with a clinical note."
+      );
+      return false;
+    }
+
+    function renderSafetyPanel() {
+      const panel = document.getElementById("safetyPanel");
+      if (!panel) return;
+      const analysis = safetyState.analysis;
+      const rules = safetyState.rules || [];
+      if (!analysis || (!rules.length && !analysis.warnings.length && !analysis.surgery)) {
+        panel.classList.add("hidden");
+        panel.innerHTML = "";
+        return;
+      }
+      const seen = new Set();
+      const sources = rules.map(r => r.source).filter(src => src && !seen.has(src) && seen.add(src));
+      const header = [
+        analysis.surgery ? analysis.surgery.name : "",
+        analysis.side && analysis.side !== "Unknown" ? analysis.side : (analysis.surgery ? "side not stated" : ""),
+        analysis.phase ? analysis.phase.label : ""
+      ].filter(Boolean).join(" \u00b7 ");
+      panel.className = "rounded-lg border px-3 py-2 text-[11px] space-y-1 " + (rules.some(r => r.severity === "block") ? "safety-block" : "safety-warn");
+      panel.innerHTML = `
+        <p class="font-bold uppercase tracking-wide text-[10px] text-slate-700">Active safety rules${header ? ": " + escapeHtml(header) : ""}</p>
+        ${analysis.warnings.map(w => `<p class="font-semibold text-amber-800">\u26a0\ufe0f ${escapeHtml(w)}</p>`).join("")}
+        ${sources.length ? `<ul class="list-disc list-inside text-slate-700">${sources.map(src => `<li>${escapeHtml(src)}</li>`).join("")}</ul>` : ""}
+        <p class="text-slate-500">Blocked exercises need a clinician override note before they can be added, printed, or shared.</p>
+      `;
+    }
+
+    // Share links carry only exercise ids, doses, preset directive ids, and scrubbed free text.
+    function scrubbedShareProgram() {
+      let removed = 0;
+      const scrub = value => {
+        const out = HEPSafety.scrubPHI(value || "");
+        removed += out.removed;
+        return out.text;
+      };
+      const presetIds = [];
+      const customDirectives = [];
+      currentProgramState.directives.forEach(text => {
+        const preset = clinicalDirectivePresets.find(item => directiveString(item) === text);
+        if (preset) presetIds.push(preset.id);
+        else customDirectives.push(scrub(text));
+      });
+      const program = {
+        code: currentAccessCode,
+        clinic: document.getElementById("clinicSelect").value,
+        title: scrub(document.getElementById("programTitleInput").value),
+        notes: scrub(document.getElementById("patientNotesInput").value),
+        directiveIds: presetIds,
+        customDirectives,
+        exercises: currentProgram.map(item => ({
+          id: item.baseId && item.baseId !== "custom" ? item.baseId : "custom",
+          name: item.baseId && item.baseId !== "custom" ? "" : scrub(item.name),
+          side: item.side,
+          sets: item.sets,
+          reps: item.reps,
+          hold: formatHold(item.hold),
+          freq: item.freq
+        }))
+      };
+      return { program, removed };
+    }
+
+    // Shrinks the payload until it fits a QR code: notes first, then custom directives, then the title.
+    function shareFragmentForQr(program) {
+      const attempts = [
+        {},
+        { includeNotes: false },
+        { includeNotes: false, includeCustomDirectives: false },
+        { includeNotes: false, includeCustomDirectives: false, includeTitle: false }
+      ];
+      for (const opts of attempts) {
+        const encoded = HEPSafety.encodeCompactProgram(program, opts);
+        if (encoded.length <= 1100) return { encoded, dropped: Object.keys(opts) };
+      }
+      return { encoded: HEPSafety.encodeCompactProgram(program, attempts[attempts.length - 1]), dropped: ["too-long"] };
     }
 
     function renderCatalog() {
@@ -1164,6 +1434,19 @@
 
       filtered.forEach(ex => {
         const dosing = dosingFromExercise(ex);
+        const safety = evaluateSafety(ex, "Bilateral");
+        const blockReasons = uniqueReasons(safety, "block");
+        const warnReasons = uniqueReasons(safety, "warn");
+        const safetyBadge = safety.status === "block"
+          ? `<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-red-700 text-white" title="${escapeHtml(blockReasons.map(reasonText).join(" "))}">BLOCKED</span>`
+          : safety.status === "warn"
+            ? `<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500 text-white" title="${escapeHtml(warnReasons.map(reasonText).join(" "))}">CAUTION</span>`
+            : "";
+        const safetyLine = safety.status === "block"
+          ? `<p class="text-[11px] text-red-800 font-semibold mt-1">${escapeHtml(reasonText(blockReasons[0]))}</p>`
+          : safety.status === "warn"
+            ? `<p class="text-[11px] text-amber-800 mt-1">${escapeHtml(reasonText(warnReasons[0]))}</p>`
+            : "";
         const typeBadge = ex.type === "stretch"
           ? `<span class="frost-chip text-[10px] font-semibold px-1.5 py-0.5">STRETCH</span>`
           : ex.type === "strength"
@@ -1171,7 +1454,7 @@
             : "";
         const thumbs = exerciseFigureTags(ex, "w-16 h-12 flex-shrink-0");
         const card = document.createElement("div");
-        card.className = "bg-white p-3 flex flex-wrap items-center justify-between gap-2 transition";
+        card.className = "bg-white p-3 flex flex-wrap items-center justify-between gap-2 transition" + (safety.status === "block" ? " border-l-4 safety-block" : safety.status === "warn" ? " border-l-4 safety-warn" : "");
         card.innerHTML = `
           <div class="flex items-center gap-3 min-w-0 flex-1">
             <div class="flex gap-1 flex-shrink-0">${thumbs}</div>
@@ -1180,16 +1463,19 @@
                 <h3 class="text-sm font-bold text-[#11224A]">${ex.name}</h3>
                 ${typeBadge}
                 ${ex.starter ? `<span class="frost-chip text-[10px] font-semibold px-1.5 py-0.5">STARTER</span>` : ''}
+                <span class="frost-chip text-[10px] font-semibold px-1.5 py-0.5">${escapeHtml(ex.movementType || "")}</span>
+                ${safetyBadge}
               </div>
               <div class="dose-chips">
                 <span>Sets: ${dosing.sets}</span>
                 <span>Reps: ${dosing.reps}</span>
                 <span>Hold: ${dosing.hold}s</span>
               </div>
+              ${safetyLine}
             </div>
           </div>
-          <button onclick="addToProgram('${ex.id}')" class="btn-alpine shrink-0 px-3 py-1.5 text-xs transition">
-            + Add
+          <button onclick="requestAddToProgram('${ex.id}')" class="${safety.status === "block" ? "px-3 py-1.5 text-xs font-bold rounded border border-red-700 text-red-800 bg-white" : "btn-alpine px-3 py-1.5 text-xs"} shrink-0 transition">
+            ${safety.status === "block" ? "Override…" : "+ Add"}
           </button>
         `;
         container.appendChild(card);
@@ -1197,9 +1483,15 @@
     }
 
     // --- 5. Active Program Management ---
-    function addToProgram(exerciseId, sideOverride = "Bilateral", dosePresetId = null, renderNow = true) {
+    function addToProgram(exerciseId, sideOverride = "Bilateral", dosePresetId = null, renderNow = true, opts = {}) {
       const template = catalogData.find(e => e.id === exerciseId);
       if (!template) return null;
+      // Safety gate: every add path (catalog, protocol, dictation, templates) passes through here.
+      const verdict = evaluateSafety(template, sideOverride);
+      if (verdict.status === "block" && !opts.override) {
+        if (opts.skipped) opts.skipped.push({ name: template.name, verdict });
+        return null;
+      }
 
       const dosing = dosingFromExercise(template);
 
@@ -1219,6 +1511,7 @@
         status: "active", // ADDED: New AI safety net field
         note: ""          // ADDED: New AI safety net field
       };
+      if (opts.override) programItem.override = opts.override;
 
       if (dosePresetId && dosePresetId !== "custom") {
         const preset = dosingPresets.find(entry => entry.id === dosePresetId);
@@ -1384,13 +1677,17 @@
       const precautions = entry.precautions ? `${criteria ? "Precautions: " : ""}${entry.precautions}` : "";
       document.getElementById("patientNotesInput").value = `${phase}${criteria}${precautions}`.replace(/\s+/g, " ").trim();
       currentProgram = [];
+      safetyContext = { protocolText: "", extraText: "" };
+      recomputeSafety();
+      const skipped = [];
       if (Array.isArray(entry.saved_exercises) && entry.saved_exercises.length) {
-        entry.saved_exercises.forEach(saved => applySavedExercise(saved));
-        renderActiveProgram();
+        entry.saved_exercises.forEach(saved => applySavedExercise(saved, skipped));
+        refreshSafety(true);
+        if (skipped.length) showPrescribeToast(skippedSummary(skipped).trim());
         return;
       }
       (entry.exercise_ids || []).forEach(id => {
-        const item = addToProgram(id, "Bilateral", null, false);
+        const item = addToProgram(id, "Bilateral", null, false, { skipped });
         const dose = { ...(entry.default_dosing || {}), ...((entry.exercise_doses || {})[id] || {}) };
         if (!item || !Object.keys(dose).length) return;
         if (dose.sets != null) item.sets = dose.sets;
@@ -1401,12 +1698,15 @@
         if (frequency) item.freq = frequency;
         item.dosePreset = "custom";
       });
-      renderActiveProgram();
+      refreshSafety(true);
+      if (skipped.length) showPrescribeToast(skippedSummary(skipped).trim());
     }
 
-    function applySavedExercise(saved) {
+    function applySavedExercise(saved, skipped) {
       const side = saved.side || "Bilateral";
-      let item = saved.id && saved.id !== "custom" ? addToProgram(saved.id, side, null, false) : null;
+      const inCatalog = saved.id && saved.id !== "custom" && catalogData.some(e => e.id === saved.id);
+      let item = inCatalog ? addToProgram(saved.id, side, null, false, { skipped, override: saved.override }) : null;
+      if (inCatalog && !item) return null;
       if (!item) {
         item = {
           uniqueInstanceId: "item_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
@@ -1424,8 +1724,8 @@
           status: "active",
           note: ""
         };
-        currentProgram.push(item);
-        return item;
+        if (saved.override) item.override = saved.override;
+        return gateCustomProgramItem(item, { skipped });
       }
       if (saved.sets != null) item.sets = saved.sets;
       if (saved.reps != null) item.reps = saved.reps;
@@ -1530,12 +1830,14 @@
     function clearProgram() {
       currentProgram = [];
       currentProgramState.directives = [];
+      safetyContext = { protocolText: "", extraText: "" };
       const titleInput = document.getElementById("programTitleInput");
       if (titleInput) titleInput.value = "";
       const notesInput = document.getElementById("patientNotesInput");
       if (notesInput) notesInput.value = "";
       renderDirectiveChips();
       renderActiveProgram();
+      refreshSafety(true);
     }
 
     function resetProgram() {
@@ -1547,7 +1849,9 @@
 
     function renderActiveProgram() {
       const container = document.getElementById("activeProgramList");
-      const emptyState = document.getElementById("emptyProgramState");
+      // Keep a reference: the placeholder is detached while the program has items.
+      renderActiveProgram.emptyState = renderActiveProgram.emptyState || document.getElementById("emptyProgramState");
+      const emptyState = renderActiveProgram.emptyState;
       const badge = document.getElementById("activeCountBadge");
 
       badge.textContent = currentProgram.length;
@@ -1563,28 +1867,26 @@
       }
       currentProgram.forEach((item, index) => {
         const row = document.createElement("div");
-        
-        // --- ADDED: THE CLINICAL SAFETY NET RENDERING ---
-        let cardStyle = "bg-white p-3 rounded-lg border border-[#B8C5CB] shadow-sm space-y-2";
-        let warningHtml = "";
-        
-        if (item.status === "hold") {
-          // Red alert styling
-          cardStyle = "p-3 rounded-lg border-2 border-[#dc3545] bg-[#fff8f8] shadow-sm space-y-2";
-          warningHtml = `
-            <div class="text-[#dc3545] font-bold px-2 py-1.5 mb-1 text-[11px] border border-[#dc3545] bg-white rounded shadow-sm flex items-start gap-1.5">
-              <span class="text-[14px]">⚠️</span> 
-              <span>CLINICAL HOLD: ${escapeHtml(item.note || "MD Protocol Restriction")}</span>
-            </div>
-          `;
-        }
-        
-        row.className = cardStyle;
+        const safety = itemSafety(item);
+        const blockReasons = uniqueReasons(safety, "block");
+        const warnReasons = uniqueReasons(safety, "warn");
+        row.className = "bg-white p-3 rounded-lg border shadow-sm space-y-2 " +
+          (safety.status === "block" ? "border-2 safety-block" : safety.status === "warn" ? "safety-warn" : "border-[#B8C5CB]");
+        const safetyHtml = safety.status === "ok" && !item.override ? "" : `
+          <div class="text-[11px] space-y-0.5" data-safety-status="${safety.status}">
+            ${blockReasons.map(r => `<p class="text-red-800 font-semibold">⛔ ${escapeHtml(reasonText(r))}</p>`).join("")}
+            ${warnReasons.slice(0, 3).map(r => `<p class="text-amber-800">⚠️ ${escapeHtml(reasonText(r))}</p>`).join("")}
+            ${warnReasons.length > 3 ? `<p class="text-amber-800">+${warnReasons.length - 3} more caution(s)</p>` : ""}
+            ${item.override
+              ? `<p class="font-bold text-slate-900 bg-yellow-100 border border-yellow-400 rounded px-1.5 py-0.5" data-override-note>Clinician override: ${escapeHtml(item.override.note)}</p>`
+              : safety.status === "block"
+                ? `<button type="button" onclick="overrideItem('${item.uniqueInstanceId}')" class="px-2 py-0.5 text-[10px] font-bold rounded border border-red-700 text-red-800 bg-white">Override with note…</button>`
+                : ""}
+          </div>`;
         const photoBoxes = exerciseFigureTags(item, "h-28 w-full");
         const figureCount = ownedDrawingFrames(item).length || 1;
         
         row.innerHTML = `
-          ${warningHtml}
           ${item.baseId === "custom" ? `
           <div class="space-y-1.5">
             <div class="${figureCount === 1 ? "" : "grid grid-cols-2 gap-1.5"}">
@@ -1605,6 +1907,7 @@
               <button type="button" onclick="removeFromProgram('${item.uniqueInstanceId}')" class="text-xs text-red-500 hover:text-red-700 font-bold px-1.5">✕</button>
             </div>
           </div>
+          ${safetyHtml}
 
           <!-- Lateral Selector Chips -->
           <div class="flex items-center space-x-1">
@@ -1659,6 +1962,7 @@
         return;
       }
 
+      if (!confirmSafeToShare("Copy EMR note")) return;
       saveCurrentProgramLocally();
 
       const clinic = document.getElementById("clinicSelect").value;
@@ -1677,6 +1981,13 @@
         });
       }
       if (notes) snippet += `Therapist Notes: ${notes}\n`;
+      const overridden = currentProgram.filter(item => item.override);
+      if (overridden.length > 0) {
+        snippet += `CLINICIAN OVERRIDES OF SAFETY BLOCKS:\n`;
+        overridden.forEach(item => {
+          snippet += `- ${item.name}: ${item.override.note} (blocked by: ${item.override.reasons.join("; ")})\n`;
+        });
+      }
       snippet += `Patient demonstrated safe independent mechanics and verbalized understanding.`;
 
       navigator.clipboard.writeText(snippet).then(() => {
@@ -1695,37 +2006,64 @@
       return path + "/";
     }
 
-    function sharePayload() {
+    function patientPageBase() {
+      const url = new URL(appDirectoryPath() + "patient.html", window.location.origin);
+      return url.origin + url.pathname;
+    }
+
+    // Compact, PHI-scrubbed share link: patient.html#p=<ids + doses>&code=PW-XXXX
+    // Returns { url, removed, dropped } so callers can tell the clinician what was left out.
+    function patientShareLink(code, forQr) {
+      const { program, removed } = scrubbedShareProgram();
+      const fit = forQr ? shareFragmentForQr(program) : { encoded: HEPSafety.encodeCompactProgram(program), dropped: [] };
       return {
-        code: currentAccessCode,
-        clinic: document.getElementById("clinicSelect").value,
-        title: document.getElementById("programTitleInput").value,
-        notes: document.getElementById("patientNotesInput").value,
-        directives: [...currentProgramState.directives],
-        exercises: currentProgram.map(item => ({
-          id: item.baseId,
-          name: item.name,
-          side: item.side,
-          sets: item.sets,
-          reps: item.reps,
-          hold: item.hold,
-          freq: item.freq
-        }))
+        url: patientPageBase() + "#p=" + fit.encoded + "&code=" + encodeURIComponent(code),
+        removed,
+        dropped: fit.dropped
       };
     }
 
-    function encodeSharePayload(payload) {
-      const bytes = new TextEncoder().encode(JSON.stringify(payload));
-      let binary = "";
-      bytes.forEach(byte => { binary += String.fromCharCode(byte); });
-      return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+    function patientPageUrl(code) {
+      return patientShareLink(code, false).url;
     }
 
-    function patientPageUrl(code) {
-      const url = new URL(appDirectoryPath() + "patient.html", window.location.origin);
-      url.search = "";
-      const encoded = encodeSharePayload(sharePayload());
-      return url.origin + url.pathname + "#d=" + encoded + "&code=" + encodeURIComponent(code);
+    function renderPrintQr(code) {
+      const qrContainer = document.getElementById("printQrCode");
+      const fallback = document.getElementById("printQrFallback");
+      qrContainer.innerHTML = "";
+      fallback.classList.add("hidden");
+      fallback.textContent = "";
+      const link = patientShareLink(code, true);
+      const notes = [];
+      let rendered = false;
+      if (!link.dropped.includes("too-long") && typeof QRCode !== "undefined") {
+        try {
+          new QRCode(qrContainer, {
+            text: link.url,
+            width: 160,
+            height: 160,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: link.url.length > 900 ? QRCode.CorrectLevel.L : QRCode.CorrectLevel.M
+          });
+          rendered = true;
+        } catch (error) {
+          rendered = false;
+        }
+      }
+      if (!rendered) {
+        qrContainer.innerHTML = `<div class="text-[11px] font-bold text-center leading-tight">Program too large for a QR code.<br>Open the app and enter code<br><span class="font-mono text-base">${escapeHtml(code)}</span></div>`;
+        notes.push("Visit " + patientPageBase() + " and enter code " + code + ".");
+      } else if (link.dropped.includes("includeNotes")) {
+        notes.push("QR shows exercises and doses; full notes are on this sheet.");
+      }
+      if (link.removed > 0) notes.push(link.removed + " possible identifier(s) removed from the share link.");
+      if (notes.length) {
+        fallback.textContent = notes.join(" ");
+        fallback.classList.remove("hidden");
+      }
+      qrContainer.dataset.qrRendered = rendered ? "true" : "false";
+      return { rendered, link };
     }
 
     function triggerPrintHandout() {
@@ -1733,6 +2071,7 @@
         alert("Please add exercises before printing.");
         return;
       }
+      if (!confirmSafeToShare("Printing")) return;
 
       saveCurrentProgramLocally();
 
@@ -1743,17 +2082,7 @@
       const notes = document.getElementById("patientNotesInput").value || "Perform daily within comfortable tolerance.";
       document.getElementById("printNotesText").textContent = notes;
 
-      const qrTargetUrl = patientPageUrl(currentAccessCode);
-      const qrContainer = document.getElementById("printQrCode");
-      qrContainer.innerHTML = "";
-      new QRCode(qrContainer, {
-        text: qrTargetUrl,
-        width: 72,
-        height: 72,
-        colorDark: "#000000",
-        colorLight: "#ffffff",
-        correctLevel: QRCode.CorrectLevel.M
-      });
+      renderPrintQr(currentAccessCode);
 
       const printSheet = document.getElementById("printExerciseSheet");
       printSheet.innerHTML = "";
@@ -1822,7 +2151,7 @@
         : ["Perform with control and within comfortable tolerance."];
       const dosing = clinicDosingFor(type);
 
-      currentProgram.push({
+      const added = gateCustomProgramItem({
         uniqueInstanceId: "item_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
         baseId: "custom",
         name,
@@ -1835,10 +2164,9 @@
         dosePreset: type === "stretch" ? "standard_stretch" : "standard_strength",
         cues,
         region: inferMovementRegion(name),
-        photos: customMovementGraphics(name, inferMovementRegion(name)),
-        status: "active",
-        note: ""
-      });
+        photos: customMovementGraphics(name, inferMovementRegion(name))
+      }, { interactive: true });
+      if (!added) return;
 
       renderActiveProgram();
       closeCustomExerciseModal();
@@ -1850,7 +2178,7 @@
       "knee-103": ["patellar glides", "patellar glide", "patella glide", "patellar mobs", "patellar mob"],
       "knee-104": ["tke", "tkes", "terminal knee extension", "terminal knee extensions"],
       "knee-105": ["heel slides", "heel slide"],
-      "knee-106": ["laq", "long arc quad", "long arc quads", "long arc quadriceps"],
+      "knee-106": ["long arc quads", "long arc quad", "laqs", "laq", "long arc quadriceps"],
       "lumbar-201": ["prone press ups", "prone press up", "prone pressups", "prone pressup", "press ups", "press up", "pressups", "pressup", "mckenzie extension", "mckenzie extensions", "mckenzie"],
       "hip-101": ["clamshells", "clamshell", "clam shells", "clam shell", "clams", "clam"],
       "hip-clamshell-with-resistance-01": ["clams with resistance", "clamshell with resistance", "resisted clams", "resisted clamshell"],
@@ -2694,6 +3022,16 @@
 
     function applyClinicalTranscript(transcript) {
       const parsed = parseClinicalTranscript(transcript);
+      // Spoken restrictions ("no ankle pumps", "PROM only") become safety rules before anything is added.
+      if (window.HEPSafety) {
+        const rules = HEPSafety.parseRestrictions(String(transcript || ""), {});
+        const sentences = [...new Set(rules.map(rule => rule.source).filter(Boolean))];
+        if (sentences.length) {
+          const scrubbed = sentences.map(line => HEPSafety.scrubPHI(line).text);
+          safetyContext.extraText = [safetyContext.extraText, ...scrubbed].filter(Boolean).join("\n");
+        }
+      }
+      const skipped = [];
       parsed.directives.forEach(id => {
         const preset = clinicalDirectivePresets.find(item => item.id === id);
         if (!preset) return;
@@ -2701,9 +3039,11 @@
         if (!currentProgramState.directives.includes(text)) currentProgramState.directives.push(text);
       });
       renderDirectiveChips();
+      recomputeSafety();
+      let addedCount = 0;
       parsed.exercises.forEach(entry => {
         if (entry.custom) {
-          currentProgram.push({
+          const customItem = gateCustomProgramItem({
             uniqueInstanceId: "item_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
             baseId: "custom",
             name: entry.name,
@@ -2718,18 +3058,21 @@
             region: entry.region,
             demoPhotos: 0,
             photos: customMovementGraphics(entry.name, entry.region)
-          });
+          }, { skipped });
+          if (customItem) addedCount += 1;
           return;
         }
-        const added = addToProgram(entry.id, entry.side, entry.dosePreset, false);
+        const added = addToProgram(entry.id, entry.side, entry.dosePreset, false, { skipped });
+        if (added) addedCount += 1;
         if (!added || !entry.overrides) return;
         const keys = Object.keys(entry.overrides);
         if (!keys.length) return;
         keys.forEach(key => { added[key] = entry.overrides[key]; });
         added.dosePreset = "custom";
       });
-      renderActiveProgram();
-      showPrescribeToast(prescribeSummary(parsed.exercises.length, parsed.directives.length));
+      refreshSafety(true);
+      showPrescribeToast(prescribeSummary(addedCount, parsed.directives.length) + skippedSummary(skipped));
+      parsed.skipped = skipped;
       return parsed;
     }
 
@@ -2849,8 +3192,24 @@
         openDictatePasteModal();
         return;
       }
-      if (dictateListening) stopDictatePlan();
-      else startDictatePlan();
+      if (dictateListening) {
+        stopDictatePlan();
+        return;
+      }
+      if (!dictationConsent) {
+        const ok = window.confirm(
+          "Voice dictation is off by default.\n\n" +
+          "Chrome's speech recognition sends the audio to Google's servers. " +
+          "Do not say patient names, dates of birth, or any other identifying details.\n\n" +
+          "Turn on voice dictation for this session? (Cancel opens the type/paste box instead.)"
+        );
+        if (!ok) {
+          openDictatePasteModal();
+          return;
+        }
+        dictationConsent = true;
+      }
+      startDictatePlan();
     }
 
     function openDictatePasteModal() {
@@ -2902,66 +3261,16 @@
     const protocolExtraExercises = [
       { phrases: ["heel slides", "heel slide"], id: "knee-105" },
       { phrases: ["patellar mobilizations", "patellar mobilization", "patellar mobs", "patellar mob"], id: "knee-103" },
-      { phrases: ["ankle pumps", "ankle pump"], customName: "Ankle Pumps", type: "strength", cues: ["Move the ankle up and down through a comfortable range.", "Keep the motion slow and do not hold your breath.", "Stay within the surgeon weight-bearing limit."] },
-      { phrases: ["codmans", "codman", "pendulum exercises", "pendulums", "pendulum"], customName: "Pendulum (Codman)", type: "stretch", cues: ["Lean forward and let the arm hang without shrugging.", "Use a small body sway to create gentle circles.", "Keep the shoulder muscles relaxed."] },
+      { phrases: ["ankle pumps", "ankle pump"], id: "ankle-pumps", customName: "Ankle Pumps", type: "strength", cues: ["Move the ankle up and down through a comfortable range.", "Keep the motion slow and do not hold your breath.", "Stay within the surgeon weight-bearing limit."] },
+      { phrases: ["codmans", "codman", "pendulum exercises", "pendulums", "pendulum"], id: "standing-pendulum", customName: "Pendulum (Codman)", type: "stretch", cues: ["Lean forward and let the arm hang without shrugging.", "Use a small body sway to create gentle circles.", "Keep the shoulder muscles relaxed."] },
       { phrases: ["passive supine flexion", "supine passive flexion", "passive knee flexion"], customName: "Passive Supine Flexion", type: "stretch", cues: ["Use the other leg or a strap to bend the knee.", "Stop at the surgeon flexion limit.", "Do not force the motion with the operative thigh."] }
     ];
-
-    function detectSurgery(original, lowered) {
-      if (/\b(tka|tkr|total knee(?: arthroplasty| replacement)?)\b/i.test(lowered)) {
-        return { id: "tka", name: "Total Knee Arthroplasty (TKA)" };
-      }
-      if (/\bacl\b[^.\n]{0,30}\b(reconstruction|recon|repair)\b|\bacl reconstruction\b/i.test(lowered)) {
-        return { id: "acl", name: "ACL Reconstruction" };
-      }
-      if (/\b(rcr|rotator cuff repair|cuff repair)\b/i.test(lowered)) {
-        return { id: "rcr", name: "Rotator Cuff Repair (RCR)" };
-      }
-      if (/\bsubacromial decompression\b/i.test(lowered) || /\bSAD\b/.test(original)) {
-        return { id: "sad", name: "Subacromial Decompression" };
-      }
-      const discectomy = /\b(lumbar discectomy|microdiscectomy|discectomy)\b/i.test(lowered);
-      const fusion = /\b(lumbar fusion|spinal fusion|tlif|plif|alif)\b/i.test(lowered);
-      if (discectomy && fusion) return { id: "lumbar_both", name: "Lumbar Discectomy/Fusion" };
-      if (fusion) return { id: "lumbar_fusion", name: "Lumbar Fusion" };
-      if (discectomy) return { id: "lumbar_disc", name: "Lumbar Discectomy" };
-      if (/\blumbar spine\b|\blumbar (?:protocol|surgery|procedure)\b/i.test(lowered)) {
-        return { id: "lumbar_spine", name: "Lumbar Spine" };
-      }
-      if (/\b(meniscectomy|partial meniscectomy)\b/i.test(lowered)) {
-        return { id: "meniscectomy", name: "Meniscectomy" };
-      }
-      return null;
-    }
-
-    function detectProtocolPhase(original) {
-      const text = original.replace(/[–—]/g, "-");
-      const parts = [];
-      const phaseMatch = text.match(/\bphase\s*(iv|i{1,3}|[1-4])\b/i);
-      if (phaseMatch) {
-        const token = phaseMatch[1].toUpperCase();
-        const roman = { I: "1", II: "2", III: "3", IV: "4" };
-        parts.push("Phase " + (roman[token] || token));
-      }
-      const weekMatch = text.match(/\bweeks?\s*(\d{1,2})\s*(?:-|to)\s*(\d{1,2})\b/i);
-      if (weekMatch) parts.push("Weeks " + weekMatch[1] + "-" + weekMatch[2]);
-      if (/\bacute\b/i.test(text)) parts.push("Acute");
-      return parts.length ? { label: parts.join(", ") } : null;
-    }
-
-    function detectOperativeSide(lowered) {
-      const hasLeft = /\bleft\b/.test(lowered);
-      const hasRight = /\bright\b/.test(lowered);
-      if (hasLeft && !hasRight) return "Left";
-      if (hasRight && !hasLeft) return "Right";
-      return "Bilateral";
-    }
 
     function dosePresetForProtocolPhase(phaseLabel, type) {
       const label = String(phaseLabel || "").toLowerCase();
       const stretch = type === "stretch";
       if (/phase 1|weeks 0-[0-4]\b|acute/.test(label)) return stretch ? "acute_stretch" : "standard_strength";
-      if (/phase [34]|weeks 6-/.test(label)) return stretch ? "standard_stretch" : "hypertrophy";
+      if (/phase [3-7]|weeks 6-/.test(label)) return stretch ? "standard_stretch" : "hypertrophy";
       if (/phase 2|weeks 2-6/.test(label)) return stretch ? "standard_stretch" : "standard_strength";
       return stretch ? "standard_stretch" : "standard_strength";
     }
@@ -3040,9 +3349,10 @@
       const found = [];
       const seen = new Set();
       function pushMatch(entry) {
-        const key = entry.id || ("custom:" + entry.name);
-        if (seen.has(key)) return;
+        const key = normalizedExerciseName(entry.name);
+        if (seen.has(key) || (entry.id && seen.has("id:" + entry.id))) return;
         seen.add(key);
+        if (entry.id) seen.add("id:" + entry.id);
         found.push(entry);
       }
       protocolExtraExercises.forEach(item => {
@@ -3052,8 +3362,9 @@
           if (hits.length && (start === -1 || hits[0] < start)) start = hits[0];
         });
         if (start === -1) return;
-        if (item.id) {
-          const exercise = catalogData.find(entry => entry.id === item.id);
+        const catalogHit = item.id ? catalogData.find(entry => entry.id === item.id) : null;
+        if (catalogHit) {
+          const exercise = catalogHit;
           const type = exercise && exercise.type === "stretch" ? "stretch" : "strength";
           pushMatch({
             start,
@@ -3095,9 +3406,13 @@
     function parseSurgeonProtocolText(rawText) {
       const original = String(rawText || "").trim();
       const lowered = original.toLowerCase();
-      const surgery = original ? detectSurgery(original, lowered) : null;
-      const phase = original ? detectProtocolPhase(original) : null;
-      const side = original ? detectOperativeSide(lowered) : "Bilateral";
+      const analysis = original && window.HEPSafety ? HEPSafety.analyzeProtocolText(original) : null;
+      const surgery = analysis && analysis.surgery ? { id: analysis.surgery.id, name: analysis.surgery.name, joint: analysis.surgery.joint } : null;
+      const phase = analysis ? analysis.phase : null;
+      const operativeSide = analysis ? analysis.side : "Unknown";
+      // Exercises default to the operative side when it is clear; otherwise Bilateral plus a warning.
+      const side = operativeSide === "Left" || operativeSide === "Right" ? operativeSide : "Bilateral";
+      const warnings = analysis ? [...analysis.warnings] : [];
       const directives = [];
       const restrictions = [];
 
@@ -3126,8 +3441,23 @@
 
       const phaseLabel = phase ? phase.label : "";
       const exercises = original ? collectProtocolExercises(original, phaseLabel, side) : [];
+      // Evaluate every candidate against this protocol plus the restrictions already active.
+      if (window.HEPSafety && original) {
+        const combined = HEPSafety.analyzeProtocolText([original, safetySourceText()].filter(Boolean).join("\n"));
+        const ctx = { surgicalSide: operativeSide, surgicalJoint: surgery ? surgery.joint : null };
+        exercises.forEach(entry => {
+          const exercise = entry.id ? catalogData.find(e => e.id === entry.id) : { name: entry.name, category: inferMovementRegion(entry.name) };
+          entry.safety = combined.rules.length ? HEPSafety.evaluateExercise(exercise || { name: entry.name }, combined.rules, ctx, entry.side) : { status: "ok", reasons: [] };
+        });
+        const seenSources = new Set(restrictions);
+        (analysis ? analysis.rules : []).forEach(rule => {
+          if (!rule.source || seenSources.has(rule.source)) return;
+          seenSources.add(rule.source);
+          restrictions.push("Restriction: " + rule.source);
+        });
+      }
       const titleParts = [];
-      if (side !== "Bilateral" && surgery) titleParts.push(side);
+      if ((side === "Left" || side === "Right") && surgery) titleParts.push(side);
       if (surgery) titleParts.push(surgery.name);
       let title = titleParts.join(" ");
       if (phase) title = title ? title + " — " + phase.label : phase.label;
@@ -3135,10 +3465,11 @@
       return {
         surgery,
         phase,
-        side,
+        side: operativeSide,
         title,
         directives,
         restrictions,
+        warnings,
         exercises,
         notice: "",
         canApply: Boolean(surgery || phase || directives.length || exercises.length)
@@ -3159,6 +3490,18 @@
       const applyButton = document.getElementById("applyProtocolBtn");
       if (!box || !surgeryNode || !restrictionList || !exerciseList || !applyButton) return;
       box.classList.remove("hidden");
+      const warningList = document.getElementById("protocolPreviewWarnings");
+      if (warningList) {
+        warningList.innerHTML = "";
+        const lines = [...(parsed.warnings || [])];
+        if (parsed.surgery) lines.unshift("Operative side: " + (parsed.side || "Unknown"));
+        if (!lines.length) lines.push("No safety warnings.");
+        lines.forEach(text => {
+          const li = document.createElement("li");
+          li.textContent = (text.startsWith("Operative side") ? "" : "⚠️ ") + text;
+          warningList.appendChild(li);
+        });
+      }
       surgeryNode.textContent = parsed.notice || parsed.title || "No surgery or phase detected.";
       restrictionList.innerHTML = "";
       if (!parsed.directives.length) {
@@ -3181,7 +3524,16 @@
         parsed.exercises.forEach(item => {
           const li = document.createElement("li");
           const source = item.id ? "" : " · custom";
+          const safety = item.safety || { status: "ok", reasons: [] };
           li.textContent = item.name + " · " + item.side + " · " + protocolDoseSummary(item.dosePreset) + source;
+          li.dataset.safetyStatus = safety.status;
+          if (safety.status !== "ok") {
+            const reason = uniqueReasons(safety, safety.status)[0];
+            const note = document.createElement("span");
+            note.className = safety.status === "block" ? "block text-red-800 font-semibold" : "block text-amber-800";
+            note.textContent = (safety.status === "block" ? "⛔ Blocked, will not be added: " : "⚠️ Caution: ") + (reason ? reasonText(reason) : "");
+            li.appendChild(note);
+          }
           exerciseList.appendChild(li);
         });
       }
@@ -3457,7 +3809,7 @@
       renderProtocolPreview(latestProtocolParse);
     }
 
-    function addProtocolCustomExercise(entry) {
+    function addProtocolCustomExercise(entry, skipped) {
       const preset = dosingPresets.find(item => item.id === entry.dosePreset);
       const dosing = preset || {
         sets: entry.type === "stretch" ? 2 : 2,
@@ -3466,7 +3818,7 @@
         freq: "Daily (7x/wk)",
         id: entry.type === "stretch" ? "standard_stretch" : "standard_strength"
       };
-      currentProgram.push({
+      return gateCustomProgramItem({
         uniqueInstanceId: "item_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
         baseId: "custom",
         name: entry.name,
@@ -3480,10 +3832,8 @@
         cues: entry.cues && entry.cues.length ? [...entry.cues] : ["Perform with control and within the surgeon protocol."],
         region: inferMovementRegion(entry.name),
         demoPhotos: 0,
-        photos: customMovementGraphics(entry.name, inferMovementRegion(entry.name)),
-        status: "active",
-        note: ""
-      });
+        photos: customMovementGraphics(entry.name, inferMovementRegion(entry.name))
+      }, { skipped });
     }
 
     function applySurgeonProtocolToRoutine() {
@@ -3491,6 +3841,10 @@
       if (source) latestProtocolParse = parseSurgeonProtocolText(source);
       const parsed = latestProtocolParse;
       if (!parsed || !parsed.canApply) return;
+      if (source && window.HEPSafety) {
+        const scrubbed = HEPSafety.scrubPHI(source).text;
+        safetyContext.protocolText = [safetyContext.protocolText, scrubbed].filter(Boolean).join("\n");
+      }
       if (parsed.title) document.getElementById("programTitleInput").value = parsed.title;
       parsed.directives.forEach(item => {
         if (!item.text || currentProgramState.directives.includes(item.text)) return;
@@ -3504,17 +3858,21 @@
           notes.value = notes.value.trim() ? notes.value.trim() + "\n" + line : line;
         });
       }
+      recomputeSafety();
+      const skipped = [];
+      let addedCount = 0;
       parsed.exercises.forEach(entry => {
-        if (entry.id) addToProgram(entry.id, entry.side || "Bilateral", entry.dosePreset, false);
-        else addProtocolCustomExercise(entry);
+        const added = entry.id
+          ? addToProgram(entry.id, entry.side || "Bilateral", entry.dosePreset, false, { skipped })
+          : addProtocolCustomExercise(entry, skipped);
+        if (added) addedCount += 1;
       });
-      renderActiveProgram();
+      refreshSafety(true);
       const applyButton = document.getElementById("applyProtocolBtn");
       if (applyButton) applyButton.disabled = true;
       closeProtocolIngestModal();
-      const exerciseCount = parsed.exercises.length;
       const directiveCount = parsed.directives.length;
-      const summary = prescribeSummary(exerciseCount, directiveCount).replace(/^Added/, "Applied").replace(/^Checked/, "Applied");
+      const summary = prescribeSummary(addedCount, directiveCount).replace(/^Added/, "Applied").replace(/^Checked/, "Applied") + skippedSummary(skipped);
       showPrescribeToast(parsed.surgery ? parsed.surgery.name + ": " + summary : summary);
     }
 
@@ -3523,6 +3881,7 @@
         alert("Please add exercises to the program first.");
         return;
       }
+      if (!confirmSafeToShare("Patient view")) return;
       saveCurrentProgramLocally();
       window.open(patientPageUrl(currentAccessCode), "_blank");
     }

@@ -429,7 +429,6 @@
     "phase": "0-2 Weeks",
     "region": "Foot/Ankle",
     "exercise_ids": [
-      "elevated-ice",
       "gentle-ankle-circles",
       "ankle-pumps",
       "short-foot",
@@ -444,12 +443,6 @@
       "hamstring-curls"
     ],
     "exercise_doses": {
-      "elevated-ice": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "gentle-ankle-circles": {
         "sets": 2,
         "reps": 10,
@@ -545,9 +538,7 @@
       "toe-lifts",
       "ankle-104",
       "double-leg-shuttle-press",
-      "initiate-wb-with-crutches-in-the-boot",
-      "balance-103",
-      "out-of-boot"
+      "balance-103"
     ],
     "exercise_doses": {
       "ankle-pumps": {
@@ -616,18 +607,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "initiate-wb-with-crutches-in-the-boot": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "out-of-boot": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "balance-103": {
         "sets": 2,
         "reps": 12,
@@ -656,7 +635,6 @@
       "knee-squat-01",
       "great-toe-rom",
       "tibial-rotation",
-      "double-leg-wall-sit-progression-on",
       "ankle-104",
       "inv-isometric",
       "knee-forward-step-up-01",
@@ -705,12 +683,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "tibial-rotation": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "double-leg-wall-sit-progression-on": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -805,14 +777,10 @@
       "knee-lunge-on-slider-01",
       "tibial-rotation",
       "knee-forward-step-up-01",
-      "lsd-progression",
       "standing-baps-board",
-      "fwd-step-down-progression",
       "ankle-104",
-      "sl-squat-progression",
       "split-squat-w-wedge",
       "balance-101",
-      "shuttle-press-variations",
       "sled-pulls",
       "star-drill",
       "star-drill-on-unstable-surface",
@@ -842,31 +810,13 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lsd-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "standing-baps-board": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "fwd-step-down-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "ankle-104": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-squat-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -879,12 +829,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "balance-101": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -969,32 +913,19 @@
     "region": "Foot/Ankle",
     "exercise_ids": [
       "standing-baps-board",
-      "add-weight",
       "knee-squat-01",
       "ankle-104",
       "knee-lunge-matrix-01",
       "heel-walks-toe-walks",
-      "increase-distance",
-      "deadlift-romanian-deadlift-variations",
-      "lateral-squat-progression",
       "farmer-walks",
       "knee-forward-step-up-01",
       "toe-raises",
       "tib-bar",
       "agility-ladder",
-      "mini-hops",
-      "jogging-progression",
-      "snap-down-progression",
-      "jump-progression"
+      "mini-hops"
     ],
     "exercise_doses": {
       "standing-baps-board": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-weight": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -1007,24 +938,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "heel-walks-toe-walks": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "increase-distance": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -1066,24 +979,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "jogging-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-squat-01": {
         "sets": 2,
         "reps": 10,
@@ -1112,8 +1007,6 @@
       "toe-raises",
       "tib-bar",
       "toe-walks",
-      "increase-distance",
-      "add-weight",
       "medicine-ball-drops",
       "3-way-hurdle-hop",
       "ankle-104",
@@ -1122,7 +1015,6 @@
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "add-more-load-to-functional-movements",
       "cutting-footwork-drill",
       "cone-cutting",
       "exxentric-squat",
@@ -1149,18 +1041,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "toe-walks": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "increase-distance": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-weight": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -1214,12 +1094,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "add-more-load-to-functional-movements": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "cutting-footwork-drill": {
         "sets": 3,
         "reps": 3,
@@ -1262,36 +1136,17 @@
     "phase": "Return to Sport",
     "region": "Foot/Ankle",
     "exercise_ids": [
-      "depth-jump-progression",
       "sled-pushes",
-      "hurdle-hop-variations",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
       "cutting-footwork-drill",
       "cone-cutting",
-      "compound-exercise-at",
       "sprinting-drills",
-      "jump-progression",
-      "weighted-baps-board",
-      "cross-train-rather-than-just-running",
-      "weighted-toe-walks",
       "ankle-104"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "sled-pushes": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hurdle-hop-variations": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -1327,37 +1182,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "compound-exercise-at": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "sprinting-drills": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "weighted-baps-board": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "cross-train-rather-than-just-running": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "weighted-toe-walks": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -1389,7 +1214,6 @@
       "wall-slides",
       "nu-step-and-bike",
       "knee-102",
-      "weight-shifting-with-ue-assistance",
       "gait-training-with-crutches",
       "low-hurdle-gait-training",
       "ankle-104"
@@ -1438,12 +1262,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-102": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "weight-shifting-with-ue-assistance": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -1579,12 +1397,9 @@
     "exercise_ids": [
       "knee-squat-01",
       "knee-forward-step-up-01",
-      "more-aggressive-prom",
-      "lsd-progression",
       "hip-102",
       "prone-quad-stretch",
       "hip-104",
-      "hamstring-curls-progression",
       "quadruped-hip-extension-over-bench-holds",
       "shuttle-press",
       "sl-romanian-deadlift-reaches",
@@ -1592,7 +1407,6 @@
       "hip-101",
       "hip-103",
       "balance-101",
-      "wall-sit-progression",
       "sidelying-shuttle-press",
       "knee-104",
       "hip-hike-holds",
@@ -1606,18 +1420,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "more-aggressive-prom": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "hip-102": {
         "sets": 2,
         "reps": 12,
@@ -1625,12 +1427,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "prone-quad-stretch": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -1667,12 +1463,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "hip-103": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -1739,19 +1529,12 @@
     "region": "Knee",
     "exercise_ids": [
       "dip-bar-assisted-slantboard-squat",
-      "lsd-progression",
-      "fwd-step-down-progression",
-      "sl-squat-progression",
       "hip-104",
       "prone-quad-stretch",
       "hip-102",
       "knee-106",
-      "ankle-weight",
-      "romanian-deadlift-progression",
-      "hamstring-curls-progression",
       "ankle-104",
       "sled-pulls-sled-pushes",
-      "lateral-squat-progression",
       "kickstand-squat-on-wall",
       "knee-squat-01",
       "balance-101",
@@ -1760,24 +1543,6 @@
     ],
     "exercise_doses": {
       "dip-bar-assisted-slantboard-squat": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "fwd-step-down-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-squat-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -1795,24 +1560,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "ankle-weight": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "romanian-deadlift-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "ankle-104": {
         "sets": 3,
         "reps": 6,
@@ -1820,12 +1567,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "sled-pulls-sled-pushes": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -1889,22 +1630,13 @@
       "agility-ladder",
       "slantboard-step-downs",
       "mini-hops",
-      "jogging-progression",
       "knee-106",
-      "snap-down-progression",
-      "jump-progression",
-      "shuttle-press-variations",
-      "hamstring-curls-progression",
       "knee-lunge-matrix-01",
       "hip-102",
       "knee-forward-step-up-01",
-      "deadlift-romanian-deadlift-variations",
       "knee-squat-01",
-      "nordic-progression",
-      "loaded-lsd",
       "forward-step-downs",
       "ankle-104",
-      "lateral-squat-variations",
       "anti-rotation-and-balance-training"
     ],
     "exercise_doses": {
@@ -1932,55 +1664,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "jogging-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "loaded-lsd": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -1993,12 +1677,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ankle-104": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -2047,27 +1725,20 @@
     "region": "Knee",
     "exercise_ids": [
       "medicine-ball-drops",
-      "weighted-hops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "hip-102",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "cutting-footwork-drill",
       "cone-cutting",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
       "knee-forward-step-up-01",
-      "shuttle-press-variations",
-      "lateral-squat-variations",
       "knee-106",
       "knee-lateral-lunge-with-slider-01",
       "knee-squat-01",
@@ -2080,19 +1751,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weighted-hops": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -2116,12 +1775,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -2135,18 +1788,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "pro-agility": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -2183,18 +1824,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -2242,37 +1871,9 @@
     "phase": "Return to Sport",
     "region": "Knee",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -2337,7 +1938,6 @@
       "knee-102",
       "knee-104",
       "leg-press-into-physioball",
-      "short-arc-quad-progression",
       "knee-106",
       "balance-101",
       "sl-balance-reaches",
@@ -2367,12 +1967,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "leg-press-into-physioball": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "short-arc-quad-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -2440,18 +2034,15 @@
     "exercise_ids": [
       "knee-squat-01",
       "knee-forward-step-up-01",
-      "lsd-progression",
       "prone-quad-stretch",
       "knee-circles",
       "hip-102",
       "shuttle-press",
-      "hamstring-curls-progression",
       "quadruped-hip-extension-over-bench-holds",
       "sl-romanian-deadlift-reaches",
       "ankle-104",
       "hip-101",
       "hip-103",
-      "wall-sit-progression",
       "balance-101",
       "knee-104",
       "sidelying-shuttle-press",
@@ -2461,12 +2052,6 @@
     ],
     "exercise_doses": {
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -2491,12 +2076,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "shuttle-press": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -2527,12 +2106,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "hip-103": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -2593,22 +2166,15 @@
     "region": "General",
     "exercise_ids": [
       "dip-bar-assisted-slantboard-squat",
-      "lsd-progression",
-      "fwd-step-down-progression",
-      "sl-squat-progression",
       "hip-104",
       "prone-quad-stretch",
       "hip-102",
-      "dl-machine-extension-holds-at-0-degrees",
-      "romanian-deadlift-progression",
-      "hamstring-curls-progression",
       "dl-extension",
       "sl-extension",
       "ankle-104",
       "sled-pulls-sled-pushes",
       "kickstand-squat-on-wall",
       "knee-squat-01",
-      "lateral-squat-progression",
       "balance-101",
       "hip-side-stepping-with-resistance-at-ankles-01",
       "core-102"
@@ -2620,43 +2186,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lsd-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "fwd-step-down-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-squat-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "prone-quad-stretch": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "dl-machine-extension-holds-at-0-degrees": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "romanian-deadlift-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -2687,12 +2217,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "kickstand-squat-on-wall": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -2748,26 +2272,15 @@
     "exercise_ids": [
       "split-squat-isometric-holds",
       "agility-ladder",
-      "dl-machine-extension-holds-at-0-degrees",
       "sl-holds",
       "mini-hops",
-      "jogging-progression",
       "dl-machine-extension",
-      "sl-machine",
-      "snap-down-progression",
-      "shuttle-press-variations",
       "knee-squat-01",
-      "jump-progression",
       "knee-lunge-matrix-01",
       "knee-forward-step-up-01",
-      "hamstring-curls-progression",
-      "loaded-lsd",
       "forward-step-downs",
       "hip-102",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "ankle-104",
-      "lateral-squat-variations",
       "anti-rotation-and-balance-training"
     ],
     "exercise_doses": {
@@ -2778,12 +2291,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "agility-ladder": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "dl-machine-extension-holds-at-0-degrees": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -2801,37 +2308,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "jogging-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "dl-machine-extension": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-machine": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -2843,43 +2320,13 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "loaded-lsd": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "forward-step-downs": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "ankle-104": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -2922,27 +2369,20 @@
     "region": "General",
     "exercise_ids": [
       "medicine-ball-drops",
-      "weighted-hops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "hip-102",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "cutting-footwork-drill",
       "cone-cutting",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
       "knee-forward-step-up-01",
-      "shuttle-press-variations",
-      "lateral-squat-variations",
       "knee-106",
       "knee-lateral-lunge-with-slider-01",
       "knee-squat-01",
@@ -2955,19 +2395,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weighted-hops": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -2991,12 +2419,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -3010,18 +2432,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "pro-agility": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -3058,18 +2468,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -3117,37 +2515,9 @@
     "phase": "Return to Sport",
     "region": "General",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -3167,7 +2537,6 @@
     "region": "Hip",
     "exercise_ids": [
       "circumduction-at-30-flexion",
-      "70-degrees-of-hip-flexion",
       "supine-internal-rotation",
       "contract-relax-for-internal-rotation-external-rotation",
       "prone-lying",
@@ -3180,17 +2549,10 @@
       "hip-supine-gluteal-sets-01",
       "knee-101",
       "knee-106",
-      "weight-shifting-with-ue-assistance",
       "gait-training-with-crutches"
     ],
     "exercise_doses": {
       "circumduction-at-30-flexion": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "70-degrees-of-hip-flexion": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -3262,12 +2624,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weight-shifting-with-ue-assistance": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "gait-training-with-crutches": {
         "sets": 2,
         "reps": 10,
@@ -3305,12 +2661,10 @@
       "cable-column-rotation",
       "gentle-hip-circles",
       "aarom-with-physioball",
-      "active-knee",
       "standing-hip-extension",
       "hip-101",
       "prone-resisted-internal-rotation-external-rotation",
-      "seated-internal-rotation-external-rotation",
-      "shuttle-press-variations"
+      "seated-internal-rotation-external-rotation"
     ],
     "exercise_doses": {
       "hip-102": {
@@ -3379,12 +2733,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "active-knee": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "standing-hip-extension": {
         "sets": 2,
         "reps": 10,
@@ -3404,12 +2752,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "seated-internal-rotation-external-rotation": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -3462,7 +2804,6 @@
       "hyperextension-holds",
       "hyperextension-reps",
       "knee-forward-step-up-01",
-      "lsd-progression",
       "double-leg-shuttle-press",
       "wall-sits"
     ],
@@ -3581,12 +2922,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lsd-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "double-leg-shuttle-press": {
         "sets": 2,
         "reps": 10,
@@ -3636,20 +2971,15 @@
     "region": "Hip",
     "exercise_ids": [
       "knee-squat-01",
-      "sl-squat-progression",
       "knee-forward-step-up-01",
       "sl-romanian-deadlift-reaches",
-      "lsd-progression",
       "4-corner-balance-reach",
-      "fwd-step-down-progression",
       "kb-pass-through",
       "knee-106",
       "1-2-kneeling-halos",
       "tall-kneeling-halos",
       "leg-curls",
       "knee-lunge-matrix-01",
-      "focus-on-problem-areas",
-      "romanian-deadlift-progression",
       "hip-104",
       "ankle-104",
       "hip-90-90",
@@ -3663,16 +2993,9 @@
       "quadruped-hip-extension-on-bench",
       "hip-101",
       "balance-101",
-      "seated-internal-rotation-external-rotation",
-      "copenhagen-progression"
+      "seated-internal-rotation-external-rotation"
     ],
     "exercise_doses": {
-      "sl-squat-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-forward-step-up-01": {
         "sets": 2,
         "reps": 10,
@@ -3685,19 +3008,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lsd-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "4-corner-balance-reach": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "fwd-step-down-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -3722,18 +3033,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "leg-curls": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "focus-on-problem-areas": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "romanian-deadlift-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -3805,12 +3104,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "copenhagen-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-squat-01": {
         "sets": 2,
         "reps": 10,
@@ -3860,33 +3153,19 @@
     "region": "Hip",
     "exercise_ids": [
       "knee-106",
-      "snap-down-progression",
       "leg-press-machine",
       "mini-jumps",
-      "jump-progression",
       "knee-lunge-matrix-01",
-      "jogging-progression",
       "knee-forward-step-up-01",
       "knee-squat-01",
       "multiplanar-hops",
       "ladder-decels",
-      "loaded-lsd",
       "forward-step-downs",
-      "hamstring-curls-progression",
-      "lateral-squat-variations",
       "hip-102",
-      "deadlift-romanian-deadlift-variations",
       "anti-rotation-and-balance-training",
-      "nordic-progression",
       "ankle-104"
     ],
     "exercise_doses": {
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "leg-press-machine": {
         "sets": 2,
         "reps": 3,
@@ -3894,18 +3173,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "mini-jumps": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jogging-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -3929,43 +3196,13 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "loaded-lsd": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "forward-step-downs": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "anti-rotation-and-balance-training": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -4014,27 +3251,20 @@
     "region": "Hip",
     "exercise_ids": [
       "medicine-ball-drops",
-      "weighted-hops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "hip-102",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "cutting-footwork-drill",
       "cone-cutting",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
       "knee-forward-step-up-01",
-      "shuttle-press-variations",
-      "lateral-squat-variations",
       "knee-106",
       "knee-lateral-lunge-with-slider-01",
       "knee-squat-01",
@@ -4047,19 +3277,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weighted-hops": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -4083,12 +3301,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -4102,18 +3314,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "pro-agility": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -4150,18 +3350,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -4209,37 +3397,9 @@
     "phase": "6-8 Months",
     "region": "Hip",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -4259,27 +3419,17 @@
     "region": "General",
     "exercise_ids": [
       "knee-101",
-      "hamstring-and-slantboard",
       "knee-104",
       "knee-106",
       "knee-prone-knee-extension-hang-01",
       "sl-shuttle-press",
-      "wall-sit-progression",
       "seated-knee-bend-off-table",
       "knee-circles",
       "balance-101",
-      "sl-balance-reaches",
-      "hurdle-progression",
-      "gait-progression"
+      "sl-balance-reaches"
     ],
     "exercise_doses": {
       "knee-101": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-and-slantboard": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -4292,12 +3442,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "sl-shuttle-press": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -4327,18 +3471,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hurdle-progression": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "gait-progression": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-106": {
         "sets": 2,
         "reps": 12,
@@ -4363,8 +3495,6 @@
     "phase": "3-8 Weeks",
     "region": "General",
     "exercise_ids": [
-      "hamstring-curls-progression",
-      "romanian-deadlift-progression",
       "hip-104",
       "prone-quad-stretch",
       "ankle-104",
@@ -4374,28 +3504,12 @@
       "hip-hike-reps",
       "sled-pulls-sled-pushes",
       "balance-101",
-      "wall-sit-progression",
       "hip-side-stepping-with-resistance-at-ankles-01",
       "sl-shuttle-press",
       "core-102",
-      "lateral-squat-progression",
-      "knee-squat-01",
-      "lsd-progression",
-      "fwd-step-down-progression"
+      "knee-squat-01"
     ],
     "exercise_doses": {
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 8,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "romanian-deadlift-progression": {
-        "sets": 3,
-        "reps": 8,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "prone-quad-stretch": {
         "sets": 3,
         "reps": 8,
@@ -4438,12 +3552,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "wall-sit-progression": {
-        "sets": 3,
-        "reps": 8,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "sl-shuttle-press": {
         "sets": 3,
         "reps": 8,
@@ -4451,24 +3559,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "core-102": {
-        "sets": 3,
-        "reps": 8,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
-        "sets": 3,
-        "reps": 8,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
-        "sets": 3,
-        "reps": 8,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "fwd-step-down-progression": {
         "sets": 3,
         "reps": 8,
         "hold_sec": 2,
@@ -4512,25 +3602,13 @@
     "exercise_ids": [
       "split-squat-isometric-holds",
       "agility-ladder",
-      "dl-machine-extension-holds-at-0-degrees",
       "mini-hops",
-      "jogging-progression",
       "dl-machine-extension",
-      "sl-machine",
-      "snap-down-progression",
       "cable-decels",
-      "shuttle-press-variations",
-      "jump-progression",
       "knee-squat-01",
-      "split-squat-progression",
-      "hamstring-curls-progression",
       "knee-forward-step-up-01",
       "hip-102",
-      "lsd-progression",
-      "romanian-deadlift-progression",
-      "nordic-progression",
       "ankle-104",
-      "lateral-squat-variations",
       "anti-rotation-and-balance-training"
     ],
     "exercise_doses": {
@@ -4546,19 +3624,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "dl-machine-extension-holds-at-0-degrees": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "mini-hops": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jogging-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -4570,43 +3636,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "sl-machine": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "cable-decels": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "split-squat-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -4618,31 +3648,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lsd-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "romanian-deadlift-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "ankle-104": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -4679,27 +3685,20 @@
     "region": "General",
     "exercise_ids": [
       "medicine-ball-drops",
-      "weighted-hops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "hip-102",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "cutting-footwork-drill",
       "cone-cutting",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
       "knee-forward-step-up-01",
-      "shuttle-press-variations",
-      "lateral-squat-variations",
       "knee-106",
       "knee-lateral-lunge-with-slider-01",
       "knee-squat-01",
@@ -4712,19 +3711,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weighted-hops": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -4748,12 +3735,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -4767,18 +3748,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "pro-agility": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -4815,18 +3784,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -4874,37 +3831,9 @@
     "phase": "8-16 Weeks",
     "region": "General",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -5011,7 +3940,6 @@
       "knee-102",
       "knee-104",
       "leg-press-into-physioball",
-      "short-arc-quad-progression",
       "knee-106",
       "balance-101",
       "sl-balance-reaches",
@@ -5041,12 +3969,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "leg-press-into-physioball": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "short-arc-quad-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -5114,16 +4036,13 @@
     "exercise_ids": [
       "knee-squat-01",
       "knee-forward-step-up-01",
-      "lsd-progression",
       "prone-quad-stretch",
       "knee-circles",
       "hip-102",
       "shuttle-press",
-      "hamstring-curls-progression",
       "quadruped-hip-extension-over-bench-holds",
       "sl-romanian-deadlift-reaches",
       "ankle-104",
-      "wall-sit-progression",
       "hip-101",
       "hip-103",
       "knee-104",
@@ -5135,12 +4054,6 @@
     ],
     "exercise_doses": {
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -5170,12 +4083,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "quadruped-hip-extension-over-bench-holds": {
         "sets": 2,
         "reps": 12,
@@ -5189,12 +4096,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ankle-104": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -5266,65 +4167,28 @@
     "phase": "10-16 Weeks",
     "region": "General",
     "exercise_ids": [
-      "lsd-progression",
       "tibial-rotation",
-      "fwd-step-down-progression",
       "hip-104",
       "prone-quad-stretch",
-      "sl-squat-progression",
-      "dl-machine-extension-holds-at-0-degrees",
       "hip-102",
-      "romanian-deadlift-progression",
       "dl-extension",
       "sl-extension",
-      "hamstring-curls-progression",
       "sled-pulls-sled-pushes",
       "ankle-104",
       "kickstand-squat-on-wall",
       "knee-squat-01",
-      "lateral-squat-progression",
       "balance-101",
       "hip-side-stepping-with-resistance-at-ankles-01",
       "core-102"
     ],
     "exercise_doses": {
-      "lsd-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "tibial-rotation": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "fwd-step-down-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "prone-quad-stretch": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-squat-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "dl-machine-extension-holds-at-0-degrees": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "romanian-deadlift-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -5337,12 +4201,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "sl-extension": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -5361,12 +4219,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "kickstand-squat-on-wall": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -5420,32 +4272,21 @@
     "phase": "14-20 Weeks",
     "region": "General",
     "exercise_ids": [
-      "dip-bar-assisted-slant-board-squat",
+      "dip-bar-assisted-slantboard-squat",
       "agility-ladder",
       "mini-hops",
-      "jogging-progression",
-      "snap-down-progression",
       "split-squat-isometric-holds",
-      "dl-machine-extension-holds-at-0-degrees",
-      "jump-progression",
       "dl-machine-extension",
-      "sl-machine",
-      "hamstring-curls-progression",
       "hip-102",
-      "shuttle-press-variations",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "knee-squat-01",
       "ankle-104",
       "knee-lunge-matrix-01",
       "knee-forward-step-up-01",
-      "lateral-squat-variations",
-      "loaded-lsd",
       "forward-step-downs",
       "anti-rotation-and-balance-training"
     ],
     "exercise_doses": {
-      "dip-bar-assisted-slant-board-squat": {
+      "dip-bar-assisted-slantboard-squat": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -5463,67 +4304,13 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "jogging-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "split-squat-isometric-holds": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "dl-machine-extension-holds-at-0-degrees": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "dl-machine-extension": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-machine": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -5536,18 +4323,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "loaded-lsd": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -5596,27 +4371,20 @@
     "region": "General",
     "exercise_ids": [
       "medicine-ball-drops",
-      "weighted-hops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "hip-102",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "cutting-footwork-drill",
       "cone-cutting",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
       "knee-forward-step-up-01",
-      "shuttle-press-variations",
-      "lateral-squat-variations",
       "knee-106",
       "knee-lateral-lunge-with-slider-01",
       "knee-squat-01",
@@ -5629,19 +4397,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weighted-hops": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -5665,12 +4421,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -5684,18 +4434,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "pro-agility": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -5732,18 +4470,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -5791,37 +4517,9 @@
     "phase": "Return to Sport",
     "region": "General",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -5845,7 +4543,6 @@
       "knee-105",
       "wall-slides",
       "knee-prone-knee-extension-hang-01",
-      "hamstring-and-slantboard",
       "knee-101",
       "knee-102",
       "kicking-into-physio-ball-isometric-holds",
@@ -5878,12 +4575,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-prone-knee-extension-hang-01": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-and-slantboard": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -6045,17 +4736,14 @@
     "exercise_ids": [
       "knee-squat-01",
       "knee-forward-step-up-01",
-      "lsd-progression",
       "prone-quad-stretch",
       "knee-circles",
       "hip-102",
       "shuttle-press",
-      "hamstring-curls-progression",
       "quadruped-hip-extension-over-bench-holds",
       "sl-romanian-deadlift-reaches",
       "knee-106",
       "ankle-104",
-      "wall-sit-progression",
       "knee-104",
       "hip-101",
       "hip-103",
@@ -6067,12 +4755,6 @@
     ],
     "exercise_doses": {
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -6102,12 +4784,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "quadruped-hip-extension-over-bench-holds": {
         "sets": 2,
         "reps": 12,
@@ -6127,12 +4803,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ankle-104": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -6204,18 +4874,11 @@
     "phase": "12-20 Weeks",
     "region": "Knee",
     "exercise_ids": [
-      "lsd-progression",
-      "fwd-step-down-progression",
-      "sl-squat-progression",
       "tibial-rotations-w-slider",
       "hip-102",
       "hip-104",
-      "romanian-deadlift-progression",
-      "hamstring-curls-progression",
       "ankle-104",
       "knee-106",
-      "double-leg",
-      "lateral-squat-progression",
       "balance-101",
       "sled-pulls-sled-pushes",
       "hip-side-stepping-with-resistance-at-ankles-01",
@@ -6224,55 +4887,13 @@
       "core-102"
     ],
     "exercise_doses": {
-      "lsd-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "fwd-step-down-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-squat-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "tibial-rotations-w-slider": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "romanian-deadlift-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "ankle-104": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "double-leg": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -6344,32 +4965,23 @@
     "phase": "16-24 Weeks",
     "region": "Knee",
     "exercise_ids": [
-      "dip-bar-assisted-slant-board-squat",
+      "dip-bar-assisted-slantboard-squat",
       "agility-ladder",
       "mini-hops",
-      "jogging-progression",
-      "snap-down-progression",
       "prone-quad-stretch",
       "split-squat-isometric-holds",
-      "jump-progression",
       "slantboard-step-downs",
       "heavy-sl-machine-extension",
-      "hamstring-curls-progression",
       "hip-102",
-      "shuttle-press-variations",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "knee-lunge-matrix-01",
       "ankle-104",
       "knee-forward-step-up-01",
       "knee-squat-01",
-      "lateral-squat-variations",
-      "loaded-lsd",
       "forward-step-downs",
       "anti-rotation-and-balance-training"
     ],
     "exercise_doses": {
-      "dip-bar-assisted-slant-board-squat": {
+      "dip-bar-assisted-slantboard-squat": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -6387,18 +4999,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "jogging-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "prone-quad-stretch": {
         "sets": 2,
         "reps": 3,
@@ -6406,12 +5006,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "split-squat-isometric-holds": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -6429,30 +5023,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "ankle-104": {
         "sets": 2,
         "reps": 3,
@@ -6460,18 +5030,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "loaded-lsd": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -6521,27 +5079,21 @@
     "exercise_ids": [
       "medicine-ball-drops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "bulgarian-split",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
       "hip-102",
-      "deadlift-romanian-deadlift-variations",
       "cutting-footwork-drill",
       "cone-cutting",
-      "nordic-progression",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
-      "shuttle-press-variations",
       "knee-forward-step-up-01",
       "knee-106",
-      "lateral-squat-progression",
       "knee-squat-01",
       "knee-lateral-lunge-with-slider-01",
       "rotational-deadlifts"
@@ -6554,12 +5106,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -6589,12 +5135,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -6613,12 +5153,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "cutting-footwork-drill": {
         "sets": 3,
         "reps": 3,
@@ -6626,12 +5160,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "cone-cutting": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -6655,19 +5183,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -6715,37 +5231,9 @@
     "phase": "Return to Sport",
     "region": "Knee",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -6768,8 +5256,6 @@
       "scapular-plane-shoulder-elevation-90",
       "arm-hangs-outside-of-the-sling",
       "standing-pendulum",
-      "prom-arom-of-the-elbow",
-      "cervical-prom-stretching",
       "cerv-304",
       "ball-squeezes"
     ],
@@ -6787,18 +5273,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "standing-pendulum": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "prom-arom-of-the-elbow": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "cervical-prom-stretching": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -6838,13 +5312,10 @@
       "shld-402",
       "shoulder-doorway-isometrics-25-50",
       "cross-symmetry-walk-outs",
-      "flexion-progression",
       "scapular-rowing-off-of-table",
-      "external-rotation-progression",
       "cerv-304",
       "arom-of-the-elbow",
-      "standing-pendulum",
-      "cervical-prom-stretching"
+      "standing-pendulum"
     ],
     "exercise_doses": {
       "shoulder-doorway-isometrics-25-50": {
@@ -6859,19 +5330,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "flexion-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "scapular-rowing-off-of-table": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "external-rotation-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -6884,12 +5343,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "standing-pendulum": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "cervical-prom-stretching": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -6921,41 +5374,15 @@
     "region": "Shoulder",
     "exercise_ids": [
       "shld-402",
-      "standing-flexion-progression",
       "rotator-cuff-series",
-      "external-rotation-progression",
-      "pnf-pattern-progression",
       "i-y-ts-w-slider-on-the-wall",
       "ube-light-resistance-with-b-ue",
-      "light-isotonics",
-      "standing-unweighted-flex",
       "band-resisted-ext",
       "band-resisted-seated-row",
-      "prone-row",
-      "band-resisted-biceps-curls-and-triceps",
-      "ckc-progression",
-      "push-up-plus-progression"
+      "prone-row"
     ],
     "exercise_doses": {
-      "standing-flexion-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "rotator-cuff-series": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "external-rotation-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "pnf-pattern-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -6968,18 +5395,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ube-light-resistance-with-b-ue": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "light-isotonics": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "standing-unweighted-flex": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -6998,24 +5413,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "prone-row": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "band-resisted-biceps-curls-and-triceps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "ckc-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "push-up-plus-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7040,34 +5437,20 @@
     "phase": "12-20 Weeks",
     "region": "Shoulder",
     "exercise_ids": [
-      "aggressive-prom-stretching-to-achieve",
       "shld-405",
       "rotator-cuff-series",
       "supine-passive-external-rotation",
       "trx-rows",
       "behind-the-back-stretch-rope",
-      "biceps-curls-and-triceps-extensions",
-      "ckc-progression",
       "shoulder-taps",
       "core-standard-plank-01",
       "wall-end-range-isometrics",
-      "functional-external-rotation-internal-rotation-breakout-progression",
-      "intro-to-functional-movements",
-      "gross-movements",
-      "push-up-plus-progression",
-      "shoulder-circle-progression",
       "shoulder-press",
       "bent-over-rows",
-      "lat-pull-down",
+      "lat-pulldown",
       "farmer-walks"
     ],
     "exercise_doses": {
-      "aggressive-prom-stretching-to-achieve": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "rotator-cuff-series": {
         "sets": 2,
         "reps": 10,
@@ -7092,18 +5475,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "biceps-curls-and-triceps-extensions": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "ckc-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "shoulder-taps": {
         "sets": 2,
         "reps": 10,
@@ -7122,36 +5493,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "functional-external-rotation-internal-rotation-breakout-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "intro-to-functional-movements": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "gross-movements": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "push-up-plus-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shoulder-circle-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "shoulder-press": {
         "sets": 2,
         "reps": 10,
@@ -7164,7 +5505,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lat-pull-down": {
+      "lat-pulldown": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7195,26 +5536,16 @@
     "region": "Shoulder",
     "exercise_ids": [
       "bent-over-rows",
-      "exxentric-machine",
       "d2-pattern",
       "lat-pulldown",
       "trx-ys",
       "flexion-abduction-scapation",
       "chest-press",
-      "bench-progression",
-      "over-the-shoulder-weighted-ball-catch",
-      "shoulder-press-variations",
       "farmer-walks",
       "suitcase-carry"
     ],
     "exercise_doses": {
       "bent-over-rows": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "exxentric-machine": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7250,24 +5581,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "bench-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "over-the-shoulder-weighted-ball-catch": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shoulder-press-variations": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "farmer-walks": {
         "sets": 2,
         "reps": 10,
@@ -7292,31 +5605,10 @@
     "phase": "Return to Sport",
     "region": "Shoulder",
     "exercise_ids": [
-      "weighted-ball-taps-on-the-wall",
-      "plyo-variations",
-      "push-up-plus-progression",
       "push-press",
       "barbell-inverted-row"
     ],
     "exercise_doses": {
-      "weighted-ball-taps-on-the-wall": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyo-variations": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "push-up-plus-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "push-press": {
         "sets": 2,
         "reps": 10,
@@ -7348,13 +5640,10 @@
       "scapular-plane-shoulder-elevation-90",
       "scapular-plane-internal-rotation",
       "ball-squeezes",
-      "abduction-beginning-at-2-weeks",
       "shld-405",
       "arm-hangs-outside-of-the-sling",
       "standing-pendulum",
-      "prom-of-the-elbow",
-      "arom-of-wrist-and-hand",
-      "cervical-prom-stretching"
+      "arom-of-wrist-and-hand"
     ],
     "exercise_doses": {
       "shoulder-isometrics-in-neutral": {
@@ -7387,12 +5676,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "abduction-beginning-at-2-weeks": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "arm-hangs-outside-of-the-sling": {
         "sets": 2,
         "reps": 10,
@@ -7405,19 +5688,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "prom-of-the-elbow": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "arom-of-wrist-and-hand": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "cervical-prom-stretching": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7457,13 +5728,10 @@
       "shld-402",
       "shoulder-doorway-isometrics-25-50",
       "cross-symmetry-walk-outs",
-      "flexion-progression",
       "scapular-rowing-off-of-table",
-      "external-rotation-progression",
       "cerv-304",
       "arom-of-wrist-and-hand",
-      "standing-pendulum",
-      "cervical-prom-stretching"
+      "standing-pendulum"
     ],
     "exercise_doses": {
       "shoulder-doorway-isometrics-25-50": {
@@ -7478,19 +5746,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "flexion-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "scapular-rowing-off-of-table": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "external-rotation-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7503,12 +5759,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "standing-pendulum": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "cervical-prom-stretching": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7540,40 +5790,15 @@
     "region": "Shoulder",
     "exercise_ids": [
       "shld-402",
-      "flexion-progression",
       "rotator-cuff-series",
-      "external-rotation-progression",
-      "pnf-pattern-progression",
       "i-y-ts-w-slider-on-the-wall",
       "ube-light-resistance-with-b-ue",
-      "light-isotonics",
-      "standing-unweighted-flex",
       "band-resisted-ext",
       "band-resisted-seated-row",
-      "prone-row",
-      "ckc-progression",
-      "push-up-plus-progression"
+      "prone-row"
     ],
     "exercise_doses": {
-      "flexion-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "rotator-cuff-series": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "external-rotation-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "pnf-pattern-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7586,18 +5811,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ube-light-resistance-with-b-ue": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "light-isotonics": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "standing-unweighted-flex": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7616,18 +5829,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "prone-row": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "ckc-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "push-up-plus-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7652,35 +5853,21 @@
     "phase": "Progressive Overload",
     "region": "Shoulder",
     "exercise_ids": [
-      "aggressive-prom-stretching-to-achieve",
       "shld-405",
       "rotator-cuff-series",
       "supine-passive-external-rotation",
       "trx-rows",
       "behind-the-back-stretch-rope",
-      "biceps-curls-and-triceps-extensions",
-      "ckc-progression",
       "shoulder-taps",
       "core-standard-plank-01",
       "wall-end-range-isometrics",
-      "functional-external-rotation-internal-rotation-breakout-progression",
-      "intro-to-functional-movements",
-      "gross-movements",
-      "push-up-plus-progression",
       "end-range-y-t-i-w",
       "shoulder-press",
-      "shoulder-circle-progression",
       "bent-over-rows",
-      "lat-pull-down",
+      "lat-pulldown",
       "farmer-walks"
     ],
     "exercise_doses": {
-      "aggressive-prom-stretching-to-achieve": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "rotator-cuff-series": {
         "sets": 2,
         "reps": 10,
@@ -7705,18 +5892,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "biceps-curls-and-triceps-extensions": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "ckc-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "shoulder-taps": {
         "sets": 2,
         "reps": 10,
@@ -7735,30 +5910,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "functional-external-rotation-internal-rotation-breakout-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "intro-to-functional-movements": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "gross-movements": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "push-up-plus-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "end-range-y-t-i-w": {
         "sets": 2,
         "reps": 10,
@@ -7771,19 +5922,13 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "shoulder-circle-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "bent-over-rows": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lat-pull-down": {
+      "lat-pulldown": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7814,26 +5959,16 @@
     "region": "Shoulder",
     "exercise_ids": [
       "bent-over-rows",
-      "exxentric-machine",
       "d2-pattern",
       "lat-pulldown",
       "trx-ys",
       "flexion-abduction-scapation",
       "chest-press",
-      "bench-progression",
-      "over-the-shoulder-weighted-ball-catch",
-      "shoulder-press-variations",
       "farmer-walks",
       "suitcase-carry"
     ],
     "exercise_doses": {
       "bent-over-rows": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "exxentric-machine": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -7869,24 +6004,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "bench-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "over-the-shoulder-weighted-ball-catch": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shoulder-press-variations": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "farmer-walks": {
         "sets": 2,
         "reps": 10,
@@ -7911,25 +6028,11 @@
     "phase": "Return to Sport",
     "region": "Shoulder",
     "exercise_ids": [
-      "weighted-ball-taps-on-the-wall",
-      "plyo-variations",
       "push-ups",
       "push-press",
       "barbell-inverted-row"
     ],
     "exercise_doses": {
-      "weighted-ball-taps-on-the-wall": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyo-variations": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "push-ups": {
         "sets": 2,
         "reps": 10,
@@ -8013,7 +6116,6 @@
       "knee-102",
       "knee-104",
       "leg-press-into-physioball",
-      "short-arc-quad-progression",
       "knee-106",
       "double-leg-shuttle-press",
       "balance-101",
@@ -8044,12 +6146,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "leg-press-into-physioball": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "short-arc-quad-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -8123,16 +6219,13 @@
     "exercise_ids": [
       "knee-squat-01",
       "knee-forward-step-up-01",
-      "lsd-progression",
       "prone-quad-stretch",
       "knee-circles",
       "hip-102",
       "shuttle-press",
-      "hamstring-curls-progression",
       "quadruped-hip-extension-over-bench-holds",
       "sl-romanian-deadlift-reaches",
       "ankle-104",
-      "wall-sit-progression",
       "hip-101",
       "hip-103",
       "knee-104",
@@ -8144,12 +6237,6 @@
     ],
     "exercise_doses": {
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -8179,12 +6266,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "quadruped-hip-extension-over-bench-holds": {
         "sets": 2,
         "reps": 12,
@@ -8198,12 +6279,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ankle-104": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -8275,22 +6350,15 @@
     "phase": "6-12 Weeks",
     "region": "General",
     "exercise_ids": [
-      "lsd-progression",
-      "fwd-step-down-progression",
       "dip-bar-assisted-slantboard-squat",
-      "sl-squat-progression",
       "hip-102",
       "hip-104",
       "prone-quad-stretch",
-      "romanian-deadlift-progression",
-      "hamstring-curls-progression",
-      "dl-machine-extension-holds-at-0-degrees",
       "sl-holds",
       "ankle-104",
       "dl-extension",
       "sl-extension",
       "sled-pulls-sled-pushes",
-      "lateral-squat-progression",
       "kickstand-squat-on-wall",
       "knee-squat-01",
       "balance-101",
@@ -8298,49 +6366,13 @@
       "core-102"
     ],
     "exercise_doses": {
-      "lsd-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "fwd-step-down-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "dip-bar-assisted-slantboard-squat": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "sl-squat-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "prone-quad-stretch": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "romanian-deadlift-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "dl-machine-extension-holds-at-0-degrees": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -8371,12 +6403,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "sled-pulls-sled-pushes": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -8438,25 +6464,14 @@
     "exercise_ids": [
       "split-squat-isometric-holds",
       "agility-ladder",
-      "dl-machine-extension-holds-at-0-degrees",
       "mini-hops",
-      "jogging-progression",
       "dl-machine-extension",
-      "sl-machine",
-      "snap-down-progression",
-      "shuttle-press-variations",
-      "jump-progression",
       "knee-squat-01",
       "knee-lunge-matrix-01",
-      "hamstring-curls-progression",
       "knee-forward-step-up-01",
       "hip-102",
-      "loaded-lsd",
       "forward-step-downs",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "ankle-104",
-      "lateral-squat-variations",
       "anti-rotation-and-balance-training"
     ],
     "exercise_doses": {
@@ -8472,19 +6487,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "dl-machine-extension-holds-at-0-degrees": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "mini-hops": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jogging-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -8496,43 +6499,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "sl-machine": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "loaded-lsd": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -8544,25 +6511,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "ankle-104": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -8605,27 +6554,20 @@
     "region": "General",
     "exercise_ids": [
       "medicine-ball-drops",
-      "weighted-hops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "hip-102",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "cutting-footwork-drill",
       "cone-cutting",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
       "knee-forward-step-up-01",
-      "shuttle-press-variations",
-      "lateral-squat-variations",
       "knee-106",
       "knee-lateral-lunge-with-slider-01",
       "knee-squat-01",
@@ -8638,19 +6580,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weighted-hops": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -8674,12 +6604,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -8693,18 +6617,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "pro-agility": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -8741,18 +6653,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -8800,37 +6700,9 @@
     "phase": "Return to Sport",
     "region": "General",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -8937,7 +6809,6 @@
       "knee-102",
       "knee-104",
       "leg-press-into-physioball",
-      "short-arc-quad-progression",
       "knee-106",
       "balance-101",
       "sl-balance-reaches",
@@ -8967,12 +6838,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "leg-press-into-physioball": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "short-arc-quad-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -9040,16 +6905,13 @@
     "exercise_ids": [
       "knee-squat-01",
       "knee-forward-step-up-01",
-      "lsd-progression",
       "prone-quad-stretch",
       "knee-circles",
       "hip-102",
       "shuttle-press",
-      "hamstring-curls-progression",
       "quadruped-hip-extension-over-bench-holds",
       "sl-romanian-deadlift-reaches",
       "ankle-104",
-      "wall-sit-progression",
       "hip-101",
       "hip-103",
       "knee-104",
@@ -9061,12 +6923,6 @@
     ],
     "exercise_doses": {
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -9096,12 +6952,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "quadruped-hip-extension-over-bench-holds": {
         "sets": 2,
         "reps": 12,
@@ -9115,12 +6965,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ankle-104": {
-        "sets": 2,
-        "reps": 12,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 12,
         "hold_sec": 2,
@@ -9192,60 +7036,29 @@
     "phase": "12-18 Weeks",
     "region": "General",
     "exercise_ids": [
-      "lsd-progression",
       "tibial-rotation",
-      "fwd-step-down-progression",
       "hip-104",
       "prone-quad-stretch",
-      "sl-squat-progression",
-      "dl-machine-extension-holds-at-0-degrees",
       "sl-holds",
       "hip-102",
       "dl-extension",
       "sl-extension",
-      "romanian-deadlift-progression",
       "sled-pulls-sled-pushes",
-      "hamstring-curls-progression",
       "kickstand-squat-on-wall",
       "knee-squat-01",
       "ankle-104",
-      "lateral-squat-progression",
       "balance-101",
       "hip-side-stepping-with-resistance-at-ankles-01",
       "core-102"
     ],
     "exercise_doses": {
-      "lsd-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "tibial-rotation": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "fwd-step-down-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "prone-quad-stretch": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-squat-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "dl-machine-extension-holds-at-0-degrees": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -9269,19 +7082,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "romanian-deadlift-progression": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "sled-pulls-sled-pushes": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -9294,12 +7095,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "ankle-104": {
-        "sets": 3,
-        "reps": 6,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-progression": {
         "sets": 3,
         "reps": 6,
         "hold_sec": 2,
@@ -9353,32 +7148,21 @@
     "phase": "14-20 Weeks",
     "region": "General",
     "exercise_ids": [
-      "dip-bar-assisted-slant-board-squat",
+      "dip-bar-assisted-slantboard-squat",
       "agility-ladder",
       "mini-hops",
-      "jogging-progression",
-      "snap-down-progression",
       "split-squat-isometric-holds",
-      "dl-machine-extension-holds-at-0-degrees",
-      "jump-progression",
       "dl-machine-extension",
-      "sl-machine",
-      "hamstring-curls-progression",
       "hip-102",
-      "shuttle-press-variations",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "knee-squat-01",
       "ankle-104",
       "knee-lunge-matrix-01",
       "knee-forward-step-up-01",
-      "lateral-squat-variations",
-      "loaded-lsd",
       "forward-step-downs",
       "anti-rotation-and-balance-training"
     ],
     "exercise_doses": {
-      "dip-bar-assisted-slant-board-squat": {
+      "dip-bar-assisted-slantboard-squat": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -9396,67 +7180,13 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "jogging-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "snap-down-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "split-squat-isometric-holds": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "dl-machine-extension-holds-at-0-degrees": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "jump-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "dl-machine-extension": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "sl-machine": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "hamstring-curls-progression": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -9469,18 +7199,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
-        "sets": 2,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "loaded-lsd": {
         "sets": 2,
         "reps": 3,
         "hold_sec": 2,
@@ -9529,27 +7247,20 @@
     "region": "General",
     "exercise_ids": [
       "medicine-ball-drops",
-      "weighted-hops",
       "3-way-hurdle-hop",
-      "add-more-load-to-functional-movements",
       "hop-over-hurdle-in-sagittal-plane",
       "split-squat",
       "hop-over-hurdle",
-      "hamstring-curls-progression",
       "hip-102",
       "lateral-shuffles",
       "reactive-cutting",
       "pro-agility",
-      "deadlift-romanian-deadlift-variations",
-      "nordic-progression",
       "cutting-footwork-drill",
       "cone-cutting",
       "kb-swings",
       "ankle-104",
       "heavy-sl-machine-extension",
       "knee-forward-step-up-01",
-      "shuttle-press-variations",
-      "lateral-squat-variations",
       "knee-106",
       "knee-lateral-lunge-with-slider-01",
       "knee-squat-01",
@@ -9562,19 +7273,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weighted-hops": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "3-way-hurdle-hop": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "add-more-load-to-functional-movements": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -9598,12 +7297,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "hamstring-curls-progression": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "lateral-shuffles": {
         "sets": 3,
         "reps": 3,
@@ -9617,18 +7310,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "pro-agility": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "deadlift-romanian-deadlift-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "nordic-progression": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -9665,18 +7346,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "shuttle-press-variations": {
-        "sets": 3,
-        "reps": 3,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lateral-squat-variations": {
         "sets": 3,
         "reps": 3,
         "hold_sec": 2,
@@ -9724,37 +7393,9 @@
     "phase": "Return to Sport",
     "region": "General",
     "exercise_ids": [
-      "depth-jump-progression",
-      "4-exercises-performed-in-succession",
-      "plyometric-jump-3-reps",
-      "drop-set-or-weighted-jump-3-reps",
       "accelerated-jump-2-3"
     ],
     "exercise_doses": {
-      "depth-jump-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "4-exercises-performed-in-succession": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "plyometric-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "drop-set-or-weighted-jump-3-reps": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "accelerated-jump-2-3": {
         "sets": 2,
         "reps": 10,
@@ -9781,7 +7422,6 @@
       "wall-slides",
       "nu-step-and-bike",
       "knee-102",
-      "weight-shifting-with-ue-assistance",
       "gait-training-with-rw",
       "ankle-104"
     ],
@@ -9828,12 +7468,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "weight-shifting-with-ue-assistance": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "gait-training-with-rw": {
         "sets": 2,
         "reps": 10,
@@ -9866,11 +7500,8 @@
     "exercise_ids": [
       "ankle-104",
       "hip-102",
-      "more-aggressive-prom",
       "knee-squat-01",
       "knee-forward-step-up-01",
-      "lsd-progression",
-      "feet-together",
       "feet-together-on-foam",
       "nu-step",
       "shuttle-press",
@@ -9897,12 +7528,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "more-aggressive-prom": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "knee-squat-01": {
         "sets": 2,
         "reps": 10,
@@ -9910,18 +7535,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "lsd-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "feet-together": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -10014,7 +7627,6 @@
       "hamstring-curls",
       "hip-102",
       "prone-quad-stretch",
-      "tissue-work-to",
       "farmer-carries",
       "knee-lateral-lunge-with-slider-01",
       "knee-circles",
@@ -10028,15 +7640,12 @@
       "star-drill",
       "hip-side-stepping-with-resistance-at-ankles-01",
       "knee-106",
-      "wall-sit-progression",
       "toe-heel-walking",
       "knee-104",
       "sled-push-pull",
       "sl-shuttle-press",
       "incline-treadmill-walking",
-      "knee-forward-step-up-01",
-      "fwd-step-down-progression",
-      "get-up-from-floor-progression"
+      "knee-forward-step-up-01"
     ],
     "exercise_doses": {
       "hamstring-curls": {
@@ -10052,12 +7661,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "prone-quad-stretch": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "tissue-work-to": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -10111,12 +7714,6 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "wall-sit-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "toe-heel-walking": {
         "sets": 2,
         "reps": 10,
@@ -10148,18 +7745,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "knee-forward-step-up-01": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "fwd-step-down-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "get-up-from-floor-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -10209,7 +7794,6 @@
     "exercise_ids": [
       "knee-106",
       "core-standard-plank-01",
-      "wall-sit-progression",
       "hip-101",
       "hip-103",
       "knee-104",
@@ -10221,22 +7805,13 @@
       "knee-squat-01",
       "hip-side-stepping-with-resistance-at-ankles-01",
       "lateral-step-downs",
-      "lateral-squat-progression",
       "split-squat",
       "knee-lunge-matrix-01",
-      "get-up-from-floor-progression",
       "hip-102",
-      "hamstring-curls",
-      "incorporate-more-compound-movements"
+      "hamstring-curls"
     ],
     "exercise_doses": {
       "core-standard-plank-01": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "wall-sit-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -10284,19 +7859,7 @@
         "hold_sec": 2,
         "frequency": "Daily (7x/wk)"
       },
-      "lateral-squat-progression": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
       "split-squat": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "get-up-from-floor-progression": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
@@ -10309,12 +7872,6 @@
         "frequency": "Daily (7x/wk)"
       },
       "hamstring-curls": {
-        "sets": 2,
-        "reps": 10,
-        "hold_sec": 2,
-        "frequency": "Daily (7x/wk)"
-      },
-      "incorporate-more-compound-movements": {
         "sets": 2,
         "reps": 10,
         "hold_sec": 2,
