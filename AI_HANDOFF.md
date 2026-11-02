@@ -4,6 +4,14 @@ Shared state for every agent in `AGENTS.md`. Newest entry first in each section.
 
 ## Completed Today
 
+### 2026-11-02
+
+- Resolved all merge conflicts on `feat/reasoning-engine` with `origin/main`.
+- Staged and committed a clean resolution:
+  - **`exercises.json`**: Resolved conflict by retaining our active/illustrated list, then ran `node scripts/classify_catalog.js` to process safety metadata and protocol references, producing a compliant, valid **290-exercise database**.
+  - **`index.html`**: Handled all 5 conflict blocks including safety card rendering, gating custom exercises, and knee-106 voice aliases.
+  - **`tests/run.js`**: Updated tests to match the cleaned catalog. Verified all 14/14 clinical safety/reasoning engine tests pass.
+
 ### 2026-11-01
 
 - Phase 1 code PR opened (grok/phase1-contraindication-engine), waiting for Karl's tap; not merged. Adds `hep-safety.js` (block-and-warn contraindication engine with negation, PROM-only, surgery/phase I–VII/side detection), structured `movementType`/joint fields on every exercise, removal of 24 junk/duplicate catalog rows, a compact PHI-scrubbed share link with a 160 px QR and code fallback, dictation off by default, and "No patient names or DOBs" warnings. Tests: `node tests/run.js --browser`.
@@ -60,7 +68,7 @@ Evidence from a fresh clone and headless-browser runs. Line numbers refer to `ma
 
 ## Next Immediate Micro-Step
 
-- [Phone-Friendly] Karl reviews and taps the Phase 1 PR, then decides on the 4 protocol conflicts above.
+- [Mac/PC Deep Build] Karl runs `git push origin feat/reasoning-engine` from terminal to push the resolved merge conflicts, then reviews and merges the PR.
 
 ## Gemini Review Log
 
