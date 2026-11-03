@@ -6,6 +6,7 @@ Shared state for every agent in `AGENTS.md`. Newest entry first in each section.
 
 ### 2026-11-02
 
+- Posterior-view `assets/standing-hip-rotations-on-stool.webp` from `e9bb3d8` on `feat/reasoning-engine` is merged to `main`. 800×800. The cleared illustration queue is unchanged (0 missing, 290 illustrated).
 - Standing Hamstring Curl category is `knee` (was `shoulder`). Karl kept Scapular Retraction and Depression (`cerv-304`) as `cervical`. The five hip-titled rows that were tagged `knee` are now `hip`.
 - Hamstring Curls, Hamstring Ball Curls, and Prone Hamstring Curls are catalog category `knee` (was `ankle`). The Swap Match tag and the Knee filter both read that field from `exercises.json`.
 - Karl approved the merge. `main` is `47062ec` (fast-forward of `feat/reasoning-engine`) and is pushed to origin. GitHub Pages publishes `main`. Standing-hip drawing remains the `bdc07d5` file. `missing-illustrations-queue.json` remains the cleared `e928221` queue (0 missing, 290 illustrated). `.DS_Store` is now in `.gitignore`.
