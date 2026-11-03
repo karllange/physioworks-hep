@@ -10634,7 +10634,7 @@
   {
     "id": "standing-hamstring-curl",
     "name": "Standing Hamstring Curl",
-    "category": "shoulder",
+    "category": "knee",
     "type": "strength",
     "starter": false,
     "default_dosing": {

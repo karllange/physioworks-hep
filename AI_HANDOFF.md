@@ -6,6 +6,7 @@ Shared state for every agent in `AGENTS.md`. Newest entry first in each section.
 
 ### 2026-11-02
 
+- Standing Hamstring Curl category is `knee` (was `shoulder`). Other title/category mismatches were listed and left unchanged.
 - Hamstring Curls, Hamstring Ball Curls, and Prone Hamstring Curls are catalog category `knee` (was `ankle`). The Swap Match tag and the Knee filter both read that field from `exercises.json`.
 - Karl approved the merge. `main` is `47062ec` (fast-forward of `feat/reasoning-engine`) and is pushed to origin. GitHub Pages publishes `main`. Standing-hip drawing remains the `bdc07d5` file. `missing-illustrations-queue.json` remains the cleared `e928221` queue (0 missing, 290 illustrated). `.DS_Store` is now in `.gitignore`.
 - Dictate Plan / Paste now best-guesses a library exercise instead of dropping straight to "Custom Clinic Movement". Cue clauses ("as you…", "making sure to…", "holding for…", "on the edge of…") leave the title and land on the card as spoken cues. A non-exact match loads the top library exercise (real start/end images) and shows a Swap Match / Options picker: top alternatives, a library search box, and Keep as Custom with the cleaned dictated name. Exact titles and voice aliases stay exact and do not show the picker. Lives in `index.html`. Checked in the browser with "Hamstring stretch in seated position as you lean forward from the hips holding for 30 seconds" (best guess Seated Hamstring Stretch, alternatives are the other hamstring exercises, hold 30s, cues preserved through swap and Keep as Custom). Rare clinical words outrank a generic word such as "stretch". A phrase that shares no muscle, movement, position, or equipment word, and fewer than two title words, stays a custom card under the full cleaned name. UI change, waits for Karl's tap.
@@ -23,6 +24,7 @@ Shared state for every agent in `AGENTS.md`. Newest entry first in each section.
 
 ## Pending Tasks
 
+- Title vs category mismatches left for Karl (not changed, 2026-11-02): Scapular Retraction and Depression (`cerv-304`, category cervical, joints shoulder); Quadruped Hip Extension Over Bench Holds, Quadruped Hip Extension On Bench, Hip Hike Holds, Hip Hike Reps, and Hip Hikes (all category knee, joints hip).
 - Catalog is at 344 exercises after the Phase 1 cleanup (was 368); goal is 400+.
 - Automated contraindication filters: built in the Phase 1 PR; live once Karl merges it.
 - Asset gaps are tracked in `docs/asset_gaps.md`. `docs/asset_gaps.md`, `docs/asset_batches` and `scripts/batch_asset_prompts.py` still list some removed ids; clean up in a later PR.
