@@ -6229,7 +6229,7 @@
   {
     "id": "quadruped-hip-extension-over-bench-holds",
     "name": "Quadruped Hip Extension Over Bench Holds",
-    "category": "knee",
+    "category": "hip",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -6303,7 +6303,7 @@
   {
     "id": "hip-hike-holds",
     "name": "Hip Hike Holds",
-    "category": "knee",
+    "category": "hip",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -6340,7 +6340,7 @@
   {
     "id": "hip-hike-reps",
     "name": "Hip Hike Reps",
-    "category": "knee",
+    "category": "hip",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -7784,7 +7784,7 @@
   {
     "id": "quadruped-hip-extension-on-bench",
     "name": "Quadruped Hip Extension On Bench",
-    "category": "knee",
+    "category": "hip",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -10814,7 +10814,7 @@
   {
     "id": "hip-hikes",
     "name": "Hip Hikes",
-    "category": "knee",
+    "category": "hip",
     "type": "strength",
     "starter": false,
     "default_dosing": {
