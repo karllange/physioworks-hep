@@ -4283,7 +4283,7 @@
   {
     "id": "hamstring-curls",
     "name": "Hamstring Curls",
-    "category": "ankle",
+    "category": "knee",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -10213,7 +10213,7 @@
   {
     "id": "hamstring-ball-curls",
     "name": "Hamstring Ball Curls",
-    "category": "ankle",
+    "category": "knee",
     "type": "strength",
     "starter": false,
     "default_dosing": {
@@ -10250,7 +10250,7 @@
   {
     "id": "prone-hamstring-curls",
     "name": "Prone Hamstring Curls",
-    "category": "ankle",
+    "category": "knee",
     "type": "strength",
     "starter": false,
     "default_dosing": {
