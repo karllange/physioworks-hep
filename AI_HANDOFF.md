@@ -1,6 +1,19 @@
 # AI handoff clipboard — PhysioWorks HEP Engine
+- **Last Updated:** 2026-11-04 16:15 PST
+- **Unified Path:** `/Users/karllange/Development/physioworks-hep`
+- **Active Branch:** `main`
+- **Working Tree:** Clean
 
 Shared state for every agent in `AGENTS.md`. Newest entry first in each section. Never paste PHI, secrets, or personal information; if any shows up, record only its location.
+
+## Recent Git Commits (Last 3)
+1. `f541d7b` | 2026-11-02 | Karl Lange — `Note the posterior standing hip rotations illustration is on main.`
+2. `9bcaa18` | 2026-11-02 | Karl Lange — `Merge posterior standing hip rotations illustration from feat/reasoning-engine.`
+3. `452d915` | 2026-11-02 | Karl Lange — `Tag five hip exercises as hip instead of knee.`
+
+## Current Project Status
+- **Production Branch (`main`):** Live on GitHub Pages with a validated **290-exercise illustrated database** (`exercises.json`, 0 missing illustrations in `missing-illustrations-queue.json`), clinical safety & contraindication engine (`hep-safety.js`, 14/14 tests passing in `tests/run.js`), smart Dictate Plan / Paste library matcher with cue extraction and Swap Match picker in `index.html`, and updated hip/knee category tags and posterior standing hip rotations illustration (`assets/standing-hip-rotations-on-stool.webp`).
+- **Pending Review Items:** Clinician review on 4 protocol precaution conflicts in `protocols.json` and 6 retained catalog rows, plus catalog expansion toward 400+ exercises.
 
 ## Completed Today
 
